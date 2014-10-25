@@ -1,2 +1,2 @@
-startbootstrap-business-casual
-==============================
+Start Bootstrap - Business Casual
+=========
