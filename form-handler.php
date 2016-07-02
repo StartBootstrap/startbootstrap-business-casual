@@ -1,7 +1,7 @@
 <?php
 // Emails form data to you and the person submitting the form and adds it to a database
 
-// Make sure there is a db to write to
+// Test for db
 $db = new mysqli("DB_HOST","DB_USER","DB_PASSWORD","DB_NAME");
 $sql = "SELECT id FROM form_submissions";
 $result = $db->query($sql);
