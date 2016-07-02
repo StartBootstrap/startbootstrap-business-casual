@@ -8,6 +8,7 @@ To begin using this template, choose one of the following options to get started
 * [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/business-casual/)
 * Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-business-casual.git`
 * Fork the repo
+* Your must enter your database information and your email in form-handler.php - if you don't have a database, that's fine.  Edit contact.html to direct the form to form-handler-nodb.php and emails will be sent with no database writes.
 
 ## Bugs and Issues
 
