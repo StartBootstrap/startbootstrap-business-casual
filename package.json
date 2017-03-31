@@ -1,0 +1,16 @@
+{
+    "name": "startbootstrap-business-casual",
+    "title": "Business Casual",
+    "description": "A Bootstrap 4 website template featuring full page background images and other easy to use Bootstrap elements.",
+    "version": "4.0.0-alpha",
+    "homepage": "http://startbootstrap.com/template-overviews/business-casual",
+    "author": "Start Bootstrap",
+    "license": {
+        "type": "MIT",
+        "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BlackrockDigital/startbootstrap-business-casual.git"
+    }
+}
