@@ -1,16 +1,37 @@
 {
-    "name": "startbootstrap-business-casual",
     "title": "Business Casual",
-    "description": "A Bootstrap 4 website template featuring full page background images and other easy to use Bootstrap elements.",
+    "name": "startbootstrap-business-casual",
     "version": "4.0.0-alpha",
+    "description": "A casual HTML website theme for businesses built with Bootstrap",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
     "homepage": "http://startbootstrap.com/template-overviews/business-casual",
-    "author": "Start Bootstrap",
-    "license": {
-        "type": "MIT",
-        "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+    "bugs": {
+        "url": "https://github.com/BlackrockDigital/startbootstrap-business-casual/issues",
+        "email": "feedback@startbootstrap.com"
     },
+    "license": "MIT",
+    "author": "Start Bootstrap",
+    "contributors": [
+        "David Miller (http://davidmiller.io/)"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/BlackrockDigital/startbootstrap-business-casual.git"
+    },
+    "dependencies": {
+        "bootstrap": "^4.0.0-alpha.6",
+        "jquery": "^3.2.1",
+        "tether": "^1.4.0"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.18.8",
+        "gulp": "^3.9.1"
     }
 }
