@@ -20,49 +20,34 @@
     <!-- Custom styles for this template -->
     <link href="css/business-casual.css" rel="stylesheet">
 
-    <!-- Temporary navbar container fix -->
-    <style>
-    .navbar-toggler {
-        z-index: 1;
-    }
-    
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
-        }
-    }
-    </style>
-
 </head>
 
 <body>
 
-    <div class="tagline-upper text-center text-heading text-shadow text-white mt-4 hidden-md-down">Business Casual</div>
-    <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-4 hidden-md-down">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+    <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block">Business Casual</div>
+    <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-toggleable-md navbar-light navbar-custom bg-faded py-lg-4">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="container">
-            <a class="navbar-brand text-uppercase text-expanded font-weight-bold hidden-lg-up" href="#">Start Bootstrap</a>
-            <div class="collapse navbar-collapse" id="navbarExample">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item active px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+                </li>
+                <li class="nav-item active px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -72,10 +57,10 @@
             <div class="card card-inverse">
                 <img class="card-img img-fluid w-100" src="img/slide-1.jpg" alt="">
                 <div class="card-img-overlay bg-overlay">
-                    <h2 class="card-title text-shadow text-uppercase mb-0">Post Title</h2>
+                    <h2 class="card-title text-shadow text-white text-uppercase mb-0">Post Title</h2>
                     <h4 class="text-shadow text-white">March 1, 2017</h4>
-                    <p class="lead card-text text-shadow text-white w-50 hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repellat provident quo aliquam eius ea, animi porro magnam totam dolor nam error quas labore eveniet dicta nostrum inventore veniam. Ipsam?</p>
-                    <a href="" class="btn btn-secondary">Read More</a>
+                    <p class="lead card-text text-shadow text-white w-50 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repellat provident quo aliquam eius ea, animi porro magnam totam dolor nam error quas labore eveniet dicta nostrum inventore veniam. Ipsam?</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
                 </div>
             </div>
         </div>
@@ -84,10 +69,10 @@
             <div class="card card-inverse">
                 <img class="card-img img-fluid w-100" src="img/slide-2.jpg" alt="">
                 <div class="card-img-overlay bg-overlay">
-                    <h2 class="card-title text-shadow text-uppercase mb-0">Post Title</h2>
+                    <h2 class="card-title text-shadow text-white text-uppercase mb-0">Post Title</h2>
                     <h4 class="text-shadow text-white">March 1, 2017</h4>
-                    <p class="lead card-text text-shadow text-white w-50 hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repellat provident quo aliquam eius ea, animi porro magnam totam dolor nam error quas labore eveniet dicta nostrum inventore veniam. Ipsam?</p>
-                    <a href="" class="btn btn-secondary">Read More</a>
+                    <p class="lead card-text text-shadow text-white w-50 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repellat provident quo aliquam eius ea, animi porro magnam totam dolor nam error quas labore eveniet dicta nostrum inventore veniam. Ipsam?</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
                 </div>
             </div>
         </div>
@@ -96,10 +81,10 @@
             <div class="card card-inverse">
                 <img class="card-img img-fluid w-100" src="img/slide-3.jpg" alt="">
                 <div class="card-img-overlay bg-overlay">
-                    <h2 class="card-title text-shadow text-uppercase mb-0">Post Title</h2>
+                    <h2 class="card-title text-shadow text-white text-uppercase mb-0">Post Title</h2>
                     <h4 class="text-shadow text-white">March 1, 2017</h4>
-                    <p class="lead card-text text-shadow text-white w-50 hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repellat provident quo aliquam eius ea, animi porro magnam totam dolor nam error quas labore eveniet dicta nostrum inventore veniam. Ipsam?</p>
-                    <a href="" class="btn btn-secondary">Read More</a>
+                    <p class="lead card-text text-shadow text-white w-50 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repellat provident quo aliquam eius ea, animi porro magnam totam dolor nam error quas labore eveniet dicta nostrum inventore veniam. Ipsam?</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
                 </div>
             </div>
         </div>
@@ -123,7 +108,7 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
