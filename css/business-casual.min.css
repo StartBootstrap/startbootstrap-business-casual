@@ -4,7 +4,8 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/master/LICENSE)
  */
 body {
-    font-family: Lora;
+    font-family: 'Open Sans',
+        sans-serif;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(173, 175, 255, 0.65))), url(../img/sitfox.jpg);
     background: linear-gradient(rgba(190, 178, 255, 0.65)), url(../img/bg.jpg);
     /* background-attachment: fixed; */
@@ -18,7 +19,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Raleway
+    font-family: 'Open Sans',
+        sans-serif;
 }
 
 p {
@@ -34,7 +36,8 @@ p {
     margin-bottom: 5rem;
     text-transform: uppercase;
     line-height: 1;
-    font-family: Raleway
+    font-family: 'Open Sans',
+        sans-serif;
 }
 
 .site-heading .site-heading-upper {
@@ -74,10 +77,8 @@ p {
     background-color: rgba(255, 255, 255, .85)
 }
 
-#mainNav {
-    background-color: rgba(47, 23, 15, .9);
-    font-family: Raleway
-}
+#mainNav {}
+
 
 #mainNav .navbar-brand {
     color: #e6a756
@@ -149,7 +150,7 @@ p {
 .cta {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: rgba(230, 167, 86, .9)
+    background-color: (rgba(190, 178, 255, 0.65))
 }
 
 .cta .cta-inner {
@@ -232,7 +233,7 @@ p {
 }
 
 .footer {
-    background-color: rgba(47, 23, 15, .9)
+    background-color: (rgba(190, 178, 255, 0.65))
 }
 
 .text-primary {

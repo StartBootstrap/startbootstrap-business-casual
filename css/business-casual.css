@@ -38,7 +38,8 @@ p {
   margin-bottom: 5rem;
   text-transform: uppercase;
   line-height: 1;
-  font-family: 'Raleway';
+  font-family: 'Open Sans',
+    sans-serif;
 }
 
 .site-heading .site-heading-upper {
