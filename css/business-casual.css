@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Lora';
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, 0.65))), url("../img/bg.jpg");
-  background: linear-gradient(rgba(47, 23, 15, 0.65)), url("../img/bg.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(176, 174, 255, 0.65))), url("../img/princeimage.png");
+  background: linear-gradient(rgba(170, 168, 255, 0.65)), url("../img/princeimage.png");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -18,8 +18,11 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: 'Raleway';
+h6,
+p,
+a {
+  font-family: 'Open Sans',
+    sans-serif;
 }
 
 p {
@@ -97,9 +100,11 @@ p {
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 0.9rem;
   }
+
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: rgba(255, 255, 255, 0.4);
   }
+
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
     color: #e6a756;
   }
@@ -123,12 +128,14 @@ p {
     width: 75%;
     float: right;
   }
+
   .intro .intro-text {
     left: 0;
     width: 60%;
     margin-top: 3rem;
     position: absolute;
   }
+
   .intro .intro-text .intro-button {
     width: 100%;
     left: 0;
@@ -172,6 +179,7 @@ p {
     position: relative;
     z-index: 0;
   }
+
   .about-heading .about-heading-content {
     margin-top: -5rem;
     position: relative;
@@ -185,11 +193,13 @@ p {
     z-index: 1;
     margin-bottom: -3rem;
   }
+
   .product-item .product-item-img {
     position: relative;
     z-index: 0;
     max-width: 60vw;
   }
+
   .product-item .product-item-description {
     position: relative;
     z-index: 1;
@@ -247,7 +257,9 @@ p {
   border-color: #e6a756;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
   background-color: #df902a;
   border-color: #df902a;
 }
