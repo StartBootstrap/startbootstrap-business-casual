@@ -1,7 +1,7 @@
 {
     "title": "Business Casual",
     "name": "startbootstrap-business-casual",
-    "version": "5.0.4",
+    "version": "5.0.5",
     "scripts": {
         "start": "gulp watch"
     },
@@ -34,7 +34,7 @@
     },
     "devDependencies": {
         "browser-sync": "2.26.3",
-        "del": "^3.0.0",
+        "del": "4.0.0",
         "gulp": "4.0.0",
         "gulp-autoprefixer": "6.0.0",
         "gulp-clean-css": "4.0.0",
@@ -42,7 +42,6 @@
         "gulp-plumber": "^1.2.1",
         "gulp-rename": "1.4.0",
         "gulp-sass": "4.0.2",
-        "gulp-uglify": "3.0.1",
         "merge-stream": "^1.0.1"
     }
 }
