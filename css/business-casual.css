@@ -6,11 +6,11 @@
 
 body {
   font-family: 'Lora';
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, 0.65))), url("../img/bg.jpeg");
-  background: linear-gradient(rgba(47, 23, 15, 0.65)), url("../img/bg.jpeg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  background-image: url(../img/scooter.png), url(../img/bg.jpeg);
+    background-attachment: scroll, fixed;
+    background-position: bottom right, center;
+    background-repeat: no-repeat, repeat;
+  background-size: contain, cover;
 }
 
 h1,
