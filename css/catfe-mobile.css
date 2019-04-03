@@ -180,6 +180,7 @@ p {
   }
 }
 
+/*
 @media (min-width: 992px) {
   .product-item .product-item-title {
     position: relative;
@@ -197,6 +198,26 @@ p {
     margin-top: -3rem;
     max-width: 50vw;
   }
+}
+*/
+
+@media (min-width: 992px) {
+    .update .update-title{
+        position: relative;
+        z-index: 1;
+        margin-bottom: -3rem;
+    }
+    .update .update-img {
+        position: relative;
+        z-index: 0;
+        max-width: 60vw;
+    }
+    .update .update-description {
+        position: relative;
+        z-index: 1;
+        margin-top: -3rem;
+        max-width: 50vw;
+    }
 }
 
 .list-hours {
