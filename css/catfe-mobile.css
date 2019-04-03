@@ -76,8 +76,9 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: rgba(60, 35, 15, 0.95);
   font-family: 'Raleway';
+    /* 47 23 15 orignal */
 }
 
 #mainNav .navbar-brand {
@@ -226,7 +227,7 @@ p {
 }
 
 .footer {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: rgba(60, 35, 15, 0.95);
 }
 
 .text-primary {
