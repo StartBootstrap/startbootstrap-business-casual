@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+      
+<link rel="shortcut icon" href="img/favicon.ico">
 
     <title>Contact Catfe!</title>
 
@@ -19,6 +21,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/catfe-mobile.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
 
@@ -66,7 +70,8 @@
                 <span class="section-heading-upper">Comments? Questions?</span>
                 <span class="section-heading-lower">Contact Us!</span>
               </h2>
-              <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                
+              <!--<ul class="list-unstyled list-hours mb-5 text-left mx-auto">
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Sunday
                   <span class="ml-auto">Closed</span>
@@ -109,14 +114,110 @@
                 </small>
                 <br>
                 (317) 585-8468
-              </p>
+              </p> -->
+                
+                <!--Section: Contact v.2-->
+<section class="mb-4">
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Email Address</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+                
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="updates" id="updates" value="1">
+                    <label for="updates" class="form-check-label">Send me updates!</label>
+                </div>
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fa fa-instagram fa-2x"></i>
+                    <p>@catfe-mobile</p>
+                </li>
+
+                <li><i class="fa fa-twitter mt-4 fa-2x"></i>
+                    <p>@catfe</p>
+                </li>
+
+                <li><i class="fa fa-envelope mt-4 fa-2x"></i>
+                    <p>pbushko@princeton.edu</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="page-section about-heading">
+    <!--<section class="page-section about-heading">
       <div class="container">
         <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
         <div class="about-heading-content">
@@ -136,7 +237,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">
