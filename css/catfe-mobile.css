@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Lora';
-  background-image: url(../img/scooter.png), url(../img/bg.jpeg);
+  background-image: url(../img/scooter.png), url(../img/bg2.jpg);
     background-attachment: scroll, fixed;
     background-position: bottom right, center;
     background-repeat: no-repeat, repeat;
@@ -76,9 +76,10 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(60, 35, 15, 0.95);
+  background-color: rgba(113, 66, 28, 0.95);
   font-family: 'Raleway';
-    /* 47 23 15 orignal */
+    /* 47 23 15 orignal 
+    60, 35, 15  lighter */
 }
 
 #mainNav .navbar-brand {
@@ -248,7 +249,7 @@ p {
 }
 
 .footer {
-  background-color: rgba(60, 35, 15, 0.95);
+  background-color: rgba(113, 66, 28, 0.95);
 }
 
 .text-primary {
