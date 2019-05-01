@@ -45,9 +45,10 @@ p {
 }
 
 .site-heading .site-heading-lower {
-  font-size: 5rem;
+  font-size: 2rem;
   font-weight: 100;
   line-height: 4rem;
+  color: red;
 }
 
 .page-section {
