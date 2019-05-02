@@ -76,10 +76,11 @@ document.write(document.domain);
           <div class="bg-faded p-5 rounded">
 			<p class="mb-0">For more pictures go to our <a href="https://www.flickr.com/photos/home-and-property-repair/albums" target="_blank">Flickr Albums</a> directly.</p>
           </div>
-        </div>					
-		<div id="flickrembed"></div><div style="position:absolute; top:-70px; display:block; text-align:center; z-index:-1;">
-		</div>
-		<small style="display: block; text-align: center; margin: 0 auto;">Powered by <a href="https://flickrembed.com">flickr embed</a>.</small><script src='https://flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=72157667164521314&sort=0&by=album&theme=tiles_nested&scale=fill&limit=500&skin=default&autoplay=true'></script>
+        </div>
+
+<iframe style="position: relative; top: 0; left: 0; width: 100%; height: 100%;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=www.flickr.com/photos/home-and-property-repair/albums/72157667164521314&sort=2&by=album&theme=tiles_nested&scale=fill&speed=2000&limit=50&skin=alexis&autoplay=false" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"><p><a rel="nofollow" href="https://www.sellcompare.co.uk/">SellCompare</a></p><small>Powered by <a href="https://flickrembed.com">flickr embed</a>.</small></iframe><script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
+		
+
         
 		<div class="product-item-description d-flex mr-auto">
           <div class="bg-faded p-5 rounded">
