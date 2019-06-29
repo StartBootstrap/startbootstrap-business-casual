@@ -8,28 +8,43 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Business Casual - Start Bootstrap Theme</title>
+  <title>Back to the future</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>  
 
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/business-casual.min.css" rel="stylesheet">
-
+  <link href="css/business-casual.css" rel="stylesheet" id="thestylesheet">
+    
+  <!-- Reference for Ajax -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <!-- Reference for jQuery -->  
+  <script src="jquery-3.4.1.min.js"></script>
+  
 </head>
 
 <body>
 
-  <h1 class="site-heading text-center text-white d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">A Free Bootstrap 4 Business Theme</span>
-    <span class="site-heading-lower">Business Casual</span>
-  </h1>
 
-  <!-- Navigation -->
+  <!-- Beginning of the site: the Title -->
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-secondary mb-3">A really cool website</span>
+    <span class="site-heading-lower text-info">Back to the future</span>
+  </h1>
+  <!-- End of the Title -->  
+  
+  
+
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
       <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
@@ -38,13 +53,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="index.html">Home
-            <span class="sr-only">(current)</span>
-			</a>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="index.html">Home</a>
           </li>
-		  <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="tool.html">The tool</a>			
+		  <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="tool.html">The tool
+			<span class="sr-only">(current)</span>
+			</a>			
           </li>
 		  <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="documentation.html">Documentation</a>
@@ -65,52 +80,50 @@
       </div>
     </div>
   </nav>
-
-  <section class="page-section clearfix">
+  <!-- End of the Navbar -->
+  
+  
+  
+    <!-- First Section -->
+<section class="page-section about-heading">
     <div class="container">
-      <div class="intro">
-        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/intro.jpg" alt="">
-        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-          <h2 class="section-heading mb-4">
-            <span class="section-heading-upper">Fresh Coffee</span>
-            <span class="section-heading-lower">Worth Drinking</span>
-          </h2>
-          <p class="mb-3">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!
-          </p>
-          <div class="intro-button mx-auto">
-            <a class="btn btn-primary btn-xl" href="#">Visit Us Today!</a>
-          </div>
-        </div>
+      <div class="about-heading-content">
+
+            <div class="bg-faded rounded pt-5">
+              <h2 class="section-heading mb-3">
+                <span class="section-heading-upper">Well well...</span>
+                <span class="section-heading-lower">We can write something here</span>
+              </h2>
+			  <p class="mb-0" align="justify">
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			  </p>
+			</div>
       </div>
     </div>
-  </section>
+</section>
+    <!-- End of the First Section -->  
+  
+  
+  
+  
+    <!-- Frame -->
+	<div class="embed-responsive embed-responsive-4by3">
+		<iframe class="embed-responsive-item" src="iframe.html" allowfullscreen frameborder="0"></iframe>
+	</div>	  
+    <!-- End of the Frame -->
+					
+					
 
-  <section class="page-section cta">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <div class="cta-inner text-center rounded">
-            <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">Our Promise</span>
-              <span class="section-heading-lower">To You</span>
-            </h2>
-            <p class="mb-0">When you walk into our shop to start your day, we are dedicated to providing you with friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things right!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
+    <!-- Footer -->
   <footer class="footer text-faded text-center py-5">
     <div class="container">
       <p class="m-0 small">Copyright &copy; Your Website 2019</p>
     </div>
   </footer>
+    <!-- End of the Footer -->  
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
