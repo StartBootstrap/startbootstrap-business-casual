@@ -6,6 +6,8 @@
 
 body {
   font-family: 'Lora';
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, 0.65))), url("img/time.png");
+  background: linear-gradient(rgba(47, 23, 15, 0.65)), url("img/time.png");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -74,7 +76,7 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(29, 53, 87, 0.9);
+  background-color: rgba(47, 23, 15, 0.9);
   font-family: 'Raleway';
 }
 
@@ -83,12 +85,12 @@ p {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 800;
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
-  color: #fff;
+  color: #e6a756;
 }
 
 @media (min-width: 992px) {
@@ -96,10 +98,10 @@ p {
     font-size: 0.9rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #000223;
+    color: rgba(255, 255, 255, 0.4);
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #000223;
+    color: #e6a756;
   }
 }
 
@@ -224,7 +226,7 @@ p {
 }
 
 .footer {
-  background-color: rgba(29, 53, 87, 0.9);
+  background-color: rgba(47, 23, 15, 0.9);
 }
 
 .text-primary {
