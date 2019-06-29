@@ -9,7 +9,8 @@
   <meta name="author" content="">
 
   <title>Back to the future</title>
-
+  <link rel='icon' href='img/ico.ico'/>
+  
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   
@@ -28,11 +29,12 @@
   <script src="jquery-3.4.1.min.js"></script>
   
   <!-- Really important <link> to change the different css on-the-fly -->  
-  <link id="thestylesheet" rel="stylesheet" type="text/css" href="white.css"/>  
+	<link id="thestylesheet" rel="stylesheet" type="text/css" href="white.css"/> 
   
 
    <!-- CSS for the Timeline-->
 <style>
+
 html, body {
   height: 100%;
 }
@@ -307,24 +309,31 @@ input[data-description="2000"]:checked ~ #timeline-descriptions-wrapper p[data-d
     width: 300px;
   }
 }
+
+
 </style>
-   <!-- End of the CSS for the Timeline-->
 
 
 
   
-    <!-- Function for changing the CSS-->
+  
+  
+  
+  
     <script>
     function setStyleSheet(url){
        var stylesheet = document.getElementById("thestylesheet");
        stylesheet.setAttribute('href', url);
     }
     </script>
-   <!-- End of the Function for changing the CSS-->
-   
-   
 
-    <!-- Functions for changing the Articles-->
+    <script>
+    function setStyleSheet(url){
+       var stylesheet = document.getElementById("thestylesheet");
+       stylesheet.setAttribute('href', url);
+    }
+    </script>
+
 <script>
 $(document).ready(function(){
   $("#btn1").click(function(){
@@ -378,12 +387,7 @@ $(document).ready(function(){
 });
 
 	</script>
-   <!-- End of the Functions for changing the Articles-->
-
-
-
-
-   <!-- CSS for the Buttons-->   
+	
 	<style>
 .btn:link,
 .btn:visited{
@@ -452,20 +456,15 @@ $(document).ready(function(){
   }
 }
 </style>
-  <!-- End of the CSS for the Buttons-->   
 
 
-   <!-- CSS for the cursor over the timeline--> 
 <style>
 .wait {cursor: wait;}
 
 .default {
   cursor: default;
 }
-<!-- End of the CSS for the cursor over the timeline--> 
 
-
-<!-- CSS for the div in which the timeline is contained--> 
 #timeline {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
@@ -475,18 +474,16 @@ $(document).ready(function(){
   display: flex;
   flex-direction: column;
   position: relative;}
-<!-- End of the CSS for the div in which the timeline is contained--> 
+
 </style>
 
 
 </head>
 <body>
 
-
-
-<!-- First section, that contains the Timeline and the buttons. Here, the timeline:--> 
 <section>
 <div id="timeline" class="mt-5 mr-2 ml-2 p-4 rounded">
+
 <div class=" p-1"> </div>
 <div class=" p-1"> </div>
 <div class=" p-1"> </div>
@@ -554,7 +551,9 @@ $(document).ready(function(){
 	</div>
 </div>
 
-<!-- And here, the buttons: --> 			
+
+				
+				
 				
 				<div style="display:inline-block" align="center" class="mb-4">
 				<a href="#" class="btn btn-animation-1" id="btn1">ART. 1</a> 
@@ -564,18 +563,15 @@ $(document).ready(function(){
 				<a href="#" class="btn btn-animation-1" id="btn5">ART. 5</a> 
 				<a href="#" class="btn btn-animation-1" id="btn6">ART. 6</a> 
 				</div>
-</div>				
-</section>
-<!-- End of the section that contained the Timeline and the Buttons --> 
+</div>
 
-
-
-<!-- Section which contains the div that is overwritten by the articles --> 	
-<section>
-	<div id="div1" class=""> </div>
-</section>		
-<!-- End of the section which contains the div that is overwritten by the articles --> 
 				
+				
+</section>
+	
+				<section>
+				<div id="div1" class=""> </div>
+				</section>				
 	
 	</body>
 	</html>
