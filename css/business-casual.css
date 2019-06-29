@@ -1,8 +1,14 @@
-/*!
- * Start Bootstrap - Business Casual v5.0.8 (https://startbootstrap.com/template-overviews/business-casual)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/master/LICENSE)
- */
+/* dropcap */
+#dropcap:first-letter {
+    float:left;
+    font: bold 70px/55px Lora;
+}
+
+
+
+
+
+
 
 body {
   font-family: 'Lora';

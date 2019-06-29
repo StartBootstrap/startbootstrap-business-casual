@@ -11,6 +11,9 @@
   <title>Back to the future</title>
   <link rel='icon' href='img/ico.ico'/>  
 
+  <!-- FontAwesome -->  
+  <script src="https://kit.fontawesome.com/26e52bfea1.js"></script>
+  
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   
@@ -31,6 +34,14 @@
   <!-- Reference for jQuery -->  
   <script src="jquery-3.4.1.min.js"></script>
   
+				<style>
+				#img1 {
+				border-style:solid;
+				border-width: 0px 20px 0px 0px;
+				border-color:white;
+				}
+				
+				</style>  
 </head>
 <body>
 
@@ -85,27 +96,49 @@
 
 
 
-  <!-- First Section -->  
-  <section class="page-section about-heading">
+    <!-- First Section -->
+  <section class="page-section cta">
     <div class="container">
-      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
-      <div class="about-heading-content">
-        <div class="row">
-          <div class="col-xl-9 col-lg-10 mx-auto">
-            <div class="bg-faded rounded p-5">
-              <h2 class="section-heading mb-4">
-                <span class="section-heading-upper">Strong Coffee, Strong Roots</span>
-                <span class="section-heading-lower">About Our Cafe</span>
-              </h2>
-              <p>Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.</p>
-              <p class="mb-0">We guarantee that you will fall in <em>lust</em> with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.</p>
-            </div>
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner rounded">
+            <h2 class="section-heading mb-4">              
+              <!--<span class="section-heading-upper text-center mb-2">Copyrights, locations and purposes</span>-->
+              <span class="section-heading-lower text-center mb-5">DISCLAIMER</span>
+            </h2>			
+		  <div class="col-xl-12">
+                          <p id="dropcap" class="mb-3" align="justify">
+			    The <b>purpose</b> of this website is to explore various types of typographic and layout
+				style for text documents, as an <b>end-of-course project</b> for the "<i>Information
+				Modeling and Web technologies</i>" course of the Master Degree in Digital
+				Humanities and Digital Knowledge of the University of Bologna, under <b><a data-toggle="modal" href="#fabio">prof. Fabio Vitali</a></b>.
+			  </p>
+			  <p class="mb-3" align="justify">
+				The <b>documents</b> contained in this website have been selected for their length and
+				complexity among the best picks of 2018 of <a href="https://longreads.com/" target="_blank">www.longreads.com</a>. Their
+				publication here is not intended to be an alternative or replace their <b>original locations</b>:
+			  <ul>
+			  <li>Article 1: <a href="https://www.bloomberg.com/news/features/2018-03-16/japan-s-prisons-are-a-haven-for-elderly-women" target="_blank">Japan’s Prisons Are a Haven for Elderly Women</a>;
+			  <li>Article 2: <a href="https://www.the-tls.co.uk/articles/public/ridiculously-complicated-algorithms/" target="_blank">God is in the machine</a>;
+			  <li>Article 3: <a href="https://harpers.org/archive/2018/07/as-goes-the-south-so-goes-the-nation/" target="_blank">As Goes the South, so Goes the Nation</a>;
+			  <li>Article 4: <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1552167424995&uri=CELEX:32009L0041" target="_blank">Directive 2009/41/EC of the European Parliament and of the Council of 6 May 2009 on the contained use of genetically modified micro-organisms </a>;
+			  <li>Article 5: <a href="https://www.thecut.com/2018/05/how-anna-delvey-tricked-new-york.html" target="_blank">Maybe She Had So Much Money She Just Lost Track of It</a>;
+			  <li>Article 6: <a href="https://highline.huffingtonpost.com/articles/en/lotto-winners/" target="_blank">Jerry and Marge go large</a>.
+			  </ul>
+			  </p>
+			  <p class="mb-3" align="justify">
+				All <b>copyrights</b> and related rights on the content remain with their <b>original owners</b>.
+				<br>
+				All <b>copyrights</b> on the typographic and layout choices are <b>2019&copy;BACKTOTHEFUTURE</b>.
+			  </p>
+			        </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- End of the First Section -->    
+	</div>
+  </section>  
+  <!-- End of the First Section --> 
   
 
   <!-- Footer-->
@@ -116,5 +149,79 @@
   </footer>
   <!-- End of the Footer -->  
 
+
+
+  	<!--Modal for Wittenberg GRAPH-->
+  <div class="portfolio-modal modal fade" id="fabio" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Prof. Fabio Vitali</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div>
+				<img src="img/fabio.png" alt="fabiovitali" style="width:28%;" id="img1" align="left">
+				
+				
+				</div>
+				<div>
+				<p class="mb-2" align="justify" style="font-size:14px;">
+				
+<b>Dr. Fabio Vitali</b>
+</p>
+<p class="mb-2" align="justify" style="font-size:14px;">
+Current status: Associate Professor in Computer Science at the University of Bologna (Italy)</p>
+<p class="mb-2" align="justify" style="font-size:14px;">
+Address: Dept. of Computer Science, Mura A. Zamboni, 7, I-40127 Bologna, Italy</p>
+
+<p class="mb-2" align="justify" style="font-size:14px;">
+<b>Professional Preparation</b><br>
+Undergraduate: Mathematics, University of Bologna, 1990<br>
+PhD: Computer and Law, University of Bologna, 1994<br>
+Postdoctoral: Mathematics and Computer Science, University of Bologna, 1994-1996<br>
+Other Visiting scholar (1996) at the New Jersey Institute of Technology</p>
+
+<p class="mb-2" align="justify" style="font-size:14px;">
+<b>Scientific interests</b><br>
+Documentation in the software process, and hypertext visualization thereof<br>
+Semantic Web, in particular the design and development of models and applications for facilitating deduction and insertion of new meta-information based on general and predefined ontologies.<br>
+Markup Languages, in particular XML for the publishing industry, EDI, complex document display on a network. Also standards for the documentation and description of complex business processes in these fields.<br>
+Human-Computer Interaction, particularly in the design of the user interaction with Web-based systems, and Web sites design.<br>
+Hypertext Systems, particulary large-size hypertext systems, distribution on large scale networks, and interactivity of these systems.<br>
+Versioning of hypertext documents, in particular HTML, XHTML and XML documents for computer aided collaboration<br>
+Coordination languages, and their application to large scale distributed systems.
+</p>
+<p class="mb-2" align="justify" style="font-size:14px;">
+<b>Last scientific activities</b><br>
+2004-present Scientific manager of subsection 3 of the “Alma Two” project, financed by Regione Emilia-Romagna 2004-2006.<br>
+2001-present: Main author of the standard formalization efforts for the XML-based representation of Italian normative documents (e.g., national laws) in the NormeInRete? project, as recruired and supported by the Italian Ministry of Justice and the Authority for Informatics in the Public Administration (formerly AIPA, now CNIPA).<br>
+2002-present Scientific consultant for markup languages and XML for ENEA (National Research Institute for New Technologies, Energy and Environment).<br>
+2002-2004 Scientific Consultant on markup languages and XML for the Italian Ministry of Justice.<br>
+2000-2002 Scientific consultant for markup languages and XML for IAT-CNR, Pisa.<br>
+2000-2001 "Hypermedia chunk clusterer", research project sponsored by Microsoft Research.<br>
+</p>
+				</p>
+				</div>
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>
