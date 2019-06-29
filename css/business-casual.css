@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Lora';
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, 0.65))), url("img/time.png");
-  background: linear-gradient(rgba(47, 23, 15, 0.65)), url("img/time.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(000, 000, 000, 0.3))), url("../img/time.png");
+  background: linear-gradient(rgba(000, 000, 000, 0.3)), url("../img/time.png");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -42,17 +42,19 @@ p {
   display: block;
   font-size: 2rem;
   font-weight: 800;
+  text-shadow: 5px 5px 10px #000;  
 }
 
 .site-heading .site-heading-lower {
   font-size: 5rem;
   font-weight: 100;
   line-height: 4rem;
+  text-shadow: 5px 5px 10px #000; 
 }
 
 .page-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 8rem;
+  margin-bottom: 10rem;
 }
 
 .section-heading {
@@ -76,12 +78,12 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: rgba(00, 00, 00, 0.7);
   font-family: 'Raleway';
 }
 
 #mainNav .navbar-brand {
-  color: #e6a756;
+  color: #fff;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -90,7 +92,8 @@ p {
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
-  color: #e6a756;
+  color: #fff;
+  text-decoration: underline;
 }
 
 @media (min-width: 992px) {
@@ -101,7 +104,7 @@ p {
     color: rgba(255, 255, 255, 0.4);
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #e6a756;
+    color: #fff;
   }
 }
 
