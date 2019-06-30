@@ -44,10 +44,13 @@
 
     <style>
 
+.lora {
+  font-family: 'Lora';}
+
 textarea {
   width: 100%;
   margin: 20px auto 50px;
-  height: 200px;
+  height: 190px;
 
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -68,18 +71,25 @@ textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 30px 50px;
+  padding: 0px 20px;
 }
 
 .output {
   border-left: 1px solid #e3e3e3;
-  overflow-y: scroll;
+
 }
 
 .output iframe {
   border: none;
   width: 100%;
-  height: 900px;
+  height: 100%;
+}
+
+.container-large {
+min-width:100%;
+margin: 0px;
+  border: none;
+  padding: 20px;
 }
     </style>
 
@@ -209,9 +219,10 @@ textarea {
 }
 
 .cta-inner2 {
-  padding: 3rem;
+  padding: 3rem 0.5rem 3rem 0.5rem;
   margin: 0.5rem;
   background-color: rgba(255, 255, 255, 0.85);
+      height: 140%;
 }
 
 .cta2 {
@@ -221,13 +232,7 @@ textarea {
     height: 180%;
 }
 
-.cta2 .cta-inner2 {
-  position: relative;
-  padding: 3rem;
-  margin: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.85);
-    height: 140%;
-}
+
 
 .cta2 .cta-inner2:before {
   border-radius: 0.5rem;
@@ -247,19 +252,18 @@ height: 105%;
 
 
 </style>
+
     <!-- First Section -->
   <section class="page-section roba">
-      <div class="container">
+      <div class="container container-large">
       <div class="row">
         <div class="col-xl mx-auto">
           <div class="cta-inner2 rounded cta-inner-long">
-	  
-	  
-<div class=" container grid">
+<div class="container grid">
 	<form>
-		<h2>Insert your text here:</h2>
+		<h3 class="lora">Insert your text here:</h3>
 		<textarea id="html"></textarea>
-		<h2>Choose your typography style:</h2>
+		<h3 class="lora">Choose your style:</h3>
 		<textarea readonly>
 <link rel="stylesheet" type="text/css" href="1560.css"/>
 
@@ -274,14 +278,10 @@ height: 105%;
 <link rel="stylesheet" type="text/css" href="2040.css"/> 
 </textarea>
 	</form>
-
 </div>
-
 <div class="output grid">
 	<iframe id="iframe1"></iframe>
 </div>
-
-
 </div>
 </div>
 </div>
