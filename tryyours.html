@@ -37,6 +37,120 @@
   <!-- for the CK Editor -->   
   <script src="https://cdn.ckeditor.com/4.11.4/standard-all/ckeditor.js"></script>
   
+  
+  
+  
+  
+  
+  
+  
+  
+  <script>
+window.onload=function(){
+ var html=document.getElementById("html"),
+  css=document.getElementById("css"),
+  js=document.getElementById("js"),
+  output=document.getElementById("output"),
+  working=false,
+  fill=function(){
+   if(working){
+    return false;
+   }
+   working=true;
+   var document=output.contentDocument,
+    style=document.createElement("style"),
+    script=document.createElement("script");
+   document.body.innerHTML=html.textContent;
+   style.innerHTML=css.textContent.replace(/\s/g,"");
+   script.innerHTML=js.textContent;
+   document.body.appendChild(style);
+   document.body.appendChild(script);
+   working=false;
+  };
+ html.onkeyup=fill;
+ css.onkeyup=fill;
+ js.onkeyup=fill;
+}
+</script>
+<style>
+
+#section-table {
+background-color: white;
+height: 600px;
+width: 1000px;
+margin: 0 auto;
+border-radius: 25px;
+}
+
+table,div.content,iframe {
+ border:0;
+ height:100%;
+ margin:0;
+ padding:0;
+ width:100%;
+
+}
+
+td.html1{
+
+    border-left:solid black 1px;
+
+ height:100%;
+ padding:25px 5px 5px 5px;
+ position:relative;
+ vertical-align:top;
+ width:50%;
+}
+
+th {
+    border-top: none;
+}
+
+td.output1{
+
+    border-left:solid black 1px;
+
+ height:100%;
+ padding:25px 5px 5px 5px;
+ position:relative;
+ vertical-align:top;
+ width:50%;
+}
+
+td:first-child, th:first-child {
+     border-left: none;
+}
+
+td.js,
+td.css{
+
+    border-left:solid black 1px;
+    border-top:solid black 1px;
+ height:1%;
+ padding:25px 5px 5px 5px;
+ position:relative;
+ vertical-align:top;
+ width:50%;
+}
+
+div.tag{
+ position:relative;
+ left:5px;
+ top:5px;
+}
+
+#csstag, #jstag,
+#css, #js {
+display:none;
+}
+</style>
+
+
+
+
+
+
+
 </head>
 
 <body>
@@ -154,11 +268,52 @@
   
   
 
-    <!-- Frame -->
-	<div class="embed-responsive embed-responsive-4by3">
-		<iframe class="embed-responsive-item" src="tryyours/index.html" allowfullscreen frameborder="0"></iframe>
-	</div>	  
-    <!-- End of the Frame -->  
+   <section>
+
+<table id="section-table">
+   <tr>
+    <td class="html1">
+     <div class="tag">HTML (Body)</div>
+     <div readonly="readonly">serdtfghujiko</div>
+     
+     <div id="html" class="content" contenteditable>
+     
+     
+     
+     </div>
+    </td>
+    <td  class="output1">
+     <div class="tag">Output</div>
+     <iframe id="output"></iframe>
+    </td>
+   </tr>
+   <tr>
+    <td class="css1">
+     <div class="tag" id="csstag">CSS</div>
+     <div id="css" class="content">
+     p {
+     text-align:center;}</div>
+    </td>
+    
+    <td class="js1">
+     <div class="tag" id="jstag">JavaScript</div>
+     <div id="js" class="content">
+     function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</div>
+    </td>
+
+   </tr>
+  </table>
+ 
+  </section> 
   
   
 
