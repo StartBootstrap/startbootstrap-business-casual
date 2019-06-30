@@ -37,6 +37,52 @@
   <!-- for the CK Editor -->   
   <script src="https://cdn.ckeditor.com/4.11.4/standard-all/ckeditor.js"></script>
   
+  <!-- for the last iframe -->    
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+   <script src="http://localhost:35729/livereload.js"></script>
+
+
+    <style>
+
+textarea {
+  width: 100%;
+  margin: 20px auto 50px;
+  height: 200px;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-color: #999;
+}
+
+.containeriframe {
+  background: #e3e3e3;
+  border-right: 1px solid white;
+}
+
+.grid {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 30px 50px;
+}
+
+.output {
+  border-left: 1px solid #e3e3e3;
+  overflow-y: scroll;
+}
+
+.output iframe {
+  border: none;
+  width: 100%;
+  height: 900px;
+}
+    </style>
+
 </head>
 
 <body>
@@ -153,14 +199,96 @@
   
   
   
+  
+<style>
+.roba {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgba(00, 00, 00, 0.7);
+  z-index:-10;
+}
 
-    <!-- Frame -->
-	<div class="embed-responsive embed-responsive-4by3">
-		<iframe class="embed-responsive-item" src="tryyours/index.html" allowfullscreen frameborder="0"></iframe>
-	</div>	  
-    <!-- End of the Frame -->  
-  
-  
+.cta-inner2 {
+  padding: 3rem;
+  margin: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.cta2 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgba(00, 00, 00, 0.7);
+    height: 180%;
+}
+
+.cta2 .cta-inner2 {
+  position: relative;
+  padding: 3rem;
+  margin: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.85);
+    height: 140%;
+}
+
+.cta2 .cta-inner2:before {
+  border-radius: 0.5rem;
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  border: 0.25rem solid rgba(255, 255, 255, 0.85);
+  height: 120%;
+}
+
+.cta-inner-long {
+height: 105%;
+}
+
+
+</style>
+    <!-- First Section -->
+  <section class="page-section roba">
+      <div class="container">
+      <div class="row">
+        <div class="col-xl mx-auto">
+          <div class="cta-inner2 rounded cta-inner-long">
+	  
+	  
+<div class=" container grid">
+	<form>
+		<h2>Insert your text here:</h2>
+		<textarea id="html"></textarea>
+		<h2>Choose your typography style:</h2>
+		<textarea readonly>
+<link rel="stylesheet" type="text/css" href="1560.css"/>
+
+<link rel="stylesheet" type="text/css" href="1860.css"/> 
+
+<link rel="stylesheet" type="text/css" href="1927.css"/> 
+
+<link rel="stylesheet" type="text/css" href="1968.css"/>
+
+<link rel="stylesheet" type="text/css" href="1980.css"/> 
+
+<link rel="stylesheet" type="text/css" href="2040.css"/> 
+</textarea>
+	</form>
+
+</div>
+
+<div class="output grid">
+	<iframe id="iframe1"></iframe>
+</div>
+
+
+</div>
+</div>
+</div>
+  </section>  
+  <!-- End of the First Section --> 
+
+
 
     <!-- Footer -->
   <footer class="footer text-faded text-center py-5">
@@ -169,6 +297,24 @@
     </div>
   </footer>
     <!-- End of the Footer -->  
+
+
+<script>
+(function() {
+	$('.grid').height( $(window).height() );	
+	var	contents = $('iframe').contents(),
+		body = contents.find('body'),
+		styleTag = $('<style></style>').appendTo(contents.find('head'));
+	$('textarea').keyup(function() {
+		var $this = $(this);
+		if ( $this.attr('id') === 'html') {
+			body.html( $this.val() );
+		} else {
+			body.html( $this.val() );
+		}
+	});
+})();
+</script>
 
 </body>
 </html>
