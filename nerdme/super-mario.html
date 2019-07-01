@@ -4,7 +4,7 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
-	
+	<link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	
 	<!-- Super Mario CSS-->
@@ -35,28 +35,40 @@
 
 	<!-- Marquee top-bottom-->
 <style>
-@keyframes movingTopToBottom {
+@keyframes movingBottomToTop {
   0% {
-    top: -15px;
-  }
-  95% {
-    top: 150px;
-  }
+   opacity: 0.4; 
+   top: 250px;
+	}
   100% {
-    top: 165px;
+    top: -900px;
+	   opacity: 1;
   }
 }
-.container {
-  height: 150px;
-  overflow: hidden;
-}
-#divTAReviews {
-  animation: movingTopToBottom 5s linear infinite;
+
+
+section {
+  animation: movingBottomToTop steps(22, end)  10s;
   position: relative;
-  background: lightblue;
-  display: inline-block;
-  padding: 10px;
+  width: 95%;
+  text-align:center;
+  animation-fill-mode: forwards;
+  padding: 20px;
 }
+</style>
+
+<style>
+* {
+	font-family: 'super_plumber_brothersregular';
+}
+	
+@font-face {
+    font-family: 'super_plumber_brothersregular';
+    src: url('https://github.com/backtothefuture2019/tttt/blob/master/nerdme/font/super-mario-font/super_plumber_brothers-webfont.woff2') format('woff2'),
+         url('https://github.com/backtothefuture2019/tttt/blob/master/nerdme/font/super-mario-font/super_plumber_brothers-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}	
 </style>
 
 	<!-- Marquee left-right-->
@@ -75,14 +87,7 @@ span {
     animation:  9s linear 0s infinite push;
 }
 
-@font-face {
-    font-family: 'super_plumber_brothersregular';
-    src: url('https://github.com/backtothefuture2019/tttt/blob/master/nerdme/font/super-mario-font/super_plumber_brothers-webfont.woff2') format('woff2'),
-         url('https://github.com/backtothefuture2019/tttt/blob/master/nerdme/font/super-mario-font/super_plumber_brothers-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
 </style> -->
 	
 	
@@ -104,9 +109,21 @@ span {
         </div>-->
 		
 		
-		<div class="container">
-  <div id="divTAReviews">Lorem ipsum dolor sit amet,</div>
-</div>
+
+  <section>
+  
+			<h1>Lorem ipsum dolor sit amet,</h1> 
+			<h2>consectetur adipiscing elit,</h2>
+			<h3>sed do eiusmod tempor</h3>
+			<p>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+			culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet,</p> 
+			<p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</section>
+
 
 
 	
