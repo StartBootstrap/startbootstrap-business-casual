@@ -22,18 +22,11 @@
         background-color: #6899f8;
     }
 
-	@keyframes push {
-		from {
-			margin: 100%;
-		}
-		to {
-			margin: 0;
-		}
-	}
+
 	</style>
 
 
-	<!-- Marquee top-bottom-->
+	<!-- Marquee top-bottom
 <style>
 @keyframes movingBottomToTop {
   0% {
@@ -54,6 +47,31 @@ section {
   text-align:center;
   animation-fill-mode: forwards;
   padding: 20px;
+}
+</style>-->
+
+	<!-- Marquee left-right-->
+<style>
+@keyframes movingBottomToTop {
+  0% {
+   opacity: 0.5; 
+   right: 1200px;
+	}
+  100% {
+    right: -1400px;
+	   opacity: 1;
+  }
+}
+
+
+section {
+  top: 0px;
+  animation: movingBottomToTop steps(22, end)  15s;
+  position: relative;
+  width: 60%;
+  text-align:center;
+  animation-fill-mode: forwards;
+  padding: 0px;
 }
 </style>
 
