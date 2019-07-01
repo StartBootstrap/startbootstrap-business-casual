@@ -1,6 +1,6 @@
 body {
   margin: auto;
-  background: url("star-wars.png");
+  background: url("star-wars.svg");
 }
 
 /* This was an hypothesis on how to load the star-wars logo from css and so not putting it on the html
