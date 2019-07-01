@@ -15,50 +15,20 @@
         background-color: #6899f8;
     }
 
-    #cloud, .cloud{
-        position: absolute;
+@keyframes push {
+    from {
+        margin: 100%;
     }
-	
-	/* Google Fonts */
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-
-/* Global */
-html{
-  min-height: 100%;
-  overflow: hidden;
+    to {
+        margin: 0;
+    }
 }
-body{
-  height: calc(100vh - 8em);
-  padding: 4em;
-  color: rgba(255,255,255,.75);
-  font-family: 'Anonymous Pro', monospace;  
-  background-color: rgb(25,25,25);  
-}
-.line-1{
-    position: relative;
-    top: 50%;  
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
+.marquee {
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
 }
-
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+.marquee > span:nth-child(1) {
+    animation:  9s linear 0s infinite push;
 }
     </style>
     </head>
@@ -69,6 +39,12 @@ body{
 	<audio preload="auto" autoplay>
 		<source src="super-mario.mp3" type="audio/mpeg">
 	</audio>
+	
+	        <div class="marquee">
+            <span>Testing Marquee</span>
+        </div>
+
+
 	
     </body>
     <script>
