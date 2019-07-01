@@ -346,6 +346,12 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#btn2").click(function(){
+    $("#div1").load("super-mario.html") ||  $("article").load("super-mario.html");
+  });
+});  
+
+$(document).ready(function(){
+  $("#btn3").click(function(){
     $("#div1").load("../texts/japan.html") ||  $("article").load("../texts/japan.html");
   });
 });  
@@ -518,8 +524,8 @@ $(document).ready(function(){
 
 				<div style="display:inline-block" align="center" class="mb-4">
 				<a href="#" class="btn btn-animation-1" id="btn1">STAR WARS</a> 
-				<a href="#" class="btn btn-animation-1" id="btn1">SUPER MARIO</a>
-				<a href="#" class="btn btn-animation-1" id="btn2">ART. 1</a> 
+				<a href="#" class="btn btn-animation-1" id="btn2">SUPER MARIO</a>
+				<a href="#" class="btn btn-animation-1" id="btn3">ART. 1</a> 
 				</div>
 </div>
 
