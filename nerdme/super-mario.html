@@ -116,7 +116,7 @@ span {
 	
     </head>
     <body style="overflow: hidden;">
-        <canvas id="cloud" width="300px" height="300px"></canvas>
+        <!--<canvas id="cloud" width="300px" height="300px"></canvas>-->
         <img id="mario" src="super-mario.png" />
 
 	<audio preload="auto" autoplay>
@@ -152,21 +152,21 @@ span {
 	
     </body>
     <script>
-    function cloneCanvas(oldCanvas){
+    function cloneViewport(oldViewport){
 
         //create a new canvas
-        var newCanvas = document.createElement('canvas');
-        var context = newCanvas.getContext('2d');
+        var newViewport = document.createElement('canvas');
+        var context = newViewport.getContext('2d');
 
         //set dimensions
-        newCanvas.width = oldCanvas.width;
-        newCanvas.height = oldCanvas.height;
+        newViewport.width = oldViewport.width;
+        newViewport.height = oldViewport.height;
 
         //apply the old canvas to the new one
-        context.drawImage(oldCanvas, 0, 0);
+        context.drawImage(oldViewport, 0, 0);
 
         //return the new canvas
-        return newCanvas;
+        return newViewport;
     }
 
     var body = document.body;
@@ -197,11 +197,6 @@ span {
     body.addEventListener('keyup', function(e){
         keysPressed[e.keyCode] = e.type == 'keydown';
     }, false);
-
-    function move_cloud(){
-        cloud_position += 2
-        cloud.style.left = cloud_position+"px";
-    }
 
     function move(){
         mario.style.left = x_position + "px";
@@ -271,6 +266,10 @@ span {
     </script>
 	
 	<!--<script>
+	    function move_cloud(){
+        cloud_position += 2
+        cloud.style.left = cloud_position+"px";
+    }
 	// CLOUD
     // Yes this should be a function but i could not be bothered right now
     // this if for another day.
@@ -294,13 +293,13 @@ span {
     ctx.fill();
 
     // small cloud left
-    small_cloud = cloneCanvas(cloud);
+    small_cloud = cloneViewport(cloud);
     small_cloud.setAttribute('class', 'cloud');
     small_cloud.style.transform = 'scale(0.3)';
     body.appendChild(small_cloud);
 
     // small cloud center
-    small_cloud = cloneCanvas(cloud);
+    small_cloud = cloneViewport(cloud);
     small_cloud.setAttribute('class', 'cloud');
     small_cloud.style.transform = 'scale(0.4)';
     small_cloud.style.left = "400px";
@@ -308,7 +307,7 @@ span {
     body.appendChild(small_cloud);
 
     // small cloud center 2
-    small_cloud = cloneCanvas(cloud);
+    small_cloud = cloneViewport(cloud);
     small_cloud.setAttribute('class', 'cloud');
     small_cloud.style.transform = 'scale(0.4)';
     small_cloud.style.left = "500px";
@@ -316,7 +315,7 @@ span {
     body.appendChild(small_cloud);
 
     // small cloud right
-    small_cloud = cloneCanvas(cloud);
+    small_cloud = cloneViewport(cloud);
     small_cloud.setAttribute('class', 'cloud');
     small_cloud.style.transform = 'scale(0.4)';
     small_cloud.style.left = "800px";
