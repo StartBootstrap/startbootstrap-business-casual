@@ -18,7 +18,7 @@ body {
   
 .intro {
     position: absolute;
-    top: 50%;  /* Write "top:30%;" to have it centered in a new html file, outside the iframe in nerdme.html */ 
+    top: 55%;  /* Write "top:30%;" to have it centered in a new html file, outside the iframe in nerdme.html */ 
     left: 35%;
     z-index: 1;
     animation: intro 6s ease-out 1s;
@@ -46,7 +46,7 @@ body {
 /* Set the animation & hide the logo */
 .logo {    
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 20%;
     z-index: 1;
     margin: auto;
@@ -61,7 +61,7 @@ body {
 /* Scale the logo down and maintain it centered */
 @keyframes logo {
     0% {      
-        transform: scale(2.75);
+        transform: scale(1.75);
         opacity: 1;
     }
     50% {
