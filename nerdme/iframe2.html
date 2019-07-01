@@ -32,7 +32,7 @@
   <link id="thestylesheet" rel="stylesheet" type="text/css" href="white.css"/> 
   
    <!-- Really important <link> to change the different js on-the-fly -->  
-   <link id="thejs" href="white.js"/> 
+   <script id="thejs" src="star-wars.js"></script>
   
 
    <!-- CSS for the Timeline-->
@@ -333,7 +333,7 @@ input[data-description="2000"]:checked ~ #timeline-descriptions-wrapper p[data-d
     <script>
     function setJS(url){
        var thejs = document.getElementById("thejs");
-       thejs.setAttribute('href', url);
+       thejs.setAttribute('src', url);
     }
     </script>	
 
