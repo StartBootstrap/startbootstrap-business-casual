@@ -11,3 +11,44 @@
         background-color: #6899f8;
     }
 
+	@keyframes push {
+		from {
+			margin: 100%;
+		}
+		to {
+			margin: 0;
+		}
+	}
+	
+@keyframes movingBottomToTop {
+  0% {
+   opacity: 0.4; 
+   top: 250px;
+	}
+  100% {
+    top: -900px;
+	   opacity: 1;
+  }
+}
+
+
+section {
+  animation: movingBottomToTop steps(22, end)  10s;
+  position: relative;
+  width: 95%;
+  text-align:center;
+  animation-fill-mode: forwards;
+  padding: 20px;
+}
+
+* {
+	font-family: 'super_plumber_brothersregular';
+}
+	
+@font-face {
+    font-family: 'super_plumber_brothersregular';
+    src: url('https://github.com/backtothefuture2019/tttt/blob/master/nerdme/font/super-mario-font/super_plumber_brothers-webfont.woff2') format('woff2'),
+         url('https://github.com/backtothefuture2019/tttt/blob/master/nerdme/font/super-mario-font/super_plumber_brothers-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}	
