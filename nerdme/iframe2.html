@@ -29,7 +29,10 @@
   <script src="jquery-3.4.1.min.js"></script>
   
   <!-- Really important <link> to change the different css on-the-fly -->  
-	<link id="thestylesheet" rel="stylesheet" type="text/css" href="white.css"/> 
+  <link id="thestylesheet" rel="stylesheet" type="text/css" href="white.css"/> 
+  
+   <!-- Really important <link> to change the different js on-the-fly -->  
+   <link id="thejs" href="white.js"/> 
   
 
    <!-- CSS for the Timeline-->
@@ -326,6 +329,13 @@ input[data-description="2000"]:checked ~ #timeline-descriptions-wrapper p[data-d
        stylesheet.setAttribute('href', url);
     }
     </script>
+	
+    <script>
+    function setJS(url){
+       var thejs = document.getElementById("thejs");
+       thejs.setAttribute('href', url);
+    }
+    </script>	
 
 <script>
 $(document).ready(function(){
@@ -474,7 +484,7 @@ $(document).ready(function(){
 		<div class="dot-info default" data-description="1960">
 			<span class="year"></span>		
 		</div>
-		<input type="radio" name="timeline-dot" data-description="1980" onclick="setStyleSheet('star-wars.css')">
+		<input type="radio" name="timeline-dot" data-description="1980" onclick="setStyleSheet('star-wars.css')" onclick="setJS('star-wars.js')">
 		<div class="dot-info" data-description="1980">
 			<span class="year">2200?</span>
 			<span class="label">Star Wars</span>
