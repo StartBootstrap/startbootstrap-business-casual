@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+	
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	
     <style>
     html{
         height: 100%;
@@ -23,15 +29,43 @@
         margin: 0;
     }
 }
+</script>
+
+
+<script>
+@keyframes movingTopToBottom {
+  0% {
+    top: -15px;
+  }
+  95% {
+    top: 150px;
+  }
+  100% {
+    top: 165px;
+  }
+}
+.container {
+  height: 150px;
+  overflow: hidden;
+}
+#divTAReviews {
+  animation: movingTopToBottom 5s linear infinite;
+  position: relative;
+  background: lightblue;
+  display: inline-block;
+  padding: 10px;
+}
+</script>
+
+<!--
+<script>
 .marquee {
     white-space: nowrap;
     overflow: hidden;
-	font-family:'super_plumber_brothersregular';
 }
 
 span {
-	font-family:'super_plumber_brothersregular';
-	font-family:super_plumber_brothersregular;
+	font-family: 'Permanent Marker', cursive;
 }
 
 .marquee > span:nth-child(1) {
@@ -46,7 +80,9 @@ span {
     font-style: normal;
 
 }
-    </style>
+    </style> -->
+	
+	
     </head>
     <body style="overflow: hidden;">
         <canvas id="cloud" width="300px" height="300px"></canvas>
@@ -56,9 +92,18 @@ span {
 		<source src="super-mario.mp3" type="audio/mpeg">
 	</audio>
 	
-	        <div class="marquee">
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-        </div>
+	       <!-- <div class="marquee">
+            <span>
+			<h1>Lorem ipsum dolor sit amet,</h1> 
+			<h2>consectetur adipiscing elit,</h2>
+			<h3>sed do eiusmod tempor</h3>
+			incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        </div>-->
+		
+		
+		<div class="container">
+  <div id="divTAReviews">Review Text1</div>
+</div>
 
 
 	
