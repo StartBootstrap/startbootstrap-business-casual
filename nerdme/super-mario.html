@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+    html{
+        height: 100%;
+        width: 100%;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        background: url(super-mario-background.png);
+        background-repeat: repeat-x;
+        background-position: center bottom;
+        background-color: #6899f8;
+    }
+
+    #cloud, .cloud{
+        position: absolute;
+    }
+	
+	/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+    </style>
+    </head>
+    <body style="overflow: hidden;">
+        <canvas id="cloud" width="300px" height="300px"></canvas>
+        <img id="mario" src="super-mario.png" />
+
+	<audio preload="auto" autoplay>
+		<source src="super-mario.mp3" type="audio/mpeg">
+	</audio>
+	
+    </body>
+    <script>
+    function cloneCanvas(oldCanvas){
+
+        //create a new canvas
+        var newCanvas = document.createElement('canvas');
+        var context = newCanvas.getContext('2d');
+
+        //set dimensions
+        newCanvas.width = oldCanvas.width;
+        newCanvas.height = oldCanvas.height;
+
+        //apply the old canvas to the new one
+        context.drawImage(oldCanvas, 0, 0);
+
+        //return the new canvas
+        return newCanvas;
+    }
+
+    var body = document.body;
+    var jump_height = 120;
+
+    var mario = document.getElementById('mario');
+    mario.style.position = 'absolute';
+    mario.style.bottom = 0;
+    mario.setAttribute('src', 'super-mario.png');
+
+    var keysPressed = {};
+
+    var jumping = false;
+    var forwards = true;
+    var x_position = 30;
+    var y_position = 0;
+    var cloud_position = 300;
+    var in_jump = false;
+    var viewport = window.innerWidth;
+
+    
+
+
+    // capture all the events into a dictionary
+    body.addEventListener('keydown' , function(e){
+        keysPressed[e.keyCode] = e.type == 'keydown';
+    }, false);
+    body.addEventListener('keyup', function(e){
+        keysPressed[e.keyCode] = e.type == 'keydown';
+    }, false);
+
+    function move_cloud(){
+        cloud_position += 2
+        cloud.style.left = cloud_position+"px";
+    }
+
+    function move(){
+        mario.style.left = x_position + "px";
+
+        if(jumping == true)
+        {
+            in_jump = true;
+            y_position += 5;
+            if(y_position > jump_height)
+            {
+                jumping = false;
+            }
+            mario.style.bottom = y_position+ 'px';
+        }
+        if(jumping == false && y_position > 0)
+        {
+            y_position -= 5;
+            mario.style.bottom = y_position+'px';
+        }
+        else
+        {
+            in_jump = false;
+        }
+
+        if(viewport < x_position)
+        {
+            mario.style.left = "0px";
+            x_position = 0;
+        }
+        else if (0 > x_position)
+        {
+             mario.style.left=(window.width + 10) + "px";
+             x_position = viewport;
+        }
+        move_cloud();
+    }
+
+    setInterval(function(){
+        if(keysPressed[38]) // jump
+        {
+            if(in_jump != true)
+            {
+                jumping = true;
+            }
+        }
+        if(keysPressed[39]) // left
+        {
+            x_position += 10;
+
+            if(!forwards)
+            {
+                mario.setAttribute('src', 'super-mario.png');
+                forwards = true;
+            }
+        }
+        if(keysPressed[37]) // right
+        {
+            x_position -= 10;
+            if(forwards)
+            {
+                mario.setAttribute('src', 'super-mario-back.png');
+                forwards = false;
+            }
+        }
+        move();
+    }, 20);
+    </script>
+	
+	<!--<script>
+	// CLOUD
+    // Yes this should be a function but i could not be bothered right now
+    // this if for another day.
+    cloud = document.getElementById('cloud');
+    var ctx = cloud.getContext("2d");
+    ctx.beginPath();
+
+    ctx.arc(40,65,40,0,2*Math.PI)
+    ctx.fillStyle = "rgb(255,255,255)";
+    ctx.fill();
+
+    ctx.arc(110,50,50,0,2*Math.PI)
+    ctx.fillStyle = "rgb(255,255,255)";
+    ctx.fill();
+    ctx.arc(170,65,40,0,2*Math.PI)
+    ctx.fillStyle = "rgb(255,255,255)";
+    ctx.fill();
+
+    ctx.fillStyle = "rgba(255, 255, 255)";
+    ctx.fillRect (45, 35, 120, 70);
+    ctx.fill();
+
+    // small cloud left
+    small_cloud = cloneCanvas(cloud);
+    small_cloud.setAttribute('class', 'cloud');
+    small_cloud.style.transform = 'scale(0.3)';
+    body.appendChild(small_cloud);
+
+    // small cloud center
+    small_cloud = cloneCanvas(cloud);
+    small_cloud.setAttribute('class', 'cloud');
+    small_cloud.style.transform = 'scale(0.4)';
+    small_cloud.style.left = "400px";
+    small_cloud.style.top = "200px";
+    body.appendChild(small_cloud);
+
+    // small cloud center 2
+    small_cloud = cloneCanvas(cloud);
+    small_cloud.setAttribute('class', 'cloud');
+    small_cloud.style.transform = 'scale(0.4)';
+    small_cloud.style.left = "500px";
+    small_cloud.style.top = "180px";
+    body.appendChild(small_cloud);
+
+    // small cloud right
+    small_cloud = cloneCanvas(cloud);
+    small_cloud.setAttribute('class', 'cloud');
+    small_cloud.style.transform = 'scale(0.4)';
+    small_cloud.style.left = "800px";
+    small_cloud.style.top = "50px";
+    body.appendChild(small_cloud);
+    // CLOOUD
+	</script>-->
+</html>
