@@ -1,0 +1,24 @@
+Installing Webfonts
+
+1. Upload the files from this zip to your domain.
+2. Add this code to your website:
+
+@font-face {
+    font-family: 'DupuyBALloon-Italic-Italic';
+    src:url('DupuyBALloon-Italic-Italic.ttf.woff') format('woff'),
+        url('DupuyBALloon-Italic-Italic.ttf.svg#DupuyBALloon-Italic-Italic') format('svg'),
+        url('DupuyBALloon-Italic-Italic.ttf.eot'),
+        url('DupuyBALloon-Italic-Italic.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+3. Integrate the fonts into your CSS:
+Add the font name to your CSS styles. For example:
+
+h1 { 
+   font-family: 'DupuyBALloon-Italic-Italic';
+}  
+
+Troubleshooting Webfonts
+1. You may be using the fonts on different domain or subdomain.
+2. Check if you have link the fonts properly in the CSS.
