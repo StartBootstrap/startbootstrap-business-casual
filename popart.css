@@ -49,7 +49,7 @@ text-decoration: underline;
 }
 
 a {
-color: red;
+color: #A3001F;
 }
 
 /*
@@ -122,21 +122,6 @@ h1 {
   background-position: center;
   background-repeat: no-repeat !important;
   background-size: 200% 200%;
-  margin: auto;
-  text-align: center;
-  height: auto;
-  box-sizing: content-box;
-  line-height: 1;
-  background: url(img/popart/electric.svg);
-  width: auto;
-  padding: 10% 14% 12% 14%;
-  font-size: 50pt;
-}
-
-h1:hover { 
-  background-position: center;
-  background-repeat: no-repeat !important;
-  background-size: 200% 200%;
   font-size: 70pt;
   margin: auto;
   text-align: center;
@@ -146,6 +131,21 @@ h1:hover {
   background: url(img/popart/electric.svg);
   width: auto;
   padding: 10% 14% 12% 14%;
+}
+
+h1:hover {
+  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: 200% 200%;
+  margin: auto;
+  text-align: center;
+  height: auto;
+  box-sizing: content-box;
+  line-height: 1;
+  background: url(img/popart/electric.svg);
+  width: auto;
+  padding: 10% 14% 12% 14%;
+  font-size: 50pt;	
 }
 
 h1:after {
