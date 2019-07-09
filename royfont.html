@@ -9,15 +9,45 @@
 	     url('font/roy-lichtenstein/DupuyBALloon-Italic-Italic.ttf.woff') format('woff');
 }
 
+body {
+  background: wheat;
+  background-image:
+    radial-gradient(salmon 23%, transparent 0), 
+    radial-gradient(salmon 23%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+}
 
 * {
 	font-family: 'royliecthtenstein';
-	    font-weight: normal;
+	font-weight: normal;
     font-style: normal;
 }
 
-body {
-background-color: red;}
+article img{
+	height: auto;
+	filter: contrast(3);
+	transform:rotate(20deg);
+	/* -webkit-transform: rotate(20deg);  Safari and Chrome */
+	-ms-transform: rotate(20deg);
+	margin-top:150px;
+	margin-bottom: 140px;
+	margin-right:20%;
+	margin-left: 10%;
+	max-width: 70%;	
+	border: 5px solid;
+}
+
+
+article img:before {
+    content: "";
+    display: block;
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg") no-repeat;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 0 6px 0 0;
+}
 
 .circular-sb {
   min-width: 50px;
@@ -154,8 +184,110 @@ background-color: red;}
   <div class="circle23"></div>
 </div>
 
+</section>
 
-</section></article>
+
+<section>
+  <blockquote class="speech bubble">Did someone say <em>chimichangas?</em></blockquote>
+</section>
+<section>
+  <blockquote class="whisper bubble">That’s the sound of my brain</blockquote>
+</section>
+<section>
+  <blockquote class="electric bubble">Autobots,<span>Attack!</span></blockquote>
+</section>
+
+
+<style>
+@font-face {
+  font-family: 'SequentialistBB';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_1_0.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_0_0.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SequentialistBB';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_0_0.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_0_0.woff") format("woff");
+  font-style: italic;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: SequentialistBB, cursive;
+  font-size: 2.5vw;
+  margin: 0;
+}
+
+section {
+  min-height: 100vh;
+  /*display: flex;*/
+  justify-content: center;
+  align-content: center;
+}
+
+section {
+  padding: 3rem;
+}
+
+section:nth-of-type(1) {
+  background: #d52b21;
+}
+
+section:nth-of-type(2) {
+  background: #fff;
+}
+
+section:nth-of-type(3) {
+  background: #0388fe;
+}
+
+blockquote.bubble {
+  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 0;
+  box-sizing: content-box;
+  line-height: 1;
+}
+
+blockquote.speech {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
+  width: 25%;
+  padding-top: 6%;
+  padding-bottom: 20%;
+}
+
+blockquote.whisper {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/whisper.svg);
+  width: 25%;
+  font-size: 2vw;
+  color: #ccc;
+  font-style: italic;
+  padding: 6% 5% 15%;
+}
+
+blockquote.electric {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg);
+  width: 25%;
+  font-size: 2.4vw;
+  font-style: italic;
+  padding: 4% 6% 12% 0%;
+}
+
+blockquote.electric span {
+  display: block;
+  font-size: 3vw;
+  font-weight: bold;
+}
+</style>
+
+</article>
 
 
 </body>
