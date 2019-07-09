@@ -39,7 +39,7 @@ html, body {
   height: 100%;
 }
 
-body {
+timeline-section {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   color: #424949;
@@ -337,45 +337,35 @@ $(document).ready(function(){
   });
 });
     
-	</script>	
-	
-	<script>
+
 $(document).ready(function(){
   $("#btn2").click(function(){
     $("#div1").load("texts/machine.html") ||  $("article").load("texts/machine.html");
   });
 });
 
-	</script>
-	
-	<script>
+
 $(document).ready(function(){
   $("#btn3").click(function(){
     $("#div1").load("texts/alabama.html") ||  $("article").load("texts/alabama.html");
   });
 });
 
-	</script>
-	
-	<script>
+
 $(document).ready(function(){
   $("#btn4").click(function(){
     $("#div1").load("texts/eudirective.html") ||  $("article").load("texts/eudirective.html");
   });
 });
 
-	</script>
-	
-	<script>
+
 $(document).ready(function(){
   $("#btn5").click(function(){
     $("#div1").load("texts/delvey.html") ||  $("article").load("texts/delvey.html");
   });
 });
 
-	</script>
-	
-	<script>
+
 $(document).ready(function(){
   $("#btn6").click(function(){
     $("#div1").load("texts/lottery.html") ||  $("article").load("texts/lottery.html");
@@ -477,7 +467,7 @@ $(document).ready(function(){
 </head>
 <body>
 
-<section>
+<div id="timeline-section">
 <div id="timeline" class="mt-5 mr-2 ml-2 p-4 rounded">
 
 <div class=" p-1"> </div>
@@ -557,8 +547,7 @@ $(document).ready(function(){
 				<a href="#" class="btn btn-animation-1" id="btn6">ART. 6</a> 
 				</div>
 </div>
-				
-</section>
+</div>
 	
 				
 				<div id="div1" class="">      </div>

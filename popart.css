@@ -32,7 +32,7 @@
 
 
 
-html {
+body {
     background-image: url("img/popart/popart1.png");
 }
 
@@ -50,7 +50,7 @@ text-decoration: underline;
 
 
 
-section:nth-of-type(1) {
+p:nth-of-type(n+1) {
   border-top: solid 30px ; 
     font-size: 16pt;
       background: white;
