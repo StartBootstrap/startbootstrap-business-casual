@@ -117,7 +117,7 @@ min-width: 50px;
 h1 {
   background-position: center;
   background-repeat: no-repeat !important;
-  background-size: 100% 100%;
+  background-size: 150% 150%;
   margin: auto;
   text-align: center;
   height: auto;
@@ -152,7 +152,7 @@ content: " Sbam!";
 }
 
 h3:after {
-content: "! $@*#&!!";
+content: "! $@*#&!";
 }
 
 p:nth-of-type(odd):after {
@@ -184,7 +184,7 @@ h2 {
 h3 {
   margin-top: 20px;
   margin-bottom: 20px;
-  border-bottom: solid 30px ; 
+  border-bottom: solid 20px ; 
   border-left: solid black;
   border-right: solid black;
   border-top: solid black;
@@ -193,8 +193,7 @@ h3 {
 	  padding: 5px;
 	  width: auto;
 	  padding-left: 20px;
-	  padding-right:20px;
-  text-align:center;	  
+	  padding-right:20px;	  
 }
 
 
