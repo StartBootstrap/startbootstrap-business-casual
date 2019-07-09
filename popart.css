@@ -48,7 +48,7 @@ font-family: 'badaboom';
 text-decoration: underline;
 }
 
-
+/*
 
 section:nth-child(n+1) {
     font-size: 16pt;
@@ -71,6 +71,7 @@ section:last-of-type {
 	  border-right: solid black;
 	  border-bottom: solid 30px ;
 }
+*/
 
 article { 
     margin: 10% 15% 10% 15%;
@@ -91,13 +92,8 @@ article {
   }
 
 h1, h2, h3, h4 {
-font-size: 28pt;
 font-family: 'badaboom';
   display: block;
-}
-
-h1, h2 {
-	font-size: 30pt;
 }
 
 
@@ -130,6 +126,7 @@ h1 {
   background: url(img/popart/electric.svg);
   width: auto;
   padding: 10% 10% 12% 10%;
+  	font-size: 40pt;
 }
 
 h1:hover { 
@@ -177,9 +174,12 @@ h2 {
   height: auto;
   padding-top: 10%;
   padding-bottom: 20%;
+	font-size: 30pt;  
 }
 
 h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-bottom: solid 30px ; 
   border-left: solid black;
   border-right: solid black;
