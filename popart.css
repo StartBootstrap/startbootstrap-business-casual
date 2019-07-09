@@ -32,9 +32,10 @@
 
 
 
-body {
+html, body {
     background-image: url("img/popart/popart1.png");
 }
+
 
 * {
 	font-family: 'royliecthtenstein';
@@ -49,7 +50,7 @@ text-decoration: underline;
 
 
 
-section:nth-of-type(3) {
+section:nth-of-type(2) {
   border-top: solid 30px ; 
     font-size: 16pt;
       background: white;
@@ -60,7 +61,7 @@ section:nth-of-type(3) {
 	  border-right: solid black;
 }
 
-section:nth-child(n+3) {
+section:nth-child(n+2) {
     font-size: 16pt;
       background: white;
 	  padding: 5px;
@@ -146,7 +147,7 @@ h1:hover {
   background-position: center;
   background-repeat: no-repeat !important;
   background-size: 200% 200%;
-font-size: 70pt;
+  font-size: 70pt;
   margin: auto;
   text-align: center;
   height: auto;
@@ -164,7 +165,6 @@ h2:after {
 content: " Sbam!";
 }
 
-
 h3:after {
 content: "! @#&!!";
 }
@@ -172,6 +172,22 @@ content: "! @#&!!";
 p:nth-of-type(odd):after {
 content: " *";
 font-family:"comix-loud";
+}
+
+h2 {
+  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100%;
+  margin: 20 0;
+  text-align: center;
+  height: auto;
+  box-sizing: content-box;
+  line-height: 1;
+  background: url(img/popart/bubble.svg);
+  width: auto;
+  height: auto;
+  padding-top: 10%;
+  padding-bottom: 20%;
 }
 
 h3 {
@@ -186,25 +202,6 @@ h3 {
 	  padding-left: 20px;
 	  padding-right:20px;
 }
-
-
-h4 {
-  background-position: center;
-  background-repeat: no-repeat !important;
-  background-size: 100% 100%;
-  margin: 20 0;
-  text-align: center;
-  height: auto;
-  box-sizing: content-box;
-  line-height: 1;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
-  width: auto;
-  height: auto;
-  padding-top: 10%;
-  padding-bottom: 20%;
-}
-
-
 
 h4 {
 text-align:center;
@@ -230,12 +227,12 @@ figcaption:nth-of-type(odd) {
   height: auto;
   box-sizing: content-box;
   line-height: 1;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
+  background: url(img/popart/bubble.svg);
   width: auto;
   padding-top: 6%;
   padding-bottom: 16%;
     padding-left: 16%;
-	    padding-right: 16%;
+	padding-right: 16%;
 }
 
 figcaption:nth-of-type(even) {
@@ -253,7 +250,7 @@ figcaption:nth-of-type(even) {
   height: 0;
   box-sizing: content-box;
   line-height: 1;
-   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg);
+   background: url(img/popart/electric.svg);
   width: auto;
   padding: 4% 6% 12% 0%;
 }
