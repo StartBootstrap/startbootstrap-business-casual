@@ -43,9 +43,13 @@ body {
     font-style: normal;
 }
 
-strong {
+strong, a, em {
 font-family: 'badaboom';
 text-decoration: underline;
+}
+
+a {
+color: red;
 }
 
 /*
@@ -293,6 +297,7 @@ article img{
     background-color:white;
     color:black;
   }
+
 
 
 /*
