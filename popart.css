@@ -126,7 +126,7 @@ h1 {
   background: url(img/popart/electric.svg);
   width: auto;
   padding: 10% 10% 12% 10%;
-  	font-size: 40pt;
+  font-size: 50pt;
 }
 
 h1:hover { 
@@ -160,6 +160,10 @@ content: " *";
 font-family:"comix-loud";
 }
 
+p:nth-of-type(1) {
+margin-top: 20px;
+}
+
 h2 {
   background-position: center;
   background-repeat: no-repeat !important;
@@ -174,7 +178,7 @@ h2 {
   height: auto;
   padding-top: 10%;
   padding-bottom: 20%;
-	font-size: 30pt;  
+  font-size: 40pt;  
 }
 
 h3 {
@@ -184,22 +188,15 @@ h3 {
   border-left: solid black;
   border-right: solid black;
   border-top: solid black;
-    font-size: 24pt;
+    font-size: 25pt;
       background: white;
 	  padding: 5px;
 	  width: auto;
 	  padding-left: 20px;
 	  padding-right:20px;
+  text-align:center;	  
 }
 
-h4 {
-text-align:center;
-}
-
-h3 {
-text-align:center;
-    font-size: 45pt;
-}
 
 figcaption:nth-of-type(odd) {
     font-size: 10pt;
