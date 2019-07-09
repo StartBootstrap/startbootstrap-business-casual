@@ -117,7 +117,7 @@ min-width: 50px;
 h1 {
   background-position: center;
   background-repeat: no-repeat !important;
-  background-size: 150% 150%;
+  background-size: 200% 200%;
   margin: auto;
   text-align: center;
   height: auto;
@@ -125,7 +125,7 @@ h1 {
   line-height: 1;
   background: url(img/popart/electric.svg);
   width: auto;
-  padding: 10% 10% 12% 10%;
+  padding: 10% 14% 12% 14%;
   font-size: 50pt;
 }
 
