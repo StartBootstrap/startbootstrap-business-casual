@@ -55,6 +55,7 @@ h1 {
   height: 38px;
   margin: 60px 0;
 }
+
 h1 span {
   white-space: nowrap;
 }
@@ -327,12 +328,7 @@ input[data-description="2000"]:checked ~ #timeline-descriptions-wrapper p[data-d
     }
     </script>
 
-    <script>
-    function setStyleSheet(url){
-       var stylesheet = document.getElementById("thestylesheet");
-       stylesheet.setAttribute('href', url);
-    }
-    </script>
+
 
 <script>
 $(document).ready(function(){
@@ -468,11 +464,12 @@ $(document).ready(function(){
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   color: #424949;
-  background-color: rgba(236, 240, 241,0.8);
+  background-color: rgba(236, 240, 241); <!-- qua era 0.8-->
   padding: 0 25px;
   display: flex;
   flex-direction: column;
-  position: relative;}
+  position: relative;
+}
 
 </style>
 
@@ -525,7 +522,7 @@ $(document).ready(function(){
 			<span class="year">1960</span>
 			<span class="label">Pop Art</span>
 		</div>
-		<input type="radio" name="timeline-dot" data-description="1980" onclick="setStyleSheet('1980.css')">
+		<input type="radio" name="timeline-dot" data-description="1980" onclick="setStyleSheet('arcade.css')">
 		<div class="dot-info" data-description="1980">
 			<span class="year">1980</span>
 			<span class="label">ARCADE, baby!</span>
@@ -560,13 +557,11 @@ $(document).ready(function(){
 				<a href="#" class="btn btn-animation-1" id="btn6">ART. 6</a> 
 				</div>
 </div>
-
-				
 				
 </section>
 	
 				<section>
-				<div id="div1" class=""> </div>
+				<div id="div1" class="">      </div>
 				</section>				
 	
 	</body>

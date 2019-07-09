@@ -31,6 +31,17 @@
 }
 
 
+
+body {
+    background-image: url("img/popart/popart1.png");
+}
+
+* {
+	font-family: 'royliecthtenstein';
+	font-weight: normal;
+    font-style: normal;
+}
+
 strong {
 font-family: 'badaboom';
 text-decoration: underline;
@@ -38,7 +49,7 @@ text-decoration: underline;
 
 
 
-section:nth-of-type(2) {
+section:nth-of-type(3) {
   border-top: solid 30px ; 
     font-size: 16pt;
       background: white;
@@ -49,7 +60,7 @@ section:nth-of-type(2) {
 	  border-right: solid black;
 }
 
-section:nth-child(n+2) {
+section:nth-child(n+3) {
     font-size: 16pt;
       background: white;
 	  padding: 5px;
@@ -95,13 +106,13 @@ font-family: 'badaboom';
   display: block;
 }
 
-h2, h3 {
+h1, h2 {
 	font-size: 30pt;
 }
 
 
 /*
-h2 {
+h1 {
 min-width: 50px;
   max-width: 90%;
   border: 5px solid #fff;
@@ -117,7 +128,7 @@ min-width: 50px;
 }
 */
 
-h2 {
+h1 {
   background-position: center;
   background-repeat: no-repeat !important;
   background-size: 100% 100%;
@@ -131,7 +142,7 @@ h2 {
   padding: 10% 10% 12% 10%;
 }
 
-h2:hover { 
+h1:hover { 
   background-position: center;
   background-repeat: no-repeat !important;
   background-size: 200% 200%;
@@ -146,15 +157,15 @@ font-size: 70pt;
   padding: 10% 10% 12% 10%;
 }
 
-h2:after {
+h1:after {
 content: "!!!"; }
 
-h3:after {
+h2:after {
 content: " Sbam!";
 }
 
 
-h4:after {
+h3:after {
 content: "! @#&!!";
 }
 
@@ -163,7 +174,7 @@ content: " *";
 font-family:"comix-loud";
 }
 
-h4 {
+h3 {
   border-bottom: solid 30px ; 
   border-left: solid black;
   border-right: solid black;
@@ -177,7 +188,7 @@ h4 {
 }
 
 
-h3 {
+h4 {
   background-position: center;
   background-repeat: no-repeat !important;
   background-size: 100% 100%;
@@ -195,11 +206,11 @@ h3 {
 
 
 
-h3 {
+h4 {
 text-align:center;
 }
 
-h2 {
+h3 {
 text-align:center;
     font-size: 45pt;
 }
@@ -249,15 +260,6 @@ figcaption:nth-of-type(even) {
 
 /*background: linear-gradient(to bottom, red 950px,red 950px,red 950px, white 950px, white 100%);	*/
 
-body {
-    background-image: url("img/popart/popart1.png");
-}
-
-* {
-	font-family: 'royliecthtenstein';
-	font-weight: normal;
-    font-style: normal;
-}
 
 article img{
 	height: auto;
