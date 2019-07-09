@@ -254,6 +254,46 @@ article img{
 }
 
 
+#mainbody table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 10pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    word-break: break-word;
+    font-family: badaboom;
+}
+#mainbody tr {
+    border:none;
+}
+
+#mainbody td {
+    border-right: solid 1px black; 
+    border-left: solid 1px black;
+  }
+
+#mainbody th {
+    background-color:black;
+    font-family:futura;
+    text-transform: uppercase;
+    font-size: 12pt !important;
+    color:white;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+
+#mainbody tr:nth-of-type(odd) {
+    background-color:wheat;
+    color:black;
+  }
+  
+  #mainbody tr:nth-of-type(even) {
+    background-color:white;
+    color:black;
+  }
+
 
 /*
 .circular-sb {
