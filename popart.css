@@ -50,17 +50,6 @@ text-decoration: underline;
 
 
 
-p:nth-of-type(n+1) {
-  border-top: solid 30px ; 
-    font-size: 16pt;
-      background: white;
-	  padding: 5px;
-	  padding-left: 20px;
-	  padding-right:20px;
-	  border-left: solid black;
-	  border-right: solid black;
-}
-
 section:nth-child(n+1) {
     font-size: 16pt;
       background: white;
