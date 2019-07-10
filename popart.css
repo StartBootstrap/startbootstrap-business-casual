@@ -200,6 +200,21 @@ h3 {
 	  padding-right:20px;	  
 }
 
+h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 10px ; 
+  border-left: solid black;
+  border-right: solid black;
+  border-top: solid black;
+    font-size: 18;
+      background: white;
+	  padding: 5px;
+	  width: auto;
+	  padding-left: 20px;
+	  padding-right:20px;	  
+}
+
 
 figcaption:nth-of-type(odd) {
     font-size: 10pt;
@@ -258,7 +273,7 @@ article img{
 }
 
 
-#mainbody table {
+table {
     width: 100%;
     border: 1px solid black;
     border-collapse: collapse;
@@ -269,16 +284,16 @@ article img{
     word-break: break-word;
     font-family: badaboom;
 }
-#mainbody tr {
+tr {
     border:none;
 }
 
-#mainbody td {
+td {
     border-right: solid 1px black; 
     border-left: solid 1px black;
   }
 
-#mainbody th {
+th {
     background-color:black;
     font-family:futura;
     text-transform: uppercase;
@@ -288,12 +303,12 @@ article img{
     letter-spacing: 3px;
   }
 
-#mainbody tr:nth-of-type(odd) {
+tr:nth-of-type(odd) {
     background-color:wheat;
     color:black;
   }
   
-  #mainbody tr:nth-of-type(even) {
+tr:nth-of-type(even) {
     background-color:white;
     color:black;
   }
