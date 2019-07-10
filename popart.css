@@ -94,7 +94,7 @@ article {
     radial-gradient(#FFD3C1 23%, transparent 0);
   background-size: 10px 10px;
   background-position: 0 0, 5px 5px;
-    line-height: 1.5;
+    line-height: 1.6;
   }
 
 h1, h2, h3, h4 {
@@ -132,11 +132,11 @@ h1 {
   background: url(img/popart/electric.svg);
   width: auto;
   height: auto;
-  padding-top: 8%;
-  padding-bottom: 21%;
-    padding-left: 5%;
-	  padding-right: 5%;
-  font-size: 50pt; 
+  padding-top: 14%;
+  padding-bottom: 16%;
+    padding-left: 10%;
+	  padding-right: 10%;
+  font-size: 60pt; 
 }
 
 h1:hover {
@@ -178,7 +178,7 @@ h2 {
   background-position: center;
   background-repeat: no-repeat !important;
   background-size: 100% 100%;
-  margin: 20 0;
+  margin: 30 0;
   text-align: center;
   height: auto;
   box-sizing: content-box;
@@ -340,10 +340,12 @@ tr:nth-of-type(even) {
     color:black;
   }
 
-p:first-of-type:before {
+p:first-child:before {
     content:"POW! This is an AWESOME article in POP ART style! \A";
 	font-family: badaboom;
    display: block;	
+   font-size: 18px;
+   
   }
   
 
