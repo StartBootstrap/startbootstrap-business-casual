@@ -86,7 +86,7 @@ article {
     font-weight: 100;
     text-align: justify;
     border: double 40px ; 
-										font-size: 18pt;
+												font-size: 18pt;
       background: white;
   background-image:
     radial-gradient(#FFD3C1 23%, transparent 0), 
@@ -132,7 +132,7 @@ h1 {
   width: auto;
   height: auto;
   padding-top: 8%;
-  padding-bottom: 21%;
+  padding-bottom: 28%;
     padding-left: 5%;
 	  padding-right: 5%;
 											font-size: 60pt; 
@@ -343,7 +343,9 @@ section:first-of-type > p:first-of-type:before {
     content:"POW! This is an AWESOME article in POP ART style! \A";
 	font-family: badaboom;
    display: block;	
-   font-size: 18px;
+   font-size: 18pt;
+   text-decoration: underline;
+   padding: 20px;
   }
   
 
