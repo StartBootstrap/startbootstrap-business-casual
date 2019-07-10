@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'royliecthtenstein';
-    src: url('font/roy-lichtenstein/DupuyBALloon-Italic-Italic.ttf.svg') format('svg'),
-	     url('font/roy-lichtenstein/DupuyBALloon-Italic-Italic.ttf.woff') format('woff');
+    src: url('font/popart/roy-lichtenstein/DupuyBALloon-Italic-Italic.ttf.svg') format('svg'),
+	     url('font/popart/roy-lichtenstein/DupuyBALloon-Italic-Italic.ttf.woff') format('woff');
 }
 
 @font-face {
     font-family: 'badaboom';
-    src: url('font/badaboom/badabb__-webfont.woff2') format('svg'),
-	     url('font/badaboom/badabb__-webfont.woff') format('woff');
+    src: url('font/popart/badaboom/badabb__-webfont.woff2') format('svg'),
+	     url('font/popart/badaboom/badabb__-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'comix-loud';
-    src: url('font/comix-loud/comix_loud-webfont.woff') format('woff'),
-	     url('font/comix-loud/comix_loud-webfont.woff2') format('woff2');
+    src: url('font/popart/comix-loud/comix_loud-webfont.woff') format('woff'),
+	     url('font/popart/comix-loud/comix_loud-webfont.woff2') format('woff2');
 }
 
 
