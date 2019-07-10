@@ -121,7 +121,7 @@ min-width: 50px;
 h1 {
   background-position: center;
   background-repeat: no-repeat !important;
-  background-size: 200% 200%;
+  background-size: 100% 100%;
   font-size: 50pt;
   margin: auto;
   text-align: center;
@@ -279,15 +279,16 @@ table {
     width: 100%;
     border: 1px solid black;
     border-collapse: collapse;
-    font-size: 10pt;
+    font-size: 14pt;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-right: 10px;
     word-break: break-word;
     font-family: badaboom;
 }
-tr {
-    border:none;
+
+table, td, th {
+  border: 1px solid black;
 }
 
 td {
@@ -297,9 +298,9 @@ td {
 
 th {
     background-color:black;
-    font-family:futura;
+    font-family: badaboom;
     text-transform: uppercase;
-    font-size: 12pt !important;
+    font-size: 16pt !important;
     color:white;
     text-align: center;
     letter-spacing: 3px;
@@ -308,11 +309,25 @@ th {
 tr:nth-of-type(odd) {
     background-color:wheat;
     color:black;
+	
+  background: white;
+  background-image:
+    radial-gradient(#FFD3C1 23%, transparent 0), 
+    radial-gradient(#FFD3C1 23%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
   }
   
 tr:nth-of-type(even) {
-    background-color:white;
+    background-color:#FFD3C1;
     color:black;
+	
+  background: #FFD3C1;
+  background-image:
+    radial-gradient(white 23%, transparent 0), 
+    radial-gradient(white 23%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;	
   }
 
 
