@@ -78,14 +78,14 @@ section:last-of-type {
 */
 
 article { 
-    margin: 10% 15% 10% 15%;
+    margin: 10% 12% 10% 12%;
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 20px;
     padding-bottom: 80px;
     font-weight: 100;
     text-align: justify;
-    border: double 30px ; 
+    border: double 40px ; 
     font-size: 16pt;
       background: white;
   background-image:
@@ -162,6 +162,7 @@ content: "! $@*#&!";
 p:nth-of-type(odd):after {
 content: " *";
 font-family:"comix-loud";
+background-color: white;
 }
 
 p:nth-of-type(1) {
