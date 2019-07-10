@@ -327,8 +327,12 @@ tr:nth-of-type(even) {
     color:black;
   }
 
-
-
+p:first-of-type:before {
+    content:"POW! This is an AWESOME article in POP ART style! \A";
+	font-family: badaboom;
+   display: block;	
+  }
+  
 
 /*
 .circular-sb {
