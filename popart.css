@@ -121,7 +121,7 @@ min-width: 50px;
 h1 {
   background-position: center;
   background-repeat: no-repeat !important;
-  background-size: 100% 100%;
+  background-size: auto;
   font-size: 50pt;
   margin: auto;
   text-align: center;
@@ -278,26 +278,24 @@ article img{
 
 table {
     width: 100%;
-    border: 1px solid black;
     border-collapse: collapse;
     font-size: 14pt;
+    border: 5px solid black;
+    border-bottom: 15px solid black;	
     margin-top: 15px;
     margin-bottom: 15px;
     margin-right: 10px;
     word-break: break-word;
     font-family: badaboom;
+	padding: 5px;
 }
 
-table, td, th {
+td, th {
   border: 1px solid black;
   margin-top: 4pt;
   margin-bottom: 4pt;
 }
 
-td {
-    border-right: solid 1px black; 
-    border-left: solid 1px black;
-  }
 
 th {
     background-color:black;
@@ -308,22 +306,25 @@ th {
     text-align: center;
     letter-spacing: 3px;
   }
+  
+ th:before {
+content: "MEANWHILE..."	 
+ }	 
 
 tr:nth-of-type(odd) {
-    background-color:white;
     color:black;
+	
+  background: #FFD3C1;
+  background-image:
+    radial-gradient(white 23%, transparent 0), 
+    radial-gradient(white 23%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
   }
   
 tr:nth-of-type(even) {
-    background-color:wheat;
+    background-color:white;
     color:black;
-	
-  background: white;
-  background-image:
-    radial-gradient(#FFD3C1 23%, transparent 0), 
-    radial-gradient(#FFD3C1 23%, transparent 0);
-  background-size: 10px 10px;
-  background-position: 0 0, 5px 5px;
   }
 
 
