@@ -132,7 +132,7 @@ h1 {
   width: auto;
   height: auto;
   padding-top: 8%;
-  padding-bottom: auto; /*21%;*/
+  padding-bottom: 21%;
     padding-left: 5%;
 	  padding-right: 5%;
 											font-size: 60pt; 
@@ -223,7 +223,7 @@ h4 {
 }
 
 
-article > figcaption:nth-child(odd) {
+figcaption {
     font-size: 13pt;
     margin-top: 10pt;
     -webkit-hyphens: auto;
@@ -246,7 +246,7 @@ article > figcaption:nth-child(odd) {
 	padding-right: 16%;
 }
 
-article > figcaption:nth-child(even) {
+/* figcaption {
     font-size: 13pt;
     margin-top: 10pt;
     -webkit-hyphens: auto;
@@ -265,7 +265,7 @@ article > figcaption:nth-child(even) {
   width: auto;
   padding: 6% 6% 12% 0%;
 }
-
+*/
 /*background: linear-gradient(to bottom, red 950px,red 950px,red 950px, white 950px, white 100%);	*/
 
 
@@ -309,7 +309,7 @@ th {
     background-color:black;
     font-family: badaboom;
     text-transform: uppercase;
-    font-size: 16pt !important;
+    font-size: 18pt !important;
     color:white;
     text-align: center;
     letter-spacing: 3px;
