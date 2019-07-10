@@ -41,6 +41,7 @@ body {
 	font-family: 'royliecthtenstein';
 	font-weight: normal;
     font-style: normal;
+
 }
 
 strong, a, em {
@@ -93,6 +94,7 @@ article {
     radial-gradient(#FFD3C1 23%, transparent 0);
   background-size: 10px 10px;
   background-position: 0 0, 5px 5px;
+    line-height: 1.5;
   }
 
 h1, h2, h3, h4 {
@@ -121,16 +123,20 @@ min-width: 50px;
 h1 {
   background-position: center;
   background-repeat: no-repeat !important;
-  background-size: auto;
-  font-size: 50pt;
-  margin: auto;
+  background-size: 100% 100%;
+  margin: 20 0;
   text-align: center;
   height: auto;
   box-sizing: content-box;
   line-height: 1;
   background: url(img/popart/electric.svg);
   width: auto;
-  padding: 5% 10% 5% 10%;
+  height: auto;
+  padding-top: 8%;
+  padding-bottom: 21%;
+    padding-left: 5%;
+	  padding-right: 5%;
+  font-size: 50pt; 
 }
 
 h1:hover {
@@ -162,7 +168,6 @@ content: "! $@*#&!";
 p:nth-of-type(odd):after {
 content: " *";
 font-family:"comix-loud";
-background-color: white;
 }
 
 p:nth-of-type(1) {
@@ -210,7 +215,7 @@ h4 {
   border-left: solid black;
   border-right: solid black;
   border-top: solid black;
-    font-size: 18;
+    font-size: 21;
       background: white;
 	  padding: 5px;
 	  width: auto;
@@ -281,7 +286,7 @@ table {
     border-collapse: collapse;
     font-size: 14pt;
     border: 5px solid black;
-    border-bottom: 15px solid black;	
+    border-bottom: 20px solid black;	
     margin-top: 15px;
     margin-bottom: 15px;
     margin-right: 10px;
@@ -294,8 +299,12 @@ td, th {
   border: 1px solid black;
   margin-top: 4pt;
   margin-bottom: 4pt;
+  	padding: 10px;
 }
 
+tr {
+padding: 10px;
+}	
 
 th {
     background-color:black;
@@ -308,8 +317,12 @@ th {
   }
   
  th:before {
-content: "MEANWHILE..."	 
+content: "MEANWHILE... "	 
  }	 
+ 
+  th:after {
+content: "!"	 
+ }	
 
 tr:nth-of-type(odd) {
     color:black;
