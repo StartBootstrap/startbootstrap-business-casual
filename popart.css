@@ -180,8 +180,8 @@ h2 {
   background: url(img/popart/bubble.svg);
   width: auto;
   height: auto;
-  padding-top: 10%;
-  padding-bottom: 20%;
+  padding-top: 8%;
+  padding-bottom: 21%;
     padding-left: 5%;
 	  padding-right: 5%;
   font-size: 40pt;  
@@ -289,6 +289,8 @@ table {
 
 table, td, th {
   border: 1px solid black;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
 }
 
 td {
@@ -307,6 +309,11 @@ th {
   }
 
 tr:nth-of-type(odd) {
+    background-color:white;
+    color:black;
+  }
+  
+tr:nth-of-type(even) {
     background-color:wheat;
     color:black;
 	
@@ -317,18 +324,7 @@ tr:nth-of-type(odd) {
   background-size: 10px 10px;
   background-position: 0 0, 5px 5px;
   }
-  
-tr:nth-of-type(even) {
-    background-color:#FFD3C1;
-    color:black;
-	
-  background: #FFD3C1;
-  background-image:
-    radial-gradient(white 23%, transparent 0), 
-    radial-gradient(white 23%, transparent 0);
-  background-size: 10px 10px;
-  background-position: 0 0, 5px 5px;	
-  }
+
 
 
 
