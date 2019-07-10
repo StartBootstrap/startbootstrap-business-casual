@@ -133,7 +133,7 @@ h1 {
   width: auto;
   height: auto;
   padding-top: 8%;
-  padding-bottom: 21%;
+  /*padding-bottom: 21%;*/
     padding-left: 5%;
 	  padding-right: 5%;
   font-size: 60pt; 
@@ -248,7 +248,7 @@ figcaption:nth-of-type(odd) {
 }
 
 figcaption:nth-of-type(even) {
-    font-size: 10pt;
+    font-size: 12pt;
     margin-top: 10pt;
     -webkit-hyphens: auto;
             hyphens: auto;
@@ -286,7 +286,7 @@ table {
     border-collapse: collapse;
     font-size: 14pt;
     border: 5px solid black;
-    border-bottom: 25px solid black;	
+    border-bottom: 35px solid black;	
     margin-top: 15px;
     margin-bottom: 15px;
     margin-right: 10px;
@@ -340,7 +340,7 @@ tr:nth-of-type(even) {
     color:black;
   }
 
-section:first-of-type > p:first-child:before {
+section:first-of-type > p:first-of-type:before {
     content:"POW! This is an AWESOME article in POP ART style! \A";
 	font-family: badaboom;
    display: block;	
