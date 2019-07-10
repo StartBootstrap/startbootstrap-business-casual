@@ -41,7 +41,6 @@ body {
 	font-family: 'royliecthtenstein';
 	font-weight: normal;
     font-style: normal;
-
 }
 
 strong, a, em {
@@ -87,7 +86,7 @@ article {
     font-weight: 100;
     text-align: justify;
     border: double 40px ; 
-    font-size: 16pt;
+										font-size: 18pt;
       background: white;
   background-image:
     radial-gradient(#FFD3C1 23%, transparent 0), 
@@ -133,10 +132,10 @@ h1 {
   width: auto;
   height: auto;
   padding-top: 8%;
-  /*padding-bottom: 21%;*/
+  padding-bottom: auto; /*21%;*/
     padding-left: 5%;
 	  padding-right: 5%;
-  font-size: 60pt; 
+											font-size: 60pt; 
 }
 
 h1:hover {
@@ -151,7 +150,7 @@ h1:hover {
   background: url(img/popart/electric.svg);
   width: auto;
   padding: 10% 14% 10% 14%;
-  font-size: 70pt;	
+												font-size: 70pt;	
 }
 
 h1:after {
@@ -190,7 +189,7 @@ h2 {
   padding-bottom: 21%;
     padding-left: 5%;
 	  padding-right: 5%;
-  font-size: 40pt;  
+										font-size: 40pt;  
 }
 
 h3 {
@@ -200,7 +199,7 @@ h3 {
   border-left: solid black;
   border-right: solid black;
   border-top: solid black;
-    font-size: 25pt;
+										font-size: 25pt;
       background: white;
 	  padding: 5px;
 	  width: auto;
@@ -215,7 +214,7 @@ h4 {
   border-left: solid black;
   border-right: solid black;
   border-top: solid black;
-    font-size: 21;
+										font-size: 21;
       background: white;
 	  padding: 5px;
 	  width: auto;
@@ -224,8 +223,8 @@ h4 {
 }
 
 
-figcaption:nth-of-type(odd) {
-    font-size: 10pt;
+article > figcaption:nth-child(odd) {
+    font-size: 13pt;
     margin-top: 10pt;
     -webkit-hyphens: auto;
             hyphens: auto;
@@ -247,8 +246,8 @@ figcaption:nth-of-type(odd) {
 	padding-right: 16%;
 }
 
-figcaption:nth-of-type(even) {
-    font-size: 12pt;
+article > figcaption:nth-child(even) {
+    font-size: 13pt;
     margin-top: 10pt;
     -webkit-hyphens: auto;
             hyphens: auto;
@@ -264,7 +263,7 @@ figcaption:nth-of-type(even) {
   line-height: 1;
    background: url(img/popart/electric.svg);
   width: auto;
-  padding: 4% 6% 12% 0%;
+  padding: 6% 6% 12% 0%;
 }
 
 /*background: linear-gradient(to bottom, red 950px,red 950px,red 950px, white 950px, white 100%);	*/
