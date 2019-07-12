@@ -40,7 +40,36 @@ src: url("font/arcade_baby/allstar4.ttf") format("truetype");
 font-weight: normal;
 font-style: normal;
 }
+@font-face
+{
+font-family: "postman";
+src: url("font/arcade_baby/postman.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+@font-face
+{
+font-family: "lowrider";
+src: url("font/arcade_baby/lowrider.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+@font-face
+{
+font-family: "death_star";
+src: url("font/arcade_baby/death_star.otf") format("opentype");
+font-weight: normal;
+font-style: normal;
+}
+@font-face
+{
+font-family: "pt_sans";
+src: url("font/arcade_baby/pt_sans_r.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
 
+ С‚РµРіР° РЅРµС‚ СЃС‚РёР»РµР№*/
 * {
     font-family: 'retronoid';
     font-size: 26px;
@@ -49,143 +78,168 @@ font-style: normal;
 }
 
 body {
-    background: url(img/arcade_baby/back_main.jpg);
+    background: url(img/arcade_baby/back.jpg);   
+    background-size: 100%; 
 }
 
-/*секция со статьями*/
+
 section:last-of-type {
 padding-left: 20px;
 padding-right: 20px;
-/*background: url(img/arcade_baby/back.jpg);*/
 }
 
 article {
-    margin: 30px 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    padding-bottom: 80px;
-    font-weight: 100;
-    text-align: justify;
-    font-size: 16px;
-    background: #eeeeee;
-    background-image: radial-gradient(#cccccc 50%, transparent 0);
-  background-size: 8px 8px;
-  background-position: 0 0;
-
-  border: 4px solid #ffff00;
-  border-radius: 24px;
+    margin: 3% 12%; 
+    padding-left: 50px; 
+    padding-right: 50px;   
+    padding-top: 20px;   
+    padding-bottom: 40px; 
+    text-align: justify; 
+    background: #000000;
+    background-image: radial-gradient(#222222 50%, transparent 0);  
+  background-size: 10px 10px; 
+  border: 16px solid #000000; 
+  border-radius: 24px; 
   }
+
 
 article section  {
 margin-top: 20px;
 margin-bottom: 20px;
 padding: 20px;
-border: 4px solid #3339b7;
-border-radius: 24px;
+/*border: 4px solid #3339b7;
+border-radius: 24px;*/
 font-family: 'retronoid';
-background: #ffffff;
+/*background: #ffffff; */
 }
+
 article section:nth-of-type(1) {
 background: none;
 border:none;
 }
 
-/*текста статей в зависимости от номера абзаца*/
 section p:nth-of-type(odd) {
-    font-size:20px;
-    line-height: 20px;
-    color:#C71585;
+    font-size:28px;
+    line-height: 28px;   
+    color:#ffffff;
 }
 
 section p:nth-of-type(even) {
-    font-size:19px;
-    line-height: 20px;
-    color:#00a;
+    font-size:28px;
+    line-height: 28px;   
+    color:#ffffff;
 }
+
 
 section p:nth-of-type(1) {
-    font-size:21px;
-    line-height: 22px;
-    color:#008B8B;
+    font-size:28px;
+    line-height: 28px;    
+    color:#ffffff;
 }
+
 
 section p:first-letter{
-    font-size:26px;
-    line-height: 22px;
+    color:#ffffff;
+    font-size:32px;    
+    line-height: 28px;
 }
 
-/*текст всех статей*/
+
 p {
-font-family: 'allstar4';
+font-family: 'pt_sans';
 }
 
-/*выделенный текст*/
-p strong, p em {
+
+q {
+display: block;
+font-family: 'death_star';
+color:#E6E6FA;
 font-size:22px;
 }
 
-/*текст ссылки в статье*/
+
+p strong, em {
+font-family: 'death_star';
+color:#E6E6FA;
+font-size:22px;
+}
+
+
+p i {
+font-family: 'death_star';
+font-style: italic;
+color:#E6E6FA;
+font-size:22px;
+}
+
+
 p a {
-font-family: 'emulogic';
+font-family: 'death_star';
 font-size: 17px;
-color:#333333;
+color:#E6E6FA;
 text-decoration: underline;
 }
 
+
 h1, h2, h3, h4 {
     display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 h1 {
 font-size: 36px;
-line-height: 50px;
-color:#333;
-font-family: 'games';
+line-height: 50px; 
+color:#E6E6FA;
+font-family: 'death_star';
 }
 h2 {
 font-size: 36px;
 line-height: 46px;
-color:#333;
-font-family: 'games';
+color:#E6E6FA;
+font-family: 'death_star';
 }
 h3 {
-font-size: 30px;
+font-size: 34px;
 line-height: 36px;
-color:#555;
-font-family: 'retronoid';
+color:#7B68EE;
+font-family: 'lowrider';
+font-style: italic;
 }
 h4 {
-font-size: 28px;
-line-height: 32px;
-color:#666;
-font-family: 'retronoid';
+font-size: 34px;
+line-height: 34px;
+color:#E6E6FA;
+font-family: 'lowrider';
+font-style: italic;
 }
 
 article img {
-    max-width: 90%;
+    max-width: 80%; 
     height: auto;
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
+    display: block; 
     margin-bottom: 20px;
-    border: 4px solid #00c;
-    border-radius: 6px;
+  
+    border: 15px double #0000aa; 
+    border-radius: 12px;
 }
+
 
 figcaption {
 margin-bottom: 30px;
 font-size: 20px;
-color:#333;
-font-family: 'games';
+color:#7B68EE;
+font-family: 'lowrider';
+font-style: italic;
 text-align: center;
 }
+
 
 table {
 margin-top: 20px;
 margin-bottom: 20px;
 }
 
-/*чередуем фон таблицы по четности строк*/
+
 table tr:nth-of-type(odd) {
   background: #333333;
   }
@@ -194,7 +248,7 @@ table tr:nth-of-type(even) {
   background: #999999;
   }
 
-/*заголовок таблицы*/
+
 table th {
 padding-top: 10px;
 padding-bottom: 10px;
@@ -204,7 +258,7 @@ font-family: 'games';
 font-size: 30px;
 color:#00cccc;
 }
-/*ячейки таблицы*/
+
 table td {
 padding-top: 10px;
 padding-bottom: 10px;
@@ -213,5 +267,10 @@ padding-right: 10px;
 font-family: 'emulogic';
 font-size: 18px;
 color:#ffffff;
+}
+
+
+#timeline {
+  opacity:0.8;
 }
 
