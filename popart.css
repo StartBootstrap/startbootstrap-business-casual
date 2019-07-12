@@ -354,6 +354,14 @@ section:first-of-type > p:first-of-type:before {
 
 /*eudirective*/
 
+.col-ing > div:first-of-type {
+text-align: center;	
+}
+
+.col-ita > div:first-of-type {
+text-align: center;	
+}
+
 .flex-container{
     width: 80%;
 	margin-top:30px;
