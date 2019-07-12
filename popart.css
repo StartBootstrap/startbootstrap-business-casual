@@ -377,29 +377,33 @@ section:first-of-type > p:first-of-type:before {
 	margin-left:20px;
 }
 
-.container-eu{margin-top: 50px;
+.container-eu{
+	margin: 50px;
 		margin-bottom:70px;
-		background-image:url("img/sfondo puntini.png");
-		border: 20px outset black;
+		
+		      background: white;
+  background-image:
+    radial-gradient(#FFD3C1 23%, transparent 0), 
+    radial-gradient(#FFD3C1 23%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+    line-height: 1.7;
+		
+		border: double 40px;
 		text-align:justify;
-		font-size: 11.25pt;
+		font-size: 18pt;
 		margin-left:90px;
 		margin-right:90px;
 		 padding-top:20px;
 		padding-left:0px;
 		padding-right: 0px;
 		height:auto;
-		overflow: hidden;}
+		overflow: hidden;
+}
 
-		
-.container-eu p:after{content:"...}";
-	font-family:English Gothic Bold Italic;
-	margin-top: 10px;
-	font-size:15pt;}
 	
-	
-.container-eu p {font-family:LibbyHeavy;
-				font-size: 7.5pt;
+.container-eu p {
+				font-size: 18pt;
 				border-right:none;
 				margin-top: 20px;
 				margin-left:20px;
@@ -407,9 +411,9 @@ section:first-of-type > p:first-of-type:before {
 }
 
 
-.container-eu a{font-family: Futurismo; 
+.container-eu a{ 
 				color:black;
-				font-size:11.25pt;
+				font-size:18pt;
 				}
 
 .container-eu a:active {
@@ -418,6 +422,7 @@ section:first-of-type > p:first-of-type:before {
 .container-eu a:visited {
 	color: red;}
 
+/*
 .container-eu span {
 	border-top:solid;
 	border-bottom: solid;
@@ -429,6 +434,7 @@ section:first-of-type > p:first-of-type:before {
 
 .container-eu h2{margin-top:20px;
 	font-size:45pt;}
+	*/
 	
 
 	@media screen and (max-width: 1000px) { .container-eu p { font-size: 5.25pt;
