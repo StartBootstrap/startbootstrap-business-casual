@@ -262,7 +262,7 @@ margin-top: 20px;
 margin-bottom: 20px;
 }
 
-/*чередуем фон таблицы по четности строк*/
+/*чередуем фон таблицы по четностистрок*/
 table tr:nth-of-type(odd) {
   background: #333333;
   }
@@ -296,4 +296,3 @@ color:#ffffff;
 #timeline {
   opacity:0.8; /*прозрачность от общего цвета*/
 }
-
