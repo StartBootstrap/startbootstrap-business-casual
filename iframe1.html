@@ -312,6 +312,11 @@ input[data-description="2000"]:checked ~ #timeline-descriptions-wrapper p[data-d
 }
 
 
+
+
+audio{
+    display:none;
+}
 </style>
 
 
@@ -372,34 +377,11 @@ $(document).ready(function(){
   });
 });
 
-  function play1(){
-       var audio = document.getElementById("sumerian-audio");
-       audio.play();
-                 }
-
-
-  function play2(){
-       var audio = document.getElementById("type-audio");
-       audio.play();
-                 }
-
-
-  function play3(){
-       var audio = document.getElementById("bauhaus-audio");
-       audio.play();
-                 }
-
-
-  function play4(){
-       var audio = document.getElementById("popart-audio");
-       audio.play();
-                 }
-				 
-
-  function play5(){
-       var audio = document.getElementById("arcade-audio");
-       audio.play();
-                 }				 
+function play(sound){
+   var audio = document.getElementById("audio");
+    audio.setAttribute('src', sound);
+   audio.play();
+}		 
 
 
   function play6(){
@@ -517,6 +499,7 @@ $(document).ready(function(){
 <div class=" p-5"> </div>
 <div class="flex-parent">
 	<div class="input-flex-container">
+	<audio id="audio"></audio>
 		<input type="radio" name="timeline-dot" data-description="3200BC" checked onclick="setStyleSheet('1560.css'); play1()">
 		<div class="dot-info" data-description="3200BC">
 			<span class="year">3200BC</span>
@@ -538,7 +521,7 @@ $(document).ready(function(){
 		<div class="dot-info default">
 			<span class="year"></span>
 		</div>
-		<input type="radio" name="timeline-dot" data-description="1878"  onclick="setStyleSheet('1860.css'); play2()">
+		<input type="radio" name="timeline-dot" data-description="1878"  onclick="setStyleSheet('1860.css'); play(audio/typewriter.mp3')">
 		<div class="dot-info" data-description="1878">
 			<span class="year">1878</span>
 			<span class="label">Type type type</span>
@@ -548,7 +531,7 @@ $(document).ready(function(){
 			<span class="year">1919</span>
 			<span class="label">Bauhaus</span>
 		</div>
-		<input type="radio" name="timeline-dot" data-description="1960" onclick="setStyleSheet('popart.css'); play4()">
+		<input type="radio" name="timeline-dot" data-description="1960" onclick="setStyleSheet('popart.css'); play(audio/do-wah-diddy-diddy.mp3')">
 		<div class="dot-info" data-description="1960">
 			<span class="year">1960</span>
 			<span class="label">Pop Art</span>
