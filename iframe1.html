@@ -372,6 +372,40 @@ $(document).ready(function(){
   });
 });
 
+  function play1(){
+       var audio = document.getElementById("sumerian-audio");
+       audio.play();
+                 }
+
+
+  function play2(){
+       var audio = document.getElementById("type-audio");
+       audio.play();
+                 }
+
+
+  function play3(){
+       var audio = document.getElementById("bauhaus-audio");
+       audio.play();
+                 }
+
+
+  function play4(){
+       var audio = document.getElementById("popart-audio");
+       audio.play();
+                 }
+				 
+
+  function play5(){
+       var audio = document.getElementById("arcade-audio");
+       audio.play();
+                 }				 
+
+
+  function play6(){
+       var audio = document.getElementById("future-audio");
+       audio.play();
+                 }				 
 	</script>
 	
 	<style>
@@ -466,6 +500,13 @@ $(document).ready(function(){
 
 </head>
 <body>
+<audio id="sumerian-audio" src="http://dev.interactive-creation-works.net/1/1.ogg"></audio>
+<audio id="type-audio" src="typewriter.mp3"></audio>
+<audio id="bauhaus-audio" src="http://dev.interactive-creation-works.net/1/1.ogg"></audio>
+<audio id="popart-audio" src="http://dev.interactive-creation-works.net/1/1.ogg"></audio>
+<audio id="arcade-audio" src="http://dev.interactive-creation-works.net/1/1.ogg"></audio>
+<audio id="future-audio" src="http://dev.interactive-creation-works.net/1/1.ogg"></audio>
+
 
 <div id="timeline-section">
 <div id="timeline" class="mt-5 mr-2 ml-2 p-4 rounded">
@@ -476,7 +517,7 @@ $(document).ready(function(){
 <div class=" p-5"> </div>
 <div class="flex-parent">
 	<div class="input-flex-container">
-		<input type="radio" name="timeline-dot" data-description="3200BC" checked onclick="setStyleSheet('1560.css')">
+		<input type="radio" name="timeline-dot" data-description="3200BC" checked onclick="setStyleSheet('1560.css'); play1()">
 		<div class="dot-info" data-description="3200BC">
 			<span class="year">3200BC</span>
 			<span class="label">Sumerian cuneiform</span>
@@ -497,27 +538,27 @@ $(document).ready(function(){
 		<div class="dot-info default">
 			<span class="year"></span>
 		</div>
-		<input type="radio" name="timeline-dot" data-description="1878"  onclick="setStyleSheet('1860.css')">
+		<input type="radio" name="timeline-dot" data-description="1878"  onclick="setStyleSheet('1860.css'); play2()">
 		<div class="dot-info" data-description="1878">
 			<span class="year">1878</span>
 			<span class="label">Type type type</span>
 		</div>
-		<input type="radio" name="timeline-dot" data-description="1919"  onclick="setStyleSheet('1927.css')">
+		<input type="radio" name="timeline-dot" data-description="1919"  onclick="setStyleSheet('1927.css'); play3()">
 		<div class="dot-info" data-description="1919">
 			<span class="year">1919</span>
 			<span class="label">Bauhaus</span>
 		</div>
-		<input type="radio" name="timeline-dot" data-description="1960" onclick="setStyleSheet('popart.css')">
+		<input type="radio" name="timeline-dot" data-description="1960" onclick="setStyleSheet('popart.css'); play4()">
 		<div class="dot-info" data-description="1960">
 			<span class="year">1960</span>
 			<span class="label">Pop Art</span>
 		</div>
-		<input type="radio" name="timeline-dot" data-description="1980" onclick="setStyleSheet('arcade.css')">
+		<input type="radio" name="timeline-dot" data-description="1980" onclick="setStyleSheet('arcade.css'); play5()">
 		<div class="dot-info" data-description="1980">
 			<span class="year">1980</span>
 			<span class="label">ARCADE, baby!</span>
 		</div>
-		<input type="radio" name="timeline-dot" data-description="2040" onclick="setStyleSheet('2040.css')">
+		<input type="radio" name="timeline-dot" data-description="2040" onclick="setStyleSheet('2040.css'); play6()">
 		<div class="dot-info" data-description="2040">
 			<span class="year">2040</span>
 			<span class="label">Future, here</span>
@@ -554,7 +595,7 @@ $(document).ready(function(){
 							
 	<style>
 	#div1 {
-	margin-top:170px;
+	margin-top:150px;
 	}
 	</style>
 	

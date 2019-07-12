@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'badaboom';
-    src: url('font/popart/badaboom/badabb__-webfont.woff2') format('svg'),
+    src: url('font/popart/badaboom/badabb__-webfont.woff2') format('woff2'),
 	     url('font/popart/badaboom/badabb__-webfont.woff') format('woff');
 }
 
