@@ -315,7 +315,7 @@ th {
     letter-spacing: 3px;
   }
   
- th:before {
+ th:first-of-type:before {
 content: "MEANWHILE... "	 
  }	 
  
