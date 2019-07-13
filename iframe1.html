@@ -373,7 +373,7 @@ $(document).ready(function(){
 });
 </script>
 
-<script>
+<!--<script>
   function play1(){
        var sound2 = document.getElementById("type-audio");
        sound2.pause();
@@ -399,69 +399,31 @@ $(document).ready(function(){
        audio.play();
                  }
 
-</script>
+</script>-->
 <script>
   function play2(){
-       var sound1 = document.getElementById("sumerian-audio");
-       sound1.pause();
-       sound1.currentTime = 0;       
-	   &&	  
-       var sound3 = document.getElementById("bauhaus-audio");
-       sound3.pause();
-       sound3.currentTime = 0;
-	   &&
-       var sound4 = document.getElementById("popart-audio");
-       sound4.pause();
-       sound4.currentTime = 0;
-	   &&
-       var sound5 = document.getElementById("arcade-audio");
-       sound5.pause();
-       sound5.currentTime = 0;
-	   &&
-       var sound6 = document.getElementById("future-audio");
-       sound6.pause();
-       sound6.currentTime = 0;
-	   &&	
-       var audio = document.getElementById("type-audio");
-       audio.play();
+       var x = document.getElementById("silence");
+       var y = x.setAttribute('src', 'audio/typewriter.mp3');
+	   y.play();	
                  }
 
 </script>
-<script>
+<!--<script>
   function play3(){
        var audio = document.getElementById("bauhaus-audio");
        audio.play();
                  }
 
-</script>
+</script>-->
 <script>
-  function play4(){
-       var sound1 = document.getElementById("sumerian-audio");
-       sound1.pause();
-       sound1.currentTime = 0;
-	   &&  
-       var sound2 = document.getElementById("type-audio");
-       sound2.pause();
-       sound2.currentTime = 0;
-	   &&	  
-       var sound3 = document.getElementById("bauhaus-audio");
-       sound3.pause();
-       sound3.currentTime = 0;
-	   &&
-       var sound5 = document.getElementById("arcade-audio");
-       sound5.pause();
-       sound5.currentTime = 0;
-	   &&
-       var sound6 = document.getElementById("future-audio");
-       sound6.pause();
-       sound6.currentTime = 0;
-	   &&	   
-       var audio = document.getElementById("popart-audio");
-       audio.play();
-                 }
+  function play4(){  
+       var x = document.getElementById("silence");
+       var y = x.setAttribute('src', 'audio/do-wah-diddy-diddy.mp3');
+	   y.play();	   
+}
 				 
 </script>
-<script>
+<!--<script>
   function play5(){
        var sound1 = document.getElementById("sumerian-audio");
        sound1.pause();
@@ -493,7 +455,7 @@ $(document).ready(function(){
        var audio = document.getElementById("future-audio");
        audio.play();
                  }				 
-	</script>
+	</script>-->
 	
 	<style>
 .btn:link,
@@ -587,13 +549,10 @@ $(document).ready(function(){
 
 </head>
 <body>
-<audio id="sumerian-audio" src="audio/ "></audio>
-<audio id="type-audio" src="audio/typewriter.mp3"></audio>
-<audio id="bauhaus-audio" src="audio/ "></audio>
-<audio id="popart-audio" src="audio/do-wah-diddy-diddy.mp3"></audio>
-<audio id="arcade-audio" src="audio/ "></audio>
-<audio id="future-audio" src="audio/ "></audio>
 
+<audio autoplay id="silence">
+   <source src="audio/silence.mp3" type="audio/mpeg">
+</audio>
 
 <div id="timeline-section">
 <div id="timeline" class="mt-5 mr-2 ml-2 p-4 rounded">
