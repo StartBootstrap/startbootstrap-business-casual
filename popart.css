@@ -315,7 +315,7 @@ th {
     letter-spacing: 3px;
   }
   
- th:first-of-type:before {
+section > table > th:first-of-type:before {
 content: "MEANWHILE... "	 
  }	 
  
@@ -419,6 +419,10 @@ text-align: center;
 				margin-left:20px;
 				margin-right:20px;
 }
+
+.col-ing > table > th:first-of-type:before {
+content: " "	 
+ }	 
 
 /*
 .container-eu a{ 
