@@ -164,7 +164,7 @@ h3:after {
 content: "! $@*#&!";
 }
 
-p:nth-of-type(odd):after {
+section > p:nth-of-type(odd):after {
 content: " *";
 font-family:"comix-loud";
 }
@@ -245,28 +245,6 @@ figcaption {
     padding-left: 16%;
 	padding-right: 16%;
 }
-
-/* figcaption {
-    font-size: 13pt;
-    margin-top: 10pt;
-    -webkit-hyphens: auto;
-            hyphens: auto;
-	text-align: center;
-	
-  background-position: center;
-  background-repeat: no-repeat !important;
-  background-size: 100% 100%;
-  margin: 0 auto;
-  text-align: center;
-  height: 0;
-  box-sizing: content-box;
-  line-height: 1;
-   background: url(img/popart/electric.svg);
-  width: auto;
-  padding: 6% 6% 12% 0%;
-}
-*/
-/*background: linear-gradient(to bottom, red 950px,red 950px,red 950px, white 950px, white 100%);	*/
 
 
 article img{
@@ -424,6 +402,12 @@ text-align: center;
 content: " "	 
  }	 
 
+hr {
+height:10px; 
+border:none; 
+color: black; 
+background-color: black;
+}	
 /*
 .container-eu a{ 
 				color:black;
