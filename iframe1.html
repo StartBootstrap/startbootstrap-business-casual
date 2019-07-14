@@ -31,10 +31,214 @@
   <!-- Really important <link> to change the different css on-the-fly -->  
 	<link id="thestylesheet" rel="stylesheet" type="text/css" href="white.css"/> 
   
+  
+ 
+ <!-- jQuery functions to change the 6 articles  -->
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#div1").load("texts/japan.html") ||  $("article").load("texts/japan.html");
+  });
+});
+    
 
-   <!-- CSS for the Timeline-->
+$(document).ready(function(){
+  $("#btn2").click(function(){
+    $("#div1").load("texts/machine.html") ||  $("article").load("texts/machine.html");
+  });
+});
+
+
+$(document).ready(function(){
+  $("#btn3").click(function(){
+    $("#div1").load("texts/alabama.html") ||  $("article").load("texts/alabama.html");
+  });
+});
+
+
+$(document).ready(function(){
+  $("#btn4").click(function(){
+    $("#div1").load("texts/eudirective.html") ||  $("article").load("texts/eudirective.html");
+  });
+});
+
+
+$(document).ready(function(){
+  $("#btn5").click(function(){
+    $("#div1").load("texts/delvey.html") ||  $("article").load("texts/delvey.html");
+  });
+});
+
+
+$(document).ready(function(){
+  $("#btn6").click(function(){
+    $("#div1").load("texts/lottery.html") ||  $("article").load("texts/lottery.html");
+  });
+});
+</script> 
+  
+  <!---------- End ---------->
+  
+  
+<script>
+	// This is the function to change the 6 stylesheets; it is placed on the timeline dots
+	
+    function setStyleSheet(url){
+       var stylesheet = document.getElementById("thestylesheet");
+       stylesheet.setAttribute('href', url);
+    }
+</script>
+
+<script>
+// These are the 6 functions to change the 6 musics of the stylesheets; they are placed on the timeline dots, too
+
+  function play1(){
+       var x = document.getElementById("silence");
+       var y = x.setAttribute('src', 'audio/sumerian.mp3');
+	   y.play();
+                 }
+
+  function play2(){
+       var x = document.getElementById("silence");
+       var y = x.setAttribute('src', 'audio/typewriter.mp3');
+	   y.play();	
+                 }
+
+  function play3(){
+       var x = document.getElementById("silence");
+       var y = x.setAttribute('src', 'audio/bauhaus.mp3');
+	   y.play();	   
+}
+
+  function play4(){  
+       var x = document.getElementById("silence");
+       var y = x.setAttribute('src', 'audio/do-wah-diddy-diddy.mp3');
+	   y.play();	   
+}				 
+
+  function play5(){
+       var x = document.getElementById("silence");
+       var y = x.setAttribute('src', 'audio/arcade.mp3');
+	   y.play();
+                 }				 
+
+  function play6(){
+       var x = document.getElementById("silence");
+       var y = x.setAttribute('src', 'audio/future.mp3');
+	   y.play();
+                 }	
+</script>				 
+ 
+
+</head>
+<body>
+
+<!-- The silence "music" we have to add and that we change clicking on the timeline buttons -->
+<audio autoplay id="silence">
+   <source src="audio/silence.mp3" type="audio/mpeg">
+</audio>
+
+
+
+<!-- The timeline -->
+<div id="timeline-section">
+<div id="timeline" class="mt-5 mr-2 ml-2 p-4 rounded">
+
+<div class=" p-1"> </div>
+<div class=" p-1"> </div>
+<div class=" p-1"> </div>
+<div class=" p-5"> </div>
+<div class="flex-parent">
+	<div class="input-flex-container">
+		<input type="radio" name="timeline-dot" data-description="3200BC" checked onclick="setStyleSheet('1560.css'); play1()">
+		<div class="dot-info" data-description="3200BC">
+			<span class="year">3200BC</span>
+			<span class="label">Sumerian cuneiform</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1920" class="default" style="height: 1px;">
+		<div class="dot-info default">
+			<span class="year"></span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1930" class="default" style="height: 1px;">
+		<div class="dot-info default">
+			<span class="year"></span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1940"  class="default" style="height: 1px;">
+		<div class="dot-info default">
+			<span class="year"></span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1950"  class="default" style="height: 1px;">
+		<div class="dot-info default">
+			<span class="year"></span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1878"  onclick="setStyleSheet('1860.css'); play2()">
+		<div class="dot-info" data-description="1878">
+			<span class="year">1878</span>
+			<span class="label">Type type type</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1919"  onclick="setStyleSheet('1927.css'); play3()">
+		<div class="dot-info" data-description="1919">
+			<span class="year">1919</span>
+			<span class="label">Bauhaus</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1960" onclick="setStyleSheet('popart.css'); play4()">
+		<div class="dot-info" data-description="1960">
+			<span class="year">1960</span>
+			<span class="label">Pop Art</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1980" onclick="setStyleSheet('arcade.css'); play5()">
+		<div class="dot-info" data-description="1980">
+			<span class="year">1980</span>
+			<span class="label">ARCADE, baby!</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="2040" onclick="setStyleSheet('2040.css'); play6()">
+		<div class="dot-info" data-description="2040">
+			<span class="year">2040</span>
+			<span class="label">Future, here</span>
+		</div>
+		<div id="timeline-descriptions-wrapper">
+			<p data-description="1910"></p>
+			<p data-description="1920"></p>
+			<p data-description="1930"></p>
+			<p data-description="1940"></p>
+			<p data-description="1950"></p>
+			<p data-description="1960"></p>
+			<p data-description="1970"></p>
+			<p data-description="1980"></p>
+			<p data-description="1990"></p>
+			<p data-description="2000"></p>
+		</div>
+	</div>
+</div>
+
+
+					
+	<!-- The buttons for changing the articles -->				
+	<div style="display:inline-block" align="center" class="mb-4">
+	
+	<a href="#" class="btn btn-animation-1" id="btn1">ART. 1</a> 
+	<a href="#" class="btn btn-animation-1" id="btn2">ART. 2</a> 
+	<a href="#" class="btn btn-animation-1" id="btn3">ART. 3</a> 
+	<a href="#" class="btn btn-animation-1" id="btn4">ART. 4</a> 
+	<a href="#" class="btn btn-animation-1" id="btn5">ART. 5</a> 
+	<a href="#" class="btn btn-animation-1" id="btn6">ART. 6</a> 
+	
+	</div>
+</div>
+</div>
+	
+
+	<!-- The empty div that we populate with the articles -->	
+				<div id="div1" style="margin-top:150px;" class=""> 
+				</div>
+							
+	
+	
+	
+	
+	
 <style>
-
+/* CSS for the Timeline */
 html, body {
   height: 100%;
 }
@@ -312,69 +516,29 @@ input[data-description="2000"]:checked ~ #timeline-descriptions-wrapper p[data-d
 }
 
 
-</style>
+
+
+/* CSS for Timeline, but personalized by us */
+.default {
+  cursor: default;
+}
+
+#timeline {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: #424949;
+  background-color: rgba(255, 255, 255, 0.9); <!-- here the default background-color was rgba(236, 240, 241, 0.9)-->
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 
 
 
-  
-  
-  
-  
-  
-    <script>
-    function setStyleSheet(url){
-       var stylesheet = document.getElementById("thestylesheet");
-       stylesheet.setAttribute('href', url);
-    }
-    </script>
 
 
-
-<script>
-$(document).ready(function(){
-  $("#btn1").click(function(){
-    $("#div1").load("texts/japan.html") ||  $("article").load("texts/japan.html");
-  });
-});
-    
-
-$(document).ready(function(){
-  $("#btn2").click(function(){
-    $("#div1").load("texts/machine.html") ||  $("article").load("texts/machine.html");
-  });
-});
-
-
-$(document).ready(function(){
-  $("#btn3").click(function(){
-    $("#div1").load("texts/alabama.html") ||  $("article").load("texts/alabama.html");
-  });
-});
-
-
-$(document).ready(function(){
-  $("#btn4").click(function(){
-    $("#div1").load("texts/eudirective.html") ||  $("article").load("texts/eudirective.html");
-  });
-});
-
-
-$(document).ready(function(){
-  $("#btn5").click(function(){
-    $("#div1").load("texts/delvey.html") ||  $("article").load("texts/delvey.html");
-  });
-});
-
-
-$(document).ready(function(){
-  $("#btn6").click(function(){
-    $("#div1").load("texts/lottery.html") ||  $("article").load("texts/lottery.html");
-  });
-});
-
-	</script>
-	
-	<style>
+/* CSS for the grey rounded Buttons */
 .btn:link,
 .btn:visited{
   text-decoration: none;
@@ -441,122 +605,6 @@ $(document).ready(function(){
     transform:translateY(0);
   }
 }
-</style>
-
-
-<style>
-
-.default {
-  cursor: default;
-}
-
-#timeline {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
-  color: #424949;
-  background-color: rgba(255, 255, 255, 0.9); <!-- here the background-color was rgba(236, 240, 241, 0.9). I tried to change it in white-->
-  padding: 0 25px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-</style>
-
-
-</head>
-<body>
-
-<div id="timeline-section">
-<div id="timeline" class="mt-5 mr-2 ml-2 p-4 rounded">
-
-<div class=" p-1"> </div>
-<div class=" p-1"> </div>
-<div class=" p-1"> </div>
-<div class=" p-5"> </div>
-<div class="flex-parent">
-	<div class="input-flex-container">
-		<input type="radio" name="timeline-dot" data-description="3200BC" checked onclick="setStyleSheet('1560.css')">
-		<div class="dot-info" data-description="3200BC">
-			<span class="year">3200BC</span>
-			<span class="label">Sumerian cuneiform</span>
-		</div>
-		<input type="radio" name="timeline-dot" data-description="1920" class="default" style="height: 1px;">
-		<div class="dot-info default">
-			<span class="year"></span>
-		</div>
-		<input type="radio" name="timeline-dot" data-description="1930" class="default" style="height: 1px;">
-		<div class="dot-info default">
-			<span class="year"></span>
-		</div>
-		<input type="radio" name="timeline-dot" data-description="1940"  class="default" style="height: 1px;">
-		<div class="dot-info default">
-			<span class="year"></span>
-		</div>
-		<input type="radio" name="timeline-dot" data-description="1950"  class="default" style="height: 1px;">
-		<div class="dot-info default">
-			<span class="year"></span>
-		</div>
-		<input type="radio" name="timeline-dot" data-description="1878"  onclick="setStyleSheet('1860.css')">
-		<div class="dot-info" data-description="1878">
-			<span class="year">1878</span>
-			<span class="label">Type type type</span>
-		</div>
-		<input type="radio" name="timeline-dot" data-description="1919"  onclick="setStyleSheet('1927.css')">
-		<div class="dot-info" data-description="1919">
-			<span class="year">1919</span>
-			<span class="label">Bauhaus</span>
-		</div>
-		<input type="radio" name="timeline-dot" data-description="1960" onclick="setStyleSheet('popart.css')">
-		<div class="dot-info" data-description="1960">
-			<span class="year">1960</span>
-			<span class="label">Pop Art</span>
-		</div>
-		<input type="radio" name="timeline-dot" data-description="1980" onclick="setStyleSheet('arcade.css')">
-		<div class="dot-info" data-description="1980">
-			<span class="year">1980</span>
-			<span class="label">ARCADE, baby!</span>
-		</div>
-		<input type="radio" name="timeline-dot" data-description="2040" onclick="setStyleSheet('2040.css')">
-		<div class="dot-info" data-description="2040">
-			<span class="year">2040</span>
-			<span class="label">Future, here</span>
-		</div>
-		<div id="timeline-descriptions-wrapper">
-			<p data-description="1910"></p>
-			<p data-description="1920"></p>
-			<p data-description="1930"></p>
-			<p data-description="1940"></p>
-			<p data-description="1950"></p>
-			<p data-description="1960"></p>
-			<p data-description="1970"></p>
-			<p data-description="1980"></p>
-			<p data-description="1990"></p>
-			<p data-description="2000"></p>
-		</div>
-	</div>
-</div>
-					
-				
-				<div style="display:inline-block" align="center" class="mb-4">
-				<a href="#" class="btn btn-animation-1" id="btn1">ART. 1</a> 
-				<a href="#" class="btn btn-animation-1" id="btn2">ART. 2</a> 
-				<a href="#" class="btn btn-animation-1" id="btn3">ART. 3</a> 
-				<a href="#" class="btn btn-animation-1" id="btn4">ART. 4</a> 
-				<a href="#" class="btn btn-animation-1" id="btn5">ART. 5</a> 
-				<a href="#" class="btn btn-animation-1" id="btn6">ART. 6</a> 
-				</div>
-</div>
-</div>
-	
-
-				<div id="div1" class="">      </div>
-							
-	<style>
-	#div1 {
-	margin-top:170px;
-	}
-	</style>
-	
+</style>	
 	</body>
 	</html>

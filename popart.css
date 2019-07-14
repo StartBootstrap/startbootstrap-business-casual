@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'badaboom';
-    src: url('font/popart/badaboom/badabb__-webfont.woff2') format('svg'),
+    src: url('font/popart/badaboom/badabb__-webfont.woff2') format('woff2'),
 	     url('font/popart/badaboom/badabb__-webfont.woff') format('woff');
 }
 
@@ -164,7 +164,7 @@ h3:after {
 content: "! $@*#&!";
 }
 
-p:nth-of-type(odd):after {
+section > p:nth-of-type(odd):after {
 content: " *";
 font-family:"comix-loud";
 }
@@ -246,28 +246,6 @@ figcaption {
 	padding-right: 16%;
 }
 
-/* figcaption {
-    font-size: 13pt;
-    margin-top: 10pt;
-    -webkit-hyphens: auto;
-            hyphens: auto;
-	text-align: center;
-	
-  background-position: center;
-  background-repeat: no-repeat !important;
-  background-size: 100% 100%;
-  margin: 0 auto;
-  text-align: center;
-  height: 0;
-  box-sizing: content-box;
-  line-height: 1;
-   background: url(img/popart/electric.svg);
-  width: auto;
-  padding: 6% 6% 12% 0%;
-}
-*/
-/*background: linear-gradient(to bottom, red 950px,red 950px,red 950px, white 950px, white 100%);	*/
-
 
 article img{
 	height: auto;
@@ -315,7 +293,7 @@ th {
     letter-spacing: 3px;
   }
   
- th:before {
+section > table > th:first-of-type:before {
 content: "MEANWHILE... "	 
  }	 
  
@@ -349,196 +327,116 @@ section:first-of-type > p:first-of-type:before {
   }
   
 
+
+
+
+
+
+/*eudirective*/
+
+.col-ing > div:first-of-type {
+text-align: center;	
+}
+
+.col-ita > div:first-of-type {
+text-align: center;	
+}
+
+.flex-container{
+    width: 80%;
+	margin-top:30px;
+    margin: 0 auto;
+    display: -webkit-flex; /* Safari */     
+    display: flex; /* Standard syntax */
+	}
+
+.flex-container .col-ing{
+	margin-top: 30px;
+    -webkit-flex: 1; /* Safari */
+    flex: 1; /* Standard syntax */
+	margin-right:20px;
+}
+
+
+.flex-container .col-ita{
+	margin-top: 30px;
+   -webkit-flex: 1; /* Safari */
+    flex: 1; /* Standard syntax */
+	margin-left:20px;
+}
+
+.container-eu{
+	margin: 50px;
+		margin-bottom:70px;
+		
+		      background: white;
+  background-image:
+    radial-gradient(#FFD3C1 23%, transparent 0), 
+    radial-gradient(#FFD3C1 23%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+    line-height: 1.7;
+		
+		border: double 40px;
+		text-align:justify;
+		font-size: 18pt;
+		margin-left:90px;
+		margin-right:90px;
+		 padding-top:20px;
+		padding-left:0px;
+		padding-right: 0px;
+		height:auto;
+		overflow: hidden;
+}
+
+	
+.container-eu p {
+				font-size: 18pt;
+				border-right:none;
+				margin-top: 20px;
+				margin-left:20px;
+				margin-right:20px;
+}
+
+.col-ing > table > th:first-of-type:before {
+content: " "	 
+ }	 
+
+hr {
+height:10px; 
+border:none; 
+color: black; 
+background-color: black;
+}	
 /*
-.circular-sb {
-  min-width: 50px;
-  max-width: 90%;
-  border: 5px solid #fff;
-  padding: 80px 0px;
-  margin: 30px auto;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 24px;
-  position: relative;
-  color: #000;
-  background: #fff;
-}
+.container-eu a{ 
+				color:black;
+				font-size:18pt;
+				}
 
-.circle1 {
-  border: 5px solid #fff;
-  position: absolute;
-  width: 25px;
-  padding: 20px;
-  border-radius: 50%;
-  right: -15px;
-  bottom: 23px;
-  background: #fff;  
-}
+.container-eu a:active {
+	color: black;}
 
-.circle1:before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  padding: 20px;
-  border-radius: 50%;
-  right: 0px;
-  bottom: 0px;
-  background: #fff;
-}
-
-.circle2 {
-  border: 5px solid #fff;
-  position: absolute;
-  width: 5px;
-  padding: 10px 15px;
-  border-radius: 50%;
-  right: -60px;
-  bottom: 5px;
-  background: #fff;
-}
+.container-eu a:visited {
+	color: red;}
 
 
-*****
+.container-eu span {
+	border-top:solid;
+	border-bottom: solid;
+	font-family: English Gothic Bold Italic;
+	text-align:center; 
+	font-size:11.25pt;
+	margin-left:10px;
+	}
 
-.circular-other-side {
-  min-width: 50px;
-  max-width: 90%;
-  border: 5px solid #fff;
-  padding: 80px 0px;
-  margin: 30px auto;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 24px;
-  position: relative;
-  color: #000;
-  background: #fff;
-}
+.container-eu h2{margin-top:20px;
+	font-size:45pt;}
+	
+	
 
-.circle1-other-side {
-  border: 5px solid #fff;
-  position: absolute;
-  width: 25px;
-  padding: 20px;
-  border-radius: 50%;
-  left: -15px;
-  bottom: 23px;
-  background: #fff;  
-}
+	@media screen and (max-width: 1000px) { .container-eu p { font-size: 5.25pt;
 
-.circle1-other-side:before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  padding: 20px;
-  border-radius: 50%;
-  left: 0px;
-  bottom: 0px;
-  background: #fff;
-}
-
-.circle2-other-side {
-  border: 5px solid #fff;
-  position: absolute;
-  width: 5px;
-  padding: 10px 15px;
-  border-radius: 50%;
-  left: -60px;
-  bottom: 5px;
-  background: #fff;
-}
+}}*/
 
 
-
-<div class="circular-sb">
-  I'm Circular speech bubbleeeeeeeeeeeee aajajkb a ajnaa 
-  <div class="circle1"></div>
-  <div class="circle2"></div>
-</div>
-
-<div class="circular-sb3">
-  I'm Circular speech bubbleeeeeeeeeeeee aajajkb a ajnaa 
-  <div class="circle13"></div>
-  <div class="circle23"></div>
-</div>
-
-*/
-
-
-
-/*
-<section>
-  <blockquote class="speech bubble">Did someone say <em>chimichangas?</em></blockquote>
-</section>
-<section>
-  <blockquote class="whisper bubble">That’s the sound of my brain</blockquote>
-</section>
-<section>
-  <blockquote class="electric bubble">Autobots,<span>Attack!</span></blockquote>
-</section>
-
-
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: SequentialistBB, cursive;
-  font-size: 2.5vw;
-  margin: 0;
-}
-
-section {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-section {
-  padding: 3rem;
-}
-
-
-
-blockquote.bubble {
-  background-position: center;
-  background-repeat: no-repeat !important;
-  background-size: 100% 100%;
-  margin: 0 auto;
-  text-align: center;
-  height: 0;
-  box-sizing: content-box;
-  line-height: 1;
-}
-
-blockquote.speech {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
-  width: 25%;
-  padding-top: 6%;
-  padding-bottom: 20%;
-}
-
-blockquote.whisper {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/whisper.svg);
-  width: 25%;
-  font-size: 2vw;
-  color: #ccc;
-  font-style: italic;
-  padding: 6% 5% 15%;
-}
-
-blockquote.electric {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg);
-  width: 25%;
-  font-size: 2.4vw;
-  font-style: italic;
-  padding: 4% 6% 12% 0%;
-}
-
-blockquote.electric span {
-  display: block;
-  font-size: 3vw;
-  font-weight: bold;
-}
-*/
