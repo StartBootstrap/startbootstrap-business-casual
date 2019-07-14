@@ -63,32 +63,12 @@ font-style: normal;
 }
 @font-face
 {
-font-family: "crackman.regular";
-src: url("font/arcade_baby/crackman.regular.ttf") format("truetype");
+font-family: "pt_sans";
+src: url("font/arcade_baby/pt_sans_r.ttf") format("truetype");
 font-weight: normal;
 font-style: normal;
 }
-@font-face   
-{
-font-family: "sf-atarian-system.regular";
-src: url("font/arcade_baby/sf-atarian-system.regular.ttf") format("truetype");
-font-weight: normal;
-font-style: normal;
-}
-@font-face
-{
-font-family: "1STSORTI";
-src: url("font/1STSORTI.ttf") format("truetype");
-font-weight: normal;
-font-style: normal;
-}
-@font-face
-{
-font-family: "blrrpixs016";
-src: url("font/blrrpixs016.ttf") format("truetype");
-font-weight: normal;
-font-style: normal;
-}
+
 /*загружаем новый шрифт, кладем в нужную папку font/arcade_baby
 копируем новый блок выше
 @font-face
@@ -108,7 +88,7 @@ font-style: normal;
 
 /*здесь по умолчанию стили, используются если для какого-то тега нет стилей*/
 * {
-    font-family: 'lowrider';
+    font-family: 'retronoid';
     font-size: 26px;
     font-weight: normal;
     font-style: normal;
@@ -148,7 +128,7 @@ margin-bottom: 20px;
 padding: 20px;
 /*border: 4px solid #3339b7;
 border-radius: 24px;*/
-font-family: 'lowrider';
+font-family: 'retronoid';
 /*background: #ffffff; */
 }
 
@@ -179,43 +159,44 @@ section p:nth-of-type(1) {
 
 /*первая буква в абзацах*/
 section p:first-letter{
-    color:#0000CD;
+    color:#ffffff;
     font-size:32px;     /*межстрочный интервал  */
     line-height: 28px;
 }
 
 /*текст всех статей*/
 p {
-font-family: 'sf-atarian-system.regular';
+font-family: 'pt_sans';
 }
 
 /*тег цитат*/
 q {
 display: block;
-font-family: 'games';
-color:#FFD700;
+font-family: 'death_star';
+color:#E6E6FA;
 font-size:22px;
 }
 
 /*выделенный текст*/
 p strong, em {
-font-family: 'games';
-color:#0000CD;
+font-family: 'death_star';
+color:#E6E6FA;
 font-size:22px;
 }
 
 /*выделенный курсив*/
 p i {
-font-family: 'games';
-color:#0000CD;
+font-family: 'death_star';
+font-style: italic;
+color:#E6E6FA;
 font-size:22px;
 }
 
 /*текст ссылки в статье*/
 p a {
-font-family: 'games';
+font-family: 'death_star';
 font-size: 17px;
-color:#800080;
+color:#E6E6FA;
 text-decoration: underline;
 }
 
@@ -226,28 +207,30 @@ h1, h2, h3, h4 {
     padding-bottom: 15px;
 }
 h1 {
-font-size: 24px;
+font-size: 36px;
 line-height: 50px; /*межстрочный интервал*/
-color:#FF0000;
-font-family: 'emulogic';
+color:#E6E6FA;
+font-family: 'death_star';
 }
 h2 {
-font-size: 24px;
+font-size: 36px;
 line-height: 46px;
-color:#0000CD;
-font-family: 'emulogic';
+color:#E6E6FA;
+font-family: 'death_star';
 }
 h3 {
-font-size: 20px;
+font-size: 34px;
 line-height: 36px;
-color:#FFD700;
-font-family: 'emulogic';
+color:#7B68EE;
+font-family: 'lowrider';
+font-style: italic;
 }
 h4 {
-font-size: 20px;
+font-size: 34px;
 line-height: 34px;
-color:#FFD700;
-font-family: 'emulogic';
+color:#E6E6FA;
+font-family: 'lowrider';
+font-style: italic;
 }
 
 /*фотографии*/
@@ -267,7 +250,7 @@ article img {
 figcaption {
 margin-bottom: 30px;
 font-size: 20px;
-color:#FFD700;
+color:#7B68EE;
 font-family: 'lowrider';
 font-style: italic;
 text-align: center;
@@ -310,11 +293,6 @@ color:#ffffff;
 }
 
 /*общий стиль временной линии*/
-#timeline { 
+#timeline {
   opacity:0.8; /*прозрачность от общего цвета*/
 }
-
-div {
-color: #BA55D3;
-}
-
