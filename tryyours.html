@@ -204,10 +204,6 @@ height: 105%;
 </head>
 
 <body>
-<!-- I tried to add music but it doesn't go 
-<audio autoplay id="silence">
-   <source src="audio/silence.mp3" type="audio/mpeg">
-</audio>-->
 
   <!-- Beginning of the site: the Title -->
   <h1 class="site-heading text-center text-white d-none d-lg-block">
@@ -297,8 +293,6 @@ height: 105%;
             </h2>			
 		  <div class="col-xl-12">
 			    <textarea cols="80" id="editor1" name="editor1" rows="10" data-sample-short>
-&lt;article&gt;
-&lt;section&gt;
 &lt;h1&gt;Lorem ipsum&lt;/h1&gt;
 &lt;h2&gt;Dolor sit amet&lt;/h2&gt;
 &lt;h3&gt;Consectetur adipiscing elit&lt;/h3&gt;
@@ -307,8 +301,6 @@ height: 105%;
 &lt;p&gt;&lt;strong&gt;Duis aute irure dolor in reprehenderit in voluptate&lt;/strong&gt; velit esse cillum dolore eu fugiat nulla pariatur.&lt;/p&gt;
 &lt;p&gt;Excepteur sint occaecat cupidatat non proident, &lt;i&gt;sunt in culpa qui officia deserunt mollit anim id est laborum&lt;/i&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&quot;time&quot; src=&quot;https://backtothefuture2019.github.io/tttt/img/time.png&quot; style=&quot;height:200px; width:200px&quot; /&gt;&lt;/p&gt;
-&lt;/section&gt;
-&lt;/article&gt;
  </textarea>
   <script>
     // We need to turn off the automatic editor creation first.
@@ -342,12 +334,12 @@ height: 105%;
 	  <div class="mb-4">		
      	<h3 class="lora mb-2">Choose your style:</h3>		
 		<div style="display:inline-block" align="center" class="mt-2">		
-		<input type="button" class="btn" value="Sumerian" onclick="play1(); addCss('1560.css')" />
-		<input type="button" class="btn" value="Typewriter" onclick="play2(); addCss('1860.css')" />
-		<input type="button" class="btn" value="Bauhaus" onclick="play3(); addCss('1927.css')" />
-		<input type="button" class="btn" value="Pop Art" onclick="play4(); addCss('popart.css')" />
-		<input type="button" class="btn" value="Arcade" onclick="play5(); addCss('arcade.css')" />
-		<input type="button" class="btn" value="Future" onclick="play6(); addCss('2040.css')" />
+		<input type="button" class="btn" value="Sumerian" onclick="addCss('sumerian.css')" />
+		<input type="button" class="btn" value="Typewriter" onclick="addCss('typewriter.css')" />
+		<input type="button" class="btn" value="Bauhaus" onclick="addCss('bauhaus.css')" />
+		<input type="button" class="btn" value="Pop Art" onclick="addCss('popart.css')" />
+		<input type="button" class="btn" value="Arcade" onclick="addCss('arcade.css')" />
+		<input type="button" class="btn" value="Future" onclick="addCss('future.css')" />
 		</div>		
 	   </div>
 		
@@ -427,48 +419,6 @@ function removeCss() {
   list.removeChild(list.childNodes[1]);
 }
 </script>  
-
-<!-- I tried to add music but it doesn't go!
-<script>
-// These are the 6 functions to change the 6 musics of the stylesheets
-
-  function play1(){
-       var x = document.getElementById("silence");
-       var y = x.setAttribute('src', 'audio/sumerian.mp3');
-	   y.play();
-                 }
-
-  function play2(){
-       var x = document.getElementById("silence");
-       var y = x.setAttribute('src', 'audio/typewriter.mp3');
-	   y.play();	
-                 }
-
-  function play3(){
-       var x = document.getElementById("silence");
-       var y = x.setAttribute('src', 'audio/bauhaus.mp3');
-	   y.play();	   
-}
-
-  function play4(){  
-       var x = document.getElementById("silence");
-       var y = x.setAttribute('src', 'audio/do-wah-diddy-diddy.mp3');
-	   y.play();	   
-}				 
-
-  function play5(){
-       var x = document.getElementById("silence");
-       var y = x.setAttribute('src', 'audio/arcade.mp3');
-	   y.play();
-                 }				 
-
-  function play6(){
-       var x = document.getElementById("silence");
-       var y = x.setAttribute('src', 'audio/future.mp3');
-	   y.play();
-                 }	
-</script>
--->
 
 </body>
 </html>
