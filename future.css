@@ -14,7 +14,7 @@ article {
   overflow: auto;
   width: 278px;
   max-height: 532px;
-  margin-left: 559px;
+  margin-left: 609px;
   margin-top: 255px;
   margin-bottom: 224px;
   display: inline-block;
@@ -144,17 +144,17 @@ font-family: 'Exo 2', sans-serif; }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: rgba(120, 200, 255, 0.1); 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: rgba(0,121,171,0.9); 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: rgba(0,50,93,0.9); 
 }
 
 
