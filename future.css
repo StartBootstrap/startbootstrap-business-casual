@@ -9,7 +9,10 @@ body {
 
 
 article {
-  padding: 3pt 2pt 3pt 2pt;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   box-sizing: border-box;
   overflow: auto;
   width: 278px;
@@ -21,14 +24,24 @@ article {
   font-family: 'Exo 2', sans-serif;
   font-size: 10pt;
   letter-spacing: .06em;
-  background-color: rgba(0, 17, 34, 0.2);
+  background-color: rgba(120, 200, 255, 0.1);
   border: 1px solid rgba(120, 200, 255, 0.2);
-  color: rgba(120, 200, 255, 0.5);
+  color: black;
   border-radius: 15px;
+  text-align: justify;
   
     -webkit-animation: breathing 7s ease-out infinite normal;
     animation: breathing 7s ease-out infinite normal;
     }
+	
+img {
+  transition: transform .3s;
+}
+
+img:hover {
+	transform: scale(1.9);
+	margin-bottom: 40px;
+}
 
 h1 {
   font-family: 'Exo 2', sans-serif;
@@ -63,8 +76,8 @@ font-family: 'Exo 2', sans-serif; }
 
 @-webkit-keyframes breathing {
   0% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
   }
 
   25% {
@@ -73,21 +86,21 @@ font-family: 'Exo 2', sans-serif; }
   }
 
   60% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
   }
 
   100% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
   }
 }
 
 @keyframes breathing {
   0% {
-    -webkit-transform: scale(0.97);
-    -ms-transform: scale(0.97);
-    transform: scale(0.97) rotate(-7deg);
+    -webkit-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    transform: scale(0.98) rotate(-7deg);
   }
 
   25% {
@@ -97,15 +110,15 @@ font-family: 'Exo 2', sans-serif; }
   }
 
   60% {
-    -webkit-transform: scale(0.97);
-    -ms-transform: scale(0.97);
-    transform: scale(0.97) rotate(-7deg);
+    -webkit-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    transform: scale(0.98) rotate(-7deg);
   }
 
   100% {
-    -webkit-transform: scale(0.97);
-    -ms-transform: scale(0.97);
-    transform: scale(0.97) rotate(-7deg);
+    -webkit-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    transform: scale(0.98) rotate(-7deg);
   }
 }
 
@@ -188,18 +201,12 @@ article::-webkit-scrollbar-thumb:hover {
 
 
 
-section {
-
-}
 
 
 article img{
 	height: auto;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 23%;
 	max-width: 50%;	
-	/* border: double 15px;
-		filter: saturate(900%);*/
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
