@@ -1,5 +1,6 @@
 body {
-  background-color: #012;
+    background-image: url("img/future/hand.png");
+	        background-position: center bottom;
   	position: relative;
   box-sizing: border-box;
   width: 80%;
@@ -9,23 +10,113 @@ body {
   letter-spacing: .06em;
 
   padding: 0 1em 1em;
+  
+  
 }
+
+
 
 
 article {
   box-sizing: border-box;
   overflow: auto;
-  width: 80%;
-  max-height: 50%;
-  margin-left: 7em;
+  width: 21%;
+  max-height: 72%;
+  margin-left: 365px;
+  margin-top: 75px;
   display: inline-block;
   font: normal 100 14px/1.2em "Exo 2", Arial, sans-serif;
   letter-spacing: .06em;
   background-color: rgba(120, 200, 255, 0.1);
   border: 1px solid rgba(120, 200, 255, 0.2);
-  color: rgba(120, 200, 255, 0.8);
+  color: black;
   padding: 0 1em 1em;
+
+    -webkit-animation: breathing 7s ease-out infinite normal;
+    animation: breathing 7s ease-out infinite normal;
+
+
+
+   
+    }
+
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
 }
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    transform: scale(0.97) rotate(-7deg);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1) rotate(-7deg);
+  }
+
+  60% {
+    -webkit-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    transform: scale(0.97) rotate(-7deg);
+  }
+
+  100% {
+    -webkit-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    transform: scale(0.97) rotate(-7deg);
+  }
+}
+
+
+@keyframes bg-breathing {
+  0% {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+  100% {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+}
+
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -299,3 +390,7 @@ h1.heading {
   border-bottom: 1px solid rgba(0, 255, 255, 0.2);
 }
 
+img {
+  box-sizing: border-box;
+  overflow: auto;
+  }
