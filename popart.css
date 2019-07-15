@@ -441,24 +441,25 @@ background-color: black;
 
 
 /* width */
-article::-webkit-scrollbar {
-  width: 15px;
+::-webkit-scrollbar {
+  width: 17px;
 }
 
 /* Track */
-article::-webkit-scrollbar-track {
-  background: rgba(120, 200, 255, 0.1); 
-    box-shadow: inset 0 0 5px grey; 
+::-webkit-scrollbar-track {
+  background: black; 
+    box-shadow: inset 0 0 5px wheat; 
   border-radius: 15px;
 }
  
 /* Handle */
-article::-webkit-scrollbar-thumb {
-  background: rgba(0,121,171,0.5); 
+::-webkit-scrollbar-thumb {
+  background: white; 
     border-radius: 15px;
+	
 }
 
 /* Handle on hover */
-article::-webkit-scrollbar-thumb:hover {
-  background: rgba(0,50,93,0.9); 
+::-webkit-scrollbar-thumb:hover {
+  background: salmon; 
 }
