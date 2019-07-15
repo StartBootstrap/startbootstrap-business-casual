@@ -2,7 +2,7 @@
 
 body {
     background-image: url("img/future/hand.png");
-	background-position: center bottom;
+	background-position: center;
 	  background-repeat: no-repeat;
 }
 
@@ -161,6 +161,29 @@ article::-webkit-scrollbar-thumb:hover {
   background: rgba(0,50,93,0.9); 
 }
 
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(120, 200, 255, 0.1); 
+    box-shadow: inset 0 0 5px grey; 
+  border-radius: 15px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0,121,171,0.5); 
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,50,93,0.9); 
+}
 
 
 
