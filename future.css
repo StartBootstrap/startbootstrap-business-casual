@@ -21,9 +21,9 @@ article {
   font-family: 'Exo 2', sans-serif;
   font-size: 10pt;
   letter-spacing: .06em;
-  background-color: rgba(120, 200, 255, 0.1);
+  background-color: rgba(0, 17, 34, 0.2);
   border: 1px solid rgba(120, 200, 255, 0.2);
-  color: black;
+  color: rgba(120, 200, 255, 0.5);
   border-radius: 15px;
   
     -webkit-animation: breathing 7s ease-out infinite normal;
