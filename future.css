@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
 body {
     background-image: url("img/future/hand.png");
 	background-position: center bottom;
@@ -6,8 +8,8 @@ body {
 
 
 
-
 article {
+  padding: 3pt 2pt 3pt 2pt;
   box-sizing: border-box;
   overflow: auto;
   width: 278px;
@@ -16,21 +18,47 @@ article {
   margin-top: 255px;
   margin-bottom: 224px;
   display: inline-block;
-  font: normal 100 14px/1.2em "Exo 2", Arial, sans-serif;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 10pt;
   letter-spacing: .06em;
   background-color: rgba(120, 200, 255, 0.1);
   border: 1px solid rgba(120, 200, 255, 0.2);
   color: black;
-  padding: 0 1em 1em;
 
     -webkit-animation: breathing 7s ease-out infinite normal;
     animation: breathing 7s ease-out infinite normal;
-
-
-
-   
     }
 
+h1 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 13pt;	
+  border-bottom: 1px solid rgba(120, 200, 255, 0.2);
+  text-transform: uppercase;  
+}
+
+h2 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 12pt;	
+  border-bottom: 1px solid rgba(120, 200, 255, 0.2);
+  text-transform: uppercase;  
+}
+
+h3 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 11pt;	
+  border-bottom: 1px solid rgba(120, 200, 255, 0.2);
+  text-transform: uppercase;  
+}
+
+h4 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 11pt;	
+  border-bottom: 1px solid rgba(120, 200, 255, 0.2);
+  text-transform: uppercase;  
+}
+
+* {
+font-family: 'Exo 2', sans-serif; }
 
 @-webkit-keyframes breathing {
   0% {
@@ -111,7 +139,7 @@ article {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 /* Track */
@@ -137,7 +165,8 @@ section {
 
 article img{
 	height: auto;
-	margin-left: 13%;
+	margin-left: auto;
+	margin-right: auto;
 	max-width: 50%;	
 	/* border: double 15px;
 		filter: saturate(900%);*/
