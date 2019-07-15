@@ -1,17 +1,13 @@
 body {
     background-image: url("img/future/hand.png");
-	        background-position: center bottom;
+	        background-position: center;
   	position: relative;
-  box-sizing: border-box;
-  width: 80%;
-  margin-left: 10em;
-  display: inline-block;
-  font: normal 100 14px/1.2em "Exo 2", Arial, sans-serif;
-  letter-spacing: .06em;
 
-  padding: 0 1em 1em;
-  
-  
+  display: inline-block;
+
+  background-repeat: repeat-y;
+
+
 }
 
 
@@ -20,10 +16,11 @@ body {
 article {
   box-sizing: border-box;
   overflow: auto;
-  width: 21%;
-  max-height: 72%;
-  margin-left: 365px;
+  width: 300px;
+  max-height: 550px;
+  margin-left: 505px;
   margin-top: 75px;
+  margin-bottom: 75px;
   display: inline-block;
   font: normal 100 14px/1.2em "Exo 2", Arial, sans-serif;
   letter-spacing: .06em;
