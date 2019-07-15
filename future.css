@@ -14,7 +14,7 @@ article {
   overflow: auto;
   width: 278px;
   max-height: 532px;
-  margin-left: 609px;
+  margin-left: 622px;
   margin-top: 255px;
   margin-bottom: 224px;
   display: inline-block;
@@ -24,7 +24,8 @@ article {
   background-color: rgba(120, 200, 255, 0.1);
   border: 1px solid rgba(120, 200, 255, 0.2);
   color: black;
-
+  border-radius: 15px;
+  
     -webkit-animation: breathing 7s ease-out infinite normal;
     animation: breathing 7s ease-out infinite normal;
     }
@@ -138,24 +139,30 @@ font-family: 'Exo 2', sans-serif; }
 
 
 /* width */
-::-webkit-scrollbar {
+article::-webkit-scrollbar {
   width: 5px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+article::-webkit-scrollbar-track {
   background: rgba(120, 200, 255, 0.1); 
+    box-shadow: inset 0 0 5px grey; 
+  border-radius: 15px;
 }
  
 /* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgba(0,121,171,0.9); 
+article::-webkit-scrollbar-thumb {
+  background: rgba(0,121,171,0.5); 
+    border-radius: 15px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+article::-webkit-scrollbar-thumb:hover {
   background: rgba(0,50,93,0.9); 
 }
+
+
+
 
 
 section {
