@@ -36,6 +36,7 @@ article {
 	
 img {
   transition: transform .3s;
+  border-radius: 2px;
 }
 
 img:hover {
