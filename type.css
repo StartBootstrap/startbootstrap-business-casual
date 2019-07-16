@@ -46,8 +46,11 @@ font-size: 13px;
 
 body {
 	
-background-image: url("img/type/provasfondo.jpg");
-background-size: 100%;
+background-image: url("img/type/provasfondo.jpg") no-repeat center top; position: fixed; z-index: -1;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 
 }
 
