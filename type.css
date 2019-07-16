@@ -1,0 +1,79 @@
+p, h2, h3, h4, figcaption, div, table { 
+
+font-family: 'Special Elite';
+margin: 25px 25px 25px 25px;
+	
+}
+
+p {
+
+text-indent: 50px
+  
+}
+
+div {
+	
+text-decoration: underline;
+	
+}
+
+table, tr, td {
+
+border-collapse: collapse;
+border: 1px solid black;
+padding: 10px;
+text-align: left;
+
+}
+
+h2, h3, h4 {
+
+text-decoration: underline;
+text-transform: uppercase;
+	
+}
+
+figcaption { 
+
+text-align: center;
+font-size: 13px;
+
+}
+
+body {
+	
+background-color: black;
+
+}
+
+img {
+
+width: 80%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+
+}
+
+section {
+
+background-image: url("typebackground.png");
+padding-top: 80px;
+padding-bottom: 80px;
+padding-right: 50px;
+padding-left: 50px;
+margin: 5%;
+
+}
+
+article {
+
+margin-top: 5%;
+margin-bottom: 5%;
+margin-left: 20%;
+margin-right: 20%;
+word-spacing: 6px;
+
+}
