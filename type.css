@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
 
-p, h2, h3, h4, figcaption, div, table { 
+p, h1, h2, h3, h4, figcaption, div, table { 
 
 font-family: 'Special Elite';
 margin: 25px 25px 25px 25px;
@@ -9,8 +9,9 @@ margin: 25px 25px 25px 25px;
 
 p {
 
-text-indent: 50px
-  
+text-indent: 50px;
+font-size: 15px;
+
 }
 
 div {
@@ -28,7 +29,7 @@ text-align: left;
 
 }
 
-h2, h3, h4 {
+h1, h2, h3, h4 {
 
 text-decoration: underline;
 text-transform: uppercase;
