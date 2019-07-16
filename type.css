@@ -85,11 +85,11 @@ word-spacing: 6px;
 /*eudirective*/
 
 .col-ing > div:first-of-type {
-text-align: center;	
+
 }
 
 .col-ita > div:first-of-type {
-text-align: center;	
+
 }
 
 .flex-container{
@@ -117,14 +117,11 @@ text-align: center;
 
 .container-eu{
 	margin: 50px;
-		margin-bottom:70px;
-		
-		      background: black;
-
+		margin-bottom:70px;		
+	background-image: url("img/type/typebackground.png");
     line-height: 1.7;
 		
 		border: double 40px;
-		text-align:justify;
 		font-size: 18pt;
 		margin-left:90px;
 		margin-right:90px;
