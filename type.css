@@ -47,6 +47,8 @@ font-size: 13px;
 body {
 	
 background-image: url("img/type/provasfondo.jpg");
+background-repeat: repeat;
+background-size: cover;
 
 }
 
