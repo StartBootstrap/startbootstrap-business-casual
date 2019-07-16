@@ -1,0 +1,124 @@
+body {
+  margin: auto;
+  background: url("star-wars.png");
+}
+
+/* This was an hypothesis on how to load the star-wars logo from css and so not putting it on the html
+.anchor:after {
+  display: block;
+  content: ;
+  background-image: url('star-wars-logo.svg');
+  background-position: center;  
+}
+
+*/ 
+ 
+  
+ /* Set the animation, color, size and hide the text */
+  
+.intro {
+    position: absolute;
+    top: 55%;  /* Write "top:30%;" to have it centered in a new html file, outside the iframe in nerdme.html */ 
+    left: 35%;
+    z-index: 1;
+    animation: intro 6s ease-out 1s;
+    color: rgb(75, 213, 238);
+    font-weight: 400;
+    font-size: 300%;
+    opacity: 0;
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Set the animation & hide the logo */
+.logo {    
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    z-index: 1;
+    margin: auto;
+    animation: logo 9s ease-out 9s;
+    opacity: 0;
+}
+
+.logo svg {
+    width: inherit;
+}
+
+/* Scale the logo down and maintain it centered */
+@keyframes logo {
+    0% {      
+        transform: scale(1.75);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1; 		
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+}
+
+p {
+  color: #FFFF82;
+}
+
+/* Set the font, lean the board, position it */
+#board {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  transform: perspective(300px) rotateX(25deg);
+  transform-origin: 50% 100%;
+  text-align: justify;
+  position: absolute;
+  margin-left: -9em;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 350%;
+  height: 50em;
+  width: 18em;
+  bottom: 0;
+  left: 50%;
+}
+
+#board:after {    
+  position: absolute;
+  content: ' ';
+  bottom: 60%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+/* Set the scrolling animation and position it */
+#content {
+  animation: scroll 100s linear 16s;
+  position: absolute;
+  top: 100%;
+}
+
+#title, #subtitle {
+  text-align: center;
+}
+
+@keyframes scroll {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -170%;
+    }
+}

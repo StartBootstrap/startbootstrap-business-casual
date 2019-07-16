@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+	
+	<!-- Super Mario CSS-->
+    <style>
+    html{
+        height: 100%;
+        width: 100%;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        background: url(super-mario-background3.png);
+        background-repeat: repeat-x;
+        background-position: center bottom;		
+        background-color: #6899f8;
+    }
+	</style>
+
+
+	<!-- Marquee top-bottom
+<style>
+@keyframes movingBottomToTop {
+  0% {
+   opacity: 0.4; 
+   top: 250px;
+	}
+  100% {
+    top: -900px;
+	   opacity: 1;
+  }
+}
+
+
+section {
+  animation: movingBottomToTop steps(22, end)  10s;
+  position: relative;
+  width: 95%;
+  text-align:center;
+  animation-fill-mode: forwards;
+  padding: 20px;
+}
+</style>-->
+
+	<!-- Marquee left-right-->
+<style>
+@keyframes movingBottomToTop {
+  0% {
+   right: 1200px;
+   opacity: 1;
+	}
+  100% {
+    right: -1300px;
+	opacity: 1;
+  }
+}
+
+
+main {
+  top: -50px;
+  animation: movingBottomToTop steps(22, end) infinite 15s;
+  position: relative;
+  width: 60%;
+  text-align:center;
+  animation-fill-mode: forwards;
+  padding: 0px;
+}
+</style>
+
+<style>
+@font-face {
+    font-family: 'mario-luigi';
+    src: url('font/super-mario-font/super_plumber_brothers-webfont.woff') format('woff'),
+	     url('font/super-mario-font/msuper_plumber_brothers-webfont.woff2') format('woff2'),
+         url('font/super-mario-font/Super Plumber Brothers.ttf') format('tff');
+}
+
+
+* {
+	font-family: 'mario-luigi';
+	    font-weight: normal;
+    font-style: normal;
+}
+</style>
+
+	<!-- Marquee left-right-->
+<!--
+<style>
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+span {
+	font-family: 'Permanent Marker', cursive;
+}
+
+.marquee > span:nth-child(1) {
+    animation:  9s linear 0s infinite push;
+}
+
+</style> -->
+	
+	
+    </head>
+    <body style="overflow: hidden;">
+        <!--<canvas id="cloud" width="300px" height="300px"></canvas>-->
+        <img id="mario" src="super-mario.png" />
+
+	<audio preload="auto" autoplay>
+		<source src="super-mario.mp3" type="audio/mpeg">
+	</audio>
+	
+	       <!-- <div class="marquee">
+            <span>
+			<h1>Lorem ipsum dolor sit amet,</h1> 
+			<h2>consectetur adipiscing elit,</h2>
+			<h3>sed do eiusmod tempor</h3>
+			incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        </div>-->
+		
+		
+
+  <main>
+  
+			<h1>Lorem ipsum dolor sit amet,</h1> 
+			<h2>consectetur adipiscing elit,</h2>
+			<h3>sed do eiusmod tempor</h3>
+			<p>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+			culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p><h2>Lorem ipsum dolor sit amet,</h2></p> 
+			<p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</main>
+
+
+
+	
+    </body>
+    <script>
+    function cloneViewport(oldViewport){
+
+        //create a new canvas
+        var newViewport = document.createElement('canvas');
+        var context = newViewport.getContext('2d');
+
+        //set dimensions
+        newViewport.width = oldViewport.width;
+        newViewport.height = oldViewport.height;
+
+        //apply the old canvas to the new one
+        context.drawImage(oldViewport, 0, 0);
+
+        //return the new canvas
+        return newViewport;
+    }
+
+    var body = document.body;
+    var jump_height = 120;
+
+    var mario = document.getElementById('mario');
+    mario.style.position = 'absolute';
+    mario.style.bottom = 0;
+    mario.setAttribute('src', 'super-mario.png');
+
+    var keysPressed = {};
+
+    var jumping = false;
+    var forwards = true;
+    var x_position = 30;
+    var y_position = 0;
+    var cloud_position = 300;
+    var in_jump = false;
+    var viewport = window.innerWidth;
+
+    
+
+
+    // capture all the events into a dictionary
+    body.addEventListener('keydown' , function(e){
+        keysPressed[e.keyCode] = e.type == 'keydown';
+    }, false);
+    body.addEventListener('keyup', function(e){
+        keysPressed[e.keyCode] = e.type == 'keydown';
+    }, false);
+
+    function move(){
+        mario.style.left = x_position + "px";
+
+        if(jumping == true)
+        {
+            in_jump = true;
+            y_position += 5;
+            if(y_position > jump_height)
+            {
+                jumping = false;
+            }
+            mario.style.bottom = y_position+ 'px';
+        }
+        if(jumping == false && y_position > 0)
+        {
+            y_position -= 5;
+            mario.style.bottom = y_position+'px';
+        }
+        else
+        {
+            in_jump = false;
+        }
+
+        if(viewport < x_position)
+        {
+            mario.style.left = "0px";
+            x_position = 0;
+        }
+        else if (0 > x_position)
+        {
+             mario.style.left=(window.width + 10) + "px";
+             x_position = viewport;
+        }
+        move_cloud();
+    }
+
+    setInterval(function(){
+        if(keysPressed[38]) // jump
+        {
+            if(in_jump != true)
+            {
+                jumping = true;
+            }
+        }
+        if(keysPressed[39]) // left
+        {
+            x_position += 10;
+
+            if(!forwards)
+            {
+                mario.setAttribute('src', 'super-mario.png');
+                forwards = true;
+            }
+        }
+        if(keysPressed[37]) // right
+        {
+            x_position -= 10;
+            if(forwards)
+            {
+                mario.setAttribute('src', 'super-mario-back.png');
+                forwards = false;
+            }
+        }
+        move();
+    }, 20);
+    </script>
+	
+	<!--<script>
+	    function move_cloud(){
+        cloud_position += 2
+        cloud.style.left = cloud_position+"px";
+    }
+	// CLOUD
+    // Yes this should be a function but i could not be bothered right now
+    // this if for another day.
+    cloud = document.getElementById('cloud');
+    var ctx = cloud.getContext("2d");
+    ctx.beginPath();
+
+    ctx.arc(40,65,40,0,2*Math.PI)
+    ctx.fillStyle = "rgb(255,255,255)";
+    ctx.fill();
+
+    ctx.arc(110,50,50,0,2*Math.PI)
+    ctx.fillStyle = "rgb(255,255,255)";
+    ctx.fill();
+    ctx.arc(170,65,40,0,2*Math.PI)
+    ctx.fillStyle = "rgb(255,255,255)";
+    ctx.fill();
+
+    ctx.fillStyle = "rgba(255, 255, 255)";
+    ctx.fillRect (45, 35, 120, 70);
+    ctx.fill();
+
+    // small cloud left
+    small_cloud = cloneViewport(cloud);
+    small_cloud.setAttribute('class', 'cloud');
+    small_cloud.style.transform = 'scale(0.3)';
+    body.appendChild(small_cloud);
+
+    // small cloud center
+    small_cloud = cloneViewport(cloud);
+    small_cloud.setAttribute('class', 'cloud');
+    small_cloud.style.transform = 'scale(0.4)';
+    small_cloud.style.left = "400px";
+    small_cloud.style.top = "200px";
+    body.appendChild(small_cloud);
+
+    // small cloud center 2
+    small_cloud = cloneViewport(cloud);
+    small_cloud.setAttribute('class', 'cloud');
+    small_cloud.style.transform = 'scale(0.4)';
+    small_cloud.style.left = "500px";
+    small_cloud.style.top = "180px";
+    body.appendChild(small_cloud);
+
+    // small cloud right
+    small_cloud = cloneViewport(cloud);
+    small_cloud.setAttribute('class', 'cloud');
+    small_cloud.style.transform = 'scale(0.4)';
+    small_cloud.style.left = "800px";
+    small_cloud.style.top = "50px";
+    body.appendChild(small_cloud);
+    // CLOOUD
+	</script>-->
+</html>
