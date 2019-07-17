@@ -31,6 +31,11 @@
 }
 
 
+article div {
+text-decoration: uppercase;
+margin-left: 20px;
+margin-right: 20px;
+}	
 
 body {
     background-image: url("img/popart/popart1.png");
