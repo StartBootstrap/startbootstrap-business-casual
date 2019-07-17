@@ -40,6 +40,10 @@ content:"";
 background-color: black;
 border-color: red;
 border: solid 20px;
+
+  margin-left: 122px;
+  margin-top: 100px;
+  margin-bottom: 90px;
 }	
 	
 img {
@@ -184,6 +188,8 @@ article::-webkit-scrollbar-thumb:hover {
 }
 
 
+
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -198,7 +204,7 @@ article::-webkit-scrollbar-thumb:hover {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(0,121,171,0.5); 
+  background: rgba(0,121,171,0.4); 
     border-radius: 15px;
 }
 
