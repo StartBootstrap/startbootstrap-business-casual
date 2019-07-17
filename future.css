@@ -18,8 +18,8 @@ article {
   width: 278px;
   max-height: 532px;
   margin-left: 622px;
-  margin-top: 105px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 90px;
   display: inline-block;
   font-family: 'Exo 2', sans-serif;
   font-size: 10pt;
@@ -29,10 +29,18 @@ article {
   color: black;
   border-radius: 15px;
   text-align: justify;
+  cursor: url(img/future/handcursor.png), auto;
   
     -webkit-animation: breathing 7s ease-out infinite normal;
     animation: breathing 7s ease-out infinite normal;
     }
+	
+article:before {
+content:"";
+background-color: black;
+border-color: red;
+border: solid 20px;
+}	
 	
 img {
   transition: transform .3s;
