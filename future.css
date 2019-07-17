@@ -3,10 +3,16 @@
 body {
     background-image: url("img/future/hand.png");
 	background-position: center top;
-	  background-repeat: no-repeat;
+	background-repeat: no-repeat;
 }
 
+* {
+	font-family: 'Exo 2', sans-serif;
+}
 
+strong, a, em {
+text-decoration: underline;
+}
 
 article {
   padding-left: 20px;
@@ -22,14 +28,14 @@ article {
   margin-bottom: 90px;
   display: inline-block;
   font-family: 'Exo 2', sans-serif;
-  font-size: 10pt;
+  font-size: 11pt;
   letter-spacing: .06em;
   background-color: rgba(120, 200, 255, 0.1);
   border: 1px solid rgba(120, 200, 255, 0.2);
   color: black;
   border-radius: 15px;
   text-align: justify;
-  cursor: url(img/future/handcursor.png), auto;
+  cursor: url("https://backtothefuture2019.github.io/tttt/img/future/handcursor.png"), auto;
   
     -webkit-animation: breathing 7s ease-out infinite normal;
     animation: breathing 7s ease-out infinite normal;
@@ -58,28 +64,28 @@ img:hover {
 
 h1 {
   font-family: 'Exo 2', sans-serif;
-  font-size: 13pt;	
+  font-size: 14pt;	
   border-bottom: 1px solid rgba(120, 200, 255, 0.2);
   text-transform: uppercase;  
 }
 
 h2 {
   font-family: 'Exo 2', sans-serif;
-  font-size: 12pt;	
+  font-size: 13pt;	
   border-bottom: 1px solid rgba(120, 200, 255, 0.2);
   text-transform: uppercase;  
 }
 
 h3 {
   font-family: 'Exo 2', sans-serif;
-  font-size: 11pt;	
+  font-size: 12pt;	
   border-bottom: 1px solid rgba(120, 200, 255, 0.2);
   text-transform: uppercase;  
 }
 
 h4 {
   font-family: 'Exo 2', sans-serif;
-  font-size: 11pt;	
+  font-size: 12pt;	
   border-bottom: 1px solid rgba(120, 200, 255, 0.2);
   text-transform: uppercase;  
 }
@@ -87,131 +93,10 @@ h4 {
 * {
 font-family: 'Exo 2', sans-serif; }
 
-@-webkit-keyframes breathing {
-  0% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-  }
-
-  25% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  60% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-  }
-
-  100% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-  }
-}
-
-@keyframes breathing {
-  0% {
-    -webkit-transform: scale(0.98);
-    -ms-transform: scale(0.98);
-    transform: scale(0.98) rotate(-7deg);
-  }
-
-  25% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1) rotate(-7deg);
-  }
-
-  60% {
-    -webkit-transform: scale(0.98);
-    -ms-transform: scale(0.98);
-    transform: scale(0.98) rotate(-7deg);
-  }
-
-  100% {
-    -webkit-transform: scale(0.98);
-    -ms-transform: scale(0.98);
-    transform: scale(0.98) rotate(-7deg);
-  }
-}
-
-
-@keyframes bg-breathing {
-  0% {
-    -webkit-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    transform: scale(0.95);
-  }
-
-  25% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
-
-  60% {
-    -webkit-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    transform: scale(0.95);
-  }
-
-  100% {
-    -webkit-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    transform: scale(0.95);
-  }
-}
-
-
-
-/* width */
-article::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-article::-webkit-scrollbar-track {
-  background: rgba(120, 200, 255, 0.1); 
-    box-shadow: inset 0 0 5px grey; 
-  border-radius: 15px;
-}
- 
-/* Handle */
-article::-webkit-scrollbar-thumb {
-  background: rgba(0,121,171,0.5); 
-    border-radius: 15px;
-}
-
-/* Handle on hover */
-article::-webkit-scrollbar-thumb:hover {
-  background: rgba(0,50,93,0.9); 
-}
 
 
 
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: rgba(120, 200, 255, 0.1); 
-    box-shadow: inset 0 0 5px grey; 
-  border-radius: 15px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgba(0,121,171,0.4); 
-    border-radius: 15px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0,50,93,0.9); 
-}
 
 
 
@@ -466,3 +351,131 @@ img {
   box-sizing: border-box;
   overflow: auto;
   }
+
+
+  
+  
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+
+  100% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    transform: scale(0.98) rotate(-7deg);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1) rotate(-7deg);
+  }
+
+  60% {
+    -webkit-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    transform: scale(0.98) rotate(-7deg);
+  }
+
+  100% {
+    -webkit-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    transform: scale(0.98) rotate(-7deg);
+  }
+}
+
+
+@keyframes bg-breathing {
+  0% {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+  100% {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+}
+
+
+/* width */
+article::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+article::-webkit-scrollbar-track {
+  background: rgba(120, 200, 255, 0.1); 
+    box-shadow: inset 0 0 5px grey; 
+  border-radius: 15px;
+}
+ 
+/* Handle */
+article::-webkit-scrollbar-thumb {
+  background: rgba(0,121,171,0.5); 
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+article::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,50,93,0.9); 
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(120, 200, 255, 0.1); 
+    box-shadow: inset 0 0 5px grey; 
+  border-radius: 15px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0,121,171,0.4); 
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,50,93,0.9); 
+}
