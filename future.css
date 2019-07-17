@@ -139,6 +139,67 @@ font-family: 'Exo 2', sans-serif; }
 
 
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14pt;
+    border: 5px solid black;
+    border-bottom: 35px solid black;	
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    word-break: break-word;
+    font-family: badaboom;
+	padding: 5px;
+}
+
+td, th {
+  border: 1px solid black;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  	padding: 10px;
+}
+
+tr {
+padding: 10px;
+}	
+
+th {
+    background-color:black;
+    font-family: badaboom;
+    text-transform: uppercase;
+    font-size: 18pt !important;
+    color:white;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+
+tr:nth-of-type(odd) {
+    color:black;
+	
+  background: #FFD3C1;
+  background-image:
+    radial-gradient(white 23%, transparent 0), 
+    radial-gradient(white 23%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+  }
+  
+tr:nth-of-type(even) {
+    background-color:white;
+    color:black;
+  }
+
+/*section:first-of-type > p:first-of-type:before {
+    content:"POW! This is an AWESOME article in POP ART style! \A";
+	font-family: badaboom;
+   display: block;	
+   font-size: 18pt;
+   text-decoration: underline;
+   padding: 20px;
+  }
+ */
+
 
 
 
