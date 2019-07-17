@@ -44,18 +44,20 @@ article {
   color: black;
   border-radius: 15px;
   text-align: justify;
-  cursor: url("https://backtothefuture2019.github.io/tttt/img/future/handcursor.png"), auto;
+  cursor: url("img/future/finger.png"), auto;
   
     -webkit-animation: breathing 7s ease-out infinite normal;
     animation: breathing 7s ease-out infinite normal;
     }
 	
+	
+	
 article:before {
 box-sizing: content-box;
-content:"Welcome back, Mr. Fabio. You have selected your favorite news:";
+content:"Welcome back, Mr. Fabio. I have selected for you the latest news:";
 background-color: rgba(0,121,171,0.1);
 border: 1px solid rgba(0,121,171,0.2);
-color: rgb(0, 50, 93);
+  font-size: 13pt;	
   text-align: justify;
     border-radius: 5px;
   padding-left: 10px;
@@ -66,16 +68,15 @@ margin: auto;
   margin-top: 8px;
   margin-bottom: 10px; 
     display: block;
-
 }	
 
 
 section:first-of-type:before {
 box-sizing: content-box;
 content:"";
-height: 130px;
+height: 115px;
 background-repeat:no-repeat;
-background-image: url('img/future/gif.gif');
+background-image: url('img/future/website.gif');
   background-size: 230px;
   border-radius: 3px;
 opacity: 0.7;  
@@ -96,6 +97,26 @@ margin: auto;
 }	
 
 
+article div {
+  float: right;
+  width: 100px;
+  height: auto;
+  font-size: 11pt;
+  margin-left: 10px;
+    border-radius: 5px;  
+	padding: 2px;
+  text-align: center;
+  color: white;
+
+line-height: 1.5;
+
+	    border: 1px solid rgba(0,121,171,0.8);	
+		    background-color:rgba(0,121,171,0.5);
+		border-radius: 3px;
+
+}
+
+
 
 
 section:last-of-type:after {
@@ -103,7 +124,7 @@ box-sizing: content-box;
 content:"Did you enjoy your article, Mr. Fabio? I can show you more.";
 background-color: rgba(0,121,171,0.1);
 border: 1px solid rgba(0,121,171,0.2);
-color: rgb(0, 50, 93);
+  font-size: 14pt;	
   text-align: justify;
     border-radius: 5px;
   padding-left: 10px;
@@ -154,6 +175,8 @@ img:hover {
 	margin-bottom: 40px;
 }
 
+
+	
 h1 {
   font-family: 'Exo 2', sans-serif;
   font-size: 14pt;	
@@ -186,8 +209,7 @@ line-height: 1.5;
 		    background-color:rgba(0,121,171,0.2);
 		border-radius: 3px;
 		padding-left: 5px;
-		
-		margin-bottom: 40px;
+
 }
 
 h3 {
@@ -196,7 +218,16 @@ h3 {
   border-bottom: 1px solid rgba(0,121,171,0.2);
   padding-bottom: 2px;
   text-transform: uppercase;  
-}
+
+  text-align: center;
+    display: block;
+line-height: 1.5;
+
+	    border: 1px solid rgba(0,121,171,0.5);	
+		    background-color:rgba(0,121,171,0.2);
+		border-radius: 3px;
+		padding-left: 5px;
+		}
 
 h4 {
   font-family: 'Exo 2', sans-serif;
@@ -204,6 +235,15 @@ h4 {
   border-bottom: 1px solid rgba(0,121,171,0.2);
   padding-bottom: 2px;
   text-transform: uppercase;  
+
+  text-align: center;
+    display: block;
+line-height: 1.5;
+
+	    border: 1px solid rgba(0,121,171,0.5);	
+		    background-color:rgba(0,121,171,0.2);
+		border-radius: 3px;
+		padding-left: 5px;  
 }
 
 * {
@@ -303,241 +343,185 @@ padding: 2%;
 
 
 
-.futurepanel .futurepanel__header {
-  box-sizing: border-box;
-  border-bottom: 1px solid rgba(120, 200, 255, 0.2);
-}
-/*
-h1 {
-  box-sizing: content-box;
-  width: 100%;  
-  font: normal 100 1.429em/1em "Exo 2", Arial, sans-serif;
-  text-transform: uppercase;
-  padding: .4em 0;
-  margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}*/
+/*eudirective*/
 
-.futurepanel .futurepanel__body {
-  box-sizing: border-box;
-  padding: 1em;
+.container-eu:before {
+box-sizing: content-box;
+content:"Welcome back, Mr. Fabio. I have selected for you the latest news:";
+background-color: rgba(0,121,171,0.1);
+border: 1px solid rgba(0,121,171,0.2);
+  font-size: 13pt;	
+  text-align: justify;
+    border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+margin: auto;  
+  margin-top: 8px;
+  margin-bottom: 10px; 
+    display: block;
 }
-.futurepanel .futurepanel__divider {
-  box-sizing: border-box;
-  height: .6em;
-  margin-top: .6em;
-  border-top: 1px solid rgba(120, 200, 255, 0.2);
-}
-.futurepanel .futurepanel__footer {
-  box-sizing: border-box;
-  height: 2em;
-  font-size: .8em;
-  color: rgba(120, 200, 255, 0.2);
+.flex-container:before {
+box-sizing: content-box;
+content:"";
+height: 115px;
+background-repeat:no-repeat;
+background-image: url('img/future/website.gif');
+  background-size: 230px;
+  border-radius: 3px;
+opacity: 0.7;  
+background-color: rgba(0,121,171,0.1);
+border: 1px solid rgba(0,121,171,0.2);
+color: rgb(0, 50, 93);
+  text-align: justify;
+    border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+margin: auto;  
+  margin-top: 8px;
+  margin-bottom: 40px; 
+    display: block;
 }
 
-.futureinput {
-  font: normal 100 16px/1.2em "Exo 2", Arial, sans-serif;
+.flex-container:last-of-type:after {
+box-sizing: content-box;
+content:"Did you enjoy your article, Mr. Fabio? I can show you more.";
+background-color: rgba(0,121,171,0.1);
+border: 1px solid rgba(0,121,171,0.2);
+  font-size: 14pt;	
+  text-align: justify;
+    border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+margin: auto;  
+  margin-top: 40px;
+  margin-bottom: 10px; 
+    display: block;
+}	
+
+.container-eu:after {
+box-sizing: content-box;
+content:"";
+height: 90px;
+background-repeat:no-repeat;
+background-image: url('img/future/light.gif');
+  background-size: 230px;
+  border-radius: 3px;
+opacity: 0.7;  
+background-color: rgba(0,121,171,0.1);
+border: 1px solid rgba(0,121,171,0.2);
+color: rgb(0, 50, 93);
+  text-align: justify;
+    border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+margin: auto;  
+  margin-top: 20px;
+  margin-bottom: 10px; 
+    display: block;
+
+}	
+
+.continer-eu {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+  width: 278px;
+  max-height: 532px;
+  margin-left: 622px;
+  margin-top: 100px;
+  margin-bottom: 90px;
+  display: inline-block;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 11pt;
   letter-spacing: .06em;
-  color: rgba(120, 200, 255, 0.8);
-  margin: 0;
-  padding: 0;
-}
-.futureinput label {
-  font: normal 100 1em/1.8em "Exo 2", Arial, sans-serif;
-  margin: 0 0 4em 0;
-}
-.futureinput label.required:after {
-  display: relative;
-  content: '*';
-  padding-left: .2em;
-  color: rgba(255, 120, 120, 0.8);
-  font: normal 100 1em/1.8em "Exo 2", Arial, sans-serif;
-}
-.futureinput input[type="text"] {
-  font: normal 100 1em/2.4em "Exo 2", Arial, sans-serif;
   background-color: rgba(120, 200, 255, 0.1);
   border: 1px solid rgba(120, 200, 255, 0.2);
-  color: rgba(120, 200, 255, 0.8);
-  height: 2.4em;
-  box-sizing: border-box;
-  padding: 0 .8em;
-  letter-spacing: .06em;
-  width: 100%;
-}
-.futureinput input[type="text"]:focus {
-  background-color: rgba(120, 200, 255, 0.2);
-  border: 1px solid rgba(120, 200, 255, 0.3);
-  color: rgba(120, 200, 255, 0.9);
-  outline: none;
-}
-.futureinput input[type="text"]::-webkit-input-placeholder {
-  color: rgba(120, 200, 255, 0.5);
-  font: normal 100 1em/2.4em "Exo 2", Arial, sans-serif;
-}
-.futureinput input[type="text"]:-moz-placeholder {
-  color: rgba(120, 200, 255, 0.5);
-  font: normal 100 1em/2.4em "Exo 2", Arial, sans-serif;
-}
-.futureinput input[type="text"][disabled] {
-  background-color: rgba(120, 200, 255, 0.04);
-  border: 1px solid rgba(120, 200, 255, 0.06);
-  color: rgba(120, 200, 255, 0.2);
-  cursor: not-allowed;
-}
-.futureinput input[type="text"][disabled]::-webkit-input-placeholder {
-  color: rgba(120, 200, 255, 0.2);
-}
-.futureinput input[type="text"][disabled]:-moz-placeholder {
-  color: rgba(120, 200, 255, 0.2);
-}
-.futureinput .futureinput__help {
-  display: block;
-  font: normal 100 0.8em/1.2em "Exo 2", Arial, sans-serif;
-  padding: .6em 0;
-  color: rgba(120, 200, 255, 0.5);
-}
-.futureinput .futureinput__error {
-  display: block;
-  font: normal 100 0.8em/1.2em "Exo 2", Arial, sans-serif;
-  text-transform: uppercase;
-  padding: .6em 0;
-  color: rgba(255, 120, 120, 0.8);
+  color: black;
+  border-radius: 15px;
+  text-align: justify;
+  cursor: url("img/future/finger.png"), auto;
+  
+    -webkit-animation: breathing 7s ease-out infinite normal;
+    animation: breathing 7s ease-out infinite normal;
 }
 
-.futurebutton {
-  font: normal 300 14px/1.2em "Exo 2", Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  color: rgba(255, 255, 255, 0.8);
-  margin: 1px;
-  padding: .4em 1em;
-  border: 1px solid rgba(120, 200, 255, 0.2);
-  background-color: rgba(120, 200, 255, 0.6);
-  cursor: pointer;
-}
-.futurebutton:hover {
-  background-color: rgba(120, 200, 255, 0.4);
-  color: rgba(255, 255, 255, 0.6);
-}
-.futurebutton[disabled] {
-  background-color: rgba(120, 200, 255, 0.2);
-  border: 1px solid rgba(120, 200, 255, 0.1);
-  color: rgba(255, 255, 255, 0.3);
-  cursor: not-allowed;
+.col-ing > div:first-of-type {
+text-align: center;	
 }
 
-.futurebutton--alert {
-  background-color: rgba(120, 0, 0, 0.9);
-  border: 1px solid rgba(255, 120, 120, 0.4);
-  color: rgba(255, 255, 255, 0.8);
-}
-.futurebutton--alert:hover {
-  background-color: rgba(120, 0, 0, 0.9);
-  color: rgba(255, 255, 255, 0.8);
-}
-.futurebutton--alert[disabled] {
-  background-color: rgba(120, 0, 0, 0.2);
-  border: 1px solid rgba(255, 120, 120, 0.2);
-  color: rgba(255, 255, 255, 0.4);
+.col-ita > div:first-of-type {
+text-align: center;	
 }
 
-.futuremetric {
-  font: normal 300 14px/1.2em "Exo 2", Arial, sans-serif;
-  box-sizing: border-box;
-  display: inline-block;
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  border: 1px solid rgba(120, 200, 255, 0.4);
-  color: rgba(120, 200, 255, 0.8);
-  height: 6em;
-  width: 6em;
-  margin: 0;
-  padding: .4em;
-  text-align: center;
-  border-radius: 50%;
-}
-.futuremetric .futuremetric__value {
-  font: normal 300 2em/1.2em "Exo 2", Arial, sans-serif;
-  margin-top: .4em;
-}
-.futuremetric .futuremetric__value--optimal {
-  color: rgba(100, 200, 100, 0.8);
-}
-.futuremetric .futuremetric__value--optimal:hover {
-  color: #64c864;
-}
-.futuremetric .futuremetric__value--warning {
-  color: rgba(255, 200, 0, 0.8);
-}
-.futuremetric .futuremetric__value--warning:hover {
-  color: #ffc800;
-}
-.futuremetric .futuremetric__value--alert {
-  color: rgba(255, 120, 120, 0.8);
-}
-.futuremetric .futuremetric__value--alert:hover {
-  color: #ff7878;
-}
-.futuremetric .futuremetric__label {
-  font-size: .8em;
+.flex-container{
+    width: 80%;
+	margin-top:30px;
+    margin: 0 auto;
+    display: -webkit-flex; /* Safari */     
+    display: flex; /* Standard syntax */
+	}
+
+.flex-container .col-ing{
+	margin-top: 30px;
+    -webkit-flex: 1; /* Safari */
+    flex: 1; /* Standard syntax */
+	margin-right:20px;
 }
 
-.futuregrid {
-  font: normal 300 14px/1.2em "Exo 2", Arial, sans-serif;
-  box-sizing: border-box;
-  display: inline-block;
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  border: 1px solid rgba(120, 200, 255, 0.4);
-  color: rgba(120, 200, 255, 0.8);
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.futuregrid .futuregrid__cell {
-  display: inline-block;
-  box-sizing: border-box;
-  margin: 0;
-  border-right: 1px solid rgba(120, 200, 255, 0.4);
-  border-bottom: 1px solid rgba(120, 200, 255, 0.4);
-  height: 3.6em;
-  width: 3.6em;
-  text-align: center;
+
+.flex-container .col-ita{
+	margin-top: 30px;
+   -webkit-flex: 1; /* Safari */
+    flex: 1; /* Standard syntax */
+	margin-left:20px;
 }
 
-.heading {
-  font: normal 100 12px/1.2em 'Exo 2', Arial, sans-serif;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-}
+/*.container-eu{
+	margin: 50px;
+		margin-bottom:70px;
+		
+		      background: white;
+  background-image:
+    radial-gradient(#FFD3C1 23%, transparent 0), 
+    radial-gradient(#FFD3C1 23%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+    line-height: 1.7;
+		
+		border: double 40px;
+		text-align:justify;
+		font-size: 18pt;
+		margin-left:90px;
+		margin-right:90px;
+		 padding-top:20px;
+		padding-left:0px;
+		padding-right: 0px;
+		height:auto;
+		overflow: hidden;
+}*/
 
-h6.heading {
-  font-size: 1em;
+/*	
+.container-eu p {
+				font-size: 18pt;
+				border-right:none;
+				margin-top: 20px;
+				margin-left:20px;
+				margin-right:20px;
 }
+*/
 
-h5.heading {
-  font-size: 1.143em;
-}
 
-h4.heading {
-  font-size: 1.286em;
-}
-
-h3.heading {
-  font-size: 1.429em;
-}
-
-h2.heading {
-  font-size: 1.714em;
-}
-
-h1.heading {
-  font-size: 2em;
-  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
-}
 
 img {
   box-sizing: border-box;
