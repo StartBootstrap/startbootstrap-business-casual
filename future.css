@@ -10,8 +10,17 @@ body {
 	font-family: 'Exo 2', sans-serif;
 }
 
-strong, a, em {
+strong {
+font-style: bold;
+color: rgb(0, 50, 93);
+}
+
+a {
 text-decoration: underline;
+}
+
+em {
+font-style: oblique;	
 }
 
 article {
@@ -42,15 +51,44 @@ article {
     }
 	
 article:before {
-content:"";
-background-color: black;
-border-color: red;
-border: solid 20px;
+box-sizing: content-box;
+content:"Welcome back, Mr. Fabio. You have selected your favorite news:";
+background-color: rgba(0,121,171,0.1);
+border: 1px solid rgba(0,121,171,0.2);
+color: rgb(0, 50, 93);
+  text-align: justify;
+    border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+margin: auto;  
+  margin-top: 10px;
+  margin-bottom: 10px; 
+    display: block;
 
-  margin-left: 122px;
-  margin-top: 100px;
-  margin-bottom: 90px;
 }	
+
+article:after {
+box-sizing: content-box;
+content:"Did you enjoy your article, Mr. Fabio? I can show you more.";
+background-color: rgba(0,121,171,0.1);
+border: 1px solid rgba(0,121,171,0.2);
+color: rgb(0, 50, 93);
+  text-align: justify;
+    border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+margin: auto;  
+  margin-top: 10px;
+  margin-bottom: 10px; 
+    display: block;
+}	
+
+article:after:hover {
+}
 	
 img {
   transition: transform .3s;
@@ -65,33 +103,38 @@ img:hover {
 h1 {
   font-family: 'Exo 2', sans-serif;
   font-size: 14pt;	
-  border-bottom: 1px solid rgba(120, 200, 255, 0.2);
+  border-bottom: 1px solid rgba(0,121,171,0.2);
+  padding-bottom: 2px;
   text-transform: uppercase;  
 }
 
 h2 {
   font-family: 'Exo 2', sans-serif;
   font-size: 13pt;	
-  border-bottom: 1px solid rgba(120, 200, 255, 0.2);
+  border-bottom: 1px solid rgba(0,121,171,0.2);
+  padding-bottom: 2px;
   text-transform: uppercase;  
 }
 
 h3 {
   font-family: 'Exo 2', sans-serif;
   font-size: 12pt;	
-  border-bottom: 1px solid rgba(120, 200, 255, 0.2);
+  border-bottom: 1px solid rgba(0,121,171,0.2);
+  padding-bottom: 2px;
   text-transform: uppercase;  
 }
 
 h4 {
   font-family: 'Exo 2', sans-serif;
   font-size: 12pt;	
-  border-bottom: 1px solid rgba(120, 200, 255, 0.2);
+  border-bottom: 1px solid rgba(0,121,171,0.2);
+  padding-bottom: 2px;
   text-transform: uppercase;  
 }
 
 * {
 font-family: 'Exo 2', sans-serif; }
+
 
 
 
@@ -110,6 +153,30 @@ article img{
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
+
+
+figcaption {
+    font-size: 10pt;
+    margin-top: 10pt;
+    -webkit-hyphens: auto;
+            hyphens: auto;
+	text-align: center;
+	
+
+  margin: 0 auto;
+  text-align: center;
+  height: auto;
+  box-sizing: content-box;
+
+  width: auto;
+  padding-top: 6%;
+  padding-bottom: 12%;
+    padding-left: 16%;
+	padding-right: 16%;
+}
+
+
 
 .futurepanel .futurepanel__header {
   box-sizing: border-box;

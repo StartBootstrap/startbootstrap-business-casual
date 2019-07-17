@@ -29,10 +29,14 @@
   <script src="jquery-3.4.1.min.js"></script>
   
   <!-- Really important <link> to change the different css on-the-fly -->  
-	<link id="thestylesheet" rel="stylesheet" type="text/css" href="white.css"/> 
+  <link id="thestylesheet" rel="stylesheet" type="text/css" href="white.css"/> 
+	
+
+<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
   
-  
- 
+
+
+
  <!-- jQuery functions to change the 6 articles  -->
 <script>
 $(document).ready(function(){
@@ -80,14 +84,22 @@ $(document).ready(function(){
   <!---------- End ---------->
   
   
-<script>
+<!---<script>
 	// This is the function to change the 6 stylesheets; it is placed on the timeline dots
 	
     function setStyleSheet(url){
-       var stylesheet = document.getElementById("thestylesheet");
-       stylesheet.setAttribute('href', url);
+	   var x = document.getElementById("thestylesheet").getAttribute("href");
+	   
+	   if (x == 'future.css') {
+	function heading(){
+	responsiveVoice.speak("Welcome to your task planner.");
+	responsiveVoice.cancel();
+}
+	   }	   
+	   else {
+	   }
     }
-</script>
+</script>--->
 
 <script>
 // These are the 6 functions to change the 6 musics of the stylesheets; they are placed on the timeline dots, too
@@ -133,10 +145,6 @@ $(document).ready(function(){
 </head>
 <body>
 
-<!-- The silence "music" we have to add and that we change clicking on the timeline buttons -->
-<audio autoplay id="silence">
-   <source src="audio/silence.mp3" type="audio/mpeg">
-</audio>
 
 
 
@@ -206,7 +214,7 @@ $(document).ready(function(){
 			<p data-description="1970"></p>
 			<p data-description="1980"></p>
 			<p data-description="1990"></p>
-			<p data-description="2000"></p>
+			<p data-description="2000"></p> 
 		</div>
 	</div>
 </div>
@@ -229,11 +237,14 @@ $(document).ready(function(){
 	
 
 	<!-- The empty div that we populate with the articles -->	
-				<article>
+
+	
+	
+	<article >
 
     
 <section>
-<h1>Japan&apos;s Prisons Are a Haven for Elderly Women</h1>
+<h1 onmouseover="heading()">Japan&apos;s Prisons Are a Haven for Elderly Women</h1>
 <h2>Lonely seniors are shoplifting in search of the community and stability of jail.</h2>
 <h3>By Shiho Fukada</h3>
       <h4>16<sup>th</sup> march 2018, 09:00 CET</h4>
