@@ -32,10 +32,34 @@
 
 
 article div {
-text-decoration: uppercase;
-margin-left: 20px;
-margin-right: 20px;
+margin-left: 40px;
+margin-right: 40px;
+line-height: 1.7;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+	    padding-bottom: 20px;
+margin-bottom: 20px;
+
+  background: white;
+border: solid black;
+border-bottom: solid 20px ;	
 }	
+
+article div:before {
+content:"INCREDIBLE!";
+color: white;
+background:black;
+padding: 10px; 
+border: 2px solid black;
+border-radius: 30px;
+}
+
+article div:after {
+content:"CAN YOU BELIEVE IT?!!";
+
+}
+
 
 body {
     background-image: url("img/popart/popart1.png");
@@ -57,30 +81,6 @@ a {
 color: #A3001F;
 }
 
-/*
-
-section:nth-child(n+1) {
-    font-size: 16pt;
-      background: white;
-	  padding: 5px;
-	  padding-left: 20px;
-	  padding-right:20px;
-	  border-left: solid black;
-	  border-right: solid black;
-}
-
-
-section:last-of-type {
-    font-size: 16pt;
-      background: white;
-	  padding: 5px;
-	  padding-left: 20px;
-	  padding-right:20px;
-	  border-left: solid black;
-	  border-right: solid black;
-	  border-bottom: solid 30px ;
-}
-*/
 
 article { 
     margin: 10% 12% 10% 12%;
