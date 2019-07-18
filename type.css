@@ -20,7 +20,7 @@ section > div {
 text-decoration: underline;
 text-indent: 50px;
 
-font-family: 'Special Elite';
+	font-family: 'Special Elite';
 margin: 25px 25px 25px 25px;
 		
 }
@@ -50,7 +50,8 @@ font-size: 13px;
 
 body {
 	
-background-color: black; 
+background-image: url("img/type/typebackgroundbody.jpg");
+background-position: center top;
 
 }
 
@@ -125,7 +126,7 @@ word-spacing: 6px;
 	background-image: url("img/type/typebackground.png");
     line-height: 1.7;
 		
-		font-size: 18pt;
+		font-size: 15pt;
 		margin-left:90px;
 		margin-right:90px;
 		 padding-top:20px;
@@ -137,7 +138,7 @@ word-spacing: 6px;
 
 	
 .container-eu p {
-				font-size: 18pt;
+				font-size: 15pt;
 				border-right:none;
 				margin-top: 20px;
 				margin-left:20px;
