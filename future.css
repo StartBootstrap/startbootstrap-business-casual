@@ -102,7 +102,8 @@ article div {
   width: 100px;
   height: auto;
   font-size: 11pt;
-  margin-left: 10px;
+  margin-left: 15px;
+    margin-top: 10px;
     border-radius: 5px;  
 	padding: 2px;
   text-align: center;
@@ -343,7 +344,7 @@ padding: 2%;
 
 
 
-/*eudirective*/
+/*eudirective
 
 .container-eu:before {
 box-sizing: content-box;
@@ -427,13 +428,13 @@ margin: auto;
   margin-bottom: 10px; 
     display: block;
 
-}	
+}	*/
 
 .continer-eu {
-  padding-left: 20px;
+ /* padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 20px;*/
   box-sizing: border-box;
   overflow: auto;
   width: 278px;
@@ -441,7 +442,7 @@ margin: auto;
   margin-left: 622px;
   margin-top: 100px;
   margin-bottom: 90px;
-  display: inline-block;
+ /* display: inline-block;*/
   font-family: 'Exo 2', sans-serif;
   font-size: 11pt;
   letter-spacing: .06em;
@@ -450,10 +451,10 @@ margin: auto;
   color: black;
   border-radius: 15px;
   text-align: justify;
-  cursor: url("img/future/finger.png"), auto;
+  /*cursor: url("img/future/finger.png"), auto;
   
     -webkit-animation: breathing 7s ease-out infinite normal;
-    animation: breathing 7s ease-out infinite normal;
+    animation: breathing 7s ease-out infinite normal;*/
 }
 
 .col-ing > div:first-of-type {
