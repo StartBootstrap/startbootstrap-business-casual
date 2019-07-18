@@ -330,7 +330,7 @@ padding: 2%;
 
 
 
-/*eudirective
+/*eudirective*/
 
 .container-eu:before {
 box-sizing: content-box;
@@ -414,13 +414,13 @@ margin: auto;
   margin-bottom: 10px; 
     display: block;
 
-}	*/
+}	
 
 .continer-eu {
- /* padding-left: 20px;
+ padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
-  padding-top: 20px;*/
+  padding-top: 20px;
   box-sizing: border-box;
   overflow: auto;
   width: 278px;
