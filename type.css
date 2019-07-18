@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
 
-p, h1, h2, h3, h4, figcaption, table { 
+p, h1, h2, h3, h4, figcaption, table, q { 
 
 font-family: 'Special Elite';
 margin: 25px 25px 25px 25px;
@@ -19,8 +19,7 @@ section > div {
 	
 text-decoration: underline;
 text-indent: 50px;
-
-	font-family: 'Special Elite';
+font-family: 'Special Elite';
 margin: 25px 25px 25px 25px;
 		
 }
@@ -69,6 +68,7 @@ filter: grayscale(100%);
 section {
 
 background-image: url("img/type/typebackground.png");
+border-radius: 1px;
 padding-top: 80px;
 padding-bottom: 80px;
 padding-right: 50px;
