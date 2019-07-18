@@ -31,7 +31,7 @@
 }
 
 
-article > div {
+section > div {
 margin-left: 40px;
 margin-right: 40px;
 line-height: 1.7;
@@ -49,7 +49,7 @@ border-bottom: solid 20px ;
 
 
 
-article div:before {
+section > div:before {
 content:"INCREDIBLE!";
 color: white;
 background:black;
@@ -58,7 +58,7 @@ border: 2px solid black;
 border-radius: 30px;
 }
 
-article div:after {
+section > div:after {
 content:"CAN YOU BELIEVE IT?!!";
 
 }
