@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
+body {
+    background-image: url("img/future/hand.png");
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+s
+* {
+	font-family: 'Exo 2', sans-serif;
+
+}
+
+strong {
+font-style: bold;
+color: rgb(0, 50, 93);
+}
+
+a {
+text-decoration: underline;
+}
+
+em {
+font-style: oblique;	
+}
+
+article {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+  width: 278px;
+  max-height: 532px;
+  margin-left: 622px;
+  margin-top: 100px;
+  margin-bottom: 90px;
+  display: inline-block;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 11pt;
+  letter-spacing: .06em;
+  background-color: rgba(120, 200, 255, 0.1);
+  border: 1px solid rgba(120, 200, 255, 0.2);
+  color: black;
+  border-radius: 15px;
+  text-align: justify;
+	  cursor: url("img/future/finger.png"), auto;
+  
+    -webkit-animation: breathing 7s ease-out infinite normal;
+    animation: breathing 7s ease-out infinite normal;
+    }
+	
+	
+	
+article:before {
+box-sizing: content-box;
+content:"Welcome back, Mr. Fabio. I have selected for you the latest news:";
+background-color: rgba(0,121,171,0.1);
+border: 1px solid rgba(0,121,171,0.2);
+  font-size: 13pt;	
+  text-align: justify;
+    border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+margin: auto;  
+  margin-top: 8px;
+  margin-bottom: 10px; 
+    display: block;
+		  cursor: url("img/future/finger.png"), auto;
+}	
+
+
+section:first-of-type:before {
+box-sizing: content-box;
+content:"";
+height: 115px;
+background-repeat:no-repeat;
+background-image: url('img/future/website.gif');
+  background-size: 230px;
+  border-radius: 3px;
+opacity: 0.5;  
+background-color: rgba(0,121,171,0.1);
+border: 1px solid rgba(0,121,171,0.2);
+color: rgb(0, 50, 93);
+  text-align: justify;
+    border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+margin: auto;  
+  margin-top: 8px;
+  margin-bottom: 40px; 
+    display: block;
+  -webkit-filter: contrast(150%); /* Safari */
+  filter: contrast(150%);
+  	  cursor: url("img/future/finger.png"), auto;
+}	
+
+
+article > div {
+  float: right;
+  width: 100px;
+  height: auto;
+  font-size: 11pt;
+  margin-left: 15px;
+    margin-top: 10px;
+    border-radius: 5px;  
+	padding: 2px;
+  text-align: center;
+  color: white;
+
+line-height: 1.5;
+
+	    border: 1px solid rgba(0,121,171,0.8);	
+		    background-color:rgba(0,121,171,0.5);
+		border-radius: 3px;
+	  cursor: url("img/future/finger.png"), auto;
+}
+
+
+
+
+section:last-of-type:after {
+box-sizing: content-box;
+content:"Did you enjoy your article, Mr. Fabio? I can show you more.";
+background-color: rgba(0,121,171,0.1);
+border: 1px solid rgba(0,121,171,0.2);
+  font-size: 14pt;	
+  text-align: justify;
+    border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+margin: auto;  
+  margin-top: 40px;
+  margin-bottom: 10px; 
+    display: block;
+		  cursor: url("img/future/finger.png"), auto;
+}	
+
+article:after {
+box-sizing: content-box;
+content:"";
+height: 90px;
+background-repeat:no-repeat;
+background-image: url('img/future/light.gif');
+  background-size: 230px;
+  border-radius: 3px;
+opacity: 0.7;  
+background-color: rgba(0,121,171,0.1);
+border: 1px solid rgba(0,121,171,0.2);
+color: rgb(0, 50, 93);
+  text-align: justify;
+    border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+margin: auto;  
+  margin-top: 20px;
+  margin-bottom: 10px; 
+    display: block;
+	  cursor: url("img/future/finger.png"), auto;
+}	
+
+
+	
+img {
+  transition: transform .3s;
+  border-radius: 2px;
+  	  cursor: url("img/future/finger.png"), auto;
+}
+
+img:hover {
+	transform: scale(1.9);
+	margin-bottom: 40px;
+		  cursor: url("img/future/finger.png"), auto;
+}
+
+
+	
+h1 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 14pt;	
+  border-bottom: 1px solid rgba(0,121,171,0.2);
+  padding-bottom: 5px;
+  text-transform: uppercase;  
+  
+  text-align: center;
+    display: block;
+line-height: 1.5;
+
+	    border: 1px solid rgba(0,121,171,0.5);	
+		    background-color:rgba(0,121,171,0.2);
+		border-radius: 3px;
+		padding-left: 5px;
+			  cursor: url("img/future/finger.png"), auto;
+}
+
+h2 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 13pt;	
+  border-bottom: 1px solid rgba(0,121,171,0.2);
+  padding-bottom: 2px;
+  text-transform: uppercase;  
+  
+  text-align: center;
+    display: block;
+line-height: 1.5;
+
+	    border: 1px solid rgba(0,121,171,0.5);	
+		    background-color:rgba(0,121,171,0.2);
+		border-radius: 3px;
+		padding-left: 5px;
+	  cursor: url("img/future/finger.png"), auto;
+}
+
+h3 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 12pt;	
+  border-bottom: 1px solid rgba(0,121,171,0.2);
+  padding-bottom: 2px;
+  text-transform: uppercase;  
+
+  text-align: center;
+    display: block;
+line-height: 1.5;
+
+	    border: 1px solid rgba(0,121,171,0.5);	
+		    background-color:rgba(0,121,171,0.2);
+		border-radius: 3px;
+		padding-left: 5px;
+			  cursor: url("img/future/finger.png"), auto;
+		}
+
+h4 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 12pt;	
+  border-bottom: 1px solid rgba(0,121,171,0.2);
+  padding-bottom: 2px;
+  text-transform: uppercase;  
+
+  text-align: center;
+    display: block;
+line-height: 1.5;
+
+	    border: 1px solid rgba(0,121,171,0.5);	
+		    background-color:rgba(0,121,171,0.2);
+		border-radius: 3px;
+		padding-left: 5px; 
+	  cursor: url("img/future/finger.png"), auto;		
+}
+
+* {
+font-family: 'Exo 2', sans-serif; }
+
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    border: 1px solid rgba(0,121,171,0.5);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    word-break: break-word;
+	padding: 5px;
+	border-radius: 3px;
+		  cursor: url("img/future/finger.png"), auto;
+}
+
+td, th {
+  border: 1px solid rgba(0,121,171,0.5);
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  	padding: 8px;
+		border-radius: 3px;
+			  cursor: url("img/future/finger.png"), auto;
+}
+
+tr {
+padding: 10px;
+	border-radius: 3px;
+		  cursor: url("img/future/finger.png"), auto;
+}	
+
+th {
+    background-color:rgba(0,121,171,0.3);
+    text-transform: uppercase;
+    font-size: 10pt;
+    text-align: center;
+		border-radius: 3px;
+			  cursor: url("img/future/finger.png"), auto;
+  }
+
+td {
+    background-color:rgba(0,121,171,0.2);
+		border-radius: 3px;
+			  cursor: url("img/future/finger.png"), auto;
+}	
+
+section {
+	  cursor: url("img/future/finger.png"), auto;
+}
+
+/*section:first-of-type > p:first-of-type:before {
+    content:"POW! This is an AWESOME article in POP ART style! \A";
+	font-family: badaboom;
+   display: block;	
+   font-size: 18pt;
+   text-decoration: underline;
+   padding: 20px;
+  }
+ */
+
+
+
+
+
+
+
+
+article img{
+	height: auto;
+	margin-left: 23%;
+	max-width: 50%;	
+	margin-top: 20px;
+	margin-bottom: 20px;
+		  cursor: url("img/future/finger.png"), auto;
+}
+
+
+
+figcaption {
+    font-size: 10pt;
+    margin-top: 10pt;
+    -webkit-hyphens: auto;
+            hyphens: auto;
+	text-align: center;
+	
+
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+  height: auto;
+  box-sizing: content-box;
+
+  width: auto;
+padding: 2%;
+	
+	    border: 1px solid rgba(0,121,171,0.5);	
+		    background-color:rgba(0,121,171,0.2);
+		border-radius: 3px;
+	  cursor: url("img/future/finger.png"), auto;
+	  }
+
+
+
+/*eudirective
+
+.container-eu:before {
+box-sizing: content-box;
+content:"Welcome back, Mr. Fabio. I have selected for you the latest news:";
+background-color: rgba(0,121,171,0.1);
+border: 1px solid rgba(0,121,171,0.2);
+  font-size: 13pt;	
+  text-align: justify;
+    border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+margin: auto;  
+  margin-top: 8px;
+  margin-bottom: 10px; 
+    display: block;
+}
+.flex-container:before {
+box-sizing: content-box;
+content:"";
+height: 115px;
+background-repeat:no-repeat;
+background-image: url('img/future/website.gif');
+  background-size: 230px;
+  border-radius: 3px;
+opacity: 0.7;  
+background-color: rgba(0,121,171,0.1);
+border: 1px solid rgba(0,121,171,0.2);
+color: rgb(0, 50, 93);
+  text-align: justify;
+    border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+margin: auto;  
+  margin-top: 8px;
+  margin-bottom: 40px; 
+    display: block;
+}
+
+.flex-container:last-of-type:after {
+box-sizing: content-box;
+content:"Did you enjoy your article, Mr. Fabio? I can show you more.";
+background-color: rgba(0,121,171,0.1);
+border: 1px solid rgba(0,121,171,0.2);
+  font-size: 14pt;	
+  text-align: justify;
+    border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+margin: auto;  
+  margin-top: 40px;
+  margin-bottom: 10px; 
+    display: block;
+}	
+
+.container-eu:after {
+box-sizing: content-box;
+content:"";
+height: 90px;
+background-repeat:no-repeat;
+background-image: url('img/future/light.gif');
+  background-size: 230px;
+  border-radius: 3px;
+opacity: 0.7;  
+background-color: rgba(0,121,171,0.1);
+border: 1px solid rgba(0,121,171,0.2);
+color: rgb(0, 50, 93);
+  text-align: justify;
+    border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+margin: auto;  
+  margin-top: 20px;
+  margin-bottom: 10px; 
+    display: block;
+
+}	*/
+
+.continer-eu {
+ /* padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;*/
+  box-sizing: border-box;
+  overflow: auto;
+  width: 278px;
+  max-height: 532px;
+  margin-left: 622px;
+  margin-top: 100px;
+  margin-bottom: 90px;
+  display: inline-block;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 11pt;
+  letter-spacing: .06em;
+  background-color: rgba(120, 200, 255, 0.1);
+  border: 1px solid rgba(120, 200, 255, 0.2);
+  color: black;
+  border-radius: 15px;
+  text-align: justify;
+  /*cursor: url("img/future/finger.png"), auto;
+  
+    -webkit-animation: breathing 7s ease-out infinite normal;
+    animation: breathing 7s ease-out infinite normal;*/
+}
+
+.col-ing > div:first-of-type {
+text-align: center;	
+}
+
+.col-ita > div:first-of-type {
+text-align: center;	
+}
+
+.flex-container{
+    width: 80%;
+	margin-top:30px;
+    margin: 0 auto;
+    display: -webkit-flex; /* Safari */     
+    display: flex; /* Standard syntax */
+	}
+
+.flex-container .col-ing{
+	margin-top: 30px;
+    -webkit-flex: 1; /* Safari */
+    flex: 1; /* Standard syntax */
+	margin-right:20px;
+}
+
+
+.flex-container .col-ita{
+	margin-top: 30px;
+   -webkit-flex: 1; /* Safari */
+    flex: 1; /* Standard syntax */
+	margin-left:20px;
+}
+
+/*.container-eu{
+	margin: 50px;
+		margin-bottom:70px;
+		
+		      background: white;
+  background-image:
+    radial-gradient(#FFD3C1 23%, transparent 0), 
+    radial-gradient(#FFD3C1 23%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+    line-height: 1.7;
+		
+		border: double 40px;
+		text-align:justify;
+		font-size: 18pt;
+		margin-left:90px;
+		margin-right:90px;
+		 padding-top:20px;
+		padding-left:0px;
+		padding-right: 0px;
+		height:auto;
+		overflow: hidden;
+}*/
+
+/*	
+.container-eu p {
+				font-size: 18pt;
+				border-right:none;
+				margin-top: 20px;
+				margin-left:20px;
+				margin-right:20px;
+}
+*/
+
+
+
+img {
+  box-sizing: border-box;
+  overflow: auto;
+  }
+
+
+  
+  
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+
+  100% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    transform: scale(0.97) rotate(-7deg);
+	cursor: url("img/future/finger.png"), auto;
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1) rotate(-7deg);
+	cursor: url("img/future/finger.png"), auto;
+  }
+
+  60% {
+    -webkit-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    transform: scale(0.97) rotate(-7deg);
+	cursor: url("img/future/finger.png"), auto;
+  }
+
+  100% {
+    -webkit-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    transform: scale(0.97) rotate(-7deg);
+	cursor: url("img/future/finger.png"), auto;
+  }
+}
+
+
+@keyframes bg-breathing {
+  0% {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+	cursor: url("img/future/finger.png"), auto;
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+	cursor: url("img/future/finger.png"), auto;
+  }
+
+  60% {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+	cursor: url("img/future/finger.png"), auto;
+  }
+
+  100% {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+	cursor: url("img/future/finger.png"), auto;
+  }
+}
+
+
+/* width */
+article::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+article::-webkit-scrollbar-track {
+  background: rgba(120, 200, 255, 0.1); 
+    box-shadow: inset 0 0 5px grey; 
+  border-radius: 15px;
+}
+ 
+/* Handle */
+article::-webkit-scrollbar-thumb {
+  background: rgba(0,121,171,0.5); 
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+article::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,50,93,0.9); 
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(120, 200, 255, 0.1); 
+    box-shadow: inset 0 0 5px grey; 
+  border-radius: 15px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0,121,171,0.4); 
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,50,93,0.9); 
+}

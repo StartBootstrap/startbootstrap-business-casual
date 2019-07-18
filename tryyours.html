@@ -132,82 +132,17 @@ margin: 0px;
 .cta-inner-long {
 height: 105%;
 }
+
+
 </style>
-
-<!-- CSS of the buttons -->
-<style>
-.btn:link,
-.btn:visited{
-  text-decoration: none;
-  text-transform:uppercase;
-  position:relative;
-  top:0;
-  left:0;
-  padding:10px 20px;
-  border-radius:100px;
-  display:inline-block;
-  transition: all .5s;
-}
-
-.btn{
-  background:#B0B7BD;
-  color:#000000;
-}
-
-.btn:hover{
-   box-shadow:0px 10px 10px #2D3E4E;
-   transform : translateY(-3px);
-}
-
-.btn:active{
-  box-shadow:0px 5px 10px #2D3E4E
-  transform:translateY(-1px);
-}
-
-
-.btn::after{
-  content:"";
-  text-decoration: none;
-  text-transform:uppercase;
-  position:absolute;
-  width:100%;
-  height:100%;
-  top:0;
-  left:0;
-  border-radius:100px;
-  display:inline-block;
-  z-index:-1;
-  transition: all .5s;
-}
-
-.btn::after {
-    background: #B0B7BD;
-}
-
-.btn-animation-1:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-@keyframes comeFromBottom{
-  0%{
-    opacity:0;
-    transform:translateY(40px);
-  } 
-  100%{
-    opacity:1;
-    transform:translateY(0);
-  }
-}
-</style>	
-
 </head>
 
 <body>
 
+
   <!-- Beginning of the site: the Title -->
   <h1 class="site-heading text-center text-white d-none d-lg-block">
-    <span class="site-heading-upper text-light mb-3">A really cool website</span>
+    <span class="site-heading-upper text-light mb-3">A typographic time travel</span>
     <span class="site-heading-lower text-light"><b>Back to the future</b></span>
   </h1>
   <!-- End of the Title --> 
@@ -331,28 +266,117 @@ height: 105%;
 		<textarea id="html">&lt;article&gt;&lt;section&gt;</textarea>
 	</form>
 		
-	  <div class="mb-4">		
-     	<h3 class="lora mb-2">Choose your style:</h3>		
+		<div class="mb-4">
+		
+     	<h3 class="lora mb-2">Choose your style:</h3>
+		
 		<div style="display:inline-block" align="center" class="mt-2">		
 		<input type="button" class="btn" value="Sumerian" onclick="addCss('sumerian.css')" />
-		<input type="button" class="btn" value="Typewriter" onclick="addCss('typewriter.css')" />
+		<input type="button" class="btn" value="Typewriter" onclick="addCss('type.css')" />
 		<input type="button" class="btn" value="Bauhaus" onclick="addCss('bauhaus.css')" />
 		<input type="button" class="btn" value="Pop Art" onclick="addCss('popart.css')" />
 		<input type="button" class="btn" value="Arcade" onclick="addCss('arcade.css')" />
 		<input type="button" class="btn" value="Future" onclick="addCss('future.css')" />
-		</div>		
-	   </div>
+		</div>
+		
+		</div>
 		
 		<hr> 
+		<div class="mt-3">
 		
-	  <div class="mt-3">		
-		<h5 class="lora mb-2">Clean the previous style:</h5>		
+		<h5 class="lora mb-2">Clean the previous style:</h5>
+		
 		<div style="display:inline-block" align="center" class="mt-2">	
 		<input type="button" class="btn" value="Clean" onclick="removeCss()" />
 		</div>
-		</div>	
-      </div>
-	  
+		</div>
+	
+	
+<style>
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+  text-transform:uppercase;
+  position:relative;
+  top:0;
+  left:0;
+  padding:10px 20px;
+  border-radius:100px;
+  display:inline-block;
+  transition: all .5s;
+}
+
+.btn{
+  background:#B0B7BD;
+  color:#000000;
+}
+
+.btn:hover{
+   box-shadow:0px 10px 10px #2D3E4E;
+   transform : translateY(-3px);
+}
+
+.btn:active{
+  box-shadow:0px 5px 10px #2D3E4E
+  transform:translateY(-1px);
+}
+
+
+.btn::after{
+  content:"";
+  text-decoration: none;
+  text-transform:uppercase;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border-radius:100px;
+  display:inline-block;
+  z-index:-1;
+  transition: all .5s;
+}
+
+.btn::after {
+    background: #B0B7BD;
+}
+
+.btn-animation-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+@keyframes comeFromBottom{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  } 
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+</style>	
+	
+	
+	<!--<div class="container grid">
+	<form>
+		<h3 class="lora">Insert your text here:</h3>
+		<textarea id="html">&lt;article&gt;&lt;section&gt;</textarea>
+		<h3 class="lora">Choose your style:</h3>
+		<textarea readonly>
+<link rel="stylesheet" type="text/css" href="1560.css"/>
+
+<link rel="stylesheet" type="text/css" href="1860.css"/> 
+
+<link rel="stylesheet" type="text/css" href="1927.css"/> 
+
+<link rel="stylesheet" type="text/css" href="1968.css"/>
+
+<link rel="stylesheet" type="text/css" href="1980.css"/> 
+</textarea>
+	</form>-->
+</div>
 <div class="output grid">
 	<iframe id="iframe" name="iframe" class="iframe"></iframe>
 </div>
@@ -419,6 +443,9 @@ function removeCss() {
   list.removeChild(list.childNodes[1]);
 }
 </script>  
+
+
+
 
 </body>
 </html>

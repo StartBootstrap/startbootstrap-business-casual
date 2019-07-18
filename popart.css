@@ -31,6 +31,38 @@
 }
 
 
+section > div {
+margin-left: 40px;
+margin-right: 40px;
+line-height: 1.7;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+	    padding-bottom: 20px;
+margin-bottom: 20px;
+
+  background: white;
+border: solid black;
+border-bottom: solid 20px ;	
+}	
+
+
+
+
+section > div:before {
+content:"INCREDIBLE!";
+color: white;
+background:black;
+padding: 10px; 
+border: 2px solid black;
+border-radius: 30px;
+}
+
+section > div:after {
+content:"CAN YOU BELIEVE IT?!!";
+
+}
+
 
 body {
     background-image: url("img/popart/popart1.png");
@@ -52,30 +84,6 @@ a {
 color: #A3001F;
 }
 
-/*
-
-section:nth-child(n+1) {
-    font-size: 16pt;
-      background: white;
-	  padding: 5px;
-	  padding-left: 20px;
-	  padding-right:20px;
-	  border-left: solid black;
-	  border-right: solid black;
-}
-
-
-section:last-of-type {
-    font-size: 16pt;
-      background: white;
-	  padding: 5px;
-	  padding-left: 20px;
-	  padding-right:20px;
-	  border-left: solid black;
-	  border-right: solid black;
-	  border-bottom: solid 30px ;
-}
-*/
 
 article { 
     margin: 10% 12% 10% 12%;
@@ -102,27 +110,11 @@ font-family: 'badaboom';
 }
 
 
-/*
-h1 {
-min-width: 50px;
-  max-width: 90%;
-  border: 5px solid #fff;
-  padding: 80px 0px;
-  margin: 30px auto;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 24px;
-  position: relative;
-  color: #000;
-  background: #fff;
-  border: black solid;
-}
-*/
 
 h1 {
   background-position: center;
   background-repeat: no-repeat !important;
-  background-size: 100% 100%;
+  background-size: 50% 50%;
   margin: 20 0;
   text-align: center;
   height: auto;
@@ -132,9 +124,9 @@ h1 {
   width: auto;
   height: auto;
   padding-top: 8%;
-  padding-bottom: 28%;
-    padding-left: 5%;
-	  padding-right: 5%;
+  padding-bottom: 8%;
+    padding-left: 15%;
+	  padding-right: 15%;
 											font-size: 60pt; 
 }
 
@@ -150,7 +142,7 @@ h1:hover {
   background: url(img/popart/electric.svg);
   width: auto;
   padding: 10% 14% 10% 14%;
-												font-size: 80pt;	
+												font-size: 90pt;	
 }
 
 h1:after {
@@ -440,3 +432,26 @@ background-color: black;
 }}*/
 
 
+/* width */
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; 
+    box-shadow: inset 0 0 5px wheat; 
+  border-radius: 15px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+    border-radius: 15px;
+	
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: salmon; 
+}
