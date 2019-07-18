@@ -314,7 +314,120 @@ color:#ffffff;
   opacity:0.8; /*прозрачность от общего цвета*/
 }
 
+/*на все непонятное*/
 div {
 color: #BA55D3;
 }
+
+
+/*Текст на временной линии*/
+.dot-info span.label {
+font-family: 'emulogic';
+font-size: 12px;
+color: #333333;
+}
+.dot-info span.year {
+font-family: 'emulogic';
+font-size: 12px;
+color: #444444;
+}
+
+
+/*/////////////////статья EUDIRECTIVE////////////////////*/
+
+/*окно*/
+.container-eu {
+    margin: 3% 12%; /* отступ окна статьи, по вертикали и горизонтали от краев браузера */
+    padding-left: 50px; /*оступ текста в статье от края окна, слева   */
+    padding-right: 50px;   /*справа  */
+    padding-top: 20px;   /* сверху*/
+    padding-bottom: 40px; /*снизу */
+    text-align: justify; /* тип выравнивания текста в статье, justify - на всю ширину */
+    font-size: 16px;    /*размер шрифта тут, если явно не указан в других тегах */
+    background: #000000;
+    background-image: radial-gradient(#222222 50%, transparent 0);  /*фон кружков, код цвета*/
+  background-size: 10px 10px; /*размер кружков фона*/
+  border: 16px solid #000000; /* рамка окна статей     размер, тип solid - сплошная линия, цвет */
+  border-radius: 24px; /* закругление рамки окна статей   */
+}
+
+/*отдельные блоки*/
+.container-eu .flex-container {
+margin-top: 20px;
+margin-bottom: 20px;
+padding: 20px;
+font-family: 'lowrider';
+}
+
+/*оыбчные параграфы*/
+.container-eu .flex-container p {
+    font-size:28px;
+    line-height: 28px;   /*межстрочный интервал  */
+    color:#ffffff;
+}
+
+.container-eu .flex-container .col-ita p {
+    font-size:28px;
+    line-height: 28px;   /*межстрочный интервал  */
+    color:#ffffff;
+}
+
+.container-eu .flex-container .col-ing p {
+    font-size:28px;
+    line-height: 28px;   /*межстрочный интервал  */
+    color:#ffffff;
+}
+
+
+
+
+/*отдельные правила на блок col-ing   */
+.container-eu .flex-container .col-ing {
+
+}
+
+/*отдельные правила на блок col-ita*/
+.container-eu .flex-container .col-ita {
+padding: 15px 20px;
+background: rgba(255,255,255,0.2);
+border: 15px double #0000aa;
+}
+
+/*ссылки*/
+.container-eu a {
+font-size: 19px;
+color:#009900;
+}
+/*цифра текст-сноска   */
+.container-eu sup {
+font-family: 'sf-atarian-system.regular';
+color:#ffffff;
+}
+
+/*Списки*/
+.container-eu ul {
+padding: 15px 15px;
+list-style: none;  /*без значка*/
+}
+/*текст списка*/
+.container-eu li {
+padding: 20px 20px;
+font-family: 'emulogic';
+font-size: 14px;
+line-height: 20px;
+/*border-top:1px solid #ffffff;   */
+}
+
+.container-eu li:nth-of-type(odd) {
+background: #333333;
+color:#CCCCCC;
+}
+.container-eu li:nth-of-type(even) {
+background: #999999;
+color:#444444;
+}
+
+
+
+
 
