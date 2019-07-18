@@ -4,11 +4,12 @@ body {
     background-image: url("img/future/hand.png");
 	background-position: center top;
 	background-repeat: no-repeat;
+	cursor: url("img/future/finger.png"), auto;
 }
 
 * {
 	font-family: 'Exo 2', sans-serif;
-
+cursor: url("img/future/finger.png"), auto;
 }
 
 strong {
