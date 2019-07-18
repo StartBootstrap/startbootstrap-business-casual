@@ -89,6 +89,13 @@ src: url("font/blrrpixs016.ttf") format("truetype");
 font-weight: normal;
 font-style: normal;
 }
+@font-face
+{
+font-family: "white_rabbit";
+src: url("font/white_rabbit.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
 /*загружаем новый шрифт, кладем в нужную папку font/arcade_baby
 копируем новый блок выше
 @font-face
@@ -186,7 +193,7 @@ section p:first-letter{
 
 /*текст всех статей*/
 p {
-font-family: 'sf-atarian-system.regular';
+font-family: 'white_rabbit';
 }
 
 /*тег цитат*/
@@ -428,6 +435,6 @@ color:#444444;
 }
 
 
-
-
+span {
+}
 
