@@ -4,12 +4,10 @@ body {
     background-image: url("img/future/hand.png");
 	background-position: center top;
 	background-repeat: no-repeat;
-	cursor: url("img/future/finger.png"), auto;
 }
 
 * {
 	font-family: 'Exo 2', sans-serif;
-cursor: url("img/future/finger.png"), auto;
 }
 
 strong {
@@ -46,7 +44,6 @@ article {
   color: black;
   border-radius: 15px;
   text-align: justify;
-	  cursor: url("img/future/finger.png"), auto;
   
     -webkit-animation: breathing 7s ease-out infinite normal;
     animation: breathing 7s ease-out infinite normal;
@@ -70,7 +67,6 @@ margin: auto;
   margin-top: 8px;
   margin-bottom: 10px; 
     display: block;
-		  cursor: url("img/future/finger.png"), auto;
 }	
 
 
@@ -98,7 +94,6 @@ margin: auto;
     display: block;
   -webkit-filter: contrast(150%); /* Safari */
   filter: contrast(150%);
-  	  cursor: url("img/future/finger.png"), auto;
 }	
 
 
@@ -119,7 +114,6 @@ line-height: 1.5;
 	    border: 1px solid rgba(0,121,171,0.8);	
 		    background-color:rgba(0,121,171,0.5);
 		border-radius: 3px;
-	  cursor: url("img/future/finger.png"), auto;
 }
 
 
@@ -141,7 +135,6 @@ margin: auto;
   margin-top: 40px;
   margin-bottom: 10px; 
     display: block;
-		  cursor: url("img/future/finger.png"), auto;
 }	
 
 article:after {
@@ -166,7 +159,6 @@ margin: auto;
   margin-top: 20px;
   margin-bottom: 10px; 
     display: block;
-	  cursor: url("img/future/finger.png"), auto;
 }	
 
 
@@ -174,13 +166,11 @@ margin: auto;
 img {
   transition: transform .3s;
   border-radius: 2px;
-  	  cursor: url("img/future/finger.png"), auto;
 }
 
 img:hover {
 	transform: scale(1.9);
 	margin-bottom: 40px;
-		  cursor: url("img/future/finger.png"), auto;
 }
 
 
@@ -200,7 +190,6 @@ line-height: 1.5;
 		    background-color:rgba(0,121,171,0.2);
 		border-radius: 3px;
 		padding-left: 5px;
-			  cursor: url("img/future/finger.png"), auto;
 }
 
 h2 {
@@ -218,7 +207,6 @@ line-height: 1.5;
 		    background-color:rgba(0,121,171,0.2);
 		border-radius: 3px;
 		padding-left: 5px;
-	  cursor: url("img/future/finger.png"), auto;
 }
 
 h3 {
@@ -236,7 +224,6 @@ line-height: 1.5;
 		    background-color:rgba(0,121,171,0.2);
 		border-radius: 3px;
 		padding-left: 5px;
-			  cursor: url("img/future/finger.png"), auto;
 		}
 
 h4 {
@@ -253,8 +240,7 @@ line-height: 1.5;
 	    border: 1px solid rgba(0,121,171,0.5);	
 		    background-color:rgba(0,121,171,0.2);
 		border-radius: 3px;
-		padding-left: 5px; 
-	  cursor: url("img/future/finger.png"), auto;		
+		padding-left: 5px; 		
 }
 
 * {
@@ -275,7 +261,6 @@ table {
     word-break: break-word;
 	padding: 5px;
 	border-radius: 3px;
-		  cursor: url("img/future/finger.png"), auto;
 }
 
 td, th {
@@ -284,13 +269,11 @@ td, th {
   margin-bottom: 4pt;
   	padding: 8px;
 		border-radius: 3px;
-			  cursor: url("img/future/finger.png"), auto;
 }
 
 tr {
 padding: 10px;
 	border-radius: 3px;
-		  cursor: url("img/future/finger.png"), auto;
 }	
 
 th {
@@ -299,30 +282,15 @@ th {
     font-size: 10pt;
     text-align: center;
 		border-radius: 3px;
-			  cursor: url("img/future/finger.png"), auto;
   }
 
 td {
     background-color:rgba(0,121,171,0.2);
 		border-radius: 3px;
-			  cursor: url("img/future/finger.png"), auto;
 }	
 
 section {
-	  cursor: url("img/future/finger.png"), auto;
 }
-
-/*section:first-of-type > p:first-of-type:before {
-    content:"POW! This is an AWESOME article in POP ART style! \A";
-	font-family: badaboom;
-   display: block;	
-   font-size: 18pt;
-   text-decoration: underline;
-   padding: 20px;
-  }
- */
-
-
 
 
 
@@ -335,7 +303,6 @@ article img{
 	max-width: 50%;	
 	margin-top: 20px;
 	margin-bottom: 20px;
-		  cursor: url("img/future/finger.png"), auto;
 }
 
 
@@ -359,7 +326,6 @@ padding: 2%;
 	    border: 1px solid rgba(0,121,171,0.5);	
 		    background-color:rgba(0,121,171,0.2);
 		border-radius: 3px;
-	  cursor: url("img/future/finger.png"), auto;
 	  }
 
 
@@ -579,28 +545,24 @@ img {
     -webkit-transform: scale(0.97);
     -ms-transform: scale(0.97);
     transform: scale(0.97) rotate(-7deg);
-	cursor: url("img/future/finger.png"), auto;
   }
 
   25% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1) rotate(-7deg);
-	cursor: url("img/future/finger.png"), auto;
   }
 
   60% {
     -webkit-transform: scale(0.97);
     -ms-transform: scale(0.97);
     transform: scale(0.97) rotate(-7deg);
-	cursor: url("img/future/finger.png"), auto;
   }
 
   100% {
     -webkit-transform: scale(0.97);
     -ms-transform: scale(0.97);
     transform: scale(0.97) rotate(-7deg);
-	cursor: url("img/future/finger.png"), auto;
   }
 }
 
@@ -610,28 +572,24 @@ img {
     -webkit-transform: scale(0.95);
     -ms-transform: scale(0.95);
     transform: scale(0.95);
-	cursor: url("img/future/finger.png"), auto;
   }
 
   25% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-	cursor: url("img/future/finger.png"), auto;
   }
 
   60% {
     -webkit-transform: scale(0.95);
     -ms-transform: scale(0.95);
     transform: scale(0.95);
-	cursor: url("img/future/finger.png"), auto;
   }
 
   100% {
     -webkit-transform: scale(0.95);
     -ms-transform: scale(0.95);
     transform: scale(0.95);
-	cursor: url("img/future/finger.png"), auto;
   }
 }
 
