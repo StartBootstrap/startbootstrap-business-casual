@@ -461,7 +461,7 @@ margin: auto;
   margin-left: 622px;
   margin-top: 100px;
   margin-bottom: 90px;
- /* display: inline-block;*/
+  display: inline-block;
   font-family: 'Exo 2', sans-serif;
   font-size: 11pt;
   letter-spacing: .06em;
