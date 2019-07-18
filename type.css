@@ -68,7 +68,7 @@ filter: grayscale(100%);
 section {
 
 background-image: url("img/type/typebackground.png");
-border-radius: 1px;
+border-radius: 2px;
 padding-top: 80px;
 padding-bottom: 80px;
 padding-right: 50px;
