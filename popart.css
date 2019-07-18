@@ -110,27 +110,11 @@ font-family: 'badaboom';
 }
 
 
-/*
-h1 {
-min-width: 50px;
-  max-width: 90%;
-  border: 5px solid #fff;
-  padding: 80px 0px;
-  margin: 30px auto;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 24px;
-  position: relative;
-  color: #000;
-  background: #fff;
-  border: black solid;
-}
-*/
 
 h1 {
   background-position: center;
   background-repeat: no-repeat !important;
-  background-size: 100% 100%;
+  background-size: 50% 50%;
   margin: 20 0;
   text-align: center;
   height: auto;
@@ -140,9 +124,9 @@ h1 {
   width: auto;
   height: auto;
   padding-top: 8%;
-  padding-bottom: 28%;
-    padding-left: 5%;
-	  padding-right: 5%;
+  padding-bottom: 8%;
+    padding-left: 15%;
+	  padding-right: 15%;
 											font-size: 60pt; 
 }
 
