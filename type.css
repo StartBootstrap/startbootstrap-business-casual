@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
 
-p, h1, h2, h3, h4, figcaption, div, table { 
+p, h1, h2, h3, h4, figcaption, table { 
 
 font-family: 'Special Elite';
 margin: 25px 25px 25px 25px;
@@ -14,11 +14,15 @@ font-size: 15px;
 
 }
 
-div {
+
+section > div {
 	
 text-decoration: underline;
 text-indent: 50px;
-	
+
+font-family: 'Special Elite';
+margin: 25px 25px 25px 25px;
+		
 }
 
 table, tr, td {
@@ -46,11 +50,7 @@ font-size: 13px;
 
 body {
 	
-background-image: url("img/type/provasfondo.jpg") no-repeat center top; position: fixed; z-index: -1;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+background-color: black; 
 
 }
 
@@ -125,7 +125,6 @@ word-spacing: 6px;
 	background-image: url("img/type/typebackground.png");
     line-height: 1.7;
 		
-		border: double 40px;
 		font-size: 18pt;
 		margin-left:90px;
 		margin-right:90px;
