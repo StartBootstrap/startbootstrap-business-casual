@@ -91,11 +91,13 @@ font-style: normal;
 }
 @font-face
 {
-font-family: "white_rabbit";
-src: url("font/white_rabbit.ttf") format("truetype");
+font-family: "urnordiskarunor";
+src: url("font/arcade_baby/urnordiskarunor.ttf") format("truetype");
 font-weight: normal;
 font-style: normal;
 }
+
+
 /*загружаем новый шрифт, кладем в нужную папку font/arcade_baby
 копируем новый блок выше
 @font-face
@@ -152,11 +154,9 @@ article {
 article section  {
 margin-top: 20px;
 margin-bottom: 20px;
-padding: 20px;
-/*border: 4px solid #3339b7;
-border-radius: 24px;*/
+padding: 0 20px;
 font-family: 'lowrider';
-/*background: #ffffff; */
+
 }
 
 article section:nth-of-type(1) {
@@ -284,6 +284,8 @@ text-align: center;
 table {
 margin-top: 20px;
 margin-bottom: 20px;
+margin-left:auto; /*выравнивание таблицы по центру  */
+margin-right:auto;
 }
 
 /*чередуем фон таблицы по четностистрок*/
@@ -304,6 +306,7 @@ padding-right: 10px;
 font-family: 'games';
 font-size: 30px;
 color:#00cccc;
+text-align: center;
 }
 /*ячейки таблицы*/
 table td {
@@ -356,17 +359,21 @@ color: #444444;
   background-size: 10px 10px; /*размер кружков фона*/
   border: 16px solid #000000; /* рамка окна статей     размер, тип solid - сплошная линия, цвет */
   border-radius: 24px; /* закругление рамки окна статей   */
+  overflow: hidden; /*если контент больше окна, не выводим за пределы*/
 }
 
 /*отдельные блоки*/
 .container-eu .flex-container {
+display: -webkit-flex;
+display: flex;
+margin: 0 auto;
 margin-top: 20px;
 margin-bottom: 20px;
 padding: 20px;
 font-family: 'lowrider';
 }
 
-/*оыбчные параграфы*/
+/*обычные параграфы*/
 .container-eu .flex-container p {
     font-size:28px;
     line-height: 28px;   /*межстрочный интервал  */
@@ -390,14 +397,20 @@ font-family: 'lowrider';
 
 /*отдельные правила на блок col-ing   */
 .container-eu .flex-container .col-ing {
-
+margin-top: 30px;
+-webkit-flex: 1;
+flex: 1;
+margin-left:15px;
+margin-right:15px;
 }
 
 /*отдельные правила на блок col-ita*/
 .container-eu .flex-container .col-ita {
-padding: 15px 20px;
-background: rgba(255,255,255,0.2);
-border: 15px double #0000aa;
+margin-top: 30px;
+-webkit-flex: 1;
+flex: 1;
+margin-left:15px;
+margin-right:15px;
 }
 
 /*ссылки*/
@@ -433,4 +446,75 @@ color:#CCCCCC;
 background: #999999;
 color:#444444;
 }
+
+/*таблицы в EUDIRECTIVE*/
+.container-eu table {
+margin-top: 20px;
+margin-bottom: 20px;
+margin-left:auto;
+margin-right:auto;
+word-break: break-word; /*перенос слов*/
+}
+
+/*чередуем фон таблицы по четностистрок*/
+.container-eu table tr:nth-of-type(odd) {
+  background: #333333;
+  }
+
+.container-eu table tr:nth-of-type(even) {
+  background: #999999;
+  }
+
+/*заголовок таблицы*/
+.container-eu table th {
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;
+font-family: 'games';
+font-size: 30px;
+color:#00cccc;
+text-align: center;
+}
+/*ячейки таблицы*/
+.container-eu table td {
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;
+font-family: 'emulogic';
+font-size: 13px;
+border-left: 2px solid #ffffff;
+color:#ffffff;
+}
+.container-eu table td:nth-of-type(1) {
+border-left: none;
+}
+
+/*новый скролл*/
+/* width */
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+    box-shadow: inset 0 0 5px wheat;
+  border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+    border-radius: 15px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: salmon;
+}
+
+
 
