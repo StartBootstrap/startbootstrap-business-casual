@@ -36,9 +36,9 @@ article {
   width: 278px;
   max-height: 532px;
   
-							margin-left: 50.5454em;
-							margin-top: 6.0909em;
-							margin-bottom: 8.1818em;
+							margin-left: 45.5454em;
+							margin-top: 5.8em;
+							margin-bottom: 9.1818em;
   
   display: inline-block;
   font-family: 'Exo 2', sans-serif;
@@ -499,8 +499,12 @@ padding: 2%;
 
 
 
-/*eudirective*/
 
+
+
+
+/*eudirective*/
+/*
 .container-eu:before {
 box-sizing: content-box;
 content:"Welcome back, Mr. Fabio. I have selected for you the latest news:";
@@ -584,8 +588,9 @@ margin: auto;
     display: block;
 
 }	
+*/
 
-.continer-eu {
+.container-eu {
  padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
