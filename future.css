@@ -121,7 +121,47 @@ line-height: 1.5;
 }
 
 
-
+section:first-of-type:after {
+	box-sizing: content-box;
+	content:"";
+	background-image: url('img/future/ad.jpg');
+  background-size: 230px;
+  border-radius: 3px;
+opacity: 0.5; 
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+margin: auto;  
+  margin-top: 8px;
+  margin-bottom: 40px; 
+    display: block;
+  background-color: rgba(0,121,171,0.1);
+border: 1px solid rgba(0,121,171,0.2);
+color: rgb(0, 50, 93);
+  }	
+  
+section:nth-of-type(2):after {
+	box-sizing: content-box;
+	content:"";
+	background-image: url('img/future/ad2.jpg');
+  background-size: 230px;
+  border-radius: 3px;
+opacity: 0.5; 
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+margin: auto;  
+  margin-top: 8px;
+  margin-bottom: 40px; 
+    display: block;
+  background-color: rgba(0,121,171,0.1);
+border: 1px solid rgba(0,121,171,0.2);
+color: rgb(0, 50, 93);
+  }	  
+  
+  
 
 section:last-of-type:after {
 box-sizing: content-box;
