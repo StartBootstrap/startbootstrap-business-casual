@@ -1,25 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baumans&display=swap');
 
 p, h1, h2, h3, h4, figcaption, table, em, q { 
 
-font-family: 'Special Elite';
+font-family: 'Baumans', cursive;
 margin: 25px 25px 25px 25px;
 	
 }
 
 p {
 
-text-indent: 50px;
 font-size: 15px;
 
 }
-
 
 section > div {
 	
 text-decoration: underline;
 text-indent: 50px;
-font-family: 'Special Elite';
+font-family: 'Baumans', cursive;
 margin: 25px 25px 25px 25px;
 		
 }
@@ -34,9 +32,10 @@ text-align: left;
 }
 
 h1, h2, h3, h4 {
-
-text-decoration: underline;
-text-transform: uppercase;
+	
+-ms-transform: rotate(20deg); /* IE 9 */
+-webkit-transform: rotate(20deg); /* Safari 3-8 */
+transform: rotate(20deg);
 	
 }
 
@@ -86,12 +85,6 @@ margin-right: 20%;
 word-spacing: 6px;
 
 }
-
- a { 
-  color: black;
-  text-decoration: underline;
-} 
-
 
 /*eudirective*/
 

@@ -1,26 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+@font-face {
+font-family: "Bauhaus 93";
+src: url("font/Bauhaus 93 Regular.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
 
 p, h1, h2, h3, h4, figcaption, table, em, q { 
 
-font-family: 'Special Elite';
+font-family: "Bauhaus 93";
 margin: 25px 25px 25px 25px;
 	
 }
 
 p {
 
-text-indent: 50px;
-font-size: 15px;
+font-size: 25px;
 
 }
-
 
 section > div {
 	
 text-decoration: underline;
-text-indent: 50px;
-font-family: 'Special Elite';
-margin: 25px 25px 25px 25px;
+font-family: "Bauhaus 93";
+margin: 10px 10px 10px 10px;
 		
 }
 
@@ -30,28 +32,40 @@ border-collapse: collapse;
 border: 1px solid black;
 padding: 10px;
 text-align: left;
+border-radius: 10px;
 
 }
 
 h1, h2, h3, h4 {
 
-text-decoration: underline;
-text-transform: uppercase;
+padding-left: 25%;	
+-ms-transform: rotate(20deg); /* IE 9 */
+-webkit-transform: rotate(45deg); /* Safari 3-8 */
+transform: rotate(45deg);
+font-size: 28px;
 	
+}
+
+h2, h3, h4{
+	
+color: #B93239;
+text-decoration: underline;
+border-bottom: 10px solid black;
+
 }
 
 figcaption { 
 
 text-align: center;
-font-size: 13px;
+font-size: 25px;
 
 }
 
 body {
 	
-background-image: url("img/type/typebackgroundbody.jpg");
-background-position: center top;
-
+background-image: url("img/bauhaus/bauh.png");
+background-size: 100%;
+background-repeat: repeat;
 }
 
 img {
@@ -60,14 +74,12 @@ width: 80%;
 display: block;
 margin-left: auto;
 margin-right: auto;
--webkit-filter: grayscale(100%);
-filter: grayscale(100%);
 
 }
 
 section {
 
-background-image: url("img/type/typebackground.png");
+background: rgba(234, 210, 176, 0.95);
 border-radius: 2px;
 padding-top: 80px;
 padding-bottom: 80px;
@@ -88,10 +100,8 @@ word-spacing: 6px;
 }
 
  a { 
-  color: black;
-  text-decoration: underline;
+  color: #B93239;
 } 
-
 
 /*eudirective*/
 
@@ -129,7 +139,7 @@ word-spacing: 6px;
 .container-eu{
 	margin: 50px;
 		margin-bottom:70px;		
-	background-image: url("img/type/typebackground.png");
+	background-image: url("img/bauhaus/bauhausbackground.jpg");
     line-height: 1.7;
 		
 		font-size: 15pt;
