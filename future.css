@@ -37,8 +37,8 @@ article {
   width: 278px;
   max-height: 532px;
   
-							margin-left: 41.5454em;
-							margin-top: 6.1em;
+							margin-left: 42.5454em;
+							margin-top: 5.8em;
 							margin-bottom: 9.8em;
   
   display: inline-block;
@@ -292,6 +292,7 @@ h1 {
   font-size: 14pt;	
   border-bottom: 1px solid rgba(0,121,171,0.2);
   padding-bottom: 5px;
+    padding-top: 5px;
   text-transform: uppercase;  
   
   text-align: center;
@@ -308,7 +309,8 @@ h2 {
   font-family: 'Exo 2', sans-serif;
   font-size: 13pt;	
   border-bottom: 1px solid rgba(0,121,171,0.2);
-  padding-bottom: 2px;
+  padding-bottom: 5px;
+    padding-top: 5px;  
   text-transform: uppercase;  
   
   text-align: center;
@@ -325,7 +327,8 @@ h3 {
   font-family: 'Exo 2', sans-serif;
   font-size: 12pt;	
   border-bottom: 1px solid rgba(0,121,171,0.2);
-  padding-bottom: 2px;
+  padding-bottom: 5px;
+    padding-top: 5px; 
   text-transform: uppercase;  
 
   text-align: center;
@@ -342,7 +345,8 @@ h4 {
   font-family: 'Exo 2', sans-serif;
   font-size: 12pt;	
   border-bottom: 1px solid rgba(0,121,171,0.2);
-  padding-bottom: 2px;
+  padding-bottom: 5px;
+    padding-top: 5px; 
   text-transform: uppercase;  
 
   text-align: center;
@@ -447,7 +451,7 @@ padding: 2%;
 
 
 /*eudirective*/
-
+/*
 .container-eu:before {
 box-sizing: content-box;
 content:"Welcome back, Mr. Fabio. I have selected for you the latest news:";
