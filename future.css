@@ -27,17 +27,19 @@ font-style: oblique;
 }
 
 article {
-  padding-left: 1.8181em;
-  padding-right: 1.8181em;
-  padding-bottom: 1.8181em;
-  padding-top: 1.8181em;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   box-sizing: border-box;
   overflow: auto;
-  width: 25.2727em;
-  max-height: 48.3636em;
-  margin-left: 56.5454em;
-  margin-top: 9.0909em;
-  margin-bottom: 8.1818;
+  width: 278px;
+  max-height: 532px;
+  
+							margin-left: 56.5454em;
+							margin-top: 9.0909em;
+							margin-bottom: 8.1818em;
+  
   display: inline-block;
   font-family: 'Exo 2', sans-serif;
   font-size: 11pt;
