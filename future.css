@@ -629,8 +629,8 @@ margin: auto;
   margin-bottom: 10px; 
     display: block;
 }
-/*
-.flex-container:before {
+
+.wrapper:before {
 box-sizing: content-box;
 content:"";
 height: 115px;
@@ -653,8 +653,8 @@ margin: auto;
   margin-bottom: 40px; 
     display: block;
 }
-*/ 
-.flex-container:last-of-type:after {
+
+.wrapper:last-of-type:after {
 box-sizing: content-box;
 content:"Did you enjoy your article, Mr. Fabio? I can show you more.";
 font-family: 'Slabo 27px', serif;
