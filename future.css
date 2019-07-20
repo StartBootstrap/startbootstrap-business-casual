@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300i,400,400i&display=swap');
 
 body {
     background-image: url("img/future/hand.png");
@@ -54,6 +56,7 @@ article {
 	
 article:before {
 box-sizing: content-box;
+font-family: 'Raleway', sans-serif;
 content:"Welcome back, Mr. Fabio. I have selected for you the latest news:";
 background-color: rgba(0,121,171,0.1);
 border: 1px solid rgba(0,121,171,0.2);
@@ -122,6 +125,7 @@ line-height: 1.5;
 
 section:last-of-type:after {
 box-sizing: content-box;
+font-family: 'Raleway', sans-serif;
 content:"Did you enjoy your article, Mr. Fabio? I can show you more.";
 background-color: rgba(0,121,171,0.1);
 border: 1px solid rgba(0,121,171,0.2);
