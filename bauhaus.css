@@ -145,7 +145,7 @@ word-spacing: 6px;
 .container-eu{
 	margin: 50px;
 		margin-bottom:70px;		
-	background-color: #ead2b0;
+    background: rgba(234, 210, 176, 0.95)
     line-height: 1.7;
 		
 		font-size: 15pt;
