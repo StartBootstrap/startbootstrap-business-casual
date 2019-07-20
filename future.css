@@ -36,9 +36,9 @@ article {
   width: 278px;
   max-height: 532px;
   
-							margin-left: 55.5454em;
-							margin-top: 8.0909em;
-							margin-bottom: 7.1818em;
+							margin-left: 54.5454em;
+							margin-top: 7.0909em;
+							margin-bottom: 8.1818em;
   
   display: inline-block;
   font-family: 'Exo 2', sans-serif;
@@ -144,10 +144,7 @@ color: rgb(0, 50, 93);
 margin: auto;  
   margin-top: 8px;
   margin-bottom: 8px; 
-    display: block;
-	
-	    transform:scale(2);
-    transform-origin: left top;
+    display: block;	
 }	
 
 
@@ -174,9 +171,6 @@ margin: auto;
   margin-top: 8px;
   margin-bottom: 40px; 
     display: block;
-	
-	    transform:scale(2);
-    transform-origin: left top;
 }	  
   
  
