@@ -37,9 +37,9 @@ article {
   width: 278px;
   max-height: 532px;
   
-							margin-left: 45.5454em;
-							margin-top: 5.8em;
-							margin-bottom: 9.1818em;
+							margin-left: 41.5454em;
+							margin-top: 6.1em;
+							margin-bottom: 9.8em;
   
   display: inline-block;
   font-family: 'Exo 2', sans-serif;
@@ -61,6 +61,8 @@ article:before {
 box-sizing: content-box;
 font-family: 'Slabo 27px', serif;
 content:"Welcome back, Mr. Fabio. I have selected for you the latest news:";
+font-style: italic;
+
 background-color: rgba(0,121,171,0.1);
 border: 1px solid rgba(0,121,171,0.2);
   font-size: 13pt;	
@@ -124,7 +126,7 @@ line-height: 1.5;
 }
 
 
-section:nth-of-type(2):after {
+section:nth-of-type(1):after {
 box-sizing: content-box;
 content:"";
 height: 115px;
@@ -146,74 +148,11 @@ margin: auto;
   margin-top: 8px;
   margin-bottom: 8px; 
     display: block;	
-	animation: tada infinite;
-	  animation-name: tada;
-	    -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
 }	
 
 
-@-webkit-keyframes tada {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  10%, 20% {
-    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-  }
-
-  30%, 50%, 70%, 90% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
-  40%, 60%, 80% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
-
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes tada {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    -ms-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  10%, 20% {
-    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-    -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-  }
-
-  30%, 50%, 70%, 90% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
-  40%, 60%, 80% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
-
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    -ms-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
   
-section:nth-of-type(4):after {
+section:nth-of-type(3):after {
 box-sizing: content-box;
 content:"";
 height: 115px;
@@ -292,7 +231,9 @@ margin: auto;
 section:last-of-type:after {
 box-sizing: content-box;
 font-family: 'Slabo 27px', serif;
+ font-style: italic;
 content:"Did you enjoy your article, Mr. Fabio? I can show you more.";
+
 background-color: rgba(0,121,171,0.1);
 border: 1px solid rgba(0,121,171,0.2);
   font-size: 14pt;	
@@ -506,10 +447,13 @@ padding: 2%;
 
 
 /*eudirective*/
-/*
+
 .container-eu:before {
 box-sizing: content-box;
 content:"Welcome back, Mr. Fabio. I have selected for you the latest news:";
+font-family: 'Slabo 27px', serif;
+ font-style: italic;
+ 
 background-color: rgba(0,121,171,0.1);
 border: 1px solid rgba(0,121,171,0.2);
   font-size: 13pt;	
@@ -524,6 +468,7 @@ margin: auto;
   margin-bottom: 10px; 
     display: block;
 }
+
 .flex-container:before {
 box-sizing: content-box;
 content:"";
@@ -551,6 +496,9 @@ margin: auto;
 .flex-container:last-of-type:after {
 box-sizing: content-box;
 content:"Did you enjoy your article, Mr. Fabio? I can show you more.";
+font-family: 'Slabo 27px', serif;
+ font-style: italic;
+ 
 background-color: rgba(0,121,171,0.1);
 border: 1px solid rgba(0,121,171,0.2);
   font-size: 14pt;	
@@ -613,9 +561,8 @@ margin: auto;
   color: black;
   border-radius: 15px;
   text-align: justify;
-  /*  
     -webkit-animation: breathing 7s ease-out infinite normal;
-    animation: breathing 7s ease-out infinite normal;*/
+    animation: breathing 7s ease-out infinite normal;
 }
 
 .col-ing > div:first-of-type {
@@ -649,29 +596,7 @@ text-align: center;
 	margin-left:20px;
 }
 
-/*.container-eu{
-	margin: 50px;
-		margin-bottom:70px;
-		
-		      background: white;
-  background-image:
-    radial-gradient(#FFD3C1 23%, transparent 0), 
-    radial-gradient(#FFD3C1 23%, transparent 0);
-  background-size: 10px 10px;
-  background-position: 0 0, 5px 5px;
-    line-height: 1.7;
-		
-		border: double 40px;
-		text-align:justify;
-		font-size: 18pt;
-		margin-left:90px;
-		margin-right:90px;
-		 padding-top:20px;
-		padding-left:0px;
-		padding-right: 0px;
-		height:auto;
-		overflow: hidden;
-}*/
+
 
 /*	
 .container-eu p {

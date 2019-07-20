@@ -5,6 +5,12 @@
 <title>Lord of the Rings theme</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Reference for Ajax -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <!-- Reference for jQuery -->  
+  <script src="jquery-3.4.1.min.js"></script>
+  
 <style>
 @font-face {
     font-family: 'elvish';
@@ -13,8 +19,15 @@
 
 body {
 font-family: 'elvish';
-        background: url(sauron.png);
+        background-image: url(sauron.png);
         background-repeat: no-repeat;
+        background-position: center bottom;
+		        width: 100%;
+        height: 100%;
+}
+
+p {
+font-family: 'elvish';
 }
 
 .move-area{/*normally use body*/
@@ -84,10 +97,10 @@ $(".move-area").mousemove(function(event) {
 
 
 
-<div id="board">  
-  <div id="content">
-    <p id="title">Episode V</p>
-    <p id="subtitle">THE EMPIRE STRIKES BACK</p>
+<div>  
+  <div>
+    <p>Episode V</p>
+    <p>THE EMPIRE STRIKES BACK</p>
     <br>
     <p>It is a dark time for the
 Rebellion. Although the Lorem
