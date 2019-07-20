@@ -4,6 +4,7 @@ body {
     background-image: url("img/future/hand.png");
 	background-position: center top;
 	background-repeat: no-repeat;
+	  font-size: 11pt;
 }
 
 * {
@@ -24,17 +25,17 @@ font-style: oblique;
 }
 
 article {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-left: 1.8181em;
+  padding-right: 1.8181em;
+  padding-bottom: 1.8181em;
+  padding-top: 1.8181em;
   box-sizing: border-box;
   overflow: auto;
-  width: 278px;
-  max-height: 532px;
-  margin-left: 622px;
-  margin-top: 100px;
-  margin-bottom: 90px;
+  width: 25.2727em;
+  max-height: 48.3636em;
+  margin-left: 56.5454em;
+  margin-top: 9.0909em;
+  margin-bottom: 8.1818;
   display: inline-block;
   font-family: 'Exo 2', sans-serif;
   font-size: 11pt;
