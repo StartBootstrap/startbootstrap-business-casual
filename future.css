@@ -131,7 +131,7 @@ background-repeat:no-repeat;
 background-image: url('img/future/ad.jpg');
   background-size: 230px;
   border-radius: 3px;
-opacity: 0.5;  
+opacity: 0.9;  
 background-color: rgba(0,121,171,0.1);
 border: 1px solid rgba(0,121,171,0.2);
 color: rgb(0, 50, 93);
@@ -143,9 +143,13 @@ color: rgb(0, 50, 93);
   padding-top: 10px;
 margin: auto;  
   margin-top: 8px;
-  margin-bottom: 40px; 
+  margin-bottom: 8px; 
     display: block;
+	
+	    transform:scale(2);
+    transform-origin: left top;
 }	
+
 
   
 section:nth-of-type(2):after {
@@ -156,7 +160,7 @@ background-repeat:no-repeat;
 background-image: url('img/future/ad2.jpg');
   background-size: 230px;
   border-radius: 3px;
-opacity: 0.5;  
+opacity: 0.9;  
 background-color: rgba(0,121,171,0.1);
 border: 1px solid rgba(0,121,171,0.2);
 color: rgb(0, 50, 93);
@@ -164,15 +168,18 @@ color: rgb(0, 50, 93);
     border-radius: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   padding-top: 10px;
 margin: auto;  
   margin-top: 8px;
   margin-bottom: 40px; 
     display: block;
+	
+	    transform:scale(2);
+    transform-origin: left top;
 }	  
   
-  
+ 
 
 section:last-of-type:after {
 box-sizing: content-box;
