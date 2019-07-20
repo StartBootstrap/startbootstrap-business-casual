@@ -29,7 +29,8 @@ margin: 10px 10px 10px 10px;
 table, tr, td {
 
 border-collapse: collapse;
-border: 1px solid black;
+border: 10px solid black;
+border-radius: 10%;
 padding: 10px;
 text-align: left;
 border-radius: 10px;
@@ -43,6 +44,8 @@ padding-left: 25%;
 -webkit-transform: rotate(45deg); /* Safari 3-8 */
 transform: rotate(45deg);
 font-size: 28px;
+display: block;
+margin-bottom: 20%;
 	
 }
 
@@ -58,6 +61,9 @@ figcaption {
 
 text-align: center;
 font-size: 25px;
+color: #B93239;
+text-decoration: underline;
+border-bottom: 10px solid black;
 
 }
 
@@ -139,7 +145,7 @@ word-spacing: 6px;
 .container-eu{
 	margin: 50px;
 		margin-bottom:70px;		
-	background-image: url("img/bauhaus/bauhausbackground.jpg");
+	background-color: #ead2b0;
     line-height: 1.7;
 		
 		font-size: 15pt;
