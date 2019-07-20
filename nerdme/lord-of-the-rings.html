@@ -22,19 +22,16 @@ font-family: 'elvish';
         background-image: url(sauron.png);
         background-repeat: no-repeat;
         background-position: center bottom;
-		        width: 100%;
-        height: 100%;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 10% 45%;
 }
 
 p {
 font-family: 'elvish';
 }
 
-.move-area{/*normally use body*/
-  width: 100vw;
-  height: 100vh;
-  padding: 10% 45%;
-}
 .container {
   width: 100%;
 }
@@ -44,7 +41,7 @@ font-family: 'elvish';
   border-radius: 50%;
   height: 30px;
   width: 30px;
-  background: #CCC;
+  background: #e0190b;
 }
 .eye:after { /*pupil*/
   position: absolute;
@@ -83,12 +80,12 @@ $(".move-area").mousemove(function(event) {
 </audio>
 
 
-<section class="move-area">
+
   <div class='.container'>
 
     <div class='eye'></div>
   </div>
-</section>
+
 
 
 
