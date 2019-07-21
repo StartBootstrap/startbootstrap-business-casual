@@ -34,6 +34,7 @@ border-radius: 10%;
 padding: 10px;
 text-align: left;
 border-radius: 10px;
+max-width: 50%; 
 
 }
 
@@ -41,8 +42,8 @@ h1, h2, h3, h4 {
 
 padding-left: 25%;	
 -ms-transform: rotate(20deg); /* IE 9 */
--webkit-transform: rotate(40deg); /* Safari 3-8 */
-transform: rotate(40deg);
+-webkit-transform: rotate(30deg); /* Safari 3-8 */
+transform: rotate(30deg);
 font-size: 28px;
 	
 }
@@ -85,6 +86,9 @@ width: 80%;
 display: block;
 margin-left: auto;
 margin-right: auto;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+border-radius: 3px;
 
 }
 
@@ -96,7 +100,7 @@ padding-top: 80px;
 padding-bottom: 80px;
 padding-right: 50px;
 padding-left: 50px;
-margin: 5%;
+margin: 10%;
 
 }
 
