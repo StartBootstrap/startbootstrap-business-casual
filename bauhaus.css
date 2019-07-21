@@ -63,6 +63,11 @@ text-decoration: underline;
 
 }
 
+h4 {
+min-height: 50px;
+padding: 0%;
+}
+
 figcaption { 
 
 text-align: center;
