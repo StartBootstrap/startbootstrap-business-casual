@@ -64,8 +64,8 @@ text-decoration: underline;
 }
 
 h4 {
-min-height: 50px;
-padding: 0%;
+min-height: 70px;
+padding-bottom: 20%;
 }
 
 figcaption { 
@@ -179,4 +179,10 @@ word-spacing: 6px;
 				margin-top: 20px;
 				margin-left:20px;
 				margin-right:20px;
+}
+
+.container-eu table {
+	
+max-width: 50px;
+font-size: 10px;
 }

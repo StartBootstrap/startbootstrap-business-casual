@@ -154,5 +154,6 @@ word-spacing: 6px;
 
 .container-eu table {
 	
-max-width: 50%;
+max-width: 50px;
+font-size: 10px;
 }
