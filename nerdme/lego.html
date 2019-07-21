@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lego theme</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Reference for Ajax -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <!-- Reference for jQuery -->  
+  <script src="jquery-3.4.1.min.js"></script>
+
+  
+<head>
+<style>
+/**
+ * Background from http://www.freepik.com/
+ * Designed by Freepik
+ */
+
+@bg-tl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/319423/lego-bg-tl.png";
+@bg-tr: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/319423/lego-bg-tr.png";
+@bg-bl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/319423/lego-bg-bl.png";
+@bg-br: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/319423/lego-bg-br.png";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  height: 100%;
+  font-family: Roboto, arial, sans-serif;
+  font-size: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  > :first-child {
+    position: absolute;
+    padding: 1em;
+    left: 18%;
+    right: 18%;
+    top: 33%;
+    bottom: 33%;  display: flex;  display: flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.large-text,
+[lego-ipsum="phrase"],
+[lego-ipsum="sentence"] {
+  font-size: 1.5em;
+}
+
+img.minifig {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.border-top,
+.border-bottom {
+  position: absolute;
+  max-height: 50%;
+  height: 50%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  
+  &:before,
+  &:after {
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    content: " ";    
+  }
+  
+  &.border-top {    
+    top: 0;
+  
+    &:before {
+      background-image: url(@bg-tl);
+      background-position: 0 0;
+      top: 0;
+      left: 0;
+    }
+  
+    &:after {
+      background-image: url(@bg-tr);
+      background-position: 100% 0;
+      top: 0;
+      right: 0;
+    }
+  }
+  
+  &.border-bottom {    
+    bottom: 0;
+    
+    &:before {
+      background-image: url(@bg-bl);
+      background-position: 0 100%;
+      bottom: 0;
+      left: 0;
+    }
+  
+    &:after {
+      background-image: url(@bg-br);
+      background-position: 100% 100%;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+/* LEGO PALETTE */
+
+      :root {
+        --lego-white: #fff;
+        --lego-blue: #006CB7;
+        --lego-azur: #00A3DA;
+        --lego-yellow: #FFCD03;
+        --lego-dark-yellow: #FBAB18;
+        --lego-green: #00AF4D;
+        --lego-dark-green: #009247;
+        --lego-red: #DD1A21;
+        --lego-violet: #B51C7D;
+      }
+
+      /* MAIN CONTAINER */
+
+      body {
+        margin: 0;
+      }
+
+      .container {
+        display: grid;
+        justify-items: center;
+      }   
+
+      h2 {
+        font-size: 4rem;
+        margin: 40px 0px 20px 0px;
+      }
+
+      .text {
+        display: grid;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+
+
+      /* LEGO BRICKS CONTAINER */
+      
+      .lego {
+        display: grid;
+        margin-top: 40px;
+        padding: 40px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+      }
+      
+      /* LEGO BRICK */
+      
+      .brick {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
+      }
+
+      .bit {
+        height: 15%;
+        align-self: flex-end;
+        justify-self: center;
+        width: 50%;
+        border-top-left-radius: 20%;
+        border-top-right-radius: 20%;
+      }
+
+      .bod {
+        grid-column: 1 / 5;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
+			}
+
+      /* MEDIA QUERIES */
+
+      /* Smallest - 1998 */
+      
+      @media only screen and (max-width: 500px) {
+        body {
+					background-color: #fff;
+				}
+				
+				.lego {
+          background-color: var(--lego-green);
+        }
+        
+        .lego {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(9, 60px);
+        grid-template-areas: 
+          "logo logo"
+          "text text"
+          "text text"
+          "text text"
+          "text text"
+          "text text"
+          "brick brick"
+          "brick brick"
+          "brick brick";
+        grid-gap: 5px 20px;
+        width: 200px;
+        }
+
+        .bit,
+        .bod {
+          background-color: var(--lego-yellow);
+        }
+
+        .logo {
+          grid-column: 1 / -1;
+          grid-row: 1;
+        }
+      
+        .text {
+          grid-column: 1 / -1;
+          grid-row: 2 / 7;
+        }
+
+        .text h2:before {
+          content: "1998";
+        }
+
+        .text p::before {
+          content: "Developed in association with MIT, 1998 sees the launch of the intelligent LEGO brick. LEGO Mindstorms are built models that once connected to a PC, can be programmed to do a series of different tasks.";
+        }
+      }
+      
+      /* 2nd Smallest - 1978 */
+
+      @media only screen and (min-width: 501px) {
+        body {
+					background-color: #fff;
+				}
+				
+				.lego {
+          background-color: var(--lego-yellow);
+        }
+
+        .lego {
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: repeat(4, 70px) 0px 70px 70px;
+          grid-template-areas: 
+          "logo logo logo"
+          "text text text"
+          "text text text"
+          "text text text"
+          "brick brick brick"
+          "brick brick brick"
+          "brick brick brick";
+          grid-gap: 10px 20px;
+          width: 380px;
+        }
+
+        .bit,
+        .bod {
+          background-color: var(--lego-blue);
+        }
+
+        div.bod {
+          background-image: url(https://vignette.wikia.nocookie.net/galaxy4rblx/images/9/9f/LEGO_space_logo.png/revision/latest/scale-to-width-down/640?cb=20130727015128);
+          background-size: 40px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        .logo {
+          grid-row: 1;
+          grid-column: 1 / -1;
+        }
+
+        .text {
+          grid-column: 1 / -1;
+          grid-row: 2 / 6;
+        }
+
+        .text h2:before {
+          content: "1978";
+        }
+        
+        .text p:before {
+          content: "In 1978, LEGO develop the “System within the System”; introducing new play themes. One of the initial 3 themes is LEGOLAND® Space. The sets become well-known for their gray and blue color scheme, minifigure astronauts and iconic logo of a spaceship circling a moon.";
+        }
+      }
+
+      /* 3rd Smallest - 1958 */
+
+      @media only screen and (min-width: 701px) {
+        body {
+					background-color: #fff;
+				}
+				
+				.lego {
+          background-color: var(--lego-blue);
+        }
+        
+        .lego {
+          grid-template-columns: 2fr 1fr 1fr 1fr;
+          grid-template-rows: repeat(5, 70px);
+          grid-template-areas: 
+          "logo logo brick brick"
+          "text text brick brick"
+          "text text brick brick"
+          "text text brick brick"
+          "text text brick brick";
+          grid-gap: 10px 20px;
+          width: 580px;
+        }
+
+        .bit,
+        .bod {
+          background-color: var(--lego-yellow);
+        }
+
+        div.bod {
+          background-image: none;
+        }
+
+        .logo {
+          grid-column: 1 / 3;
+        }
+
+        .text {
+          grid-column: 1 / 3;
+          grid-row: 2 / -1;
+          padding-right: 40px;
+        }
+
+        .text h2:before {
+          content: "1958";
+        }
+
+        .text p::before {
+          content: "In 1958, the company submits its patent for a new interlocking principle. A system that, with studs and tubes, create 'clutch power'. With more stability, it is possible to combine six 2x4 bricks in over 915 million different ways.";
+        }
+      }
+
+      /* Largest - 1949 */
+      
+      @media only screen and (min-width: 1000px) {
+				body {
+					background-color: #fff;
+				}
+				
+				.lego {
+          background-color: var(--lego-yellow);
+        }
+
+        .lego {
+          grid-template-columns: repeat(6, 1fr);
+          grid-template-rows: repeat(4, 70px);
+          grid-template-areas: 
+          "logo logo logo brick brick brick"
+          "text text text brick brick brick"
+          "text text text brick brick brick"
+          "text text text brick brick brick";
+          grid-gap: 20px 30px;
+          width: 800px;
+          padding-bottom: 50px;
+        }
+
+        .bit,
+        .bod {
+          background-color: var(--lego-red);
+        }
+
+        .logo {
+          grid-column: 1 / -4;
+          grid-row: 1;
+        }
+
+        .text {
+          grid-column: 1 / 4;
+          grid-row: 2 / 5;
+        }
+
+        .text h2:before {
+          content: "1949";
+        }
+
+        .text p::before {
+          content: "In 1949, the first primitive plastic bricks are marketed under the name 'Automatic Binding Bricks' – the forerunner of the LEGO® brick we know today. The English name is in honor of the allied forces who liberated Europe in 1945.";
+        }
+
+      }
+</style>
+
+
+<script>
+(function () {
+  
+  var divTop = document.createElement("div");
+  var divBottom = document.createElement("div");
+  
+  divTop.setAttribute("class", "border-top");
+  divBottom.setAttribute("class", "border-bottom");
+  
+  document.body.appendChild(divTop);
+  document.body.appendChild(divBottom);
+  
+})();
+</script>
+
+</head>
+
+<body>
+      <div class="container">
+        <div class="lego">
+
+          <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/LEGO_logo.svg" class="logo" height="60px">
+          </div>
+          
+          <div class="text">
+            <h2></h2>
+            <p></p>
+          </div>
+          
+          <div class="brick">  
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bod">
+            </div>
+          </div>
+          
+          <div class="brick">  
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bod">
+            </div>
+          </div>
+
+          <div class="brick">  
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bod">
+            </div>
+          </div>
+          
+          <div class="brick">  
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bod">
+            </div>
+          </div>
+          
+          <div class="brick">  
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bod">
+            </div>
+          </div>
+          
+          <div class="brick">  
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bod">
+            </div>
+          </div>
+          
+          <div class="brick">  
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bod">
+            </div>
+          </div>
+          
+          <div class="brick">  
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bit">
+            </div>
+            <div class="bod">
+            </div>
+          </div>
+
+          <div class="brick">  
+              <div class="bit">
+              </div>
+              <div class="bit">
+              </div>
+              <div class="bit">
+              </div>
+              <div class="bit">
+              </div>
+              <div class="bod">
+              </div>
+            </div>
+            
+            <div class="brick">  
+              <div class="bit">
+              </div>
+              <div class="bit">
+              </div>
+              <div class="bit">
+              </div>
+              <div class="bit">
+              </div>
+              <div class="bod">
+              </div>
+            </div>
+            
+            <div class="brick">  
+              <div class="bit">
+              </div>
+              <div class="bit">
+              </div>
+              <div class="bit">
+              </div>
+              <div class="bit">
+              </div>
+              <div class="bod">
+              </div>
+            </div>
+            
+            <div class="brick">  
+              <div class="bit">
+              </div>
+              <div class="bit">
+              </div>
+              <div class="bit">
+              </div>
+              <div class="bit">
+              </div>
+              <div class="bod">
+              </div>
+            </div>
+
+        </div>
+      </div>
+  </body>
+  </html>
