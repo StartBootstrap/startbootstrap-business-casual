@@ -115,7 +115,6 @@ h1, h2, h3, h4 {
     padding-bottom: 15px;
     color:#000000;
     cursor: pointer;
-    border:5px solid rgba(41,11,4,0.5);
 }
 h1 {
 font-size: 36px;
@@ -134,18 +133,6 @@ font-size: 30px;
 line-height: 34px;
 }
 
-h1:hover {
-font-family: 'cuneiforme';
-}
-h2:hover {
-font-family: 'cuneiforme';
-}
-h3:hover {
-font-family: 'cuneiforme';
-}
-h4:hover {
-font-family: 'cuneiforme';
-}
 
 /*фотографии*/
 img {
@@ -168,7 +155,6 @@ img {
 figcaption {
 margin-bottom: 30px;
 font-size: 20px;
-font-style: italic;
 text-align: center;
 /*display: inline;     для выделения фоном
 background: #556666;*/
