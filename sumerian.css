@@ -21,8 +21,8 @@ font-style: normal;
 }
 @font-face
 {
-font-family: "zarathustra";
-src: url("font/sumerian/zarathustra.ttf") format("truetype");
+font-family: "Behistun";
+src: url("font/sumerian/Behistun.ttf") format("truetype");
 font-weight: normal;
 font-style: normal;
 }
@@ -79,7 +79,7 @@ p {
 font-family: 'cuneiform';
 font-size:28px;
 line-height: 30px;
-color:#26120E;
+color:#000000;
 }
 
 /*тег цитат*/
@@ -95,13 +95,13 @@ font-size:22px;
 
 /*выделенный курсив*/
 p i {
-font-family: 'cuneiform';
+font-family: 'cuneiforme';
 font-size:22px;
 }
 
 /*текст ссылки в статье*/
 p a {
-font-family: 'cuneiform';
+font-family: 'cuneiforme';
 font-size: 17px;
 color:#000000;
 text-decoration: underline;
@@ -110,7 +110,7 @@ text-decoration: underline;
 /*заголовки*/
 h1, h2, h3, h4 {
     display: block;
-    font-family: 'zarathustra';
+    font-family: 'Behistun';
     padding-top: 15px;
     padding-bottom: 15px;
     color:#000000;
