@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lord of the Rings theme</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Reference for Ajax -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <!-- Reference for jQuery -->  
+  <script src="jquery-3.4.1.min.js"></script>
+
+  
+<style>
+@font-face {
+    font-family: 'elvish';
+    src: url('font/elvish/tngan.ttf') format('ttf');
+}
+
+body {
+  margin: auto;
+  background: url(ssauron.png);
+        background-repeat: no-repeat;
+        background-position: center top;  
+font-family: 'elvish', normal;		
+}
+
+
+p {
+font-family: 'elvish';
+}
+
+.move-area{/*normally use body
+  width: 100vw;
+  height: 100vh;*/
+  padding: 12% 27%;
+}
+
+
+.container {
+  width: 100%;
+}
+
+.eye {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  background: #e0190b;
+  opacity:0.6;
+}
+
+.eye:after { /*pupil*/
+  position: absolute;
+  bottom: 17px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background: #000;
+  border-radius: 50%;
+  content: " ";
+  opacity:1;
+}
+</style>
+
+<script>
+//This is a pen based off of Codewoofy's eyes follow mouse. It is just cleaned up, face removed, and then made to be a little more cartoony. https://codepen.io/Codewoofy/pen/VeBJEP
+
+$(".move-area").mousemove(function(event) {
+  var eye = $(".eye");
+  var x = (eye.offset().left) + (eye.width() / 2);
+  var y = (eye.offset().top) + (eye.height() / 2);
+  var rad = Math.atan2(event.pageX - x, event.pageY - y);
+  var rot = (rad * (180 / Math.PI) * -1) + 180;
+  eye.css({
+    '-webkit-transform': 'rotate(' + rot + 'deg)',
+    '-moz-transform': 'rotate(' + rot + 'deg)',
+    '-ms-transform': 'rotate(' + rot + 'deg)',
+    'transform': 'rotate(' + rot + 'deg)'
+  });
+});
+</script>
+</head>
+<body>
+
+<audio preload="auto" autoplay>
+  <source src="Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg">
+</audio>
+
+
+<div class="move-area">
+  <div class='.container'>
+
+    <div class='eye'></div>
+  </div>
+</div>
+
+
+
+<div style="float:right;">  
+  <div>
+    <p>Episode V</p>
+    <p>THE EMPIRE STRIKES BACK</p>
+    <br>
+    <p>It is a dark time for the
+Rebellion. Although the Lorem
+Ipsum has been destroyed,
+Digital Humanities troops have driven the
+Vitali's forces from their hidden
+base and pursued them across
+the university.
+</p> 
+<p>
+Evading the dreaded Imperial
+Starfleet, a group of freedom
+fighters led by Fabio Vitali
+has established a new secret
+base on the remote ice world
+of Bologna.
+</p> 
+<p>
+The lord Francesca Tomasi,
+obsessed with finding young
+Vitali, has dispatched
+thousands of remote probes into
+the far reaches of space....</p>     
+  </div>  
+</div>
+
+
+</body>
+</html>

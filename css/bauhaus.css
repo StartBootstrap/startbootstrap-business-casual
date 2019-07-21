@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Baumans&display=swap');
+
+p, h1, h2, h3, h4, figcaption, table, em, q { 
+
+font-family: 'Baumans', cursive;
+margin: 25px 25px 25px 25px;
+	
+}
+
+p {
+
+font-size: 15px;
+
+}
+
+section > div {
+	
+text-decoration: underline;
+text-indent: 50px;
+font-family: 'Baumans', cursive;
+margin: 25px 25px 25px 25px;
+		
+}
+
+table, tr, td {
+
+border-collapse: collapse;
+border: 1px solid black;
+padding: 10px;
+text-align: left;
+
+}
+
+h1, h2, h3, h4 {
+	
+-ms-transform: rotate(20deg); /* IE 9 */
+-webkit-transform: rotate(20deg); /* Safari 3-8 */
+transform: rotate(20deg);
+	
+}
+
+figcaption { 
+
+text-align: center;
+font-size: 13px;
+
+}
+
+body {
+	
+background-image: url("img/type/typebackgroundbody.jpg");
+background-position: center top;
+
+}
+
+img {
+
+width: 80%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+
+}
+
+section {
+
+background-image: url("img/type/typebackground.png");
+border-radius: 2px;
+padding-top: 80px;
+padding-bottom: 80px;
+padding-right: 50px;
+padding-left: 50px;
+margin: 5%;
+
+}
+
+article {
+
+margin-top: 5%;
+margin-bottom: 5%;
+margin-left: 20%;
+margin-right: 20%;
+word-spacing: 6px;
+
+}
+
+/*eudirective*/
+
+.col-ing > div:first-of-type {
+
+}
+
+.col-ita > div:first-of-type {
+
+}
+
+.flex-container{
+    width: 80%;
+	margin-top:30px;
+    margin: 0 auto;
+    display: -webkit-flex; /* Safari */     
+    display: flex; /* Standard syntax */
+	}
+
+.flex-container .col-ing{
+	margin-top: 30px;
+    -webkit-flex: 1; /* Safari */
+    flex: 1; /* Standard syntax */
+	margin-right:20px;
+}
+
+
+.flex-container .col-ita{
+	margin-top: 30px;
+   -webkit-flex: 1; /* Safari */
+    flex: 1; /* Standard syntax */
+	margin-left:20px;
+}
+
+.container-eu{
+	margin: 50px;
+		margin-bottom:70px;		
+	background-image: url("img/type/typebackground.png");
+    line-height: 1.7;
+		
+		font-size: 15pt;
+		margin-left:90px;
+		margin-right:90px;
+		 padding-top:20px;
+		padding-left:0px;
+		padding-right: 0px;
+		height:auto;
+		overflow: hidden;
+}
+
+	
+.container-eu p {
+				font-size: 15pt;
+				border-right:none;
+				margin-top: 20px;
+				margin-left:20px;
+				margin-right:20px;
+}

@@ -1,0 +1,188 @@
+@font-face {
+font-family: "Bauhaus 93";
+src: url("font/Bauhaus 93 Regular.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+
+p, h1, h2, h3, h4, figcaption, table, em, q { 
+
+font-family: "Bauhaus 93";
+margin: 25px 25px 25px 25px;
+	
+}
+
+p {
+
+font-size: 25px;
+
+}
+
+section > div {
+	
+text-decoration: underline;
+font-family: "Bauhaus 93";
+margin: 10px 10px 10px 10px;
+		
+}
+
+table, tr, td {
+
+border-collapse: collapse;
+border: 10px solid black;
+border-radius: 10%;
+padding: 10px;
+text-align: left;
+border-radius: 10px;
+max-width: 50%; 
+
+}
+
+h1, h2, h3, h4 {
+
+padding-left: 25%;	
+-ms-transform: rotate(20deg); /* IE 9 */
+-webkit-transform: rotate(30deg); /* Safari 3-8 */
+transform: rotate(30deg);
+font-size: 28px;
+	
+}
+
+h1{
+
+text-transform: uppercase;	
+font-size: 32px;
+border-bottom: 10px solid black;
+
+}
+
+h2, h4{
+	
+color: #B93239;
+text-decoration: underline;
+
+}
+
+h4 {
+min-height: 70px;
+padding-bottom: 20%;
+}
+
+figcaption { 
+
+text-align: center;
+font-size: 25px;
+color: #B93239;
+text-decoration: underline;
+border-bottom: 10px solid black;
+
+}
+
+body {
+	
+background-image: url("img/bauhaus/sfondobauhaus.jpg");
+background-size: 100%;
+background-repeat: repeat;
+}
+
+img {
+
+width: 80%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+border-radius: 3px;
+
+}
+
+section {
+
+background: rgba(234, 210, 176, 0.95);
+border-radius: 2px;
+padding-top: 80px;
+padding-bottom: 80px;
+padding-right: 50px;
+padding-left: 50px;
+margin: 10%;
+
+}
+
+article {
+
+margin-top: 5%;
+margin-bottom: 5%;
+margin-left: 20%;
+margin-right: 20%;
+word-spacing: 6px;
+
+}
+
+ a { 
+  color: #B93239;
+} 
+
+/*eudirective*/
+
+.col-ing > div:first-of-type {
+
+}
+
+.col-ita > div:first-of-type {
+
+}
+
+.flex-container{
+    width: 80%;
+	margin-top:30px;
+    margin: 0 auto;
+    display: -webkit-flex; /* Safari */     
+    display: flex; /* Standard syntax */
+	}
+
+.flex-container .col-ing{
+	margin-top: 30px;
+    -webkit-flex: 1; /* Safari */
+    flex: 1; /* Standard syntax */
+	margin-right:20px;
+}
+
+
+.flex-container .col-ita{
+	margin-top: 30px;
+   -webkit-flex: 1; /* Safari */
+    flex: 1; /* Standard syntax */
+	margin-left:20px;
+}
+
+.container-eu{
+	margin: 50px;
+		margin-bottom:70px;		
+    background: rgba(234, 210, 176, 0.95);
+    line-height: 1.7;
+		
+		font-size: 25px;
+		margin-left:90px;
+		margin-right:90px;
+		 padding-top:20px;
+		padding-left:0px;
+		padding-right: 0px;
+		height:auto;
+		overflow: hidden;
+}
+
+	
+.container-eu p {
+				font-size: 25px;
+				border-right:none;
+				margin-top: 20px;
+				margin-left:20px;
+				margin-right:20px;
+}
+
+.container-eu table {
+	
+max-width: 50px;
+font-size: 10px;
+}
