@@ -151,3 +151,8 @@ word-spacing: 6px;
 				margin-left:20px;
 				margin-right:20px;
 }
+
+.container-eu table {
+	
+max-width: 50%;
+}
