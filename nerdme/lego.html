@@ -14,594 +14,1076 @@
   
 <head>
 <style>
-/**
- * Background from http://www.freepik.com/
- * Designed by Freepik
- */
+html {
+  box-sizing: border-box;
+}
 
-@bg-tl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/319423/lego-bg-tl.png";
-@bg-tr: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/319423/lego-bg-tr.png";
-@bg-bl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/319423/lego-bg-bl.png";
-@bg-br: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/319423/lego-bg-br.png";
-
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
 
 body {
-  height: 100%;
-  font-family: Roboto, arial, sans-serif;
-  font-size: 1em;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  
-  > :first-child {
-    position: absolute;
-    padding: 1em;
-    left: 18%;
-    right: 18%;
-    top: 33%;
-    bottom: 33%;  display: flex;  display: flex;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-  }
+  height: 100vh;
+  font-family: Montserrat, sans-serif;
 }
 
-.large-text,
-[lego-ipsum="phrase"],
-[lego-ipsum="sentence"] {
-  font-size: 1.5em;
+.minifigure {
+  position: relative;
+  width: 300px;
+  height: 485px;
+  margin: auto;
+  perspective: 200;
+  transform-style: preserve-3d;
+  transition: transform 400ms;
 }
 
-img.minifig {
-  max-height: 100%;
-  max-width: 100%;
+.minifigure.explode {
+  transform: scale(0.75) translateZ(0);
 }
 
-.border-top,
-.border-bottom {
+/* Head */
+
+.head {
   position: absolute;
-  max-height: 50%;
-  height: 50%;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  
-  &:before,
-  &:after {
-    background-color: transparent;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    content: " ";    
-  }
-  
-  &.border-top {    
-    top: 0;
-  
-    &:before {
-      background-image: url(@bg-tl);
-      background-position: 0 0;
-      top: 0;
-      left: 0;
-    }
-  
-    &:after {
-      background-image: url(@bg-tr);
-      background-position: 100% 0;
-      top: 0;
-      right: 0;
-    }
-  }
-  
-  &.border-bottom {    
-    bottom: 0;
-    
-    &:before {
-      background-image: url(@bg-bl);
-      background-position: 0 100%;
-      bottom: 0;
-      left: 0;
-    }
-  
-    &:after {
-      background-image: url(@bg-br);
-      background-position: 100% 100%;
-      bottom: 0;
-      right: 0;
-    }
-  }
+  z-index: 1;
+  top: 2.25em;
+  left: 50%;
+  width: 7.25em;
+  height: 6.25em;
+  transform: translateX(-50%);
+  color: hsla(50,90%,50%,1);
+  background-color: currentColor;
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.3),
+      rgba(255,255,255,0) 20%,
+      rgba(0,0,0,0) 80%,
+      rgba(0,0,0,0.15) 95%,
+      rgba(0,0,0,0.3)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255,255,255,0) 50%,
+      rgba(255,255,255,0.2),
+      rgba(255,255,255,0)
+    );
+  border-radius: 1.5em;
+  transition: transform 400ms;
+}
+
+.explode .head {
+  transform: translate(-50%, -8em);
+}
+
+.head::before,
+.head::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  height: 2em;
+  transform: translateX(-50%);
+  background-color: currentColor;
+}
+
+.head::before {
+  top: -1.25em;
+  width: 3.5em;
+  height: 1.25em;
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.5),
+      rgba(255,255,255,0) 30%
+    ),
+    linear-gradient(
+      to right,
+      rgba(255,255,255,0) 70%,
+      rgba(255,255,255,0.25) 80%,
+      rgba(255,255,255,0) 90%
+    );
+  border-radius: 0.25em 0.25em 0 0;
+}
+
+.head::after {
+  bottom: -1em;
+  width: 4.5em;
+  height: 1em;
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.2),
+      rgba(0,0,0,0.05) 50%
+    ),
+    linear-gradient(
+      to right,
+      rgba(255,255,255,0) 70%,
+      rgba(255,255,255,0.25) 80%,
+      rgba(255,255,255,0) 90%
+    );
+  border-radius: 0 0 0.125em 0.125em;
+}
+
+/* Faces */
+
+.faces-wrap {
+  height: 100%;
+  overflow: hidden;
+}
+
+.faces {
+  display: flex;
+  transition: transform 400ms cubic-bezier(0,0,0,1.25);
+}
+
+.explode .faces {
+  transform: translateX(-500%) !important;
+}
+
+.face {
+  position: relative;
+  flex: 1 0 100%;
+}
+
+/* Eyes */
+
+.eye {
+  position: absolute;
+  top: 2.25em;
+  width: 0.75em;
+  height: 0.9375em;
+  color: #fff;
+  background-color: currentColor;
+  border-radius: 50%;
+  box-shadow: inset 0 -0.125em 0 0.25em #000;
+}
+
+.eye::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  color: #000;
+  transform: translateX(-50%);
+}
+
+.eye.right {
+  left: 2.25em;
+}
+
+.eye.left {
+  right: 2.25em;
+}
+
+.classic .eye {
+  top: 2.4375em;
+  height: 0.75em;
+  color: #000;
+  box-shadow: none;
+}
+
+.large-smile .eye {
+  top: 2em;
+}
+
+.worried .eye,
+.surprised .eye {
+  top: 2.4375em;
+  width: 1em;
+  height: 1.125em;
+  box-shadow: inset 0 -0.125em 0 0.3125em #000;
+}
+
+.worried .eye.right {
+  left: 2.125em;
+}
+
+.worried .eye.left {
+  right: 2.125em;
+}
+
+.frown .eye {
+  top: 2.625em;
+}
+
+.frown .eye::before {
+  bottom: 80%;
+  width: 1.25em;
+  height: 1em;
+  border: 0.1875em solid transparent;
+  border-bottom-color: currentColor;
+  border-radius: 50%;
+}
+
+.frown .eye.right::before {
+  margin-left: -0.25em;
+  transform: translateX(-50%) rotate(-20deg);
+}
+
+.frown .eye.left::before {
+  margin-left: 0.25em;
+  transform: translateX(-50%) rotate(20deg);
 }
 
 
+/* Brow */
+
+.brow {
+  position: absolute;
+  bottom: 0.625em;
+  left: 50%;
+  width: 1.75em;
+  height: 1em;
+  transform-origin: 0 0;
+  transform: translateX(-50%);
+  color: #000;
+  border: 0.25em solid transparent;
+  border-top-color: currentColor;
+  border-bottom: none;
+  border-radius: 50% 50% 0 0;
+}
+
+.right .brow {
+  border-left: none;
+}
+
+.left .brow {
+  border-right: none;
+}
+
+.large-smile .brow {
+  bottom: 0.375em;
+  width: 1.25em;
+  height: 1.375em;
+  border: none;
+  border-top: 0.25em solid;
+  border-radius: 50% 50% 0 0;
+}
+
+.large-smile .right .brow {
+  margin-left: -0.125em;
+  transform: skewY(-10deg) translateX(-50%) translateZ(0);
+}
+
+.large-smile .left .brow {
+  margin-left: 0.125em;
+  transform: skewY(10deg) translateX(-50%) translateZ(0);
+}
+
+.worried .brow {
+  width: 1.25em;
+  height: 0.875em;
+  bottom: 1.25em;
+  border-top: none;
+  border-bottom: 0.25em solid currentColor;
+  border-radius: 0 0 50% 50%;
+}
+
+.worried .right .brow {
+  margin-left: -0.25em;
+  transform: rotate(-20deg) translateX(-50%) translateZ(0);
+}
+
+.worried .left .brow {
+  margin-left: 0.25em;
+  transform: rotate(20deg) translateX(-50%) translateZ(0);
+}
+
+.frown .brow {
+  width: 1.5em;
+  bottom: 1.375em;
+  border-top: none;
+  border-bottom: 0.25em solid currentColor;
+  border-radius: 0 0 50% 50%;
+}
+
+.frown .right .brow {
+  margin-left: -0.625em;
+  transform: rotate(-35deg) translateX(-50%) translateZ(0);
+}
+
+.frown .left .brow {
+  margin-left: 0.625em;
+  transform: rotate(35deg) translateX(-50%) translateZ(0);
+}
+
+.surprised .brow {
+  bottom: 1em;
+  width: 1.5em;
+  border-right: none;
+  border-left: none;
+}
+
+.surprised .right .brow {
+  margin-left: -0.5em;
+  transform: rotate(-15deg) translateX(-50%) translateZ(0);
+}
+
+.surprised .left .brow {
+  margin-left: 0.5em;
+  transform: rotate(15deg) translateX(-50%) translateZ(0);
+}
+
+/* Mouth */
+
+.mouth {
+  position: absolute;
+  top: 3.125em;
+  left: 50%;
+  width: 2.5em;
+  height: 1.5em;
+  transform: translateX(-50%);
+  color: #000;
+  border: 0.25em solid transparent;
+  border-bottom-color: currentColor;
+  border-radius: 50%;
+}
+
+.mouth::before,
+.mouth::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.classic .mouth {
+  top: 2.9375em;
+}
+
+.large-smile .mouth {
+  top: 0.125em;
+  width: 3.125em;
+  height: 5em;
+  border: none;
+  border-bottom: 1.5em solid;
+  border-radius: 0 0 70% 70%/0 0 50% 50%;
+}
+
+.large-smile .mouth::before {
+  top: 1.6875em;
+  width: 4.25em;
+  height: 2em;
+  color: #000;
+  border: 0.1875em solid transparent;
+  border-bottom-color: currentColor;
+  border-radius: 0 0 50% 50%;
+  box-shadow: 0 0.9375em 0 -0.75em #fff;
+}
+
+.large-smile .mouth::after {
+  top: 4.4375em;
+  width: 1.25em;
+  height: 0.375em;
+  color: #c00;
+  background-color: currentColor;
+  border-radius: 70% 70% 70% 70%/50% 50% 100% 100%;
+}
+
+.worried .mouth {
+  top: 4.5em;
+  width: 2em;
+  height: 1.25em;
+  transform: translateX(-50%) rotate(-10deg) translateZ(0);
+  border-top-color: currentColor;
+  border-right: none;
+  border-bottom-color: transparent;
+  border-right-width: 0.5em;
+  border-radius: 50% 50% 0 0;
+}
+
+.frown .mouth {
+  top: 4.25em;
+  width: 2.75em;
+  height: 2em;
+  margin-left: -0.125em;
+  transform: translateX(-50%) rotate(-15deg) translateZ(0);
+  border-top-color: currentColor;
+  border-right: none;
+  border-bottom-color: transparent;
+  border-right-width: 0.5em;
+  border-radius: 50% 50% 0 0;
+}
+
+.frown .mouth::before {
+  top: 0.375em;
+  width: 0.75em;
+  height: 0.625em;
+  margin-left: 0.125em;
+  color: #000;
+  border: 0.125em solid transparent;
+  border-top-color: currentColor;
+  border-right: none;
+  border-radius: 50%;
+  border-radius: 50% 50% 0 0;
+}
+
+.surprised .mouth {
+  top: 4em;
+  width: 3.125em;
+  height: 1.625em;
+  background-color: currentColor;
+  border: none;
+  border-radius: 70% 70% 60% 60%/100% 100% 50% 50%;
+}
+
+.surprised .mouth::before,
+.surprised .mouth::after {
+  color: #fff;
+  background-color: currentColor;
+}
+
+.surprised .mouth::before {
+  top: 0.1875em;
+  width: 2em;
+  height: 0.375em;
+  border-radius: 70% 70% 60% 60%/100% 100% 50% 50%;
+}
+
+.surprised .mouth::after {
+  bottom: 0.1875em;
+  width: 2.25em;
+  height: 0.375em;
+  border-radius: 70% 70% 60% 60%/100% 100% 50% 50%;
+}
+
+/* Upper Body */
+
+.upper-body {
+  position: absolute;
+  top: 9.25em;
+  width: 100%;
+  color: hsl(200,0%,90%);
+}
+
+.upper-body::before,
+.upper-body::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.upper-body::before {
+  bottom: 100%;
+  width: 3em;
+  height: 3.5em;
+  background-color: currentColor;
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(255,255,255,0) 50%,
+      rgba(255,255,255,0.2),
+      rgba(255,255,255,0) 90%
+    ),
+    linear-gradient(
+      rgba(0,0,0,0) 50%,
+      rgba(0,0,0,0.05) 80%,
+      rgba(0,0,0,0.1)
+    );
+  border-radius: 50% 50% 0 0/10% 10% 0 0;
+}
+
+.upper-body::after {
+  top: -2.75em;
+  width: 2em;
+  height: 2em;
+  background-color: rgba(0,0,0,0.9);
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(255,255,255,0) 50%,
+      rgba(255,255,255,0.2) 80%,
+      rgba(255,255,255,0)
+    );
+  border-radius: 50%/10%;
+}
+
+.torso {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  width: 7.75em;
+  height: 9.125em;
+  transform-origin: top center;
+  transform: translateX(-50%) rotateX(25deg);
+  background-color: currentColor;
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.1),
+      rgba(0,0,0,0) 80%,
+      rgba(0,0,0,0.05) 98%,
+      rgba(0,0,0,0.25) 100%
+    );
+  border-radius: 0.5em 0.5em 0.125em 0.125em;
+  box-shadow:
+    inset 0 0.25em 0.25em rgba(255,255,255,0.5),
+    -1.5em 0.5em 1em -1.25em rgba(0,0,0,0.3),
+    1.5em 0.5em 1em -1.25em rgba(0,0,0,0.3);
+}
+
+.arm {
+  position: absolute;
+  left: 50%;
+  top: 4em;
+  width: 3em;
+  height: 5.5em;
+  transform-origin: center 1.5em;
+  background-color: currentColor;
+  border-radius: 1.5em/1em;
+}
+
+.arm.right {
+  margin-left: -6.25rem;
+  transform: translateX(-50%) rotate(12deg);
+  box-shadow:
+    inset 0.5em 0.25em 0.375em -0.25em rgba(255,255,255,0.4),
+    inset 0 0 0.75em 0.75em currentColor,
+    inset 0 0 0 2em rgba(255,255,255, 0.15);
+}
+
+.arm.left {
+  margin-left: 6.25rem;
+  transform: translateX(-50%) rotate(-12deg);
+  box-shadow:
+    inset -0.5em 0.25em 0.375em -0.25em rgba(255,255,255,0.4),
+    inset 0 0 0.75em 0.75em currentColor,
+    inset 0 0 0 2em rgba(255,255,255, 0.15);
+}
+
+.arm::before {
+  content: '';
+  position: absolute;
+  bottom: 3.5em;
+  left: 0;
+  width: 100%;
+  height: 5.5em;
+  backface-visibility: hidden;
+  transform-origin: center 4.5em;
+  background-color: currentColor;
+  border-radius: 1.5em/1.5em 1.5em 1em 1em;
+}
+
+.arm.right::before {
+  transform: rotate(14deg);
+  box-shadow:
+    inset 0.75em 0.125em 0.375em -0.5em rgba(255,255,255,0.4),
+    inset 0.25em 1.1em 0.75em 0.75em currentColor,
+    inset 0 0 0 2em rgba(255,255,255, 0.15);
+}
+
+.arm.left::before {
+  transform: rotate(-14deg);
+  box-shadow:
+    inset -0.75em 0.125em 0.375em -0.5em rgba(255,255,255,0.4),
+    inset -0.25em 1.1em 0.75em 0.75em currentColor,
+    inset 0 0 0 2em rgba(255,255,255, 0.15);
+}
+
+.arm::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5em;
+  transform-origin: center 4.5em;
+  background-color: currentColor;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1em rgba(255,255,255,0.2);
+}
+
+.hand {
+  position: absolute;
+  z-index: 1;
+  top: 80%;
+  left: 50%;
+  width: 1.75em;
+  height: 1.75em;
+  transform: translateX(-50%);
+  color: hsla(50,90%,50%,1);
+  background-color: currentColor;
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(255,255,255,0.2),
+      rgba(0,0,0,0.075),
+      rgba(255,255,255,0.2)
+    );
+  border-radius: 1em/0.5em;
+  box-shadow: 0 -0.125em 0.125em rgba(0,0,0,0.1);
+}
+
+.hand::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 1em;
+  left: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  transform: translateX(-50%);
+  color: hsla(50,90%,60%,1);
+  border: 0.75em solid;
+  border-bottom-color: transparent;
+  box-shadow:
+    inset 0 0.25em rgba(0,0,0,0.15),
+    inset 0 0.25em;
+  border-radius: 50%;
+}
+
+/* Lower Body */
+
+.lower-body {
+  position: absolute;
+  top: 18.5em;
+  left: 50%;
+  width: 10em;
+  height: 11.75em;
+  transform: translateX(-50%);
+  color: hsl(200,0%,90%);
+  transition: transform 400ms;
+}
+
+.explode .lower-body {
+  transform: translate(-50%, 8em);
+}
+
+.lower-body > div {
+  position: absolute;
+  background-color: currentColor;
+}
+
+.waist {
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 1.5em;
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.15),
+      rgba(0,0,0,0) 80%,
+      rgba(255,255,255,0.1) 90%,
+      rgba(255,255,255,0.15)
+    );
+  border-radius: 0.125em;
+  box-shadow: 0 0.75em 0.75em -0.25em rgba(0,0,0,0.25);
+}
+
+.waist::before,
+.waist::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 3em;
+  height: 3em;
+  transform: translateX(-50%);
+  background-color: currentColor;
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.75),
+      rgba(255,255,255,0) 10%
+    ),
+    linear-gradient(
+      to right,
+      rgba(255,255,255,0) 20%,
+      rgba(255,255,255,0.25) 25%,
+      rgba(255,255,255,0) 40%,
+      rgba(255,255,255,0) 60%,
+      rgba(255,255,255,0.25) 75%,
+      rgba(255,255,255,0) 80%,
+      rgba(255,255,255,0.2)
+    ),
+    linear-gradient(
+      rgba(255,255,255,0.1),
+      rgba(0,0,0,0.15)
+    );
+}
+
+.waist::before {
+  margin-left: -2.75em;
+  border-radius: 50% 30% 0 0/100% 30% 0 100%;
+}
+
+.waist::after {
+  margin-left: 2.75em;
+  border-radius: 30% 50% 0% 0%/30% 100% 100% 0%;
+}
+
+.crotch {
+  z-index: 1;
+  top: 1.5em;
+  left: 50%;
+  width: 10%;
+  height: 4.5em;
+  transform: translateX(-50%);
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.2),
+      rgba(0,0,0,0.05) 10%,
+      rgba(0,0,0,0.2) 10%,
+      rgba(255,255,255,0.1),
+      rgba(0,0,0,0.1)
+    );
+  border-radius: 0 0 0.25em 0.25em;
+  box-shadow:
+    -0.5em 0 0.25em -0.25em rgba(0,0,0,0.15),
+    0.5em 0 0.25em -0.25em rgba(0,0,0,0.15),
+    -0.25em 0 0.125em -0.125em rgba(0,0,0,0.2),
+    0.25em 0 0.125em -0.125em rgba(0,0,0,0.2);
+}
+
+.leg {
+  bottom: 0;
+  left: 50%;
+  width: 4.75em;
+  height: 10.75em;
+  transform: translateX(-50%);
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.1) 10%,
+      rgba(255,255,255,0.1) 25%,
+      rgba(0,0,0,0.1) 45%,
+      rgba(0,0,0,0), 50%,
+      rgba(0,0,0,0.05), 65%,
+      rgba(0,0,0,0) 74%,
+      rgba(0,0,0,0.1), 78%,
+      rgba(255,255,255,0.2) 78%,
+      rgba(255,255,255,0) 82%,
+      rgba(0,0,0,0.1)
+    );
+  border-radius: 0.25em 0.25em 0.0625em 0.0625em;
+}
+
+.leg.right {
+  margin-left: -2.75em;
+}
+
+.leg.left {
+  margin-left: 2.75em;
+}
 
 
+/* Controls */
 
+.controls {
+  position: relative;
+  z-index: 1;
+  width: 200px;
+  padding: 1.5em;
+  color: #333;
+  text-transform: uppercase;
+  background-color: rgba(220,220,220,0.5);
+}
 
+.controls .title {
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+  font-size: 1.25em;
+  letter-spacing: 0.03125em;
+}
 
-/* LEGO PALETTE */
+.button {
+  width: 100%;
+  padding: 0.5em 1em;
+  margin: 0.25rem 0;
+  color: #666;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5em;
+  cursor: pointer;
+  outline: none;
+}
 
-      :root {
-        --lego-white: #fff;
-        --lego-blue: #006CB7;
-        --lego-azur: #00A3DA;
-        --lego-yellow: #FFCD03;
-        --lego-dark-yellow: #FBAB18;
-        --lego-green: #00AF4D;
-        --lego-dark-green: #009247;
-        --lego-red: #DD1A21;
-        --lego-violet: #B51C7D;
-      }
+.button:hover {
+  color: #000;
+  border-color: #ccc;
+}
 
-      /* MAIN CONTAINER */
+.button:active {
+  background-color: #ddd;
+}
 
-      body {
-        margin: 0;
-      }
+.controls fieldset {
+  border: none;
+  margin: 1rem 0;
+}
 
-      .container {
-        display: grid;
-        justify-items: center;
-      }   
+.controls legend {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: small;
+  letter-spacing: 0.03125em;
+}
 
-      h2 {
-        font-size: 4rem;
-        margin: 40px 0px 20px 0px;
-      }
+.controls label {
+  display: block;
+  font-size: x-small;
+  letter-spacing: 0.0625em;
+}
 
-      .text {
-        display: grid;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        color: #fff;
-      }
+.controls input[type="range"] {
+  -webkit-appearance: none; 
+  appearance: none;
+  position: relative;
+  width: 100%;
+  height: 2em;
+  padding: 0.375em;
+  margin: 0.25rem 0 1rem;
+  color: inherit;
+  background-color: currentColor;
+  border-radius: 1em;
+  outline: none;
+}
 
-      p {
-        font-size: 1.1rem;
-      }
+.controls input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  position: relative;
+  z-index: 10;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: hsla(50,90%,50%,1);
+  border-radius: 50%;
+  cursor: pointer;
+}
 
+.controls input[type="range"]::-moz-range-thumb {
+  position: relative;
+  z-index: 10;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
-      /* LEGO BRICKS CONTAINER */
-      
-      .lego {
-        display: grid;
-        margin-top: 40px;
-        padding: 40px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-      }
-      
-      /* LEGO BRICK */
-      
-      .brick {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        
-      }
-
-      .bit {
-        height: 15%;
-        align-self: flex-end;
-        justify-self: center;
-        width: 50%;
-        border-top-left-radius: 20%;
-        border-top-right-radius: 20%;
-      }
-
-      .bod {
-        grid-column: 1 / 5;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-        border-top-left-radius: 2%;
-        border-top-right-radius: 2%;
-			}
-
-      /* MEDIA QUERIES */
-
-      /* Smallest - 1998 */
-      
-      @media only screen and (max-width: 500px) {
-        body {
-					background-color: #fff;
-				}
-				
-				.lego {
-          background-color: var(--lego-green);
-        }
-        
-        .lego {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(9, 60px);
-        grid-template-areas: 
-          "logo logo"
-          "text text"
-          "text text"
-          "text text"
-          "text text"
-          "text text"
-          "brick brick"
-          "brick brick"
-          "brick brick";
-        grid-gap: 5px 20px;
-        width: 200px;
-        }
-
-        .bit,
-        .bod {
-          background-color: var(--lego-yellow);
-        }
-
-        .logo {
-          grid-column: 1 / -1;
-          grid-row: 1;
-        }
-      
-        .text {
-          grid-column: 1 / -1;
-          grid-row: 2 / 7;
-        }
-
-        .text h2:before {
-          content: "1998";
-        }
-
-        .text p::before {
-          content: "Developed in association with MIT, 1998 sees the launch of the intelligent LEGO brick. LEGO Mindstorms are built models that once connected to a PC, can be programmed to do a series of different tasks.";
-        }
-      }
-      
-      /* 2nd Smallest - 1978 */
-
-      @media only screen and (min-width: 501px) {
-        body {
-					background-color: #fff;
-				}
-				
-				.lego {
-          background-color: var(--lego-yellow);
-        }
-
-        .lego {
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-template-rows: repeat(4, 70px) 0px 70px 70px;
-          grid-template-areas: 
-          "logo logo logo"
-          "text text text"
-          "text text text"
-          "text text text"
-          "brick brick brick"
-          "brick brick brick"
-          "brick brick brick";
-          grid-gap: 10px 20px;
-          width: 380px;
-        }
-
-        .bit,
-        .bod {
-          background-color: var(--lego-blue);
-        }
-
-        div.bod {
-          background-image: url(https://vignette.wikia.nocookie.net/galaxy4rblx/images/9/9f/LEGO_space_logo.png/revision/latest/scale-to-width-down/640?cb=20130727015128);
-          background-size: 40px;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-
-        .logo {
-          grid-row: 1;
-          grid-column: 1 / -1;
-        }
-
-        .text {
-          grid-column: 1 / -1;
-          grid-row: 2 / 6;
-        }
-
-        .text h2:before {
-          content: "1978";
-        }
-        
-        .text p:before {
-          content: "In 1978, LEGO develop the “System within the System”; introducing new play themes. One of the initial 3 themes is LEGOLAND® Space. The sets become well-known for their gray and blue color scheme, minifigure astronauts and iconic logo of a spaceship circling a moon.";
-        }
-      }
-
-      /* 3rd Smallest - 1958 */
-
-      @media only screen and (min-width: 701px) {
-        body {
-					background-color: #fff;
-				}
-				
-				.lego {
-          background-color: var(--lego-blue);
-        }
-        
-        .lego {
-          grid-template-columns: 2fr 1fr 1fr 1fr;
-          grid-template-rows: repeat(5, 70px);
-          grid-template-areas: 
-          "logo logo brick brick"
-          "text text brick brick"
-          "text text brick brick"
-          "text text brick brick"
-          "text text brick brick";
-          grid-gap: 10px 20px;
-          width: 580px;
-        }
-
-        .bit,
-        .bod {
-          background-color: var(--lego-yellow);
-        }
-
-        div.bod {
-          background-image: none;
-        }
-
-        .logo {
-          grid-column: 1 / 3;
-        }
-
-        .text {
-          grid-column: 1 / 3;
-          grid-row: 2 / -1;
-          padding-right: 40px;
-        }
-
-        .text h2:before {
-          content: "1958";
-        }
-
-        .text p::before {
-          content: "In 1958, the company submits its patent for a new interlocking principle. A system that, with studs and tubes, create 'clutch power'. With more stability, it is possible to combine six 2x4 bricks in over 915 million different ways.";
-        }
-      }
-
-      /* Largest - 1949 */
-      
-      @media only screen and (min-width: 1000px) {
-				body {
-					background-color: #fff;
-				}
-				
-				.lego {
-          background-color: var(--lego-yellow);
-        }
-
-        .lego {
-          grid-template-columns: repeat(6, 1fr);
-          grid-template-rows: repeat(4, 70px);
-          grid-template-areas: 
-          "logo logo logo brick brick brick"
-          "text text text brick brick brick"
-          "text text text brick brick brick"
-          "text text text brick brick brick";
-          grid-gap: 20px 30px;
-          width: 800px;
-          padding-bottom: 50px;
-        }
-
-        .bit,
-        .bod {
-          background-color: var(--lego-red);
-        }
-
-        .logo {
-          grid-column: 1 / -4;
-          grid-row: 1;
-        }
-
-        .text {
-          grid-column: 1 / 4;
-          grid-row: 2 / 5;
-        }
-
-        .text h2:before {
-          content: "1949";
-        }
-
-        .text p::before {
-          content: "In 1949, the first primitive plastic bricks are marketed under the name 'Automatic Binding Bricks' – the forerunner of the LEGO® brick we know today. The English name is in honor of the allied forces who liberated Europe in 1945.";
-        }
-
-      }
+.controls input[type="range"]::-moz-range-track {
+  background-color: transparent;
+}
 </style>
 
 
 <script>
-(function () {
+var minifigure = document.querySelector('.minifigure');
+var faces = document.querySelector('.faces');
+var upperBody = document.querySelector('.upper-body');
+var lowerBody = document.querySelector('.lower-body');
+var explode = document.querySelector('.explode');
+var randomize = document.querySelector('.randomize');
+var expressionRangeInput = document.querySelector('.expression-range');
+var colorRangeInput = document.querySelectorAll('.color-range');
+var upperHue = document.getElementById('upper-hue');
+var upperSaturation = document.getElementById('upper-saturation');
+var upperLightness = document.getElementById('upper-lightness');
+var lowerHue = document.getElementById('lower-hue');
+var lowerSaturation = document.getElementById('lower-saturation');
+var lowerLightness = document.getElementById('lower-lightness');
+
+explode.addEventListener('click', explodeMinifigure);
+randomize.addEventListener('click', randomizeInputs);
+expressionRangeInput.addEventListener('input', setExpression);
+
+for (var i = 0; i < colorRangeInput.length; i++) {
+  colorRangeInput[i].addEventListener('input', setColors);
+}
+
+function getRandomNum(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+function explodeMinifigure() {
+  minifigure.classList.toggle('explode');
   
-  var divTop = document.createElement("div");
-  var divBottom = document.createElement("div");
+  if (minifigure.classList.contains('explode')) {
+    explode.innerHTML = 'Rebuild';
+  } else {
+    explode.innerHTML = 'Explode';
+  }
+};
+
+function randomizeInputs() {
+  var randomExpression = getRandomNum(0, 5);
+  var randomUpperHue = getRandomNum(0, 360);
+  var randomUpperSaturation = getRandomNum(0, 100);
+  var randomUpperLightness = getRandomNum(0, 90);
+  var randomLowerHue = getRandomNum(0, 360);
+  var randomLowerSaturation = getRandomNum(0, 100);
+  var randomLowerLightness = getRandomNum(0, 90);
   
-  divTop.setAttribute("class", "border-top");
-  divBottom.setAttribute("class", "border-bottom");
+  expressionRangeInput.value = randomExpression * 100;
+  upperHue.value = randomUpperHue;
+  upperSaturation.value = randomUpperSaturation;
+  upperLightness.value = randomUpperLightness;
+  lowerHue.value = randomLowerHue;
+  lowerSaturation.value = randomLowerSaturation;
+  lowerLightness.value = randomLowerLightness;
   
-  document.body.appendChild(divTop);
-  document.body.appendChild(divBottom);
+  setExpression();
+  setColors();
+};
+
+function setExpression() {
+  var expressionVal = parseInt(expressionRangeInput.value);
+  faces.style.transform = 'translateX(-' + expressionVal + '%)';
+};
+
+function setColors() {
+  var upperHueVal = parseInt(upperHue.value);
+  var upperSaturationVal = parseInt(upperSaturation.value);
+  var upperLightnessVal = parseInt(upperLightness.value);
+  var lowerHueVal = parseInt(lowerHue.value);
+  var lowerSaturationVal = parseInt(lowerSaturation.value);
+  var lowerLightnessVal = parseInt(lowerLightness.value);
   
-})();
+  upperBody.style.color = 'hsl(' + upperHueVal + ',' + upperSaturationVal + '%,' + upperLightnessVal + '%)';
+  lowerBody.style.color = 'hsl(' + lowerHueVal + ',' + lowerSaturationVal + '%,' + lowerLightnessVal + '%)';
+};
 </script>
 
 </head>
 
 <body>
-      <div class="container">
-        <div class="lego">
+ <div class="minifigure">
+  <div class="head">
+    <div class="faces-wrap">
+      <div class="faces">
+        <div class="face classic">
+          <div class="eye right"></div>
+          <div class="eye left"></div>
+          <div class="mouth"></div>
+        </div>
 
-          <div class="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/LEGO_logo.svg" class="logo" height="60px">
+        <div class="face smile">
+          <div class="eye right">
+            <div class="brow"></div>
           </div>
-          
-          <div class="text">
-            <h2></h2>
-            <p></p>
+          <div class="eye left">
+            <div class="brow"></div>
           </div>
-          
-          <div class="brick">  
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bod">
-            </div>
-          </div>
-          
-          <div class="brick">  
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bod">
-            </div>
-          </div>
+          <div class="mouth"></div>
+        </div>
 
-          <div class="brick">  
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bod">
-            </div>
+        <div class="face large-smile">
+          <div class="eye right">
+            <div class="brow"></div>
           </div>
-          
-          <div class="brick">  
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bod">
-            </div>
+          <div class="eye left">
+            <div class="brow"></div>
           </div>
-          
-          <div class="brick">  
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bod">
-            </div>
-          </div>
-          
-          <div class="brick">  
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bod">
-            </div>
-          </div>
-          
-          <div class="brick">  
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bod">
-            </div>
-          </div>
-          
-          <div class="brick">  
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bit">
-            </div>
-            <div class="bod">
-            </div>
-          </div>
+          <div class="mouth"></div>
+        </div>
 
-          <div class="brick">  
-              <div class="bit">
-              </div>
-              <div class="bit">
-              </div>
-              <div class="bit">
-              </div>
-              <div class="bit">
-              </div>
-              <div class="bod">
-              </div>
-            </div>
-            
-            <div class="brick">  
-              <div class="bit">
-              </div>
-              <div class="bit">
-              </div>
-              <div class="bit">
-              </div>
-              <div class="bit">
-              </div>
-              <div class="bod">
-              </div>
-            </div>
-            
-            <div class="brick">  
-              <div class="bit">
-              </div>
-              <div class="bit">
-              </div>
-              <div class="bit">
-              </div>
-              <div class="bit">
-              </div>
-              <div class="bod">
-              </div>
-            </div>
-            
-            <div class="brick">  
-              <div class="bit">
-              </div>
-              <div class="bit">
-              </div>
-              <div class="bit">
-              </div>
-              <div class="bit">
-              </div>
-              <div class="bod">
-              </div>
-            </div>
+        <div class="face worried">
+          <div class="eye right">
+            <div class="brow"></div>
+          </div>
+          <div class="eye left">
+            <div class="brow"></div>
+          </div>
+          <div class="mouth"></div>
+        </div>
 
+        <div class="face frown">
+          <div class="eye right">
+            <div class="brow"></div>
+          </div>
+          <div class="eye left">
+            <div class="brow"></div>
+          </div>
+          <div class="mouth"></div>
+        </div>
+
+        <div class="face surprised">
+          <div class="eye right">
+            <div class="brow"></div>
+          </div>
+          <div class="eye left">
+            <div class="brow"></div>
+          </div>
+          <div class="mouth"></div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="upper-body">
+    <div class="torso"></div>
+    <div class="arm right">
+      <div class="hand right"></div>
+    </div>
+    <div class="arm left">
+      <div class="hand left"></div>
+    </div>
+  </div>
+  <div class="lower-body">
+    <div class="waist"></div>
+    <div class="crotch"></div>
+    <div class="leg right"></div>
+    <div class="leg left"></div>
+  </div>
+</div>
+
+<div class="controls">
+  <h2 class="title">Controls</h2>
+  
+  <button class="button explode">Explode</button>
+  <button class="button randomize">Randomize</button>
+  
+  <fieldset class="head-expression">
+    <legend>Head</legend>
+    
+    <div class="form-element">
+      <label for="expression">Expression</label>
+      <input id="expression" class="expression-range expression" name="expression" type="range" min="0" max="500" step="100" value="0">
+    </div>
+  </fieldset>
+  
+  <fieldset class="upper-color">
+    <legend>Upper Body</legend>
+    
+    <div class="form-element">
+      <label for="upper-hue">Hue</label>
+      <input id="upper-hue" class="color-range upper-hue" name="upper-hue" type="range" min="0" max="360" value="200">
+    </div>
+    
+    <div class="form-element">
+      <label for="upper-saturation">Saturation</label>
+      <input id="upper-saturation" class="color-range upper-saturation" name="upper-saturation" type="range" min="0" max="100" value="0">
+    </div>
+    
+    <div class="form-element">
+      <label for="upper-lightness">Lightness</label>
+      <input id="upper-lightness" class="color-range upper-lightness" name="upper-lightness" type="range" min="0" max="90" value="90">
+    </div>
+  </fieldset>
+  
+  <fieldset class="lower-color">
+    <legend>Lower Body</legend>
+    
+    <div class="form-element">
+      <label for="lower-hue">Hue</label>
+      <input id="lower-hue" class="color-range lower-hue" name="lower-hue" type="range" min="0" max="360" value="200">
+    </div>
+    
+    <div class="form-element">
+      <label for="lower-saturation">Saturation</label>
+      <input id="lower-saturation" class="color-range lower-saturation" name="lower-saturation" type="range" min="0" max="100" value="0">
+    </div>
+    
+    <div class="form-element">
+      <label for="lower-lightness">Lightness</label>
+      <input id="lower-lightness" class="color-range lower-lightness" name="lower-lightness" type="range" min="0" max="90" value="90">
+    </div>
+  </fieldset>
+</div>
+
+<section>
+Lorem Ipusumm ipsum Lorem Ipusumm ipsum Lorem Ipusumm ipsum Lorem Ipusumm ipsum Lorem Ipusumm ipsum Lorem Ipusumm ipsum Lorem Ipusumm ipsum </section>
   </body>
   </html>
