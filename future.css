@@ -37,8 +37,8 @@ article {
   width: 278px;
   max-height: 532px;
   
-							margin-left: 42.84em;
-							margin-top: 8.7em;
+							margin-left: 41.84em;
+							margin-top: 9.7em;
 							margin-bottom: 9.8em;
   
   display: inline-block;
@@ -460,6 +460,7 @@ line-height: 1.5;
 		    background-color:rgba(0,121,171,0.2);
 		border-radius: 3px;
 		padding-left: 5px;
+		padding-right: 5px;
 }
 
 h2 {
@@ -478,6 +479,7 @@ line-height: 1.5;
 		    background-color:rgba(0,121,171,0.2);
 		border-radius: 3px;
 		padding-left: 5px;
+		padding-right: 5px;
 }
 
 h3 {
@@ -496,6 +498,7 @@ line-height: 1.5;
 		    background-color:rgba(0,121,171,0.2);
 		border-radius: 3px;
 		padding-left: 5px;
+		padding-right: 5px;
 		}
 
 h4 {
@@ -513,14 +516,17 @@ line-height: 1.5;
 	    border: 1px solid rgba(0,121,171,0.5);	
 		    background-color:rgba(0,121,171,0.2);
 		border-radius: 3px;
-		padding-left: 5px; 		
+		padding-left: 5px; 	
+padding-right: 5px;		
 }
 
 * {
 font-family: 'Exo 2', sans-serif; }
 
 
-
+a {
+color: black;
+}	
 
 
 table {
