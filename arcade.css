@@ -121,6 +121,7 @@ font-style: normal;
     font-size: 26px;
     font-weight: normal;
     font-style: normal;
+    cursor : url(img/arcade_baby/cursor.png), auto;
 }
 
 body {
@@ -492,7 +493,7 @@ border-left: none;
 }
 
 /*новый скролл*/
-/* width_ */
+/* width */
 ::-webkit-scrollbar {
   width: 17px;
 }
@@ -515,7 +516,6 @@ border-left: none;
 ::-webkit-scrollbar-thumb:hover {
   background: salmon;
 }
-
 
 
 
