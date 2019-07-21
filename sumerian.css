@@ -12,6 +12,20 @@ src: url("font/sumerian/carbol.ttf") format("truetype");
 font-weight: normal;
 font-style: normal;
 }
+@font-face
+{
+font-family: "cuneiforme";
+src: url("font/sumerian/cuneiforme.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+@font-face
+{
+font-family: "zarathustra";
+src: url("font/sumerian/zarathustra.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
 
 
 * {
@@ -64,8 +78,8 @@ border:none;
 p {
 font-family: 'cuneiform';
 font-size:28px;
-line-height: 28px;
-color:#000000;
+line-height: 30px;
+color:#26120E;
 }
 
 /*тег цитат*/
@@ -96,12 +110,12 @@ text-decoration: underline;
 /*заголовки*/
 h1, h2, h3, h4 {
     display: block;
-    font-family: 'carbol';
+    font-family: 'zarathustra';
     padding-top: 15px;
     padding-bottom: 15px;
     color:#000000;
     cursor: pointer;
-    border:5px solid rgba(255,255,255,0.5);
+    border:5px solid rgba(41,11,4,0.5);
 }
 h1 {
 font-size: 36px;
@@ -121,16 +135,16 @@ line-height: 34px;
 }
 
 h1:hover {
-font-family: 'cuneiform';
+font-family: 'cuneiforme';
 }
 h2:hover {
-font-family: 'cuneiform';
+font-family: 'cuneiforme';
 }
 h3:hover {
-font-family: 'cuneiform';
+font-family: 'cuneiforme';
 }
 h4:hover {
-font-family: 'cuneiform';
+font-family: 'cuneiforme';
 }
 
 /*фотографии*/
