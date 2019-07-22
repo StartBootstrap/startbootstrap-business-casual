@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
 
 body {
-    background-image: url("img/future/hand.png");
+    background-image: url("img/future/handtryyours.png");
 	background-position: center top;
 	background-repeat: no-repeat;
 	  font-size: 11pt;
@@ -37,9 +37,9 @@ article {
   width: 278px;
   max-height: 532px;
   
-							margin-left: 42.4em;
-							margin-top: 9.01em;
-							margin-bottom: 9.8em;
+							margin-left: 200px;
+							margin-top: 100px;
+							margin-bottom: 100px;
   
   display: inline-block;
   font-family: 'Exo 2', sans-serif;
