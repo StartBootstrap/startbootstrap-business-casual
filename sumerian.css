@@ -26,6 +26,14 @@ src: url("font/sumerian/Behistun.ttf") format("truetype");
 font-weight: normal;
 font-style: normal;
 }
+@font-face
+{
+font-family: "peskyphoenicians";
+src: url("font/sumerian/peskyphoenicians.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+
 
 
 * {
@@ -101,8 +109,8 @@ font-size:22px;
 
 /*текст ссылки в статье*/
 p a {
-font-family: 'cuneiforme';
-font-size: 17px;
+font-family: 'peskyphoenicians';
+font-size: 22px;
 color:#000000;
 text-decoration: underline;
 }
@@ -134,6 +142,18 @@ font-size: 30px;
 line-height: 34px;
 }
 
+h1:hover {
+font-family: 'peskyphoenicians';
+}
+h2:hover {
+font-family: 'peskyphoenicians';
+}
+h3:hover {
+font-family: 'peskyphoenicians';
+}
+h4:hover {
+font-family: 'peskyphoenicians';
+}
 
 /*фотографии*/
 img {
@@ -160,7 +180,7 @@ margin-bottom: 30px;
 font-size: 20px;
 text-align: center;
 color: #191970;
-font-family: 'cuneiforme'
+font-family: 'peskyphoenicians'
 /*display: inline;     для выделения фоном
 background: #556666;*/
 }
