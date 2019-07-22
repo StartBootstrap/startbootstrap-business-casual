@@ -12,6 +12,28 @@ src: url("font/sumerian/carbol.ttf") format("truetype");
 font-weight: normal;
 font-style: normal;
 }
+@font-face
+{
+font-family: "cuneiforme";
+src: url("font/sumerian/cuneiforme.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+@font-face
+{
+font-family: "Behistun";
+src: url("font/sumerian/Behistun.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+@font-face
+{
+font-family: "peskyphoenicians";
+src: url("font/sumerian/peskyphoenicians.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+
 
 
 * {
@@ -64,7 +86,7 @@ border:none;
 p {
 font-family: 'cuneiform';
 font-size:28px;
-line-height: 28px;
+line-height: 30px;
 color:#000000;
 }
 
@@ -81,14 +103,14 @@ font-size:22px;
 
 /*выделенный курсив*/
 p i {
-font-family: 'cuneiform';
+font-family: 'cuneiforme';
 font-size:22px;
 }
 
 /*текст ссылки в статье*/
 p a {
-font-family: 'cuneiform';
-font-size: 17px;
+font-family: 'peskyphoenicians';
+font-size: 22px;
 color:#000000;
 text-decoration: underline;
 }
@@ -96,13 +118,14 @@ text-decoration: underline;
 /*заголовки*/
 h1, h2, h3, h4 {
     display: block;
-    font-family: 'carbol';
+    font-family: 'cuneiforme';
     padding-top: 15px;
     padding-bottom: 15px;
-    color:#000000;
+    color:#191970;
     cursor: pointer;
-    border:5px solid rgba(255,255,255,0.5);
+    border:5px solid rgba(0,0,0,0.5);
 }
+
 h1 {
 font-size: 36px;
 line-height: 50px;
@@ -121,16 +144,16 @@ line-height: 34px;
 }
 
 h1:hover {
-font-family: 'cuneiform';
+font-family: 'peskyphoenicians';
 }
 h2:hover {
-font-family: 'cuneiform';
+font-family: 'peskyphoenicians';
 }
 h3:hover {
-font-family: 'cuneiform';
+font-family: 'peskyphoenicians';
 }
 h4:hover {
-font-family: 'cuneiform';
+font-family: 'peskyphoenicians';
 }
 
 /*фотографии*/
@@ -142,6 +165,8 @@ img {
     margin-top: 20px;
     margin-bottom: 20px;
     border:2px solid #000000;
+    filter: grayscale(34%) sepia(0.41) saturate(0.34) opacity(1) contrast(198%);
+    -webkit-filter: grayscale(34%) sepia(0.41) saturate(0.34) opacity(1) contrast(100%);
 
     /*border-style: solid;
     border-color: transparent;
@@ -154,8 +179,9 @@ img {
 figcaption {
 margin-bottom: 30px;
 font-size: 20px;
-font-style: italic;
 text-align: center;
+color: #191970;
+font-family: 'peskyphoenicians'
 /*display: inline;     для выделения фоном
 background: #556666;*/
 }
@@ -199,6 +225,8 @@ padding-right: 10px;
 font-size: 18px;
 }
 
+a {color:#191970; }
+
 #timeline {
   opacity:1;
 }
@@ -215,6 +243,7 @@ font-family: 'cuneiform';
 font-size: 15px;
 color: #000000;
 }
+
 
 
 /*/////////////////статья EUDIRECTIVE////////////////////*/
