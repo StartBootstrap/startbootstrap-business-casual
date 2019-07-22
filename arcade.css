@@ -270,7 +270,7 @@ article img {
     border: 15px double #0000aa; /*рамка фото  double двойная, отступ и размер вместе задается*/
     border-radius: 12px;
     filter: grayscale(43%) sepia(0.44) saturate(1) contrast(198%);
-    -webkit-filter: grayscale(43%) sepia(0.44) saturate(1) contrast(198%);
+    -webkit-filter: sepia(0.44) saturate(1) contrast(198%);
 }
 
 /*обычно подпись под картинкой*/
