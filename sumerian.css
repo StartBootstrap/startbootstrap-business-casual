@@ -199,6 +199,8 @@ padding-right: 10px;
 font-size: 18px;
 }
 
+a {color:#123456; }
+
 #timeline {
   opacity:1;
 }
@@ -215,6 +217,7 @@ font-family: 'cuneiform';
 font-size: 15px;
 color: #000000;
 }
+
 
 
 /*/////////////////статья EUDIRECTIVE////////////////////*/
