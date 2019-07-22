@@ -143,6 +143,8 @@ img {
     margin-top: 20px;
     margin-bottom: 20px;
     border:2px solid #000000;
+    filter: grayscale(34%) sepia(0.41) saturate(0.34) opacity(1) contrast(198%);
+    -webkit-filter: grayscale(34%) sepia(0.41) saturate(0.34) opacity(1) contrast(198%);
 
     /*border-style: solid;
     border-color: transparent;
