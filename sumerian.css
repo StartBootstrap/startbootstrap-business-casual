@@ -113,8 +113,9 @@ h1, h2, h3, h4 {
     font-family: 'cuneiforme';
     padding-top: 15px;
     padding-bottom: 15px;
-    color:#000000;
+    color:#00008B;
     cursor: pointer;
+    text-decoration: underline;
 }
 h1 {
 font-size: 36px;
@@ -158,6 +159,7 @@ figcaption {
 margin-bottom: 30px;
 font-size: 20px;
 text-align: center;
+color: #00008B;
 /*display: inline;     для выделения фоном
 background: #556666;*/
 }

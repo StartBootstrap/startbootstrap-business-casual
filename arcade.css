@@ -269,8 +269,8 @@ article img {
     /*border: 8px solid #ffffff;*/ /*рамка фото */
     border: 15px double #0000aa; /*рамка фото  double двойная, отступ и размер вместе задается*/
     border-radius: 12px;
-    filter: grayscale(50%) sepia(0.19) contrast(121%);
-    -webkit-filter: grayscale(50%) sepia(0.19) contrast(122%);
+    filter: grayscale(35%) sepia(0.12) opacity(1) contrast(127%);
+    -webkit-filter: grayscale(35%) sepia(0.12) opacity(1) contrast(127%);
 }
 
 /*обычно подпись под картинкой*/
