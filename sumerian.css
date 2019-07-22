@@ -115,7 +115,6 @@ h1, h2, h3, h4 {
     padding-bottom: 15px;
     color:#191970;
     cursor: pointer;
-    text-decoration: underline;
 }
 
 h1 {
@@ -205,7 +204,7 @@ padding-right: 10px;
 font-size: 18px;
 }
 
-a {color:#000000; }
+a {color:#191970; }
 
 #timeline {
   opacity:1;
