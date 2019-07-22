@@ -110,7 +110,7 @@ text-decoration: underline;
 /*заголовки*/
 h1, h2, h3, h4 {
     display: block;
-    font-family: 'Behistun';
+    font-family: 'cuneiforme';
     padding-top: 15px;
     padding-bottom: 15px;
     color:#000000;
