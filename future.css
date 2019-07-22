@@ -38,7 +38,7 @@ article {
   max-height: 532px;
   
 							margin-left: 42.7em;
-							margin-top: 8.71em;
+							margin-top: 8.21em;
 							margin-bottom: 9.8em;
   
   display: inline-block;
@@ -126,7 +126,7 @@ line-height: 1.5;
 }
 
 
-section:nth-of-type(1):after {
+/*section:nth-of-type(1):after {
 box-sizing: content-box;
 content:"";
 height: 115px;
@@ -148,7 +148,7 @@ margin: auto;
   margin-top: 8px;
   margin-bottom: 8px; 
     display: block;	
-}	
+}	*/
 
 
 section:nth-of-type(2):after {
