@@ -1,0 +1,424 @@
+﻿@font-face
+{
+font-family: "cuneiform";
+src: url("font/sumerian/cuneiform.otf") format("opentype");
+font-weight: normal;
+font-style: normal;
+}
+@font-face
+{
+font-family: "carbol";
+src: url("font/sumerian/carbol.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+@font-face
+{
+font-family: "cuneiforme";
+src: url("font/sumerian/cuneiforme.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+@font-face
+{
+font-family: "Behistun";
+src: url("font/sumerian/Behistun.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+@font-face
+{
+font-family: "peskyphoenicians";
+src: url("font/sumerian/peskyphoenicians.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+* {
+    font-family: 'cuneiform';
+    color:#000000;
+    font-size: 26px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url(img/sumerian/back.jpg);   /*картинка фона страницы*/
+    background-size: 100%; /*растянули по размеру экрана*/
+}
+
+/*секция со статьями, особо не надо менять */
+section:last-of-type {
+padding-left: 20px;
+padding-right: 20px;
+}
+
+/*основное окно под всю статью*/
+article {
+    margin: 3% 12%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: justify;
+    font-size: 16px;
+    background: url(img/sumerian/window_back2.jpg);
+  }
+
+/*каждая секция, или абзац*/
+article section  {
+margin-top: 20px;
+margin-bottom: 20px;
+padding: 0 20px;
+font-family: 'cuneiform';
+}
+
+/*article section:nth-of-type(1) {
+background: none;
+border:none;
+}
+*/
+
+
+/*текст всех статей*/
+p {
+font-family: 'cuneiform';
+font-size:28px;
+line-height: 30px;
+color:#000000;
+}
+
+/*тег цитат*/
+q {
+display: block;
+font-size:22px;
+}
+
+/*выделенный текст*/
+p strong, em {
+font-size:22px;
+}
+
+/*выделенный курсив*/
+p i {
+font-family: 'cuneiforme';
+font-size:22px;
+}
+
+/*текст ссылки в статье*/
+p a {
+font-family: 'peskyphoenicians';
+font-size: 22px;
+color:#000000;
+text-decoration: underline;
+}
+
+/*заголовки*/
+h1, h2, h3, h4 {
+    display: block;
+    font-family: 'cuneiforme';
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color:#191970;
+    cursor: pointer;
+    border:2px solid rgba(0,0,0,1);
+}
+
+h1 {
+font-size: 36px;
+line-height: 50px;
+}
+h2 {
+font-size: 36px;
+line-height: 46px;
+}
+h3 {
+font-size: 30px;
+line-height: 36px;
+}
+h4 {
+font-size: 30px;
+line-height: 34px;
+}
+
+h1:hover {
+font-family: 'peskyphoenicians';
+}
+h2:hover {
+font-family: 'peskyphoenicians';
+}
+h3:hover {
+font-family: 'peskyphoenicians';
+}
+h4:hover {
+font-family: 'peskyphoenicians';
+}
+
+article sup {
+font-family: 'cuneiforme'; 
+font-size: 26px;
+line-height: 36px; 
+color:#191970;
+} 
+
+/*фотографии*/
+img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border:2px solid #000000;
+    filter: grayscale(34%) sepia(0.41) saturate(0.34) opacity(1) contrast(198%);
+    -webkit-filter: grayscale(34%) sepia(0.41) saturate(0.34) opacity(1) contrast(100%);
+
+    /*border-style: solid;
+    border-color: transparent;
+    border-width: 15px 15px 15px 15px;
+    -webkit-border-image: url(img/sumerian/border3.jpg) 15 15 15 15 round;
+    border-image: url(img/sumerian/border3.jpg) 15 15 15 15 round;*/
+}
+
+/*обычно подпись под картинкой*/
+figcaption {
+margin-bottom: 30px;
+font-size: 20px;
+text-align: center;
+color: #191970;
+font-family: 'peskyphoenicians'
+/*display: inline;     для выделения фоном
+background: #556666;*/
+}
+
+/*таблица*/
+table {
+display: block;
+margin-top: 20px;
+margin-bottom: 20px;
+margin-left:auto; /*выравнивание таблицы по центру  */
+margin-right:auto;
+background: -webkit-linear-gradient(top, #888888, #555555);
+background: -moz-linear-gradient(top, #888888, #555555);
+background: linear-gradient(to bottom, #888888, #555555);
+}
+
+/*чередуем фон таблицы по четностистрок*/
+table tr:nth-of-type(odd) {
+/*  background: #333333;*/
+  }
+
+table tr:nth-of-type(even) {
+/*  background: #999999; */
+  }
+
+/*заголовок таблицы*/
+table th {
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;
+font-size: 30px;
+text-align: center;
+}
+/*ячейки таблицы*/
+table td {
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;
+font-size: 18px;
+}
+
+a {color:#191970; }
+
+#timeline {
+  opacity:1;
+}
+
+
+/*Текст на временной линии*/
+.dot-info span.label {
+font-family: 'cuneiform';
+font-size: 15px;
+color: #000000;
+}
+.dot-info span.year {
+font-family: 'cuneiform';
+font-size: 15px;
+color: #000000;
+}
+
+
+
+/*/////////////////статья EUDIRECTIVE////////////////////*/
+
+/*окно*/
+.container-eu {
+    margin: 3% 12%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: justify;
+    font-size: 16px;
+    background: url(img/sumerian/window_back2.jpg);
+  overflow: hidden;
+}
+
+/*отдельные блоки*/
+.container-eu .flex-container {
+display: -webkit-flex;
+display: flex;
+margin: 0 auto;
+margin-top: 20px;
+margin-bottom: 20px;
+padding: 20px;
+font-family: 'cuneiform';
+}
+
+/*обычные параграфы*/
+.container-eu .flex-container p {
+    font-size:28px;
+    line-height: 28px;   /*межстрочный интервал  */
+}
+
+.container-eu .flex-container .col-ita p {
+    font-size:28px;
+    line-height: 28px;   /*межстрочный интервал  */
+}
+
+.container-eu .flex-container .col-ing p {
+    font-size:28px;
+    line-height: 28px;   /*межстрочный интервал  */
+}
+
+
+
+
+/*отдельные правила на блок col-ing   */
+.container-eu .flex-container .col-ing {
+margin-top: 30px;
+-webkit-flex: 1;
+flex: 1;
+margin-left:15px;
+margin-right:15px;
+}
+
+/*отдельные правила на блок col-ita*/
+.container-eu .flex-container .col-ita {
+margin-top: 30px;
+-webkit-flex: 1;
+flex: 1;
+margin-left:15px;
+margin-right:15px;
+}
+
+/*ссылки*/
+.container-eu a {
+color:#000000;
+text-decoration: underline;
+font-size: 25px;
+}
+/*цифра текст-сноска   */
+.container-eu sup {
+font-family: 'cuneiform';
+color:#FFFFFF;
+}
+
+/*Списки*/
+.container-eu ul {
+list-style: none;  /*без значка*/
+margin: 0;
+padding: 0;
+}
+/*текст списка*/
+.container-eu li {
+padding: 15px 15px;
+font-size: 14px;
+line-height: 20px;
+}
+
+.container-eu li:nth-of-type(odd) {
+background: #666666;
+}
+.container-eu li:nth-of-type(even) {
+background: #999999;
+}
+
+/*таблицы в EUDIRECTIVE*/
+.container-eu table {
+display: block;
+margin-top: 20px;
+margin-bottom: 20px;
+margin-left:auto;
+margin-right:auto;
+word-break: break-word; /*перенос слов*/
+background: #333333;
+background: -webkit-linear-gradient(top, #888888, #555555);
+background: -moz-linear-gradient(top, #888888, #555555);
+background: linear-gradient(to bottom, #888888, #555555);
+}
+
+/*чередуем фон таблицы по четностистрок*/
+.container-eu table tr:nth-of-type(odd) {
+
+  }
+
+.container-eu table tr:nth-of-type(even) {
+
+  }
+
+/*заголовок таблицы*/
+.container-eu table th {
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;
+font-size: 30px;
+text-align: center;
+}
+/*ячейки таблицы*/
+.container-eu table td {
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;
+font-size: 13px;
+border-left: 2px solid #000000;
+}
+.container-eu table td:nth-of-type(1) {
+border-left: none;
+}
+
+/*новый скролл*/
+/* width */
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+    box-shadow: inset 0 0 5px wheat;
+  border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+    border-radius: 15px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: salmon;
+}
+
+
+
+
+

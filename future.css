@@ -37,8 +37,8 @@ article {
   width: 278px;
   max-height: 532px;
   
-							margin-left: 42.84em;
-							margin-top: 8.7em;
+							margin-left: 39.7em;
+							margin-top: 6.91em;
 							margin-bottom: 9.8em;
   
   display: inline-block;
@@ -125,8 +125,34 @@ line-height: 1.5;
 		border-radius: 3px;
 }
 
+figcaption {
+    font-size: 10pt;
+    margin-top: 10pt;
+    -webkit-hyphens: auto;
+            hyphens: auto;
+	text-align: center;
+	
 
-section:nth-of-type(1):after {
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+  height: auto;
+  box-sizing: content-box;
+
+  width: auto;
+padding: 2%;
+	
+	    border: 1px solid rgba(0,121,171,0.8);	
+		    background-color:rgba(0,121,171,0.5);
+		border-radius: 3px;
+		
+  color: white;		
+	  }
+	  
+section > p {
+
+text-indent: 7px;}
+
+/*section:nth-of-type(1):after {
 box-sizing: content-box;
 content:"";
 height: 115px;
@@ -148,7 +174,7 @@ margin: auto;
   margin-top: 8px;
   margin-bottom: 8px; 
     display: block;	
-}	
+}	*/
 
 
 section:nth-of-type(2):after {
@@ -423,8 +449,7 @@ color: rgb(0, 50, 93);
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
-  padding-top: 10px;
-margin: auto;  
+  padding-top: 10px; 
   margin-top: 20px;
   margin-bottom: 10px; 
     display: block;
@@ -460,6 +485,7 @@ line-height: 1.5;
 		    background-color:rgba(0,121,171,0.2);
 		border-radius: 3px;
 		padding-left: 5px;
+		padding-right: 5px;
 }
 
 h2 {
@@ -478,6 +504,7 @@ line-height: 1.5;
 		    background-color:rgba(0,121,171,0.2);
 		border-radius: 3px;
 		padding-left: 5px;
+		padding-right: 5px;
 }
 
 h3 {
@@ -496,6 +523,7 @@ line-height: 1.5;
 		    background-color:rgba(0,121,171,0.2);
 		border-radius: 3px;
 		padding-left: 5px;
+		padding-right: 5px;
 		}
 
 h4 {
@@ -513,14 +541,18 @@ line-height: 1.5;
 	    border: 1px solid rgba(0,121,171,0.5);	
 		    background-color:rgba(0,121,171,0.2);
 		border-radius: 3px;
-		padding-left: 5px; 		
+		padding-left: 5px; 	
+padding-right: 5px;		
 }
 
 * {
 font-family: 'Exo 2', sans-serif; }
 
 
-
+a {
+color: rgb(0, 50, 93);
+text-decoration: underline;
+}	
 
 
 table {
@@ -562,8 +594,7 @@ td {
 		border-radius: 3px;
 }	
 
-section {
-}
+
 
 
 
@@ -580,26 +611,7 @@ article img{
 
 
 
-figcaption {
-    font-size: 10pt;
-    margin-top: 10pt;
-    -webkit-hyphens: auto;
-            hyphens: auto;
-	text-align: center;
-	
 
-  margin: 10px 10px 10px 10px;
-  text-align: center;
-  height: auto;
-  box-sizing: content-box;
-
-  width: auto;
-padding: 2%;
-	
-	    border: 1px solid rgba(0,121,171,0.5);	
-		    background-color:rgba(0,121,171,0.2);
-		border-radius: 3px;
-	  }
 
 
 

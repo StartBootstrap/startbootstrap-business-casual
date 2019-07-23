@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lord of the Rings theme</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Reference for Ajax -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <!-- Reference for jQuery -->  
+  <script src="jquery-3.4.1.min.js"></script>
+
+  <style>
+    html{
+        height: 100%;
+        width: 100%;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        background: url(ssauron.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;		
+    }
+
+@keyframes fade-out {
+  to {
+    width: 0;
+    height: 0;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, main, body {
+  height: 100%;
+  cursor: url(http://imageshack.com/a/img922/6285/gC18h6.png), auto;
+}
+
+body {
+  font-family: sans-serif;
+  background: url(hp.png);
+}
+
+.wrap {
+  padding: 15px;
+  background-image: url(scroll.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 3em auto;
+  width: 960px;
+  height: auto;
+  max-width: 460px;
+}
+.wrap > p {
+  margin: 1em 0;
+}
+.wrap > p:last-of-type {
+  margin-bottom: 0;
+}
+
+.lumos {
+  position: absolute;
+  width: 0;
+  height: 0;
+  transition-property: width, height;
+  transition-duration: 450ms;
+  border-radius: 50%;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.9);
+  top: 10%;
+  left: 0;
+}
+.lumos:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 51px 0 yellow;
+}
+.lumos.active {
+  width: 200px;
+  height: 200px;
+  animation: fade-out 5s 8s linear forwards;
+}
+.lumos-spell {
+  position: absolute;
+  top: 70%;
+  transform: transalteY(-50%);
+  z-index: 10;
+  color: white;
+  text-align: center;
+  left: 0;
+  right: 0;
+  transition: opacity 450ms;
+}
+.lumos-spell.hide {
+  opacity: 0;
+}
+
+</style>
+
+
+<script>
+ var el = document.querySelector('.lumos');
+ var elChild = document.querySelector('.lumos-spell');
+
+ function initLumos(e) {
+   el.style.top = e.clientY - (el.offsetTop / 3) + 'px';
+   el.style.left = e.clientX - (el.offsetLeft / 3) + 'px';
+ }
+
+ function startLumos(e) {
+   el.className += ' ' + "active";
+   elChild.className += ' ' + 'hide';
+   setTimeout(function(){
+     el.classList.remove("active");
+     elChild.classList.remove('hide');
+   },13000)
+ };
+
+ window.addEventListener('click', startLumos);
+ window.addEventListener('click', initLumos);
+ window.addEventListener('mousemove', initLumos);
+ </script>
+
+</head>
+<body>
+
+<audio preload="auto" autoplay>
+  <source src="hp.mp3" type="audio/mpeg">
+</audio>
+
+
+
+<div class="wrap">
+  <h1><i>Lumos maxima</i></h1>
+  <h2>Lorem ipsum</h2>
+  <h3>Dolor sit amet, consectetur adipisicing elit</h3>
+  <p>Omnis sint vero iste eligendi alias tenetur cum assumenda sit eius officiis cumque harum quaerat dolores distinctio fugit, possimus vel? Dolorum, molestiae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, eum, ipsam. Libero nesciunt enim, omnis deleniti, blanditiis voluptatibus, maiores amet quod perferendis cumque mollitia ullam ea animi. Ipsa nesciunt, vel?</p>
+  <h3>Lorem ipsum again</h3>
+  <img src="hp.png" alt="" width="100px">
+  <p>Omnis sint vero iste eligendi alias tenetur cum assumenda sit eius officiis cumque harum quaerat dolores distinctio fugit, possimus vel? Dolorum, molestiae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, eum, ipsam.</p>
+</div>
+
+<div class="lumos"></div>
+<h1 class="lumos-spell">Click to start a <i>Lumos<i> spell</h1>
+
+</body>
+</html>
