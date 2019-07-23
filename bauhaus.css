@@ -5,7 +5,7 @@ font-weight: normal;
 font-style: normal;
 }
 
-p, h1, h2, h3, h4, figcaption, table, em, q { 
+p, h1, h2, h3, h4, figcaption, em, q { 
 
 font-family: "Bauhaus 93";
 margin: 25px 25px 25px 25px;
@@ -35,6 +35,7 @@ padding: 10px;
 text-align: left;
 border-radius: 10px;
 max-width: 50%; 
+font-family: "Bauhaus 93";
 
 }
 
@@ -106,6 +107,7 @@ padding-bottom: 80px;
 padding-right: 50px;
 padding-left: 50px;
 margin: 10%;
+min-width: 60%;
 
 }
 
@@ -123,6 +125,13 @@ word-spacing: 6px;
   color: #B93239;
 } 
 
+article > h3:not(:first-child) {
+min-height: 70px;
+padding-bottom: 20%;
+}
+
+
+
 /*eudirective*/
 
 .col-ing > div:first-of-type {
@@ -134,7 +143,7 @@ word-spacing: 6px;
 }
 
 .flex-container{
-    width: 80%;
+    width: 100%;
 	margin-top:30px;
     margin: 0 auto;
     display: -webkit-flex; /* Safari */     
@@ -184,5 +193,11 @@ word-spacing: 6px;
 .container-eu table {
 	
 max-width: 30px;
+<<<<<<< HEAD
+font-size: 10px;
+font-family: "Bauhaus 93";
+
+=======
 font-size: 12px;
+>>>>>>> 4b8b5979bd71df3bc8f0de32b73504ac82888773
 }
