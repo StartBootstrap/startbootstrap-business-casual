@@ -125,6 +125,13 @@ word-spacing: 6px;
   color: #B93239;
 } 
 
+article > h3:not(:first-child) {
+min-height: 70px;
+padding-bottom: 20%;
+}
+
+
+
 /*eudirective*/
 
 .col-ing > div:first-of-type {
