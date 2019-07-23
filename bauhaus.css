@@ -26,7 +26,7 @@ margin: 10px 10px 10px 10px;
 		
 }
 
-table, tr, td {
+section > table, tr, td {
 
 border-collapse: collapse;
 border: 10px solid black;
@@ -172,8 +172,8 @@ padding-bottom: 20%;
     line-height: 1.7;
 		
 		font-size: 25px;
-		margin-left:90px;
-		margin-right:90px;
+		margin-left:50px;
+		margin-right:50px;
 		 padding-top:20px;
 		padding-left:0px;
 		padding-right: 0px;
@@ -193,7 +193,11 @@ padding-bottom: 20%;
 .container-eu table {
 	
 max-width: 30px;
+<<<<<<< HEAD
 font-size: 10px;
 font-family: "Bauhaus 93";
 
+=======
+font-size: 12px;
+>>>>>>> 4b8b5979bd71df3bc8f0de32b73504ac82888773
 }
