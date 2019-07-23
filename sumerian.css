@@ -158,8 +158,9 @@ font-family: 'peskyphoenicians';
 
 article sup {
 font-family: 'cuneiforme'; 
-font-size: 30px;
-line-height: 36px;  
+font-size: 26px;
+line-height: 36px; 
+color:#191970;
 } 
 
 /*фотографии*/
