@@ -26,7 +26,7 @@ margin: 10px 10px 10px 10px;
 		
 }
 
-table, tr, td {
+section > table, tr, td {
 
 border-collapse: collapse;
 border: 10px solid black;
@@ -163,8 +163,8 @@ word-spacing: 6px;
     line-height: 1.7;
 		
 		font-size: 25px;
-		margin-left:90px;
-		margin-right:90px;
+		margin-left:50px;
+		margin-right:50px;
 		 padding-top:20px;
 		padding-left:0px;
 		padding-right: 0px;
@@ -183,6 +183,6 @@ word-spacing: 6px;
 
 .container-eu table {
 	
-max-width: 50px;
-font-size: 10px;
+max-width: 30px;
+font-size: 12px;
 }
