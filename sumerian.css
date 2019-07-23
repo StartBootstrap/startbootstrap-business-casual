@@ -123,7 +123,7 @@ h1, h2, h3, h4 {
     padding-bottom: 15px;
     color:#191970;
     cursor: pointer;
-    border:2px solid rgba(0,0,0,0.5);
+    border:2px solid rgba(0,0,0,1);
 }
 
 h1 {
