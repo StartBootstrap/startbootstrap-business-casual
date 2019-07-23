@@ -156,6 +156,12 @@ h4:hover {
 font-family: 'peskyphoenicians';
 }
 
+article sup {
+font-family: 'cuneiforme'; 
+font-size: 30px;
+line-height: 36px;  
+} 
+
 /*фотографии*/
 img {
     max-width: 80%;
