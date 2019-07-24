@@ -11,6 +11,9 @@
   <title>Back to the future</title>
   <link rel='icon' href='img/ico.ico'/>  
 
+  <!-- FontAwesome -->  
+  <script src="https://kit.fontawesome.com/26e52bfea1.js"></script>
+  
   <!-- Prism.js to display code -->  
   <link href="themes/prism.css" rel="stylesheet" />
   
@@ -47,6 +50,8 @@
 
     <style>
   <!-- CSS of this page -->
+  
+
   
 .lora {
   font-family: 'Lora';}
@@ -213,11 +218,52 @@ height: 105%;
 			</p>
 			<p class="mb-3" align="justify">
 			Whether you want to write a trivial "<i>Hello World</i>", or you want to spread a huge treatise on geoquantistic physics 
-			around the world, here you can <b>format it with our typographical styles</b>!
+			around the world, here you can <b>format it with our typographical styles</b>! But f of all...
 			</p>
-			<p class="mb-3" align="justify">
-			The <b>rules</b> are simple, and are divided into <b>two parts</b>.
-			  </p>
+			
+			<p class="mb-3" align="center">
+			<b>Are you familiar with HTML/CSS?</b>
+			</p>
+			
+			<div class="row" class="rounded">
+  <div class="column" style="background-image:url('img/bgaaa.png');"  class="rounded">
+    <p align="center"><b>Unfortunately, no.</b></p>
+    <p align="justify" class="mb-2">Well, keep on reading! We have a <b>wonderful, super fast, free online tool</b> right below!</p>
+	<p align="justify">A useful <b>guide</b>, divided in two parts, will also
+	explain you how to use it.</p>
+  </div>
+  <div class="column" style="background-image:url('img/bgbbb.png');"  class="rounded">
+    <p align="center"><b>Unfortunately, yes.</b></p>
+    <p align="justify" class="mb-0">You already know everything, so you can download each of our six stylesheets <b>right now</b>:</p>
+	
+				<div class="row" >
+	<div class="column2">
+	
+	<a href="userdownload/sumerian.css" download>Sumerian</a>
+<br>
+		<a href="userdownload/bauhaus.css" download>Bauhaus</a>
+<br>
+		<a href="userdownload/arcade.css" download>Arcade</a>
+		
+</div>
+			<div class="column2">
+
+				<a href="userdownload/type.css" download>Typewriter</a>
+				<br>
+				<a href="userdownload/popart.css" download>Pop Art</a>
+				<br>
+		<a href="userdownload/future.css" download>Future</a>
+
+
+	</div>  </div>
+	
+	<p align="justify">
+	Or download	<a href="userdownload/all.css" download>all of them</a> in a .zip folder!
+	</p>
+</div>
+</div>
+
+
 			        </div>
           </div>
         </div>
@@ -227,7 +273,36 @@ height: 105%;
   </section>  
   <!-- End of the First Section -->  
 
+<style>
+* {
+  box-sizing: border-box;
+}
 
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding-righ: 40px;
+    padding-left: 40px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 
     <!-- First Section -->
   <section class="page-section cta">
@@ -251,7 +326,7 @@ height: 105%;
 						<hr>
 			
 			<p class="mb-3 mt-3" align="justify" style="font-size:10.5pt; margin-left:20px; margin-right:30px;">
-			<sup>1</sup> <i>HTML is the standard markup language for documents designed to be displayed in a web browser. In other words, 
+			<sup>1</sup> <i><b>HTML</b> is the standard markup language for documents designed to be displayed in a web browser. In other words, 
 			it describes the hierarchical structure of a text (title, subtitle, paragrahps and so on).</i>
 			<hr>
 			</p>
@@ -264,7 +339,7 @@ height: 105%;
 			(such as <i>Title 1</i>, <i>Title 2</i>, <i>Subtitle</i> etc), by clicking the <b>toolbar button <i>Format</i></b>.</p>
 			
 			<figure align="center">
-			<img src="img/editor3.png" width="20%">
+			<img src="img/editor3.png" width="20%" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 			</figure>
 
 			<p class="mb-3" align="justify">
@@ -275,7 +350,7 @@ height: 105%;
 			</p>
 			
 			<figure align="center">
-			<img src="img/editor4.png" width="18%">
+			<img src="img/editor4.png" width="18%" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 			</figure>
 			
 			<p class="mb-5" align="justify">
@@ -380,45 +455,232 @@ height: 105%;
   
   
     <!-- Third Section: the IFRAME -->
-  <section class="page-section roba">
-      <div class="container container-large">
+<section class="page-section roba">
+    <div class="container container-large">
+		<div class="row">
+			<div class="col-xl mx-auto">
+				<div class="cta-inner2 rounded cta-inner-long">
+					<div class="container grid">
+
+						<form>
+							<h3 class="lora">Insert your text here:</h3>
+							<textarea id="html">&lt;article&gt;&lt;section&gt;</textarea>
+						</form>
+		
+							<div class="mb-4">
+								<h3 class="lora mb-2">Choose your style:</h3>
+									<div style="display:inline-block" align="center" class="mt-2">		
+										<input type="button" class="btn" value="Sumerian" onclick="addCss('sumerian.css')" />
+										<input type="button" class="btn" value="Typewriter" onclick="addCss('type.css')" />
+										<input type="button" class="btn" value="Bauhaus" onclick="addCss('bauhaus.css')" />
+										<input type="button" class="btn" value="Pop Art" onclick="addCss('popart.css')" />
+										<input type="button" class="btn" value="Arcade" onclick="addCss('arcade.css')" />
+										<input type="button" class="btn" value="Future" onclick="addCss('futuretryyours.css')" />
+									</div>
+							</div>
+		
+							<hr> 
+		
+							<div class="mt-3">
+								<h5 class="lora mb-2">Clean the previous style:</h5>
+									<div style="display:inline-block" align="center" class="mt-2">	
+										<input type="button" class="btn" value="Clean" onclick="removeCss()" />
+									</div>
+							</div>
+					</div>
+							<div class="output grid">
+								<iframe id="iframe" name="iframe" class="iframe"></iframe>
+							</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>  
+  <!-- End of the Third Section --> 
+
+
+
+    <!-- First Section -->
+  <section class="page-section cta">
+    <div class="container">
       <div class="row">
-        <div class="col-xl mx-auto">
-          <div class="cta-inner2 rounded cta-inner-long">
-<div class="container grid">
-	<form>
-		<h3 class="lora">Insert your text here:</h3>
-		<textarea id="html">&lt;article&gt;&lt;section&gt;</textarea>
-	</form>
-		
-		<div class="mb-4">
-		
-     	<h3 class="lora mb-2">Choose your style:</h3>
-		
-		<div style="display:inline-block" align="center" class="mt-2">		
-		<input type="button" class="btn" value="Sumerian" onclick="addCss('sumerian.css')" />
-		<input type="button" class="btn" value="Typewriter" onclick="addCss('type.css')" />
-		<input type="button" class="btn" value="Bauhaus" onclick="addCss('bauhaus.css')" />
-		<input type="button" class="btn" value="Pop Art" onclick="addCss('popart.css')" />
-		<input type="button" class="btn" value="Arcade" onclick="addCss('arcade.css')" />
-		<input type="button" class="btn" value="Future" onclick="addCss('futuretryyours.css')" />
-		</div>
-		
-		</div>
-		
-		<hr> 
-		<div class="mt-3">
-		
-		<h5 class="lora mb-2">Clean the previous style:</h5>
-		
-		<div style="display:inline-block" align="center" class="mt-2">	
-		<input type="button" class="btn" value="Clean" onclick="removeCss()" />
-		</div>
-		</div>
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner rounded">
+            <h2 class="section-heading mb-4">              
+              <span class="section-heading-upper text-center mb-2">I wanna know how it works</span>
+              <span class="section-heading-lower text-center mb-5">At my own risk</span>
+            </h2>			
+		  <div class="col-xl-12">
+                          <p id="dropcap" class="mb-3" align="justify">
+				Oh, I see. You <b>don't believe in magic</b> and you deeply analyze know the cold, grey machine works.
+				You must be so fun at parties.
+				</p>
+				
+				<p class="mb-3" align="justify">
+				Very well. Let's reveal all the magician's tricks.
+				</p>
+				
+				<p class="mb-3" align="justify">
+				Nothing to explain regarding the <b>CK Editor</b> part: it's just a tool allowing non-HTML experts to write an article
+				with a correct HTML structure without following a whole course about HTML.
+				</p>
+				
+				<p class="mb-3" align="justify">
+				Part B, however, is trickier. It is structured as a 
+				&lt;grid&gt; divided in two columns: the left one for the <b>inputs</b> (the text and the styles) and the right one
+				for the <b>output</b> (the formatted text in the chosen style).
+				The text can be written in a &lt;textarea&gt; element, and will be shown as output on the right inside an element
+				called <b>&lt;iframe&gt;</b> (used to embed another HTML document within the current HTML document).
+				The &lt;iframe&gt; is populated through the following <b>jQuery function</b>, 
+				a reworking of a function wrote by <a href="https://github.com/bhskt/simpleWebEditor" target="_blank">
+				Bhaskar Tiwari</a>:
+				</p>
+				
+				<script src="prism.js"></script>
+				<pre>
+(function() {
+	$('.grid').height( $(window).height() );	
+	var	contents = $('iframe').contents(),
+		body = contents.find('body'),
+		styleTag = $('&lt;style&gt;&lt;/style&gt;').appendTo(contents.find('head'));
+	$('textarea').keyup(function() {
+		var $this = $(this);
+		if ( $this.attr('id') === 'html') {
+			body.html( $this.val() );
+		}
+	});
+})();</pre>			
+
+<style>
+pre {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+padding:25px; 
+background-image:url('img/white.png');
+margin-top: 20px;
+margin-bottom: 20px;
+}
+</style>
 	
+				<p class="mb-3" align="justify">
+				The grey squared buttons for choosing the styles were developed in <b>Javascript</b>. Here is what we did:
+				we added a simple <b>'onclick'</b> event 
+				on each of the buttons, defining the name of its CSS.
+				For example:
+				</p>
+<pre>
+&lt;input type="button" value="Bauhaus" onclick="addCss('bauhaus.css')"/&gt;
+&lt;input type="button" value="Pop Art" onclick="addCss('popart.css')"/&gt;
+</pre>
+		
+				<p class="mb-3" align="justify">
+				The Javascript function, therefore, took as parameter the name of its CSS and created a full
+				<b>link to an external style sheet</b> (i.e. the desired historical type), enriched with all its standard attributes
+				(<b>&lt;rel&gt;</b>, <b>&lt;type&gt;</b> and, of course, <b>&lt;href&gt;</b>). The created <b>&lt;link&gt;</b> is finally put
+				inside the body of the iframe.
+				</p>		
+
+<pre>
+function addCss(fileName) {
+
+  var x = document.getElementById("iframe");
+  var y = x.contentWindow.document;
+  var link = document.createElement("link");
+
+  link.type = "text/css";
+  link.rel = "stylesheet";
+  link.href = fileName;
+
+  y.body.appendChild(link);
+}</pre>
+
+				<p class="mb-3" align="justify">
+				In conclusion, the '<b>cleaning</b>' button was a 'trick' to avoid the accumulation/sum of the stylesheets one above the other.
+				With the Js method <b>removeChild()</b> we managed to remove a specified child node of the specified element (i.e. the iframe),
+				and we chose it to be the <b>second</b>, assuming that the first is the written text. So, the Js function will never remove
+				the text but only the <b>first appended CSS</b> (so not the last one! <i class="fas fa-exclamation-triangle"></i> ).
+				</b>
+				
+<pre>
+function removeCss() {
+  var x = document.getElementById("iframe");
+  var y = x.contentWindow.document;
+
+  var list = y.body;
+  list.removeChild(list.childNodes[1]);
+}
+</pre>
+				</p>
+
+				
+			        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
+  </section>  
+  <!-- End of the First Section --> 
+  
+  
+  
+
+    <!-- Footer -->
+  <footer class="footer text-faded text-center py-5">
+    <div class="container">
+      <p class="m-0 small">Copyright <span class="text-white">&copy; Lengua Chantal, Moccia Vittoria, Siurina Lisa</span> - 2019</p>
+    </div>
+  </footer>
+    <!-- End of the Footer -->  
 
 
-	
+    <!-- Function of the IFRAME -->  
+<script>
+(function() {
+	$('.grid').height( $(window).height() );	
+	var	contents = $('iframe').contents(),
+		body = contents.find('body'),
+		styleTag = $('<style></style>').appendTo(contents.find('head'));
+	$('textarea').keyup(function() {
+		var $this = $(this);
+		if ( $this.attr('id') === 'html') {
+			body.html( $this.val() );
+		} 
+	});
+})();
+</script>
+ 
+ 
+ 
+<script>
+function addCss(fileName) {
+
+  var x = document.getElementById("iframe");
+  var y = x.contentWindow.document;
+  var link = document.createElement("link");
+
+  link.type = "text/css";
+  link.rel = "stylesheet";
+  link.id = "stylesheet1";
+  link.href = fileName;
+
+  y.body.appendChild(link);
+}
+</script>
+
+
+<script>
+function removeCss() {
+  var x = document.getElementById("iframe");
+  var y = x.contentWindow.document;
+
+  var list = y.body;
+  list.removeChild(list.childNodes[1]);
+}
+</script>  
+
+
+
+<style>
 <style>
 .btn:link,
 .btn:visited{
@@ -484,173 +746,6 @@ height: 105%;
   }
 }
 </style>	
-	
-	
-</div>
-<div class="output grid">
-	<iframe id="iframe" name="iframe" class="iframe"></iframe>
-</div>
-</div>
-</div>
-</div>
-  </section>  
-  <!-- End of the Third Section --> 
-
-
-
-    <!-- First Section -->
-  <section class="page-section cta">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <div class="cta-inner rounded">
-            <h2 class="section-heading mb-4">              
-              <span class="section-heading-upper text-center mb-2">I wanna know how it works</span>
-              <span class="section-heading-lower text-center mb-5">At my own risk</span>
-            </h2>			
-		  <div class="col-xl-12">
-                          <p id="dropcap" class="mb-3" align="justify">
-				Oh, I see. You don't believe in magic and you deeply analyze know the cold, grey machine works.
-				You must be so fun at parties.
-				</p>
-				
-				<p class="mb-3" align="justify">
-				Very well. Let's reveal all the magician's tricks.
-				</p>
-				
-				<p class="mb-3" align="justify">
-				Nothing to explain regarding the <b>CK Editor</b> part: it's just a tool allowing non-HTML experts to write an article
-				with a correct HTML structure without studying anything. The part B, however, is trickier. It is structured as a 
-				&lt;container&gt; divided in two columns: the left one for the <b>inputs</b> (the text and the styles) and the right one
-				for the <b>output</b> (the formatted text in the chosen style).
-				The text can be written in a &lt;textarea&gt; element, and will be shown as an output on the right inside an element
-				called <b>&lt;iframe&gt;</b>, which is used to embed another HTML document within the current HTML document.
-				The &lt;iframe&gt; is populated through the following <b>jQuery function</b>:
-				</p>
-				
-				<script src="prism.js"></script>
-				<pre>		
-(function() {
-	$('.grid').height( $(window).height() );	
-	var	contents = $('iframe').contents(),
-		body = contents.find('body'),
-		styleTag = $('&lt;style&gt;&lt;/style&gt;').appendTo(contents.find('head'));
-	$('textarea').keyup(function() {
-		var $this = $(this);
-		if ( $this.attr('id') === 'html') {
-			body.html( $this.val() );
-		} else {
-			body.html( $this.val() );
-		}
-	});
-})();
-	</pre>			
-	
-				<p class="mb-3" align="justify">
-				The buttons for choosing the styles:
-				</b>
-<pre>
-function addCss(fileName) {
-
-  var x = document.getElementById("iframe");
-  var y = x.contentWindow.document;
-  var link = document.createElement("link");
-
-  link.type = "text/css";
-  link.rel = "stylesheet";
-  link.id = "stylesheet1";
-  link.href = fileName;
-
-  y.body.appendChild(link);
-}
-</pre>
-
-				<p class="mb-3" align="justify">
-				And finally the 'cleaning' button:
-				</b>
-				
-<pre>
-function removeCss() {
-  var x = document.getElementById("iframe");
-  var y = x.contentWindow.document;
-
-  var list = y.body;
-  list.removeChild(list.childNodes[1]);
-}
-</pre>
-				</p>
-
-				
-			        </div>
-          </div>
-        </div>
-      </div>
-    </div>
-	</div>
-  </section>  
-  <!-- End of the First Section --> 
-  
-  
-  
-
-    <!-- Footer -->
-  <footer class="footer text-faded text-center py-5">
-    <div class="container">
-      <p class="m-0 small">Copyright <span class="text-white">&copy; Lengua Chantal, Moccia Vittoria, Siurina Lisa</span> - 2019</p>
-    </div>
-  </footer>
-    <!-- End of the Footer -->  
-
-
-    <!-- Function of the IFRAME -->  
-<script>
-(function() {
-	$('.grid').height( $(window).height() );	
-	var	contents = $('iframe').contents(),
-		body = contents.find('body'),
-		styleTag = $('<style></style>').appendTo(contents.find('head'));
-	$('textarea').keyup(function() {
-		var $this = $(this);
-		if ( $this.attr('id') === 'html') {
-			body.html( $this.val() );
-		} else {
-			body.html( $this.val() );
-		}
-	});
-})();
-</script>
- 
- 
- 
-<script>
-function addCss(fileName) {
-
-  var x = document.getElementById("iframe");
-  var y = x.contentWindow.document;
-  var link = document.createElement("link");
-
-  link.type = "text/css";
-  link.rel = "stylesheet";
-  link.id = "stylesheet1";
-  link.href = fileName;
-
-  y.body.appendChild(link);
-}
-</script>
-
-
-<script>
-function removeCss() {
-  var x = document.getElementById("iframe");
-  var y = x.contentWindow.document;
-
-  var list = y.body;
-  list.removeChild(list.childNodes[1]);
-}
-</script>  
-
-
-
 
 </body>
 </html>

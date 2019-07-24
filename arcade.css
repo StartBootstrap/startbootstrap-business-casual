@@ -516,7 +516,7 @@ border-left: none;
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: salmon;
+  background: #ffe100;   /* or 22fdfe*/
 }
 
 
