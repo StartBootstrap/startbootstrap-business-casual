@@ -64,7 +64,7 @@ border-bottom: solid 1px black
   margin-top: 100px; 
   margin-bottom: 100px;  
   padding: 30px; 
-  background: url(img/sumerian/window_back2.png);
+  background-image: url("img/newspaper1.png");
   text-align: justify;
   -webkit-column-count: 3; /* Chrome, Safari */
   column-count: 3;
@@ -81,6 +81,31 @@ border-bottom: solid 1px black
   border-bottom-color: #52402d; 
   border-top-style: dotted;
   border-bottom-style: dotted;
+}
+
+article { 
+  text-shadow: 2px 2px 2px white;
+  margin-left: 70px; 
+  margin-right: 70px;
+  margin-top: 100px; 
+  margin-bottom: 100px;  
+  padding: 30px; 
+  background: url(img/sumerian/clay.png);
+  text-align: justify;
+  -webkit-column-count: 3; /* Chrome, Safari */
+  column-count: 3;
+  -webkit-column-gap: 20px; /* Chrome, Safari */
+  column-gap: 20px;
+  -webkit-column-rule: 1px solid; /* Chrome, Safari */
+  column-rule: 1px solid;
+  border-top-left-radius: 5px; 
+  border-top-right-radius: 5px;
+  border-top-color: #2b1d0e; 
+  border-bottom-width: 2px;
+  border-top-width: 2px;
+  border-bottom-color: #52402d; 
+  border-style: solid 2px #1a1a12;
+  box-shadow:  10px 10px 8px black, -10px -10px 8px black;
 }
 
 /*каждая секция, или абзац*/
