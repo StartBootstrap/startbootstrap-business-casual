@@ -1,3 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Back to the future</title>
+  <link rel='icon' href='img/ico.ico'/>  
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>  
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    
+  <!-- Reference for Ajax -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <!-- Reference for jQuery -->  
+  <script src="jquery-3.4.1.min.js"></script>
+  
+  <!-- Really important <link> to change the different css on-the-fly -->  
+	<link id="thestylesheet" rel="stylesheet" type="text/css" href="white.css"/> 
+  
+  
+ 
+ <!-- jQuery functions to change the 6 articles  -->
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#div1").load("texts/japan.html") ||  $("article").load("texts/japan.html");
+  });
+});
+    
+
+$(document).ready(function(){
+  $("#btn2").click(function(){
+    $("#div1").load("texts/machine.html") ||  $("article").load("texts/machine.html");
+  });
+});
+
+
+$(document).ready(function(){
+  $("#btn3").click(function(){
+    $("#div1").load("texts/alabama.html") ||  $("article").load("texts/alabama.html");
+  });
+});
+
+
+$(document).ready(function(){
+  $("#btn4").click(function(){
+    $("#div1").load("texts/eudirective.html") ||  $("article").load("texts/eudirective.html");
+  });
+});
+
+
+$(document).ready(function(){
+  $("#btn5").click(function(){
+    $("#div1").load("texts/delvey.html") ||  $("article").load("texts/delvey.html");
+  });
+});
+
+
+$(document).ready(function(){
+  $("#btn6").click(function(){
+    $("#div1").load("texts/lottery.html") ||  $("article").load("texts/lottery.html");
+  });
+});
+</script> 
+  
+  <!---------- End ---------->
+  
+  
+<script>
+	// This is the function to change the 6 stylesheets; it is placed on the timeline dots
+	
+    function setStyleSheet(url){
+       var stylesheet = document.getElementById("thestylesheet");
+       stylesheet.setAttribute('href', url);
+    }
+</script>
+
+<script>
+// These are the 6 functions to change the 6 musics of the stylesheets; they are placed on the timeline dots, too
+
+  function play1(){
+       var x = document.getElementById("silence");
+       var y = x.setAttribute('src', 'audio/sumerian.mp3');
+	   y.play();
+                 }
+
+  function play2(){
+       var x = document.getElementById("silence");
+       var y = x.setAttribute('src', 'audio/typewriter.mp3');
+	   y.play();	
+                 }
+
+  function play3(){
+       var x = document.getElementById("silence");
+       var y = x.setAttribute('src', 'audio/bauhaus.mp3');
+	   y.play();	   
+}
+
+  function play4(){  
+       var x = document.getElementById("silence");
+       var y = x.setAttribute('src', 'audio/do-wah-diddy-diddy.mp3');
+	   y.play();	   
+}				 
+
+  function play5(){
+       var x = document.getElementById("silence");
+       var y = x.setAttribute('src', 'audio/arcade.mp3');
+	   y.play();
+                 }				 
+
+  function play6(){
+       var x = document.getElementById("silence");
+       var y = x.setAttribute('src', 'audio/future.mp3');
+	   y.play();
+                 }	
+</script>				 
+ 
+
+</head>
+<body>
+
+<!-- The silence "music" we have to add and that we change clicking on the timeline buttons -->
+<audio autoplay id="silence">
+   <source src="audio/silence.mp3" type="audio/mpeg">
+</audio>
+
+
+
+<!-- The timeline -->
+<div id="timeline-section">
+<div id="timeline" class="mt-5 mr-2 ml-2 p-4 rounded">
+
+<div class=" p-1"> </div>
+<div class=" p-1"> </div>
+<div class=" p-1"> </div>
+<div class=" p-5"> </div>
+<div class="flex-parent">
+	<div class="input-flex-container">
+		<input type="radio" name="timeline-dot" data-description="3200BC" checked onclick="setStyleSheet('sumerian.css'); play1()">
+		<div class="dot-info" data-description="3200BC">
+			<span class="year">3200BC</span>
+			<span class="label">Sumerian cuneiform</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1920" class="default" style="height: 1px;">
+		<div class="dot-info default">
+			<span class="year"></span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1930" class="default" style="height: 1px;">
+		<div class="dot-info default">
+			<span class="year"></span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1940"  class="default" style="height: 1px;">
+		<div class="dot-info default">
+			<span class="year"></span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1950"  class="default" style="height: 1px;">
+		<div class="dot-info default">
+			<span class="year"></span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1878"  onclick="setStyleSheet('type.css'); play2()">
+		<div class="dot-info" data-description="1878">
+			<span class="year">1878</span>
+			<span class="label">Type type type</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1919"  onclick="setStyleSheet('bauhaus.css'); play3()">
+		<div class="dot-info" data-description="1919">
+			<span class="year">1919</span>
+			<span class="label">Bauhaus</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1960" onclick="setStyleSheet('popart.css'); play4()">
+		<div class="dot-info" data-description="1960">
+			<span class="year">1960</span>
+			<span class="label">Pop Art</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1980" onclick="setStyleSheet('arcade.css'); play5()">
+		<div class="dot-info" data-description="1980">
+			<span class="year">1980</span>
+			<span class="label">ARCADE, baby!</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="2040" onclick="setStyleSheet('future.css'); play6()">
+		<div class="dot-info" data-description="2040">
+			<span class="year">2040</span>
+			<span class="label">Future, here</span>
+		</div>
+		<div id="timeline-descriptions-wrapper">
+			<p data-description="1910"></p>
+			<p data-description="1920"></p>
+			<p data-description="1930"></p>
+			<p data-description="1940"></p>
+			<p data-description="1950"></p>
+			<p data-description="1960"></p>
+			<p data-description="1970"></p>
+			<p data-description="1980"></p>
+			<p data-description="1990"></p>
+			<p data-description="2000"></p>
+		</div>
+	</div>
+</div>
+
+
+					
+	<!-- The buttons for changing the articles -->				
+	<div style="display:inline-block" align="center" class="mb-4">
+	
+	<a href="#" class="btn btn-animation-1" id="btn1">ART. 1</a> 
+	<a href="#" class="btn btn-animation-1" id="btn2">ART. 2</a> 
+	<a href="#" class="btn btn-animation-1" id="btn3">ART. 3</a> 
+	<a href="#" class="btn btn-animation-1" id="btn4">ART. 4</a> 
+	<a href="#" class="btn btn-animation-1" id="btn5">ART. 5</a> 
+	<a href="#" class="btn btn-animation-1" id="btn6">ART. 6</a> 
+	
+	</div>
+</div>
+</div>
+	
+
+	<!-- The empty div that we populate with the articles -->	
+				<main id="div1" style="margin-top:100px;" class=""> 
+				
 
 <article>
   <section>
@@ -38,13 +271,12 @@
 
           <p>That&rsquo;s when it hit him. Right there, in the numbers on the page, he noticed a flaw&mdash;a strange and surprising pattern, like the cereal-box code, written into the fundamental machinery of the game. A loophole that would eventually make Jerry and Marge millionaires, spark an investigation by a Boston Globe Spotlight reporter, unleash a statewide political scandal and expose more than a few hypocrisies at the heart of America&rsquo;s favorite form of legalized gambling.</p>
 
-			
+			</section>
+			<section>
 
 			<img src="img/lottery3.jpg" alt="The Corner Store, in downtown Evart, where Jerry first got interested in the lottery">
             <figcaption>The Corner Store, in downtown Evart, where Jerry first got interested in the lottery.</figcaption>
 
-</section>
-			<section>
           <h3>TWO</h3>
 
           <p>Evart, Michigan: 1,903 residents, three banks, one McDonald&rsquo;s, no Starbucks, a single stoplight on Main Street, a combination Subway/gas station where locals drink coffee in the morning, a diner with the stuffed heads of elk mounted on wood-paneled walls. Historically an auto industry town, sustained by two factories that provided parts to General Motors and Chrysler. Four months of winter and rutted, ice-glazed roads. People endure the cold and the economy and vote for Republicans. Summer brings a shuffleboard tournament and a musical festival billed as &ldquo;The World&rsquo;s Largest Hammered Dulcimer Gathering.&rdquo;</p>
@@ -142,12 +374,11 @@
 
 </section>
 <section>
-<h3>FOUR</h3> 
 
 <img src="img/lottery6.jpg" alt="lottery tickets">
 <figcaption>Jerry would eventually buy hundreds of thousands of tickets every roll-down week.</figcaption>
 
-          
+          <h3>FOUR</h3>
 
           <p>The American heist master Willie Sutton was famously said to have robbed banks because that&rsquo;s where the money was. The lottery is like a bank vault with walls made of math instead of steel; cracking it is a heist for squares. And yet a surprising number of Americans have pulled it off. A 2017 <a href="https://www.cjr.org/watchdog/lottery-winners-foia-reporting.php" target="_blank">investigation</a> by the Columbia Journalism Review found widespread anomalies in lottery results, difficult to explain by luck alone. According to CJR&rsquo;s analysis, nearly 1,700 Americans have claimed winning tickets of $600 or more at least 50 times in the last seven years, including the country&rsquo;s most frequent winner, a 79-year-old man from Massachusetts named <a target="_blank" href="http://archive.boston.com/business/articles/2011/11/05/frequent_lottery_winner_wins_again/">Clarance W. Jones</a>, who has redeemed more than 10,000 tickets for prizes exceeding $18 million.</p>
 
@@ -428,3 +659,369 @@ Courtesy of Dawn Tomlison</figcaption>
 	  </section>
 
    </article>
+
+				</main>
+							
+	
+	
+	
+	
+	
+<style>
+/* CSS for the Timeline */
+timeline-section {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: #424949;
+  background-color: white; <!-- here the background-color was #ECF0F1. I tried to change it in white-->
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+    height: 100%;
+}
+
+.flex-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.input-flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  max-width: 1000px;
+  position: relative;
+  z-index: 0;
+  margin-left: calc((80vw - 25px) / 20);
+}
+
+input {
+  width: 25px;
+  height: 25px;
+  background-color: #2C3E50;
+  position: relative;
+  border-radius: 50%;
+  display: block;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+input:focus {
+  outline: none;
+}
+input::before, input::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #2C3E50;
+  width: 4vw;
+  height: 5px;
+  max-width: 50px;
+}
+input::before {
+  left: calc(-4vw + 12.5px);
+}
+input::after {
+  right: calc(-4vw + 12.5px);
+}
+input:checked {
+  background-color: #2C3E50;
+}
+input:checked::before {
+  background-color: #2C3E50;
+}
+input:checked::after {
+  background-color: #AEB6BF;
+}
+input:checked ~ input, input:checked ~ input::before, input:checked ~ input::after {
+  background-color: #AEB6BF;
+}
+input:checked + .dot-info span {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.dot-info {
+  width: 25px;
+  height: 25px;
+  display: block;
+  visibility: hidden;
+  position: relative;
+  z-index: -1;
+  left: calc((((80vw - 25px) / 20) * -1) - 1px);
+}
+.dot-info span {
+  visibility: visible;
+  position: absolute;
+  font-size: 12px;
+}
+.dot-info span.year {
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dot-info span.label {
+  top: -65px;
+  left: 0;
+  transform: rotateZ(-45deg);
+  width: 70px;
+  text-indent: -10px;
+}
+
+#timeline-descriptions-wrapper {
+  width: 100%;
+  margin-top: 140px;
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: calc((-80vw - 25px) / 20);
+}
+#timeline-descriptions-wrapper p {
+  margin-top: 0;
+  display: none;
+}
+
+input[data-description="1910"]:checked ~ #timeline-descriptions-wrapper p[data-description="1910"] {
+  display: block;
+}
+
+input[data-description="1920"]:checked ~ #timeline-descriptions-wrapper p[data-description="1920"] {
+  display: block;
+}
+
+input[data-description="1930"]:checked ~ #timeline-descriptions-wrapper p[data-description="1930"] {
+  display: block;
+}
+
+input[data-description="1940"]:checked ~ #timeline-descriptions-wrapper p[data-description="1940"] {
+  display: block;
+}
+
+input[data-description="1950"]:checked ~ #timeline-descriptions-wrapper p[data-description="1950"] {
+  display: block;
+}
+
+input[data-description="1960"]:checked ~ #timeline-descriptions-wrapper p[data-description="1960"] {
+  display: block;
+}
+
+input[data-description="1970"]:checked ~ #timeline-descriptions-wrapper p[data-description="1970"] {
+  display: block;
+}
+
+input[data-description="1980"]:checked ~ #timeline-descriptions-wrapper p[data-description="1980"] {
+  display: block;
+}
+
+input[data-description="1990"]:checked ~ #timeline-descriptions-wrapper p[data-description="1990"] {
+  display: block;
+}
+
+input[data-description="2000"]:checked ~ #timeline-descriptions-wrapper p[data-description="2000"] {
+  display: block;
+}
+
+@media (min-width: 1250px) {
+  .input-flex-container {
+    margin-left: 62.5px;
+  }
+
+  input::before {
+    left: -37.5px;
+  }
+  input::after {
+    right: -37.5px;
+  }
+
+  .dot-info {
+    left: calc((((1000px - 25px) / 20) * -1) - 1px);
+  }
+
+  #timeline-descriptions-wrapper {
+    margin-left: -37.5px;
+  }
+}
+@media (max-width: 630px) {
+  .flex-parent {
+    justify-content: initial;
+  }
+
+  .input-flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 400px;
+    height: auto;
+    margin-top: 15vh;
+    margin-left: 0;
+  }
+
+  input, .dot-info {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px 50px;
+  }
+
+  input {
+    background-color: transparent !important;
+    z-index: 1;
+  }
+  input::before, input::after {
+    content: none;
+  }
+  input:checked + .dot-info {
+    background-color: #2C3E50;
+  }
+  input:checked + .dot-info span.year {
+    font-size: 14px;
+  }
+  input:checked + .dot-info span.label {
+    font-size: 12px;
+  }
+
+  .dot-info {
+    visibility: visible;
+    border-radius: 50%;
+    z-index: 0;
+    left: 0;
+    margin-left: -70px;
+    background-color: #AEB6BF;
+  }
+  .dot-info span.year {
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ECF0F1;
+  }
+  .dot-info span.label {
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    text-indent: 0;
+    text-align: center;
+  }
+
+  #timeline-descriptions-wrapper {
+    margin-top: 30px;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .input-flex-container {
+    width: 340px;
+  }
+}
+@media (max-width: 400px) {
+  .input-flex-container {
+    width: 300px;
+  }
+}
+
+
+
+
+/* CSS for Timeline, but personalized by us */
+.default {
+  cursor: default;
+}
+
+#timeline {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: #424949;
+  background-color: rgba(255, 255, 255, 0.9); <!-- here the default background-color was rgba(236, 240, 241, 0.9)-->
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+
+
+
+/* CSS for the grey rounded Buttons */
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+  text-transform:uppercase;
+  position:relative;
+  top:0;
+  left:0;
+  padding:10px 20px;
+  border-radius:100px;
+  display:inline-block;
+  transition: all .5s;
+}
+
+.btn{
+  background:#B0B7BD;
+  color:#000000;
+}
+
+.btn:hover{
+   box-shadow:0px 10px 10px #2D3E4E;
+   transform : translateY(-3px);
+}
+
+.btn:active{
+  box-shadow:0px 5px 10px #2D3E4E
+  transform:translateY(-1px);
+}
+
+.btn-bottom-animation-1{
+  animation:comeFromBottom 1s ease-out .8s;
+}
+
+.btn::after{
+  content:"";
+  text-decoration: none;
+  text-transform:uppercase;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border-radius:100px;
+  display:inline-block;
+  z-index:-1;
+  transition: all .5s;
+}
+
+.btn::after {
+    background: #B0B7BD;
+}
+
+.btn-animation-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+@keyframes comeFromBottom{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  } 
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+</style>	
+	</body>
+	</html>

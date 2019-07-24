@@ -30,6 +30,7 @@ border-collapse: collapse;
 border: 4px solid black;
 padding: 10px;
 text-align: left;
+font-family: 'Special Elite';
 
 }
 
@@ -153,7 +154,7 @@ word-spacing: 6px;
 }
 
 .container-eu table {
-	
+font-family: 'Special Elite';	
 max-width: 50px;
 font-size: 10px;
 }
