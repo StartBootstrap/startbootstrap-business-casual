@@ -1,3 +1,7 @@
+/* Pop Art CSS made by Chantal Lengua (https://github.com/Chantallengua) 
+for the project "Back to the Future" https://github.com/backtothefuture2019/tttt. 
+*/
+
 @font-face {
     font-family: 'royliecthtenstein';
     src: url('font/popart/roy-lichtenstein/DupuyBALloon-Italic-Italic.ttf.svg') format('svg'),
@@ -16,74 +20,15 @@
 	     url('font/popart/comix-loud/comix_loud-webfont.woff2') format('woff2');
 }
 
-
-@font-face {
-  font-family: 'SequentialistBB';
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_1_0.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_0_0.woff") format("woff");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'SequentialistBB';
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_0_0.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_0_0.woff") format("woff");
-  font-style: italic;
-  font-weight: 400;
-}
-
-
-section > div {
-margin-left: 40px;
-margin-right: 40px;
-line-height: 1.7;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-	    padding-bottom: 20px;
-margin-bottom: 20px;
-
-  background: white;
-border: solid black;
-border-bottom: solid 20px ;	
-}	
-
-
-
-
-section > div:before {
-content:"INCREDIBLE!";
-color: white;
-background:black;
-padding: 10px; 
-border: 2px solid black;
-border-radius: 30px;
-}
-
-section > div:after {
-content:"CAN YOU BELIEVE IT?!!";
-
-}
-
-
 body {
     background-image: url("img/popart/popart1.png");
 }
-
 
 * {
 	font-family: 'royliecthtenstein';
 	font-weight: normal;
     font-style: normal;
 }
-
-strong, a, em {
-font-family: 'badaboom';
-text-decoration: underline;
-}
-
-a {
-color: #A3001F;
-}
-
 
 article { 
     margin: 10% 12% 10% 12%;
@@ -94,150 +39,167 @@ article {
     font-weight: 100;
     text-align: justify;
     border: double 40px ; 
-												font-size: 18pt;
-      background: white;
-  background-image:
-    radial-gradient(#FFD3C1 23%, transparent 0), 
-    radial-gradient(#FFD3C1 23%, transparent 0);
-  background-size: 10px 10px;
-  background-position: 0 0, 5px 5px;
+	font-size: 18pt;
+    background: white;
+	background-image: radial-gradient(#FFD3C1 23%, transparent 0), radial-gradient(#FFD3C1 23%, transparent 0);
+	background-size: 10px 10px;
+	background-position: 0 0, 5px 5px;
     line-height: 1.7;
   }
 
 h1, h2, h3, h4 {
-font-family: 'badaboom';
-  display: block;
+	font-family: 'badaboom';
+	display: block;
 }
 
-
-
 h1 {
-  background-position: center;
-  background-repeat: no-repeat !important;
-  background-size: 50% 50%;
-  margin: 20 0;
-  text-align: center;
-  height: auto;
-  box-sizing: content-box;
-  line-height: 1;
-  background: url(img/popart/electric.svg);
-  width: auto;
-  height: auto;
-  padding-top: 8%;
-  padding-bottom: 8%;
+	background-position: center;
+	background-repeat: no-repeat !important;
+	background-size: 50% 50%;
+	margin: 20 0;
+	text-align: center;
+	height: auto;
+	box-sizing: content-box;
+	line-height: 1;
+	background: url(img/popart/electric.svg);
+	width: auto;
+	height: auto;
+	padding-top: 8%;
+	padding-bottom: 8%;
     padding-left: 15%;
-	  padding-right: 15%;
-											font-size: 60pt; 
+	padding-right: 15%;
+	font-size: 60pt; 
 }
 
 h1:hover {
-  background-position: center;
-  background-repeat: no-repeat !important;
-  background-size: 200% 200%;
-  margin: auto;
-  text-align: center;
-  height: auto;
-  box-sizing: content-box;
-  line-height: 1;
-  background: url(img/popart/electric.svg);
-  width: auto;
-  padding: 10% 14% 10% 14%;
-												font-size: 90pt;	
+	background-position: center;
+	background-repeat: no-repeat !important;
+	background-size: 200% 200%;
+	margin: auto;
+	text-align: center;
+	height: auto;
+	box-sizing: content-box;
+	line-height: 1;
+	background: url(img/popart/electric.svg);
+	width: auto;
+	padding: 10% 14% 10% 14%;
+	font-size: 90pt;	
 }
 
 h1:after {
-content: "!!!"; }
+	content: "!!!"; }
 
-h2:after {
-content: " Sbam!";
-}
-
-h3:after {
-content: "! $@*#&!";
-}
-
-section > p:nth-of-type(odd):after {
-content: " *";
-font-family:"comix-loud";
-}
-
-p:nth-of-type(1) {
-margin-top: 20px;
-}
 
 h2 {
-  background-position: center;
-  background-repeat: no-repeat !important;
-  background-size: 100% 100%;
-  margin: 30 0;
-  text-align: center;
-  height: auto;
-  box-sizing: content-box;
-  line-height: 1;
-  background: url(img/popart/bubble.svg);
-  width: auto;
-  height: auto;
-  padding-top: 8%;
-  padding-bottom: 21%;
+	background-position: center;
+	background-repeat: no-repeat !important;
+	background-size: 100% 100%;
+	margin: 30 0;
+	text-align: center;
+	height: auto;
+	box-sizing: content-box;
+	line-height: 1;
+	background: url(img/popart/bubble.svg);
+	width: auto;
+	height: auto;
+	padding-top: 8%;
+	padding-bottom: 21%;
     padding-left: 5%;
-	  padding-right: 5%;
-										font-size: 40pt;  
+	padding-right: 5%;
+	font-size: 40pt;  
+}
+
+h2:after {
+	content: " Sbam!";
 }
 
 h3 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-bottom: solid 20px ; 
-  border-left: solid black;
-  border-right: solid black;
-  border-top: solid black;
-										font-size: 25pt;
-      background: white;
-	  padding: 5px;
-	  width: auto;
-	  padding-left: 20px;
-	  padding-right:20px;	  
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: solid 20px ; 
+	border-left: solid black;
+	border-right: solid black;
+	border-top: solid black;
+	font-size: 25pt;
+    background: white;
+	padding: 5px;
+	width: auto;
+	padding-left: 20px;
+	padding-right:20px;	  
+}
+
+h3:after {
+	content: "! $@*#&!";
 }
 
 h4 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-bottom: solid 10px ; 
-  border-left: solid black;
-  border-right: solid black;
-  border-top: solid black;
-										font-size: 21;
-      background: white;
-	  padding: 5px;
-	  width: auto;
-	  padding-left: 20px;
-	  padding-right:20px;	  
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: solid 10px ; 
+	border-left: solid black;
+	border-right: solid black;
+	border-top: solid black;
+	font-size: 21;
+    background: white;
+	padding: 5px;
+	width: auto;
+	padding-left: 20px;
+	padding-right:20px;	  
 }
 
-
-figcaption {
-    font-size: 13pt;
-    margin-top: 10pt;
-    -webkit-hyphens: auto;
-            hyphens: auto;
-	text-align: center;
-	
-	  background-position: center;
-  background-repeat: no-repeat !important;
-  background-size: 100% 100%;
-  margin: 0 auto;
-  text-align: center;
-  height: auto;
-  box-sizing: content-box;
-  line-height: 1;
-  background: url(img/popart/bubble.svg);
-  width: auto;
-  padding-top: 6%;
-  padding-bottom: 16%;
-    padding-left: 16%;
-	padding-right: 16%;
+section:first-of-type > p:first-of-type:before {
+   content:"POW! This is an AWESOME article in POP ART style! \A";
+	font-family: badaboom;
+   display: block;	
+   font-size: 18pt;
+   text-decoration: underline;
+   padding: 20px;
 }
 
+section > div {
+	margin-left: 40px;
+	margin-right: 40px;
+	line-height: 1.7;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	background: white;
+	border: solid black;
+	border-bottom: solid 20px ;	
+}	
+
+section > div:before {
+	content:"INCREDIBLE!";
+	color: white;
+	background:black;
+	padding: 10px; 
+	border: 2px solid black;
+	border-radius: 30px;
+}
+
+section > div:after {
+content:"CAN YOU BELIEVE IT?!!";
+}
+
+strong, a, em {
+	font-family: 'badaboom';
+	text-decoration: underline;
+}
+
+a {
+	color: #A3001F;
+}
+
+section > p:nth-of-type(odd):after {
+	content: " *";
+	font-family:"comix-loud";
+}
+
+p:nth-of-type(1) {
+	margin-top: 20px;
+}
 
 article img{
 	height: auto;
@@ -249,6 +211,27 @@ article img{
 	margin-bottom: 20px;
 }
 
+figcaption {
+    font-size: 13pt;
+    margin-top: 10pt;
+    -webkit-hyphens: auto;
+            hyphens: auto;
+	text-align: center;
+	background-position: center;
+	background-repeat: no-repeat !important;
+	background-size: 100% 100%;
+	margin: 0 auto;
+	text-align: center;
+	height: auto;
+	box-sizing: content-box;
+	line-height: 1;
+	background: url(img/popart/bubble.svg);
+	width: auto;
+	padding-top: 6%;
+	padding-bottom: 16%;
+    padding-left: 16%;
+	padding-right: 16%;
+}
 
 table {
     width: 100%;
@@ -265,14 +248,14 @@ table {
 }
 
 td, th {
-  border: 1px solid black;
-  margin-top: 4pt;
-  margin-bottom: 4pt;
-  	padding: 10px;
+	border: 1px solid black;
+	margin-top: 4pt;
+	margin-bottom: 4pt;
+	padding: 10px;
 }
 
 tr {
-padding: 10px;
+	padding: 10px;
 }	
 
 th {
@@ -283,40 +266,51 @@ th {
     color:white;
     text-align: center;
     letter-spacing: 3px;
-  }
+}
   
 section > table > th:first-of-type:before {
-content: "MEANWHILE... "	 
- }	 
+	content: "MEANWHILE... "	 
+}	 
  
-  th:after {
-content: "!"	 
- }	
+th:after {
+	content: "!"	 
+}	
 
 tr:nth-of-type(odd) {
-    color:black;
-	
-  background: #FFD3C1;
-  background-image:
-    radial-gradient(white 23%, transparent 0), 
-    radial-gradient(white 23%, transparent 0);
-  background-size: 10px 10px;
-  background-position: 0 0, 5px 5px;
+	color:black;
+	background: #FFD3C1;
+	background-image: radial-gradient(white 23%, transparent 0), radial-gradient(white 23%, transparent 0);
+	background-size: 10px 10px;
+	background-position: 0 0, 5px 5px;
   }
   
 tr:nth-of-type(even) {
     background-color:white;
     color:black;
-  }
+}
 
-section:first-of-type > p:first-of-type:before {
-    content:"POW! This is an AWESOME article in POP ART style! \A";
-	font-family: badaboom;
-   display: block;	
-   font-size: 18pt;
-   text-decoration: underline;
-   padding: 20px;
-  }
+/* width */
+::-webkit-scrollbar {
+	width: 17px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: black; 
+    box-shadow: inset 0 0 5px wheat; 
+	border-radius: 15px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: white; 
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: salmon; 
+}
   
 
 
@@ -327,11 +321,11 @@ section:first-of-type > p:first-of-type:before {
 /*eudirective*/
 
 .col-ing > div:first-of-type {
-text-align: center;	
+	text-align: center;	
 }
 
 .col-ita > div:first-of-type {
-text-align: center;	
+	text-align: center;	
 }
 
 .flex-container{
@@ -340,7 +334,7 @@ text-align: center;
     margin: 0 auto;
     display: -webkit-flex; /* Safari */     
     display: flex; /* Standard syntax */
-	}
+}
 
 .flex-container .col-ing{
 	margin-top: 30px;
@@ -348,7 +342,6 @@ text-align: center;
     flex: 1; /* Standard syntax */
 	margin-right:20px;
 }
-
 
 .flex-container .col-ita{
 	margin-top: 30px;
@@ -359,99 +352,39 @@ text-align: center;
 
 .container-eu{
 	margin: 50px;
-		margin-bottom:70px;
-		
-		      background: white;
-  background-image:
-    radial-gradient(#FFD3C1 23%, transparent 0), 
-    radial-gradient(#FFD3C1 23%, transparent 0);
-  background-size: 10px 10px;
-  background-position: 0 0, 5px 5px;
+	margin-bottom:70px;
+	background: white;
+	background-image: radial-gradient(#FFD3C1 23%, transparent 0),radial-gradient(#FFD3C1 23%, transparent 0);
+	background-size: 10px 10px;
+	background-position: 0 0, 5px 5px;
     line-height: 1.7;
-		
-		border: double 40px;
-		text-align:justify;
-		font-size: 18pt;
-		margin-left:90px;
-		margin-right:90px;
-		 padding-top:20px;
-		padding-left:0px;
-		padding-right: 0px;
-		height:auto;
-		overflow: hidden;
+	border: double 40px;
+	text-align:justify;
+	font-size: 18pt;
+	margin-left:90px;
+	margin-right:90px;
+	padding-top:20px;
+	padding-left:0px;
+	padding-right: 0px;
+	height:auto;
+	overflow: hidden;
 }
-
 	
 .container-eu p {
-				font-size: 18pt;
-				border-right:none;
-				margin-top: 20px;
-				margin-left:20px;
-				margin-right:20px;
+	font-size: 18pt;
+	border-right:none;
+	margin-top: 20px;
+	margin-left:20px;
+	margin-right:20px;
 }
 
 .col-ing > table > th:first-of-type:before {
-content: " "	 
- }	 
+	content: " "	 
+}	 
 
 hr {
-height:10px; 
-border:none; 
-color: black; 
-background-color: black;
+	height:10px; 
+	border:none; 
+	color: black; 
+	background-color: black;
 }	
-/*
-.container-eu a{ 
-				color:black;
-				font-size:18pt;
-				}
-
-.container-eu a:active {
-	color: black;}
-
-.container-eu a:visited {
-	color: red;}
-
-
-.container-eu span {
-	border-top:solid;
-	border-bottom: solid;
-	font-family: English Gothic Bold Italic;
-	text-align:center; 
-	font-size:11.25pt;
-	margin-left:10px;
-	}
-
-.container-eu h2{margin-top:20px;
-	font-size:45pt;}
-	
-	
-
-	@media screen and (max-width: 1000px) { .container-eu p { font-size: 5.25pt;
-
-}}*/
-
-
-/* width */
-::-webkit-scrollbar {
-  width: 17px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: black; 
-    box-shadow: inset 0 0 5px wheat; 
-  border-radius: 15px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: white; 
-    border-radius: 15px;
-	
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: salmon; 
-}
