@@ -464,7 +464,7 @@ height: 105%;
 
 						<form>
 							<h3 class="lora">Insert your text here:</h3>
-							<textarea id="html">&lt;article&gt;&lt;section&gt;</textarea>
+							<textarea id="textarea">&lt;article&gt;&lt;section&gt;</textarea>
 						</form>
 		
 							<div class="mb-4">
@@ -545,7 +545,7 @@ height: 105%;
 		styleTag = $('&lt;style&gt;&lt;/style&gt;').appendTo(contents.find('head'));
 	$('textarea').keyup(function() {
 		var $this = $(this);
-		if ( $this.attr('id') === 'html') {
+		if ( $this.attr('id') === 'textarea') {
 			body.html( $this.val() );
 		}
 	});
@@ -642,7 +642,7 @@ function removeCss() {
 		styleTag = $('<style></style>').appendTo(contents.find('head'));
 	$('textarea').keyup(function() {
 		var $this = $(this);
-		if ( $this.attr('id') === 'html') {
+		if ( $this.attr('id') === 'textarea') {
 			body.html( $this.val() );
 		} 
 	});
