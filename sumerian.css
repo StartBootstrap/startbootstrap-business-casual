@@ -21,7 +21,7 @@ font-style: normal;
 }
 @font-face
 {
-font-family: "Behistun";
+font-family: "Kakoulookiam";
 src: url("font/sumerian/Behistun.ttf") format("truetype");
 font-weight: normal;
 font-style: normal;
@@ -64,7 +64,7 @@ border-bottom: solid 1px black
   margin-top: 100px; 
   margin-bottom: 100px;  
   padding: 30px; 
-  background: url(img/sumerian/window_back2.jpg);
+  background: url(img/sumerian/window_back2.png);
   text-align: justify;
   -webkit-column-count: 3; /* Chrome, Safari */
   column-count: 3;
@@ -134,7 +134,7 @@ text-decoration: underline;
 /*заголовки*/
 h1, h2, h3, h4 {
     display: block;
-    font-family: 'cuneiforme';
+    font-family: 'Kakoulookiam';
     padding-top: 15px;
     padding-bottom: 15px;
     color:#000000;
@@ -160,16 +160,16 @@ line-height: 34px;
 }
 
 h1:hover {
-font-family: 'peskyphoenicians';
+font-family: 'cuneiforme';
 }
 h2:hover {
-font-family: 'peskyphoenicians';
+font-family: 'cuneiforme';
 }
 h3:hover {
-font-family: 'peskyphoenicians';
+font-family: 'cuneiforme';
 }
 h4:hover {
-font-family: 'peskyphoenicians';
+font-family: 'cuneiforme';
 }
 
 article sup {
