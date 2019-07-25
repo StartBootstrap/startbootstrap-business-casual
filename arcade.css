@@ -97,25 +97,6 @@ font-weight: normal;
 font-style: normal;
 }
 
-
-/*загружаем новый шрифт, кладем в нужную папку font/arcade_baby
-копируем новый блок выше
-@font-face
-{
-font-family: "name";
-src: url("font/arcade_baby/name.ttf") format("truetype");
-font-weight: normal;
-font-style: normal;
-}
-и вместо name пишем название файла и название шрифта, и это же название в стилях писать в font-family
-*** для otf прописать format("opentype") и расширение файла поменять
-названия шрифта лучше без пробела, и маленькими буквами сделать
-*/
-
-
-
-
-/*здесь по умолчанию стили, используются если для какого-то тега нет стилей*/
 * {
     font-family: 'lowrider';
     font-size: 26px;
@@ -125,33 +106,31 @@ font-style: normal;
 }
 
 body {
-    background: url(img/arcade_baby/back.jpg);   /*картинка фона страницы*/
-    background-size: 100%; /*растянули по размеру экрана*/
+    background: url(img/arcade_baby/back.jpg); 
 }
 
-/*секция со статьями, особо не надо менять */
+
 section:last-of-type {
 padding-left: 20px;
 padding-right: 20px;
 }
 
-/*основное окно под всю статью*/
+
 article {
-    margin: 3% 12%; /* отступ окна статьи, по вертикали и горизонтали от краев браузера */
-    padding-left: 50px; /*оступ текста в статье от края окна, слева   */
-    padding-right: 50px;   /*справа  */
-    padding-top: 20px;   /* сверху*/
-    padding-bottom: 40px; /*снизу */
-    text-align: justify; /* тип выравнивания текста в статье, justify - на всю ширину */
-    font-size: 16px;    /*размер шрифта тут, если явно не указан в других тегах */
+    margin: 3% 12%; 
+    padding-left: 50px; 
+    padding-right: 50px;  
+    padding-top: 20px;   
+    text-align: justify; 
+    font-size: 16px;   
     background: #000000;
-    background-image: radial-gradient(#222222 50%, transparent 0);  /*фон кружков, код цвета*/
-  background-size: 10px 10px; /*размер кружков фона*/
-  border: 16px solid #000000; /* рамка окна статей     размер, тип solid - сплошная линия, цвет */
-  border-radius: 24px; /* закругление рамки окна статей   */
+    background-image: radial-gradient(#222222 50%, transparent 0);  
+  background-size: 10px 10px; 
+  border: 16px solid #000000;
+  border-radius: 24px; 
   }
 
-/*каждая секция, или абзац*/
+
 article section  {
 margin-top: 20px;
 margin-bottom: 20px;
@@ -165,39 +144,37 @@ background: none;
 border:none;
 }
 
-/*текста статей в зависимости от номера абзаца, четный и нечетный параграфы*/
+
 section p:nth-of-type(odd) {
     font-size:28px;
-    line-height: 28px;   /*межстрочный интервал  */
+    line-height: 28px;  
     color:#ffffff;
 }
 
 section p:nth-of-type(even) {
     font-size:28px;
-    line-height: 28px;   /*межстрочный интервал  */
+    line-height: 28px;  
     color:#ffffff;
 }
 
-/*стиль самого первого абзаца*/
+
 section p:nth-of-type(1) {
     font-size:28px;
-    line-height: 28px;    /*межстрочный интервал  */
+    line-height: 28px;   
     color:#ffffff;
 }
 
-/*первая буква в абзацах*/
+
 section p:first-letter{
     color:#0000CD;
-    font-size:32px;     /*межстрочный интервал  */
+    font-size:32px;     
     line-height: 28px;
 }
 
-/*текст всех статей*/
 p {
 font-family: 'sf-atarian-system.regular';
 }
 
-/*тег цитат*/
 q {
 display: block;
 font-family: 'games';
@@ -205,21 +182,21 @@ color:#FFD700;
 font-size:22px;
 }
 
-/*выделенный текст*/
+
 p strong, em {
 font-family: 'games';
 color:#0000CD;
 font-size:22px;
 }
 
-/*выделенный курсив*/
+
 p i {
 font-family: 'games';
 color:#0000CD;
 font-size:22px;
 }
 
-/*текст ссылки в статье*/
+
 p a {
 font-family: 'games';
 font-size: 17px;
@@ -227,7 +204,7 @@ color:#800080;
 text-decoration: underline;
 }
 
-/*заголовки*/
+
 h1, h2, h3, h4 {
     display: inline-block;
     padding-top: 15px;
@@ -235,7 +212,7 @@ h1, h2, h3, h4 {
 }
 h1 {
 font-size: 24px;
-line-height: 50px; /*межстрочный интервал*/
+line-height: 50px; 
 color:#FF0000;
 font-family: 'emulogic';
 }
@@ -258,22 +235,22 @@ color:#FFD700;
 font-family: 'emulogic';
 }
 
-/*фотографии*/
+
 article img {
-    max-width: 80%;  /*ширина от размера окна*/
+    max-width: 80%; 
     height: auto;
-    display: block;  /*надо задавать фото блоком, чтобы отступы можно было делать */
-    margin: 0 auto;   /*выравание по горизонтали по центру   0 - по вертикали отступ, auto по горзонтали отступ слева и справа, auto значит одинаковый, поэтому по центру получается  */
+    display: block; 
+    margin: 0 auto;  
     margin-top: 20px;
     margin-bottom: 20px;
-    /*border: 8px solid #ffffff;*/ /*рамка фото */
-    border: 15px double #0000aa; /*рамка фото  double двойная, отступ и размер вместе задается*/
+   
+    border: 15px double #0000aa; 
     border-radius: 12px;
     filter: grayscale(35%) sepia(0.12) opacity(1) contrast(127%);
     -webkit-filter: grayscale(35%) sepia(0.12) opacity(1) contrast(127%);
 }
 
-/*обычно подпись под картинкой*/
+
 figcaption {
 margin-bottom: 30px;
 font-size: 20px;
@@ -283,15 +260,15 @@ font-style: italic;
 text-align: center;
 }
 
-/*таблица*/
+
 table {
 margin-top: 20px;
 margin-bottom: 20px;
-margin-left:auto; /*выравнивание таблицы по центру  */
+margin-left:auto; 
 margin-right:auto;
 }
 
-/*чередуем фон таблицы по четностистрок*/
+
 table tr:nth-of-type(odd) {
   background: #333333;
   }
@@ -300,7 +277,7 @@ table tr:nth-of-type(even) {
   background: #999999;
   }
 
-/*заголовок таблицы*/
+
 table th {
 padding-top: 10px;
 padding-bottom: 10px;
@@ -311,7 +288,7 @@ font-size: 30px;
 color:#00cccc;
 text-align: center;
 }
-/*ячейки таблицы*/
+
 table td {
 padding-top: 10px;
 padding-bottom: 10px;
@@ -322,18 +299,17 @@ font-size: 18px;
 color:#ffffff;
 }
 
-/*общий стиль временной линии*/
-#timeline { 
-  opacity:0.8; /*прозрачность от общего цвета*/
-}
 
-/*на все непонятное*/
+#timeline { 
+  opacity:0.8; 
+
+
 div {
 color: #BA55D3;
 }
 
 
-/*Текст на временной линии*/
+
 .dot-info span.label {
 font-family: 'emulogic';
 font-size: 12px;
@@ -346,26 +322,25 @@ color: #444444;
 }
 
 
-/*/////////////////статья EUDIRECTIVE////////////////////*/
 
-/*окно*/
+
 .container-eu {
-    margin: 3% 12%; /* отступ окна статьи, по вертикали и горизонтали от краев браузера */
-    padding-left: 50px; /*оступ текста в статье от края окна, слева   */
-    padding-right: 50px;   /*справа  */
-    padding-top: 20px;   /* сверху*/
-    padding-bottom: 40px; /*снизу */
-    text-align: justify; /* тип выравнивания текста в статье, justify - на всю ширину */
-    font-size: 16px;    /*размер шрифта тут, если явно не указан в других тегах */
+    margin: 3% 12%; 
+    padding-left: 50px; 
+    padding-right: 50px;  
+    padding-top: 20px;  
+    padding-bottom: 40px; 
+    text-align: justify; 
+    font-size: 16px;   
     background: #000000;
-    background-image: radial-gradient(#222222 50%, transparent 0);  /*фон кружков, код цвета*/
-  background-size: 10px 10px; /*размер кружков фона*/
-  border: 16px solid #000000; /* рамка окна статей     размер, тип solid - сплошная линия, цвет */
-  border-radius: 24px; /* закругление рамки окна статей   */
-  overflow: hidden; /*если контент больше окна, не выводим за пределы*/
+    background-image: radial-gradient(#222222 50%, transparent 0); 
+  background-size: 10px 10px; 
+  border: 16px solid #000000; 
+  border-radius: 24px; 
+  overflow: hidden; 
 }
 
-/*отдельные блоки*/
+
 .container-eu .flex-container {
 display: -webkit-flex;
 display: flex;
@@ -376,29 +351,27 @@ padding: 20px;
 font-family: 'lowrider';
 }
 
-/*обычные параграфы*/
+
 .container-eu .flex-container p {
     font-size:28px;
-    line-height: 28px;   /*межстрочный интервал  */
+    line-height: 28px;   
     color:#ffffff;
 }
 
 .container-eu .flex-container .col-ita p {
     font-size:28px;
-    line-height: 28px;   /*межстрочный интервал  */
+    line-height: 28px;  
     color:#ffffff;
 }
 
 .container-eu .flex-container .col-ing p {
     font-size:28px;
-    line-height: 28px;   /*межстрочный интервал  */
+    line-height: 28px;   
     color:#ffffff;
 }
 
 
 
-
-/*отдельные правила на блок col-ing   */
 .container-eu .flex-container .col-ing {
 margin-top: 30px;
 -webkit-flex: 1;
@@ -407,7 +380,7 @@ margin-left:15px;
 margin-right:15px;
 }
 
-/*отдельные правила на блок col-ita*/
+
 .container-eu .flex-container .col-ita {
 margin-top: 30px;
 -webkit-flex: 1;
@@ -416,29 +389,28 @@ margin-left:15px;
 margin-right:15px;
 }
 
-/*ссылки*/
+
 .container-eu a {
 font-size: 19px;
 color:#009900;
 }
-/*цифра текст-сноска   */
+
 .container-eu sup {
 font-family: 'sf-atarian-system.regular';
 color:#ffffff;
 }
 
-/*Списки*/
+
 .container-eu ul {
 padding: 15px 15px;
-list-style: none;  /*без значка*/
+list-style: none;  
 }
-/*текст списка*/
 .container-eu li {
 padding: 20px 20px;
 font-family: 'emulogic';
 font-size: 14px;
 line-height: 20px;
-/*border-top:1px solid #ffffff;   */
+
 }
 
 .container-eu li:nth-of-type(odd) {
@@ -450,16 +422,16 @@ background: #999999;
 color:#444444;
 }
 
-/*таблицы в EUDIRECTIVE*/
+
 .container-eu table {
 margin-top: 20px;
 margin-bottom: 20px;
 margin-left:auto;
 margin-right:auto;
-word-break: break-word; /*перенос слов*/
+word-break: break-word;
 }
 
-/*чередуем фон таблицы по четностистрок*/
+
 .container-eu table tr:nth-of-type(odd) {
   background: #333333;
   }
@@ -468,7 +440,7 @@ word-break: break-word; /*перенос слов*/
   background: #999999;
   }
 
-/*заголовок таблицы*/
+
 .container-eu table th {
 padding-top: 10px;
 padding-bottom: 10px;
@@ -479,7 +451,7 @@ font-size: 30px;
 color:#00cccc;
 text-align: center;
 }
-/*ячейки таблицы*/
+
 .container-eu table td {
 padding-top: 10px;
 padding-bottom: 10px;
@@ -494,29 +466,28 @@ color:#ffffff;
 border-left: none;
 }
 
-/*новый скролл*/
-/* width */
+
 ::-webkit-scrollbar {
   width: 17px;
 }
 
-/* Track */
+
 ::-webkit-scrollbar-track {
   background: black;
     box-shadow: inset 0 0 5px wheat;
   border-radius: 15px;
 }
 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
   background: white;
     border-radius: 15px;
 
 }
 
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffe100;   /* or 22fdfe*/
+  background: #ffe100; 
 }
 
 
