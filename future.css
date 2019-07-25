@@ -124,8 +124,8 @@ article {
 	overflow: auto;
 	width: 278px;
 	max-height: 532px;
-  	margin-left: 37.25em;
-	margin-top: 6.69em;
+  	margin-left: 37.28em;
+	margin-top: 6.72em;
 	margin-bottom: 9.8em;
     display: inline-block;
 	font-family: 'Exo 2', sans-serif;
@@ -257,7 +257,7 @@ section:nth-of-type(2):after {
     display: block;		
 }	
 
-section:nth-of-type(3):after {
+section:nth-of-type(4):after {
 	box-sizing: content-box;
 	content:"";
 	height: 120px;
@@ -281,7 +281,7 @@ section:nth-of-type(3):after {
     display: block;	
 }	  
  
-section:nth-of-type(4):after {
+section:nth-of-type(5):after {
 	box-sizing: content-box;
 	content:"";
 	height: 120px;
@@ -438,6 +438,30 @@ section:nth-of-type(13):after {
 	height: 120px;
 	background-repeat:no-repeat;
 	background-image: url('img/future/ad10.jpg');
+	background-size: 230px;
+	border-radius: 3px;
+	opacity: 0.9;  
+	background-color: rgba(0,121,171,0.1);
+	border: 1px solid rgba(0,121,171,0.2);
+	color: rgb(0, 50, 93);
+	text-align: justify;
+    border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin: auto;  
+	margin-top: 8px;
+	margin-bottom: 8px; 
+    display: block;	
+}	
+
+section:nth-of-type(15):after {
+	box-sizing: content-box;
+	content:"";
+	height: 120px;
+	background-repeat:no-repeat;
+	background-image: url('img/future/ad11.jpg');
 	background-size: 230px;
 	border-radius: 3px;
 	opacity: 0.9;  
