@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+
+p, h1, h2, h3, h4, figcaption, table, em, q { 
+
+font-family: 'Special Elite';
+margin: 25px 25px 25px 25px;
+	
+}
+
+p {
+
+text-indent: 50px;
+font-size: 15px;
+
+}
+
+
+section > div {
+	
+text-decoration: underline;
+text-indent: 50px;
+font-family: 'Special Elite';
+margin: 25px 25px 25px 25px;
+		
+}
+
+table, tr, td {
+
+border-collapse: collapse;
+border: 4px solid black;
+padding: 10px;
+text-align: left;
+font-family: 'Special Elite';
+
+}
+
+h1, h2, h3, h4 {
+
+text-decoration: underline;
+text-transform: uppercase;
+	
+}
+
+figcaption { 
+
+text-align: center;
+font-size: 13px;
+
+}
+
+body {
+	
+background-image: url("img/type/typebackgroundbody.jpg");
+background-position: center top;
+
+}
+
+img {
+
+width: 80%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+border-radius: 1px;
+
+}
+
+section {
+
+background-image: url("img/type/typebackground.png");
+border-radius: 2px;
+padding-top: 80px;
+padding-bottom: 80px;
+padding-right: 50px;
+padding-left: 50px;
+margin: 5%;
+
+}
+
+article {
+
+margin-top: 5%;
+margin-bottom: 5%;
+margin-left: 20%;
+margin-right: 20%;
+word-spacing: 6px;
+
+}
+
+ a { 
+color: black;
+text-decoration: underline;
+} 
