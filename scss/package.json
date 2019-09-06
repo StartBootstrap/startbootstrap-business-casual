@@ -1,0 +1,47 @@
+{
+    "title": "Business Casual",
+    "name": "startbootstrap-business-casual",
+    "version": "5.0.8",
+    "scripts": {
+        "start": "node_modules/.bin/gulp watch"
+    },
+    "description": "A casual HTML website theme for businesses built with Bootstrap",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://startbootstrap.com/template-overviews/business-casual",
+    "bugs": {
+        "url": "https://github.com/BlackrockDigital/startbootstrap-business-casual/issues",
+        "email": "feedback@startbootstrap.com"
+    },
+    "license": "MIT",
+    "author": "Start Bootstrap",
+    "contributors": [
+        "David Miller (http://davidmiller.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BlackrockDigital/startbootstrap-business-casual.git"
+    },
+    "dependencies": {
+        "bootstrap": "4.3.1",
+        "jquery": "3.4.1"
+    },
+    "devDependencies": {
+        "browser-sync": "2.26.7",
+        "del": "4.1.1",
+        "gulp": "4.0.2",
+        "gulp-autoprefixer": "6.1.0",
+        "gulp-clean-css": "4.2.0",
+        "gulp-header": "2.0.7",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "1.4.0",
+        "gulp-sass": "4.0.2",
+        "merge-stream": "2.0.0"
+    }
+}
