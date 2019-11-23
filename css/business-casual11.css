@@ -8,8 +8,8 @@ body {
   font-family: 'Open Sans',
     sans-serif;
   ;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(176, 174, 255, 0.65))), url("../img/princeimage.png");
-  background: linear-gradient(rgba(170, 168, 255, 0.65)), url("../img/princeimage.png");
+  /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(176, 174, 255, 0.65))), url("../img/princeimage.png"); */
+  /* background: linear-gradient(rgba(170, 168, 255, 0.65)), url("../img/princeimage.png"); */
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -146,6 +146,8 @@ p {
     position: absolute;
     bottom: -2rem;
   }
+
+
 }
 
 @media (min-width: 1200px) {
@@ -212,21 +214,7 @@ p {
   }
 }
 
-.list-hours {
-  font-size: 0.9rem;
-}
 
-.list-hours .list-hours-item {
-  border-bottom: 1px solid rgba(230, 167, 86, 0.5);
-  padding-bottom: .25rem;
-  margin-bottom: 1rem;
-  font-style: italic;
-}
-
-.list-hours .list-hours-item.today {
-  font-weight: bold;
-  color: #e6a756;
-}
 
 @media (min-width: 992px) {
   .list-hours {
@@ -239,9 +227,9 @@ p {
   font-size: 1.2rem;
 }
 
-.footer {
+/* .footer {
   background-color: rgba(47, 23, 15, 0.9);
-}
+} */
 
 .text-primary {
   color: #e6a756 !important;
@@ -270,4 +258,8 @@ p {
 
 .font-weight-light {
   font-weight: 100 !important;
+}
+
+.carousel-indicators .active li {
+  background-color: black;
 }
