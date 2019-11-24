@@ -28,3 +28,9 @@
     line-height: 4rem;
     color: black;
 }
+
+.sized {
+    height: auto;
+    width: 500px;
+    margin: 10px;
+}
