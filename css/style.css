@@ -20,6 +20,12 @@
     display: block;
     font-size: 2rem;
     font-weight: 800;
+    font-family: "LeagueGothicRegular",
+        "HelveticaNeue-CondensedBold",
+        "Franklin Gothic Demi Cond",
+        "Franklin Gothic Medium Cond",
+        "Impact",
+        sans-serif;
 }
 
 .site-heading .site-heading-lower {
@@ -27,6 +33,21 @@
     font-weight: 100;
     line-height: 4rem;
     color: black;
+    font-family: "LeagueGothicRegular",
+        "HelveticaNeue-CondensedBold",
+        "Franklin Gothic Demi Cond",
+        "Franklin Gothic Medium Cond",
+        "Impact",
+        sans-serif;
+}
+
+h1 {
+    font-family: "LeagueGothicRegular",
+        "HelveticaNeue-CondensedBold",
+        "Franklin Gothic Demi Cond",
+        "Franklin Gothic Medium Cond",
+        "Impact",
+        sans-serif;
 }
 
 .sized {
