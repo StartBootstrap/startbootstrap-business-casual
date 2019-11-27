@@ -12,6 +12,8 @@
     margin-bottom: 5rem;
     text-transform: uppercase;
     line-height: 1;
+    font-weight: 200;
+
     font-family: 'Open Sans',
         sans-serif;
 }
@@ -20,13 +22,10 @@
     display: block;
     font-size: 3rem;
     color: orange;
-    font-weight: 800;
-    font-family: "LeagueGothicRegular",
-        "HelveticaNeue-CondensedBold",
-        "Franklin Gothic Demi Cond",
-        "Franklin Gothic Medium Cond",
-        "Impact",
+    font-weight: 200;
+    font-family: 'PT Sans Narrow',
         sans-serif;
+
 }
 
 
@@ -35,21 +34,23 @@
     font-weight: 100;
     line-height: 4rem;
     color: black;
-    font-family: "LeagueGothicRegular",
-        "HelveticaNeue-CondensedBold",
-        "Franklin Gothic Demi Cond",
-        "Franklin Gothic Medium Cond",
-        "Impact",
+    font-family: 'PT Sans Narrow',
         sans-serif;
+
 }
 
-h1 {
-    font-family: "LeagueGothicRegular",
-        "HelveticaNeue-CondensedBold",
-        "Franklin Gothic Demi Cond",
-        "Franklin Gothic Medium Cond",
-        "Impact",
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: 'PT Sans Narrow',
         sans-serif;
+
+}
+
+.title-cards {
+    font-size: 3rem;
 }
 
 .sized {
@@ -63,7 +64,7 @@ h1 {
 /* ++++++ */
 
 .project-space {
-    margin: 40px 0 40px 0;
+    margin: 60px 0 30px 0;
 }
 
 /* ++++++ */
