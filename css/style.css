@@ -16,9 +16,10 @@
         sans-serif;
 }
 
-.site-heading .site-heading-upper {
+.site-heading-upper {
     display: block;
-    font-size: 2rem;
+    font-size: 3rem;
+    color: orange;
     font-weight: 800;
     font-family: "LeagueGothicRegular",
         "HelveticaNeue-CondensedBold",
@@ -27,6 +28,7 @@
         "Impact",
         sans-serif;
 }
+
 
 .site-heading .site-heading-lower {
     font-size: 5rem;
@@ -55,3 +57,13 @@ h1 {
     width: 500px;
     margin: 10px;
 }
+
+/* ++++++ */
+/* Projects Page */
+/* ++++++ */
+
+.project-space {
+    margin: 40px 0 40px 0;
+}
+
+/* ++++++ */
