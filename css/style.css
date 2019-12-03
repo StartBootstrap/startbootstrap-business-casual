@@ -50,12 +50,12 @@ p {
 }
 
 .title-cards {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .sized {
     height: auto;
-    width: 500px;
+    width: 100%;
     margin: 10px;
 }
 
