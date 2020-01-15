@@ -120,13 +120,69 @@
             <div class="col-xl-9 col-lg-10 mx-auto">
               <div class="bg-faded rounded p-5">
                 <h2 class="section-heading mb-4">
-                  <span class="section-heading-upper">Strong Coffee, Strong Roots</span>
-                  <span class="section-heading-lower">About Our Cafe</span>
+                  <span class="section-heading-lower">get a quote or make an appointment</span>
+                  <span class="section-heading-upper">If you are interested in a quote please indicate for what type of insurance</span>
+                  <span class="section-heading-lower"></span>
                 </h2>
-                <p>Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.</p>
-                <p class="mb-0">We guarantee that you will fall in
-                  <em>lust</em>
-                  with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.</p>
+                <form id="contact-form" method="post" action="contact.php" role="form">
+
+                  <div class="messages"></div>
+              
+                  <div class="controls">
+              
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_name">Firstname</label>
+                                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Jane" required="required" data-error="Firstname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_lastname">Lastname</label>
+                                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Doe" required="required" data-error="Lastname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_email">Email</label>
+                                  <input id="form_email" type="email" name="email" class="form-control" placeholder="JaneDoe@email.com" required="required" data-error="Valid email is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                          
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <label for="form_message">Message</label>
+                                  <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <input type="submit" class="btn btn-primary btn-send" value="Send message">
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <p class="text-muted">
+                                  All fields are required.</p>
+                          </div>
+                      </div>
+                  </div>
+              
+              </form>
+                <p></p>
+                <p class="mb-0">
+                  
+                  </p>
               </div>
             </div>
           </div>
