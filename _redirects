@@ -1,0 +1,9 @@
+# *** Warning! Your custom domain is not using HTTPS yet ***
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+http://millerinsurance-team.com/* http://www.millerins-team.com/:splat 301!
+http://www.millerinsurance-team.com/* http://www.millerins-team.com/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+http://xenodochial-hoover-b5e22b.netlify.com/* http://www.millerins-team.com/:splat 301!
