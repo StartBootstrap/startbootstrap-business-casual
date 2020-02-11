@@ -8,8 +8,8 @@
 
 
 .site-heading {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     text-transform: uppercase;
     line-height: 1;
     font-weight: 200;
@@ -20,7 +20,7 @@
 
 .site-heading-upper {
     display: block;
-    font-size: 3rem;
+    font-size: 1rem;
     color: orange;
     font-weight: 200;
     font-family: 'PT Sans Narrow',
@@ -30,7 +30,7 @@
 
 
 .site-heading .site-heading-lower {
-    font-size: 5rem;
+    font-size: 1rem;
     font-weight: 100;
     line-height: 4rem;
     color: black;
