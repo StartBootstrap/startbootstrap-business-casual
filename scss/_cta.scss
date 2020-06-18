@@ -16,6 +16,7 @@
       left: -0.5rem;
       right: -0.5rem;
       border: 0.25rem solid fade-out($white, 0.15);
+      z-index: -1;
     }
   }
 }

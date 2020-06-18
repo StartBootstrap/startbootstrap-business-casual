@@ -1,7 +1,7 @@
 {
     "title": "Business Casual",
     "name": "startbootstrap-business-casual",
-    "version": "5.0.9",
+    "version": "5.0.10",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
@@ -14,7 +14,7 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/business-casual",
+    "homepage": "https://startbootstrap.com/themes/business-casual",
     "bugs": {
         "url": "https://github.com/StartBootstrap/startbootstrap-business-casual/issues",
         "email": "feedback@startbootstrap.com"
