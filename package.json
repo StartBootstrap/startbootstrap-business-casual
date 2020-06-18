@@ -16,7 +16,7 @@
     ],
     "homepage": "https://startbootstrap.com/template-overviews/business-casual",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-business-casual/issues",
+        "url": "https://github.com/StartBootstrap/startbootstrap-business-casual/issues",
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
@@ -26,22 +26,22 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-business-casual.git"
+        "url": "https://github.com/StartBootstrap/startbootstrap-business-casual.git"
     },
     "dependencies": {
-        "bootstrap": "4.3.1",
-        "jquery": "3.4.1"
+        "bootstrap": "4.5.0",
+        "jquery": "3.5.1"
     },
     "devDependencies": {
         "browser-sync": "2.26.7",
         "del": "5.1.0",
         "gulp": "4.0.2",
-        "gulp-autoprefixer": "7.0.0",
-        "gulp-clean-css": "4.2.0",
+        "gulp-autoprefixer": "7.0.1",
+        "gulp-clean-css": "4.3.0",
         "gulp-header": "2.0.9",
         "gulp-plumber": "^1.2.1",
-        "gulp-rename": "1.4.0",
-        "gulp-sass": "4.0.2",
+        "gulp-rename": "2.0.0",
+        "gulp-sass": "4.1.0",
         "merge-stream": "2.0.0"
     }
 }
