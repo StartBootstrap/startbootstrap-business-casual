@@ -1,7 +1,7 @@
 {
     "title": "Business Casual",
     "name": "startbootstrap-business-casual",
-    "version": "5.0.10",
+    "version": "5.0.11",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
@@ -14,7 +14,7 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/themes/business-casual",
+    "homepage": "https://startbootstrap.com/theme/business-casual",
     "bugs": {
         "url": "https://github.com/StartBootstrap/startbootstrap-business-casual/issues",
         "email": "feedback@startbootstrap.com"
@@ -22,19 +22,19 @@
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "David Miller (https://davidmiller.io/)"
     ],
     "repository": {
         "type": "git",
         "url": "https://github.com/StartBootstrap/startbootstrap-business-casual.git"
     },
     "dependencies": {
-        "bootstrap": "4.5.0",
+        "bootstrap": "4.5.3",
         "jquery": "3.5.1"
     },
     "devDependencies": {
-        "browser-sync": "2.26.7",
-        "del": "5.1.0",
+        "browser-sync": "2.26.13",
+        "del": "6.0.0",
         "gulp": "4.0.2",
         "gulp-autoprefixer": "7.0.1",
         "gulp-clean-css": "4.3.0",
