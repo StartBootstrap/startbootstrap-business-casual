@@ -1,0 +1,101 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Business Casual - Start Bootstrap Theme
+
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v5.15.3/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body
+
+        h1.site-heading.text-center.text-white.d-none.d-lg-block
+            span.site-heading-upper.text-primary.mb-3 A Free Bootstrap 4 Business Theme
+            span.site-heading-lower Business Casual
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.py-lg-4
+            .container
+                a.navbar-brand.text-uppercase.text-expanded.font-weight-bold.d-lg-none(href='index.html') Start Bootstrap
+                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.mx-auto
+                        li.nav-item.px-lg-4
+                            a.nav-link.text-uppercase.text-expanded(href='index.html')
+                                | Home
+                                span.sr-only (current)
+                        li.nav-item.px-lg-4
+                            a.nav-link.text-uppercase.text-expanded(href='about.html') About
+                        li.nav-item.active.px-lg-4
+                            a.nav-link.text-uppercase.text-expanded(href='products.html') Products
+                        li.nav-item.px-lg-4
+                            a.nav-link.text-uppercase.text-expanded(href='store.html') Store
+
+        section.page-section
+            .container
+                .product-item
+                    .product-item-title.d-flex
+                        .bg-faded.p-5.d-flex.ml-auto.rounded
+                            h2.section-heading.mb-0
+                                span.section-heading-upper Blended to Perfection
+                                span.section-heading-lower Coffees & Teas
+                    img.product-item-img.mx-auto.d-flex.rounded.img-fluid.mb-3.mb-lg-0(src='assets/img/products-01.jpg' alt='')
+                    .product-item-description.d-flex.mr-auto
+                        .bg-faded.p-5.rounded
+                            p.mb-0
+                                | We take pride in our work, and it shows. Every time you order a beverage from us, we guarantee that it will be an experience worth having. Whether it's our world famous Venezuelan Cappuccino, a refreshing iced herbal tea, or something as simple as a cup of speciality sourced black coffee, you will be coming back for more.
+
+        section.page-section
+            .container
+                .product-item
+                    .product-item-title.d-flex
+                        .bg-faded.p-5.d-flex.mr-auto.rounded
+                            h2.section-heading.mb-0
+                                span.section-heading-upper Delicious Treats, Good Eats
+                                span.section-heading-lower Bakery & Kitchen
+                    img.product-item-img.mx-auto.d-flex.rounded.img-fluid.mb-3.mb-lg-0(src='assets/img/products-02.jpg' alt='')
+                    .product-item-description.d-flex.ml-auto
+                        .bg-faded.p-5.rounded
+                            p.mb-0
+                                | Our seasonal menu features delicious snacks, baked goods, and even full meals perfect for breakfast or lunchtime. We source our ingredients from local, oragnic farms whenever possible, alongside premium vendors for specialty goods.
+
+        section.page-section
+            .container
+                .product-item
+                    .product-item-title.d-flex
+                        .bg-faded.p-5.d-flex.ml-auto.rounded
+                            h2.section-heading.mb-0
+                                span.section-heading-upper From Around the World
+                                span.section-heading-lower Bulk Speciality Blends
+                    img.product-item-img.mx-auto.d-flex.rounded.img-fluid.mb-3.mb-lg-0(src='assets/img/products-03.jpg' alt='')
+                    .product-item-description.d-flex.mr-auto
+                        .bg-faded.p-5.rounded
+                            p.mb-0
+                                | Travelling the world for the very best quality coffee is something take pride in. When you visit us, you'll always find new blends from around the world, mainly from regions in Central and South America. We sell our blends in smaller to large bulk quantities. Please visit us in person for more details.
+
+        footer.footer.text-faded.text-center.py-5
+            .container
+                p.m-0.small Copyright © Your Website 2021
+
+        // Bootstrap core JS
+        script(src='https://code.jquery.com/jquery-3.5.1.min.js')
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')

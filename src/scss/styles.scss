@@ -1,0 +1,21 @@
+// Import variables
+@import "./variables.scss";
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+// Global CSS
+@import "./global.scss";
+
+// Components
+@import "./components/buttons.scss";
+@import "./components/navbar.scss";
+@import "./components/bootstrap-overrides";
+
+// Sections
+@import "./sections/about.scss";
+@import "./sections/cta.scss";
+@import "./sections/footer.scss";
+@import "./sections/intro.scss";
+@import "./sections/products.scss";
+@import "./sections/store.scss";
