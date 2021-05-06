@@ -10,7 +10,7 @@ p {
 }
 
 .text-faded {
-    color: fade-out($white, 0.7);
+    color: lighten($primary, 25%);
 }
 
 .site-heading {
@@ -55,5 +55,5 @@ p {
 }
 
 .bg-faded {
-    background-color: fade-out($white, 0.15);
+    background-color: lighten($primary, 25%);
 }
